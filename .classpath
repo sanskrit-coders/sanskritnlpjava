@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/scala"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/appengine-local-runtime-shared.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/commons-lang3-3.0.1.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/el-api.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/jsp-api.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/logback-classic-0.9.29.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/logback-core-0.9.29.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/scala-library.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/slf4j-api-1.6.2.jar"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>

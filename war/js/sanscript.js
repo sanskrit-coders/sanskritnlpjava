@@ -233,12 +233,12 @@
          * A simple 1:1 mapping.
          */
         hk: {
-            vowels: 'a A i I u U R RR lR lRR  e ai  o au'.split(' '),
+            vowels: 'a A i I u U R RR lR lRR e e ai o o au'.split(' '),
             other_marks: 'M H ~'.split(' '),
             virama: [''],
             consonants: 'k kh g gh G c ch j jh J T Th D Dh N t th d dh n p ph b bh m y r l v z S s h L kS jJ'.split(' '),
             symbols: "0 1 2 3 4 5 6 7 8 9 OM ' | ||".split(' '),
-            other: 'kh kh gh jh D Dh ph y r'.split(' ')
+            other: '        '.split(' ')
         },
 
         /* National Library at Kolkata
@@ -318,7 +318,33 @@
             '|': ['.'],
             '||': ['..'],
             z: ['J']
-        }
+        },
+        hk: {
+            A: ['aa'],
+            I: ['ii', 'ee'],
+            U: ['uu', 'oo'],
+            RRi: ['R^i'],
+            RRI: ['R^I'],
+            LLi: ['L^i'],
+            LLI: ['L^I'],
+            M: ['.m', '.n'],
+            '~N': ['N^'],
+            ch: ['C', 'chh', 'Ch'],
+            '~n': ['JN'],
+            v: ['w'],
+            z: ['sh'],
+            Sh: ['S', 'shh'],
+            kSh: ['kS', 'x'],
+            'j~n': ['GY', 'dny'],
+            OM: ['AUM'],
+            "\\_": ["\\`"],
+            "\\_H": ["\\`H"],
+            "\\'M": ["\\'.m", "\\'.n"],
+            "\\_M": "\\_.m \\_.n \\`M \\`.m \\`.n".split(' '),
+            ".a": ['~'],
+            '|': ['.'],
+            '||': ['..'],
+        },
     },
 
     // object cache

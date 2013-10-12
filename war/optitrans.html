@@ -1,43 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN">
 <html><head>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   
   <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
 
@@ -45,102 +7,28 @@
   <link rel="stylesheet" href="contentStylesheet.css" type="text/css">
 
   
-  <script src="pageStats.js" type="text/javascript"></script><title>OptiTrans: Optimal Transliteration scheme.</title><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="content-type" content="text/html; charset=utf-8"></head><body>
-<h1>OptiTrans: Optimal Transliteration scheme.</h1>
+  <script src="pageStats.js" type="text/javascript"></script>
+  <title>OptiTrans: Optimal Transliteration scheme.</title>
 
+  
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-<img style="width: 120px; height: 168px;" alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Patanjali.jpg/220px-Patanjali.jpg"><img style="width: 245px; height: 158px;" alt="" src="http://upload.wikimedia.org/wikipedia/en/8/89/Panini%2C_the_great_Sanskrit_grammarian..jpg"><br>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-&#2357;&#2366;&#2325;&#2381;&#2351;&#2325;&#2366;&#2352;&#2306; &#2357;&#2352;&#2352;&#2369;&#2330;&#2367;&#2306;, &#2349;&#2366;&#2359;&#2381;&#2351;&#2325;&#2366;&#2352;&#2306; &#2346;&#2340;&#2334;&#2381;&#2332;&#2354;&#2367;&#2306;, &#2346;&#2339;&#2367;&#2344;&#2367;&#2306; &#2360;&#2370;&#2340;&#2381;&#2352;&#2325;&#2366;&#2352;&#2334;&#2381;&#2330; &#2346;&#2381;&#2352;&#2339;&#2340;&#2379;&#2360;&#2381;&#2350;&#2367;
-&#2350;&#2369;&#2344;&#2367;&#2340;&#2381;&#2352;&#2351;&#2350;&#2381;!<br>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-<hr style="width: 100%; height: 2px;"><br>
-<ol id="mozToc">
-<!--mozToc h3 1 h4 2 h5 3 h4 4 h5 5 h6 6--><li><a href="#mozTocId645934">Objective</a></li><li><a href="#mozTocId230755">
-Transliteration map.</a><ol><li><a href="#mozTocId461095">Interpreting on OptiTrans encoding</a></li></ol></li><li><a href="#mozTocId288414">Motivation and evolution</a></li>
-</ol>
-<h3><a class="mozTocH3" name="mozTocId645934"></a>Objective</h3>
-<p>OptiTrans defines a simple set of rules to produce characters in
-Indic scripts using ASCII characters. These rules are defined by a
-transiteration map, and meta-rules describing contextual changes in
-the&nbsp; interpretation of these rules.</p>
-<p><span style="text-decoration: underline;">Don't worry - It is simple</span>.
-Though the rules are intelleligently designed (building on prior
-experience and expertise), there is no machine learning involved in the
-actual application of these rules.<br>
-</p>
-<h4>Desiderata (Requirements).</h4>
-The (sometimes competing) objectives are<br>
-<ul>
-  <li>OptiTrans is <span style="font-weight: bold;">intuitive</span>. The learning curve is not steep, and the scheme is natural.</li>
-  <ul>
-    <li>Where possible, use uniform rules. From this perspective, e = &#2319; and ee = &#2312; would be worse than i = &#2311;, ii = &#2312;.<br>
-    </li>
-    <li>Mapped keystrokes should correspond to how the characters sounds, rather than how it looks. So, using o.c for &#2321; is not optimal.<br>
-    </li>
-  </ul>
-
-  <li><span style="color: rgb(80, 0, 80); font-family: arial,sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);"></span><span style="color: rgb(80, 0, 80); font-family: arial,sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);"></span>OptiTrans is <span style="font-weight: bold;">optimal</span>. Typing effort is minimal. This often implies the following:</li>
-  <ul>
-    <li>user does not need to press more keys (in terms of number or variety) &nbsp;than he absolutely needs to.</li>
-    <li>Lower case is preferable to upper case (it takes effort to press the shift key).</li>
-    <li>Pressing the same key twice takes less effort than pressing two different keys.</li>
-  </ul>
-  <li>OptiTrans is suitable for both <span style="font-weight: bold;">live</span> transliteration and offline <span style="font-weight: bold;">batch</span> processing. This implies:<br>
-  </li>
-  <ul>
-    <li>If &#2311; flashes on the screen before &#2312; appears, that is fine. But,
-&#2404; flashing on the screen before the unrelated symbol&nbsp; &#2305;&nbsp;
-makes for unintuitive user experience.</li>
-    
-  </ul>
-  <li>More frequently typed characters are more important than less
-frequently used ones. So, when one needs to make a choice, assign
-shorter keystrokes for more frequently used characters.</li>
-
-  <li>Where it does not violate the other principles mentioned above,
-OptiTrans tries to be backward-compatible with commonly used rules from
-schemes such as ITRANS, Baraha and Harvard Kyoto.<br>
-  </li>
-
-</ul>
-
-<h4>Evolution and contact.</h4>
-More optimality is desirable, and the scheme should be improved when necessary
-- so suggestions and questions are welcome - try mailing to the
-following lists: <a href="https://lists.nongnu.org/mailman/listinfo/m17n-list">m17n</a>, <span style="color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 204); display: inline ! important; float: none;"><span class="Apple-converted-space">&nbsp;</span></span><a href="http://groups.google.com/group/sanskrit-programmers" style="font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 204);">sanskrit-programmers</a>.<br>
-<h3><a class="mozTocH3" name="mozTocId230755"></a>
-Transliteration map.</h3>
-
-
-The latest transliteration table is always available in <a href="https://docs.google.com/spreadsheet/ccc?key=0Al_QBT-hoqqVdHQ1MFZLU0FveUU0SlJRMFJ5MWZPWnc">this online spreadsheet</a>.
-It lists transliteration rules from OptiTrans and several other popular
-schemes (including Baraha, Harvard-Kyoto, ITRANS, Velthuis, IAST) for
-easy comparison.<br>
-<h4><a class="mozTocH4" name="mozTocId461095"></a>Interpreting on OptiTrans encoding</h4>
-<ul>
-  <li>The context decides whether a dependent or an independent vowel is produced.</li>
-  <li>When the script is used to render languages such as Hindi, the virAma at the end of the word <a href="http://en.wikipedia.org/wiki/Schwa_deletion_in_Indo-Aryan_languages">is deleted</a>.</li>
-
-</ul>
-<h4>
-Examples</h4>
-
-<ul>
-  <li>shankara manju - &#2358;&#2329;&#2381;&#2325;&#2352; &#2350;&#2334;&#2381;&#2332;&#2369;<br>
-  </li>
-  <li>shiv shankar (while writing hindI) - &#2358;&#2367;&#2357; &#2358;&#2329;&#2381;&#2325;&#2352;</li>
-  <li>shiv shankar (while writing Samskrita) - &#2358;&#2367;&#2357;&#2381; &#2358;&#2329;&#2381;&#2325;&#2352;&#2381;</li>
-  <li>ak.ha man.hju - &#2309;&#2325;&#2381;&#2361; &#2350;&#2344;&#2381;&#2332;&#2369;<br>
-  </li>
-  <li>mukha - &#2350;&#2369;&#2326;</li>
-  <li>shraddhAvAn asi. gacCha. - &#2358;&#2381;&#2352;&#2342;&#2381;&#2343;&#2366;&#2357;&#2366;&#2344;&#2381; &#2309;&#2360;&#2367;&#2404; &#2327;&#2330;&#2381;&#2331;&#2404;<br>
-  </li>
-
-</ul>
-
-
+</head><body>
 <br>
 
-<script src="bottom.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+<!--
+window.location = "https://sites.google.com/site/sanskritcode/"
+//-->
+</script>
+This page has moved <a href="https://sites.google.com/site/sanskritcode/optitrans"> here</a>.
+
 </body></html>

@@ -1,0 +1,126 @@
+#!/usr/bin/perl
+
+$description =
+"Vaccent converts representation of Vedic accents from Roman to
+Devanagari. It reads in a Unicode Roman text following ISO 15919
+conventions and indicating Vedic accents by means of acute and grave;
+it writes out the same text with svarita and anudatta accents added at
+the appropriate points, so that the result may be processed by ur2ud -s
+to convert to Devanagari. (Ur2ud will pass the Devanagari accents
+through unchanged, but will suppress the acutes and graves.)
+
+-d '<regexp>' may be used to specify a regular expression describing
+   the Roman text's equivalent for daṇḍa (danda), i.e. indicating the
+   point after which Devanagari accent notation begins a new section.
+   If the option is unset, text will be assumed to be continuous
+   unpunctuated prose.
+
+-h prints this help.
+";
+
+use Getopt::Std;
+getopts('d:h');
+if ($opt_h) {
+    print STDERR $description;
+    exit 1;
+}
+if ($opt_d) { $danda = $opt_d }
+else { $danda = '.^' }				# Unmatchable regexp (I hope)
+
+# With my weird accented chars, [bracketed] expressions fail in strange
+# ways. Hard experience indicates that catalogues have to be built as
+# "(a|b|c)", not "[abc]", and that catalogues of longer char-sequences
+# (such as r-underring-macron-acute) must precede shorter ones.
+
+$v1 = "(?:r̥̄́|l̥̄́|r̥̄̀|l̥̄̀)";
+$v2 = "(?:r̥̄|l̥̄|ŕ̥|ĺ̥|r̥̀|l̥̀)";
+$v3 = "(?:r̥|l̥|ā́|ī́|ū́|ā̀|ī̀|ū̀)";
+$v4 = "(?:á|à|ā|i|í|ì|ī|u|ú|ù|ū|e|é|è|o|ó|ò)";
+$v5 = "a(?:(?:i|í|ì|u|ú|ù)|(?!(?:i|í|ì|u|ú|ù)))";
+$vowel = "(?:$v1|$v2|$v3|$v4|$v5)";
+$diacr = "(?:ṁ|ḥ|m̐)";
+$syll = ".*?$vowel$diacr?";
+$acute = "(?:á|í|ú|é|ó|́)";
+$grave = "(?:à|ì|ù|è|ò|̀)";
+$shortgrave = "(?:à|ì|ù|r̥̀|l̥̀)";
+$svarita = "॑";
+$anudatta = "॒";
+$one = "१";
+$three = "३";
+
+$acstate = START;
+$obuf = "";
+
+while (<>) {
+    while (/^(.*?$danda)(.*)$/s) {
+	$chunk = $1;
+	$_ = $2;
+	$obuf .= process($chunk);
+	$acstate = START;
+    }
+    $obuf .= process($_);
+    #
+    # Tidy up
+    #
+    $obuf =~ s/^(.*$vowel$diacr?)(.*?\n)($anudatta)/$1$3$2/g;
+    $obuf =~ s/($anudatta)$svarita/$1/g;
+    $obuf =~ s/$svarita($anudatta)/$1/g;
+    $obuf =~ s/($one|$three)/$1$anudatta$svarita/g;
+    $obuf =~ s/(^|$svarita)$anudatta+/$1/gm;
+    if ($obuf =~ /$danda\s*$/ or $acstate ne ANUDATTA or eof) {
+	print $obuf;
+	$obuf = "";
+    }
+}
+
+sub process {
+    my $istring = shift;
+    $ostring = "";
+    while ($istring =~ /^($syll)(.*)$/s) {
+	$chunk = $1;
+	$istring = $2;
+	$ostring .= fixacc($chunk);
+    }
+    $ostring .= $istring;
+    return $ostring;
+}
+
+sub fixacc {
+    my $string = shift;
+    if ($string =~ /$grave/) {
+	if ($string =~ /$shortgrave/) { $string .= $one }
+	else { $string .= $three }
+	if ($acstate eq ANUDATTA) {
+	    $string = $anudatta . $string;
+	}
+	$acstate = SVARITA;
+	return $string;
+    }
+    if ($acstate eq START) {
+	if ($string !~ /$acute/) { $string .= $anudatta }
+	else { $acstate = UDATTA }
+	return $string;
+    }
+    if ($acstate eq SVARITA) {
+	if ($string !~ /$acute/) {
+	    $ostring =~ s/^(.*)($one|$three)(.*?)$/$1$svarita$3/;
+	    $acstate = ANUDATTA;
+	}
+	else { $acstate = UDATTA }
+	return $string;
+    }
+    if ($acstate eq ANUDATTA) {
+	if ($string =~ /$acute/) {
+	    $string = $anudatta . $string;
+	    $acstate = UDATTA;
+	}
+    return $string;
+    }
+    if ($acstate eq UDATTA) {
+	if ($string !~ /$acute/) {
+	    $string .= $svarita;
+	    $acstate = ANUDATTA;
+	}
+    }
+    return $string;
+}

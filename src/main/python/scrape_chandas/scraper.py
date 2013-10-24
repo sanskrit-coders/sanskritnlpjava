@@ -1,8 +1,6 @@
 from os import listdir
 from os.path import isfile, join
 from BeautifulSoup import BeautifulSoup
-from BeautifulSoup import BeautifulStoneSoup
-import lxml.html
 import re
 hexentityMassage = [(re.compile('&#x([^;]+);'),
 lambda m: '&#%d;' % int(m.group(1), 16))]

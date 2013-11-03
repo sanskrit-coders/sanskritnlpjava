@@ -5,8 +5,6 @@ import re
 hexentityMassage = [(re.compile('&#x([^;]+);'),
 lambda m: '&#%d;' % int(m.group(1), 16))]
 
-# file_name = '/home/vvasuki/Downloads/HTML/all_vRttas.txt'
-file_name = '/home/vvasuki/Downloads/HTML/v_zunakam_0.html'
 mypath = '/home/vvasuki/Downloads/HTML/'
 onlyfiles = [ f for f in listdir(mypath) if isfile(join(mypath,f)) and f.startswith('v')]
 for file_name in onlyfiles:

@@ -6,10 +6,11 @@ Maintainer: Sanskrit Programmers <sanskrit-programmers@googlegroups.com>
 Architecture: all
 Version: 0.1
 Suggests: goldendict, stardict-gtk
-Homepage: http://www.aupasana.com/stardict
-Description: Provides the following stardict sanskrit dictionaries:
+Homepage: https://sites.google.com/site/sanskritcode/
+Description: Provides the following stardict sanskrit dictionaries from Ajit ( http://www.aupasana.com/stardict ):
 Bidirectional Apte and Monier-Williams dictionaries.
 nyāsa devanāgarī output
 laghu siddhānta kaumudī devanāgarī output
 bālamanoramā devanāgarī output
 tattvabodhinī devanāgarī output
+

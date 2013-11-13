@@ -1,0 +1,39 @@
+#Path for installation of all packages.
+SCLINSTALLDIR=/home/vvasuki/scl
+
+#Paths for enabling web services
+HTDOCSDIR=/var/www/htdocs/scl
+SCLURL=http://localhost/htdocs/scl
+
+CGIDIR=/usr/lib/cgi-bin/scl
+CGIURL=http://localhost/cgi-bin/scl
+
+APACHE_USER_GROUP=www-data:www-data
+
+#Department server web page
+DEPTURL=http://sanskrit.uohyd.ac.in
+
+#Path of PERL
+PERLPATH=/usr/bin/perl
+
+#Path for JAVA
+JAVAPATH=/usr/bin/javac
+
+#Path of lt-proc
+LTPROCBINDIR=/usr/bin/
+
+#Path for dot
+GraphvizDot=/usr/bin/
+
+#PATHS for gdbm library and include files
+#for libgdbm.so
+LPATH=/usr/lib/
+
+#for gdbm.h
+IPATH=/usr/include/
+
+#FONT path needed for DOT
+FONT_PATH=/home/vvasuki/.fonts
+
+#Path for temporary files
+TFPATH=/tmp/SKT_TEMP

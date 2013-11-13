@@ -1,0 +1,5 @@
+#!/bin/bash
+source ../my_spec.txt
+
+# Do not edit the following line.
+perl -i -p -e "s#PERLPATH#$PERLPATH#g; s#SCLURL#$SCLURL#g; s#SCLINSTALLDIR#$SCLINSTALLDIR#g; s#CGIDIR#$CGIDIR#g; s#CGIDIR#$CGIDIR#g; s#DEPTURL#$DEPTURL#g; s#HTDOCSDIR#$HTDOCSDIR#g; s#LPATH#$LPATH#g;" utf82iscii.pl  convert.pl wx2utf8.sh itrans-iscii.sh utf82wx.sh utf8roman2wx.pl wx2utf8roman.pl wxHindi-utf8.sh Makefile slp-velthuis.pl

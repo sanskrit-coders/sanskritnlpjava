@@ -25,7 +25,7 @@ with open(data_file, 'r') as csvfile:
     # chandas = chandas.split(',')
     # print chandas
     # prefix = get_common_prefix([chandas[3].decode("utf-8"), chandas[5].decode("utf-8")])
-    prefix = get_common_prefix([chandas[3], chandas[5])
+    prefix = get_common_prefix([chandas[3], chandas[5]])
     print prefix
     # print prefix.encode("utf-8")
     # outfile.write(prefix.encode("utf-8") + '\n')

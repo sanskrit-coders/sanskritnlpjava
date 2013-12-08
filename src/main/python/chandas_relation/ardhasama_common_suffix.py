@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*- 
 import unicodecsv
-import csv
+import codecs
 from itertools import takewhile, izip
-
 
 # def removeNonAscii(s): return "".join(filter(lambda x: ord(x)<128, s))
 def get_common_prefix(strings):
@@ -13,12 +12,10 @@ def get_common_prefix(strings):
   return result
 
 data_file = u'data/Chandas छन्दः - अर्धसम.csv'
-out_file = 'data/ardhasama_prefix.csv'
+out_file = u'data/ardhasama_prefix.csv'
 
-# with open(out_file, 'w') as outfile:
-with open(data_file, 'r') as csvfile:
-  chandas_reader =  csv.reader(csvfile)
-  # chandas_reader =  unicodecsv.reader(csvfile, encoding='utf-8')
+with open(data_file, 'r') as csvfile, codecs.open(out_file, 'w', 'utf-8') as outfile:
+  chandas_reader =  unicodecsv.reader(csvfile, encoding='utf-8')
   # chandas_reader = csvfile.readlines()
   for chandas in chandas_reader:
     # chandas = chandas.decode("utf-8").split(',')
@@ -26,8 +23,4 @@ with open(data_file, 'r') as csvfile:
     # print chandas
     # prefix = get_common_prefix([chandas[3].decode("utf-8"), chandas[5].decode("utf-8")])
     prefix = get_common_prefix([chandas[3], chandas[5]])
-    print prefix
-    # print prefix.encode("utf-8")
-    # outfile.write(prefix.encode("utf-8") + '\n')
-    # print prefix.encode("utf-8")
-    # print unicode(prefix, errors='ignore')
+    outfile.write(prefix + '\n')

@@ -1,7 +1,11 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 # from PyICU import BreakIterator
+# To install pyicu:
+# sudo apt-get install libicu-dev
+# sudo easy_install pyicu
 import PyICU
+
 
 def get_graphemes(a):
   b = PyICU.BreakIterator.createCharacterInstance(PyICU.Locale())

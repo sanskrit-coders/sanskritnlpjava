@@ -111,7 +111,7 @@ sub getDetails {
 	#     print $synset, "\n";
 		if ($output_mode eq 'dict') {
 			my @non_empty_fields = grep(!/^$/, @fields);
-			print $word . "\t" . join("||", @input_words[2, 4], @non_empty_fields), "\n";
+			print "$word $artha\t" . join("||", @input_words[2, 4], @non_empty_fields), "\n";
 		} else {
 			print $word . ";" . join(";", @input_words[2, 4], @fields), "\n";
 		}
@@ -200,15 +200,17 @@ sub synset_info{
 # Example input: 1.1.7.2.2
 sub get_Sloka {
 	my ($index) = @_;
+	chomp $index;
 	$index =~ s/\.\d+.\d+$//;
-	$result = "$index:";
+	my $result = "$index:";
 	die "can't open file for reading $!" unless open(TMP,"<amara.wx");
 	my $add_to_result = 0;
+	# print "Sloka_$index\n";
 	while(my $in = <TMP>){
 		chomp $in;
-		if($in =~ /<Sloka_$index/) {
+		if($in =~ /<Sloka_$index>/) {
 			$add_to_result = 1 ;
-		} elsif($in =~ /<\/Sloka_$index/) {
+		} elsif($in =~ /<\/Sloka_$index>/) {
 			$add_to_result = 0 ;
 			break;
 		} elsif ($add_to_result) {
@@ -216,7 +218,9 @@ sub get_Sloka {
 		}
 
 	}
-	$result =~ s/^M//g;
+	$result =~ s/^M/ /g;
+	$result =~ s/\s/ /g;
+	# print $result, "\n";
 	close TMP;
 	$result;
 }

@@ -58,8 +58,8 @@ sub getDetails {
 	my(%LEX,%LEX1,$head,$vargaH,$synset,$synset_info, @samAnArWaka, @related_words);
 
 	die "can't open file for error log" unless open(TMP1,">>/tmp/error");
-	tie(%LEX,GDBM_File,"/home/vvasuki/scl/amarakosha/DBM/stem2head.gdbm",GDBM_READER,0666) || die "can't open DBM/stem2head.gdbm";
-	tie(%LEX1,GDBM_File,"/home/vvasuki/scl/amarakosha/DBM/synset_info.gdbm",GDBM_READER,0666) || die "can't open DBM/synsetinfo.gdbm";
+	tie(%LEX,GDBM_File,"DBM/stem2head.gdbm",GDBM_READER,0666) || die "can't open DBM/stem2head.gdbm";
+	tie(%LEX1,GDBM_File,"DBM/synset_info.gdbm",GDBM_READER,0666) || die "can't open DBM/synsetinfo.gdbm";
 
 	my @head = split(/::/,$LEX{$word});
 # 	print join(",", @head), "\n";
@@ -106,8 +106,8 @@ sub get_related_words {
   my @related_words;
   my (%LEX2,%LEX3, $str);
 #   print @_, "\n";
-	tie(%LEX2,GDBM_File,"/home/vvasuki/scl/amarakosha/DBM/$rel_dbm.gdbm",GDBM_READER,0666) || die "can't open DBM/$rel_dbm.gdbm";
-	tie(%LEX3,GDBM_File,"/home/vvasuki/scl/amarakosha/DBM/rule_onto.gdbm",GDBM_READER,0666) || die "can't open DBM/rule_onto.gdbm";
+	tie(%LEX2,GDBM_File,"DBM/$rel_dbm.gdbm",GDBM_READER,0666) || die "can't open DBM/$rel_dbm.gdbm";
+	tie(%LEX3,GDBM_File,"DBM/rule_onto.gdbm",GDBM_READER,0666) || die "can't open DBM/rule_onto.gdbm";
 	
 	if($rel_dbm eq "onto") {
 		my @ont;

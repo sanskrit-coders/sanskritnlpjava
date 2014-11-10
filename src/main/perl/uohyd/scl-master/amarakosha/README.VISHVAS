@@ -1,0 +1,6 @@
+Following lists changes made by Vishvas Vasuki:
+
+Code flow to produce dictionaries: makeDb.pl -> ont.pl.
+Other changes made for untracked reasons: callrel.pl.
+Paths need to be changed from {/home/vvasuki/scl/, ~/scl/converters/convert.pl} to something more appropriate.
+

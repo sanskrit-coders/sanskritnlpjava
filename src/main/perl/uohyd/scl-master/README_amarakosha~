@@ -14,9 +14,3 @@ e) sudo make install
 To Uninstall
 
 sudo make uninstall
-
-
-
-
-================
-Also see README_VISHVASA elsewhere.

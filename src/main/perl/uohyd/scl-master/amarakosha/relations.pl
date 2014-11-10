@@ -30,14 +30,14 @@ die "can't open file for error log" unless open(TMP1,">>/tmp/error");
 
 my(%LEX,%LEX1,%LEX2,%LEX3,$head,$vargaH,$synset,$heading_info,$relata_info,$synset_info);
 
-tie(%LEX,GDBM_File,"/home/vvasuki/scl/amarakosha/DBM/stem2head.gdbm",GDBM_READER,0666) || die "can't open DBM/stem2head.gdbm";
-tie(%LEX1,GDBM_File,"/home/vvasuki/scl/amarakosha/DBM/synset_info.gdbm",GDBM_READER,0666) || die "can't open DBM/synsetinfo.gdbm";
+tie(%LEX,GDBM_File,"DBM/stem2head.gdbm",GDBM_READER,0666) || die "can't open DBM/stem2head.gdbm";
+tie(%LEX1,GDBM_File,"DBM/synset_info.gdbm",GDBM_READER,0666) || die "can't open DBM/synsetinfo.gdbm";
 
 if($rel_dbm ne "NULL") {
-   tie(%LEX2,GDBM_File,"/home/vvasuki/scl/amarakosha/DBM/$rel_dbm.gdbm",GDBM_READER,0666) || die "can't open DBM/$rel_dbm.gdbm";
+   tie(%LEX2,GDBM_File,"DBM/$rel_dbm.gdbm",GDBM_READER,0666) || die "can't open DBM/$rel_dbm.gdbm";
 }
 if($rel_dbm eq "onto") {
-   tie(%LEX3,GDBM_File,"/home/vvasuki/scl/amarakosha/DBM/rule_onto.gdbm",GDBM_READER,0666) || die "can't open DBM/rule_onto.gdbm";
+   tie(%LEX3,GDBM_File,"DBM/rule_onto.gdbm",GDBM_READER,0666) || die "can't open DBM/rule_onto.gdbm";
 }
 
    $heading_info = "<\@br><\@font \@color=\"\@magenta\">$heading</\@font><\@br>";
@@ -45,9 +45,9 @@ if($rel_dbm eq "onto") {
   if($rel_dbm eq "NULL") { print "<\@center>$heading_info</\@center>"; }
 
   if($LEX{$word} eq "") {
-     system("/home/vvasuki/scl/amarakosha/shw_stem.pl $pid $word | /usr/bin/sort -u > /tmp/outNotFound$pid.txt");
+     system("shw_stem.pl $pid $word | /usr/bin/sort -u > /tmp/outNotFound$pid.txt");
      if(-s "/tmp/outNotFound$pid.txt") {
-        system("/home/vvasuki/scl/amarakosha/showMsg.pl $rel_dbm $out_encoding < /tmp/outNotFound$pid.txt");
+        system("showMsg.pl $rel_dbm $out_encoding < /tmp/outNotFound$pid.txt");
      } else {print "\@Please \@Check \@the \@spelling\n";}
   } else {
     @head = split(/::/,$LEX{$word});
@@ -191,7 +191,7 @@ sub get_Sloka_info{
 	my ($s,$e) = split (/-/,$range);
 	$s =~ s/\.[0-9]+\.[0-9]+$//;
         $e =~ s/\.[0-9]+\.[0-9]+$//;
-	die "can't open file for reading $!" unless open(TMP,"</home/vvasuki/scl/amarakosha/amara.wx");
+	die "can't open file for reading $!" unless open(TMP,"<amara.wx");
 	while(my $in = <TMP>){
 		chomp $in;
 		if($in =~ /<Sloka_$s/ and $count ==0){ my $result .= $in; $count =1; }

@@ -18,7 +18,7 @@
 #  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 
-require "../converters/convert.pl";
+require "~/scl/converters/convert.pl";
 
 my %headers = ("syns","paryAyavAcI(\@Synset)","onto","paxArWawawwvavicAraH(\@Ontology)","holo","avayavI(\@Holonymy)","mero","avayavaH(\@Meronymy)","hyper","parAjAwi(\@Hypernymy)","hypo","aparAjAwi(\@Hyponymy)","janaka","janaka","janya","janya","pawi","pawi","pawnI","pawnI","svAmi","svAmi","sevaka","sevaka","vESiRtya","vESiRtyam","saMbanXa","sambanXiwa","vqwwi","AjIvikA","tree","");
 
@@ -35,7 +35,7 @@ $pid = $ARGV[4];
       
       if($relation eq "tree"){
          system ("mkdir -p /tmp/AMARA_DOT");
-         system("get_all_rel.pl $word_wx $out_encoding > /tmp/AMARA_DOT/graph$pid.dot");
+         system("amarakosha/get_all_rel.pl $word_wx $out_encoding > /tmp/AMARA_DOT/graph$pid.dot");
          system("/usr/bin/dot /tmp/AMARA_DOT/graph$pid.dot -Tjpg -o /tmp/AMARA_DOT/graph$pid.jpg");
          print"<center><img src=\"http://localhost/htdocs/scl/amarakosha/DOT/graph$pid.jpg\" \/></center><br>";
       }else {

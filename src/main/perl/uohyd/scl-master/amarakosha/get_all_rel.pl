@@ -24,7 +24,7 @@ use GDBM_File;
 
 for $rel (@rel){
 $name = "LEX_".$rel;
-tie(%{$name},GDBM_File,"/home/vvasuki/scl/amarakosha/DBM/$rel.gdbm",GDBM_READER,0444);
+tie(%{$name},GDBM_File,"DBM/$rel.gdbm",GDBM_READER,0444);
 }
 
 $in_word = $ARGV[0];
@@ -45,9 +45,9 @@ print IN $nodes,$rels;
 close(IN);
 
 if($out_encoding eq "DEV" ) {
-system("/home/vvasuki/scl/converters/wx2utf8.sh < /tmp/inputnew$$.txt > /tmp/input$$.txt");
+system("../converters/wx2utf8.sh < /tmp/inputnew$$.txt > /tmp/input$$.txt");
 } elsif($out_encoding eq "ROMAN" ) {
-system("/home/vvasuki/scl/converters/wx2utf8roman.out < /tmp/inputnew$$.txt > /tmp/input$$.txt");
+system("../converters/wx2utf8roman.out < /tmp/inputnew$$.txt > /tmp/input$$.txt");
 }
 
 open(OUT,"</tmp/input$$.txt");

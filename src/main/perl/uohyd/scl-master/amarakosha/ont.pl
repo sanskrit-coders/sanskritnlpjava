@@ -99,7 +99,7 @@ sub getDetails {
 			$sep = ';' if($rel_dbm eq "onto");
 # 			push(@fields, join(",", $rel_dbm,  @related_words));
 			if ($output_mode eq 'dict' and scalar(@related_words)) {
-				my $field_name = "padArwa-viBAgaH" if($rel_dbm eq "onto");
+				my $field_name = "paxArWa-viBAgaH" if($rel_dbm eq "onto");
 				push(@fields, $field_name . " : " . join(', ', @related_words));
 			} else {
 				push(@fields, join($sep, @related_words));

@@ -16,5 +16,5 @@
 #  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 
-
-/home/vvasuki/scl/converters/ri_skt | /home/vvasuki/scl/converters/iscii2utf8.py 1
+# To be launched from ../amarakosha/
+../converters/ri_skt | ../converters/iscii2utf8.py 1

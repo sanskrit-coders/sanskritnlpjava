@@ -4,3 +4,4 @@ Code flow to produce dictionaries: makeDb.pl -> ont.pl.
 Other changes made for untracked reasons: callrel.pl.
 Paths need to be changed from {/home/vvasuki/scl/, ~/scl/converters/convert.pl} to something more appropriate.
 
+To convert wx output to devanAgarI : cat output/ontology_wx.csv| ../converters/wx2utf8.sh >output/ontology_deva.csv

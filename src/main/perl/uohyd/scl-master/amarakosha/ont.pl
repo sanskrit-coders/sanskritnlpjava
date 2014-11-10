@@ -53,7 +53,9 @@ sub getDetails {
 	my ($input) = @_;
 	my @input_words = split(",",$input);
 	my $word = $input_words[0];
+	my $shloka_sankhyA = $input_words[1];
 	my $arWa = $input_words[4];
+	my $output_mode = 'dict';
 # 	print @input_words, "\n";
 	my(%LEX,%LEX1,$head,$vargaH,$synset,$synset_info, @samAnArWaka, @related_words);
 
@@ -76,24 +78,43 @@ sub getDetails {
 		my @fields;
 		my $rel_dbm = "samAnArWaka";
 # 		push(@fields, join(",", $rel_dbm,  @samAnArWaka));
-		push(@fields, join(",", @samAnArWaka));
-		
-		my @related_words = ();
-		for $rel_dbm(@sambanXi_rel){
-			push(@related_words,get_related_words($head, $rel_dbm));
+		if ($output_mode eq 'dict' and scalar(@samAnArWaka)) {
+			push(@fields, $rel_dbm . ":" . join(",", @samAnArWaka));
+		} else {
+			push(@fields, join(",", @samAnArWaka));
 		}
-		push(@fields, join(',', @related_words));
+		
+		for $rel_dbm(@sambanXi_rel){
+			my @related_words = get_related_words($head, $rel_dbm);
+			if ($output_mode eq 'dict' and scalar(@related_words)) {
+				push(@fields, $rel_dbm . ":" . join(',', @related_words));
+			} else {
+				push(@fields, join(',', @related_words));
+			}
+		}
 		
 		for $rel_dbm(@relations){
-			@related_words = get_related_words($head, $rel_dbm);
+			my @related_words = get_related_words($head, $rel_dbm);
 			my $sep = ',';
 			$sep = ';' if($rel_dbm eq "onto");
 # 			push(@fields, join(",", $rel_dbm,  @related_words));
-			push(@fields, join($sep, @related_words));
+			if ($output_mode eq 'dict' and scalar(@related_words)) {
+				push(@fields, $rel_dbm . ":" . join(',', @related_words));
+			} else {
+				push(@fields, join($sep, @related_words));
+			}
 		}
+
+		push(@fields, $shloka_sankhyA);
+		push(@fields, get_Sloka($shloka_sankhyA));
 		
 	#     print $synset, "\n";
-		print join(";", @input_words[0, 2, 4], @fields) ,"\n";
+		if ($output_mode eq 'dict') {
+			my @non_empty_fields = grep(!/^$/, @fields);
+			print $word . "\t" . join("||", @input_words[2, 4], @non_empty_fields), "\n";
+		} else {
+			print $word . ";" . join(";", @input_words[2, 4], @fields), "\n";
+		}
 	}
 	untie(%LEX);
 	untie(%LEX1);
@@ -173,5 +194,30 @@ sub synset_info{
     push(@samAnArWaka, $wrd)
   }
   @samAnArWaka;
+}
+1;
+
+# Example input: 1.1.7.2.2
+sub get_Sloka {
+	my ($index) = @_;
+	$index =~ s/\.\d+.\d+$//;
+	$result = "$index:";
+	die "can't open file for reading $!" unless open(TMP,"<amara.wx");
+	my $add_to_result = 0;
+	while(my $in = <TMP>){
+		chomp $in;
+		if($in =~ /<Sloka_$index/) {
+			$add_to_result = 1 ;
+		} elsif($in =~ /<\/Sloka_$index/) {
+			$add_to_result = 0 ;
+			break;
+		} elsif ($add_to_result) {
+			$result = $result . $in
+		}
+
+	}
+	$result =~ s/^M//g;
+	close TMP;
+	$result;
 }
 1;

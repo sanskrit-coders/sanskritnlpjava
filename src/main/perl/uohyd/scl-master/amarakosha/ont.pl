@@ -81,15 +81,15 @@ sub getDetails {
 		if ($output_mode eq 'dict' and scalar(@samAnArWaka)) {
 			push(@fields, $rel_dbm . ":" . join(",", @samAnArWaka));
 		} else {
-			push(@fields, join(",", @samAnArWaka));
+			push(@fields, join(", ", @samAnArWaka));
 		}
 		
 		for $rel_dbm(@sambanXi_rel){
 			my @related_words = get_related_words($head, $rel_dbm);
 			if ($output_mode eq 'dict' and scalar(@related_words)) {
-				push(@fields, $rel_dbm . ":" . join(',', @related_words));
+				push(@fields, $rel_dbm . " : " . join(',', @related_words));
 			} else {
-				push(@fields, join(',', @related_words));
+				push(@fields, join(', ', @related_words));
 			}
 		}
 		
@@ -99,7 +99,8 @@ sub getDetails {
 			$sep = ';' if($rel_dbm eq "onto");
 # 			push(@fields, join(",", $rel_dbm,  @related_words));
 			if ($output_mode eq 'dict' and scalar(@related_words)) {
-				push(@fields, $rel_dbm . ":" . join(',', @related_words));
+				my $field_name = "padArwa-viBAgaH" if($rel_dbm eq "onto");
+				push(@fields, $field_name . " : " . join(', ', @related_words));
 			} else {
 				push(@fields, join($sep, @related_words));
 			}
@@ -112,7 +113,7 @@ sub getDetails {
 		if ($output_mode eq 'dict') {
 			my @non_empty_fields = grep(!/^$/, @fields);
 			my $head_word = "$word $input_words[2] $input_words[4] $shloka_sankhyA";
-			print "$head_word\t" . join("||", @input_words[2, 4], @non_empty_fields), "\n";
+			print "$head_word\t" . join(" || ", @input_words[2, 4], @non_empty_fields), "\n";
 		} else {
 			print $word . ";" . join(";", @input_words[2, 4], @fields), "\n";
 		}
@@ -203,7 +204,7 @@ sub get_Sloka {
 	my ($index) = @_;
 	chomp $index;
 	$index =~ s/\.\d+.\d+$//;
-	my $result = "$index:";
+	my $result = "";
 	die "can't open file for reading $!" unless open(TMP,"<amara.wx");
 	my $add_to_result = 0;
 	# print "Sloka_$index\n";

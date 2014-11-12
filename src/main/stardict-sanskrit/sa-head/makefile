@@ -4,4 +4,5 @@ TABFILE=$(STARDICT_TOOLS_DIR)/tabfile
 all:
 	$(TABFILE) */*.tsv
 	dictunzip */*.dz
-	bash ./make_tarballs.sh 
+	bash ./make_tarballs.sh
+

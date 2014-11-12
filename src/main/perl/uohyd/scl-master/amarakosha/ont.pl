@@ -84,6 +84,9 @@ sub getDetails {
 			push(@fields, join(", ", @samAnArWaka));
 		}
 		
+		push(@fields, $shloka_sankhyA);
+		push(@fields, get_Sloka($shloka_sankhyA));
+		
 		for $rel_dbm(@sambanXi_rel){
 			my @related_words = get_related_words($head, $rel_dbm);
 			if ($output_mode eq 'dict' and scalar(@related_words)) {
@@ -106,14 +109,11 @@ sub getDetails {
 			}
 		}
 
-		push(@fields, $shloka_sankhyA);
-		push(@fields, get_Sloka($shloka_sankhyA));
-		
 	#     print $synset, "\n";
 		if ($output_mode eq 'dict') {
 			my @non_empty_fields = grep(!/^$/, @fields);
 			my $head_word = "$word";
-			print "$head_word\t$word" . join(" || ", @input_words[2, 4], @non_empty_fields), "\n";
+			print "$head_word\t$word " . join(" || ", @input_words[2, 4], @non_empty_fields), "\n";
 		} else {
 			print $word . ";" . join(";", @input_words[2, 4], @fields), "\n";
 		}

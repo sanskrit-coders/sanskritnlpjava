@@ -11,5 +11,5 @@ with open('AkhyAtachandrikA.txt', 'rb') as csvfile:
 		for root in roots[2:]:
 			print root + " " + meaning + " " + verse_position + "\t" + meaning + ' '.join(roots[2:])
 			pass
-		print meaning + " " + verse_position + "\t" + meaning + ' '.join(roots[2:])
+		print meaning + "\t" + meaning + ' '.join(roots[2:]) + " " + verse_position
 

@@ -112,8 +112,8 @@ sub getDetails {
 	#     print $synset, "\n";
 		if ($output_mode eq 'dict') {
 			my @non_empty_fields = grep(!/^$/, @fields);
-			my $head_word = "$word $input_words[2] $input_words[4] $shloka_sankhyA";
-			print "$head_word\t" . join(" || ", @input_words[2, 4], @non_empty_fields), "\n";
+			my $head_word = "$word";
+			print "$head_word\t$word" . join(" || ", @input_words[2, 4], @non_empty_fields), "\n";
 		} else {
 			print $word . ";" . join(";", @input_words[2, 4], @fields), "\n";
 		}

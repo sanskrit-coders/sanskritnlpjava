@@ -2,7 +2,11 @@
 <resources>
 
     <string name="app_name">Sanskrit Dictionary Updater</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="permission_request">Shall we update your Sanskrit Dictionary files?\n\n
+        (This program downloads latest dictionary files from the internet, and stores it in the appropriate folder for stardict apps to use.\n
+        This will take some time.)
+    </string>
     <string name="action_settings">Settings</string>
+    <string name="proceed_button">Proceed?</string>
 
 </resources>

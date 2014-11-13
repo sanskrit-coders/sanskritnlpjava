@@ -10,6 +10,9 @@ all:
 	dictunzip $(dicts)/*.dz
 	bash ./make_tarballs.sh $(dicts)
 
+tars:
+	bash ./make_tarballs.sh $(dicts)
+
 test:
 	echo $(dicts)
 	bash ./make_tarballs.sh

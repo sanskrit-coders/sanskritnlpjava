@@ -1,6 +1,6 @@
-touch tars/tars.txt
-rm tars/tars.txt
-touch tars/tars.txt
+touch tars/tars.MD
+rm tars/tars.MD
+touch tars/tars.MD
 for dir in */
 do
 	base=$(basename "$dir")

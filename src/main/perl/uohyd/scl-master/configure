@@ -1,7 +1,0 @@
-#!/bin/bash
-
-source ./my_spec.txt
-
-perl -i -p -e "s#SCLINSTALLDIR#$SCLINSTALLDIR#; s#HTDOCSDIR#$HTDOCSDIR#; s#CGIDIR#$CGIDIR#; #CGIURL#$CGIURL#; #TFPATH#$TFPATH#;" Makefile
-
-mkdir -p $SCLINSTALLDIR

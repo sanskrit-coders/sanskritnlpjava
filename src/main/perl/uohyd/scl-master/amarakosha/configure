@@ -1,8 +1,0 @@
-#!/bin/bash
-source ../my_spec.txt
-
-# Do not edit the following lines.
-perl -i -p -e "s#GraphvizDot#$GraphvizDot#g;" callrel.pl
-
-perl -i -p -e "s#PERLPATH#$PERLPATH#g; s#SCLURL#$SCLURL#g; s#SCLINSTALLDIR#$SCLINSTALLDIR#g; -e s#CGIDIR#$CGIDIR#g; -e s#DEPTURL#$DEPTURL#g; -e s#HTDOCSDIR#$HTDOCSDIR#g; -e s#APACHE_USER_GROUP#$APACHE_USER_GROUP#g; -e s#CGIURL#$CGIURL#g; -e s#LTPROCBINDIR#$LTPROCBINDIR#g; -e s#HTDOCSURL#$HTDOCSURL#g" get_all_rel.pl relations.pl showMsg.pl shw_stem.pl relations.sh callrel.pl Makefile web_interface/interface.cgi web_interface/index_cp.html DBM/create_dbm_key_value.pl DBM/create_rule_onto.pl DBM/create_dbm.pl DBM/create_onto_dbm.pl DBM/create_onto_dbm.pl DBM/ontology.pl DBM/get_synset_data.pl web_interface/about.html web_interface/banner.html
-

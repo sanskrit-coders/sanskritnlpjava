@@ -16,6 +16,8 @@
         android:text="@string/proceed_button"
         android:id="@+id/button"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="putDictionaries"
+        android:nestedScrollingEnabled="false" />
 
 </RelativeLayout>

@@ -13,18 +13,17 @@ import android.widget.TextView;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.FileAsyncHttpResponseHandler;
 
+import org.apache.commons.io.FilenameUtils;
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.params.ClientPNames;
 import org.apache.http.entity.BufferedHttpEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -41,8 +40,11 @@ public class MainActivity extends ActionBarActivity {
 
 
     private TextView topText;
+    private File sdcard;
+    private File downloadsDir;
+    private File dictDir;
     public List<String> dictUrls;
-    protected static AsyncHttpClient client = new AsyncHttpClient();
+    protected static AsyncHttpClient asyncHttpClient = new AsyncHttpClient();
 
     protected class DictUrlGetter extends AsyncTask<String, Integer, Integer> {
         private final String DICT_URL_GETTER = DictUrlGetter.class.getName();
@@ -89,48 +91,32 @@ public class MainActivity extends ActionBarActivity {
     }
 
     protected void getDictionaries(int index) {
+        if(index >= dictUrls.size()) return;
+        downloadDict(index);
+    }
+
+    protected void extractDict(final String fileName) {
+        Log.d("extractDict", "Extracting " + fileName);
+        topText.setText("Extracting " + fileName);
     }
 
     protected void downloadDict(final int index) {
-        String url = dictUrls.get(index);
-        client.get(url, new FileAsyncHttpResponseHandler() {
+        final String url = dictUrls.get(index);
+        final String fileName = FilenameUtils.getName(url);
+        topText.setText("Getting " + fileName);
+        Log.d("downloadDict", "Getting " + fileName);
+        asyncHttpClient.get(url, new FileAsyncHttpResponseHandler(new File(downloadsDir, fileName)) {
             @Override
             public void onSuccess(int statusCode, Header[] headers, File response) {
-                File sdcard = Environment.getExternalStorageDirectory();
-                File dir = new File (sdcard.getAbsolutePath() + "/Downloads");
-                if(dir.exists()==false) {
-                    dir.mkdirs();
-                }
-                String fileName = FileNameUtils.getName();
-                File file = new File(dir, fileName);
-
-
-                long startTime = System.currentTimeMillis();
-
-                try {
-                    FileInputStream fis = new FileInputStream(response);
-                    FileOutputStream fos = new FileOutputStream(file);
-                    int current = 0;
-                    byte[] buffer = new byte[5000];
-                    int bytes_read = 0;
-                    while((bytes_read = fis.read(buffer, current, bytes_read)) != -1) {
-                        current = current + bytes_read;
-                        fos.write(buffer);
-                    }
-
-                    fos.flush();
-                    fos.close();
-                } catch (Exception e) {
-                    Log.e(MAIN_ACTIVITY, "Failed " + e.getStackTrace());
-                }
-                Log.d("DownloadManager", "download ready in" + ((System.currentTimeMillis() - startTime) / 1000) + " sec");
-                                // Do something with the file `response`
+                extractDict(fileName);
                 getDictionaries(index + 1);
             }
 
             @Override
             public void onFailure(int statusCode, Header[] headers, Throwable throwable, File file) {
-
+                String message = "Failed to get " + fileName;
+                topText.setText(message);
+                Log.w(MAIN_ACTIVITY, message + ":" + throwable.getStackTrace());
             }
         });
     }
@@ -138,8 +124,18 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        asyncHttpClient.getHttpClient().getParams().setParameter(ClientPNames.ALLOW_CIRCULAR_REDIRECTS, true);
         setContentView(R.layout.activity_main);
         topText = (TextView) findViewById(R.id.textView);
+        sdcard = Environment.getExternalStorageDirectory();
+        downloadsDir = new File (sdcard.getAbsolutePath() + "/Download/dicttars");
+        if(downloadsDir.exists()==false) {
+            downloadsDir.mkdirs();
+        }
+        dictDir = new File (sdcard.getAbsolutePath() + "/dictdata");
+        if(dictDir.exists()==false) {
+            dictDir.mkdirs();
+        }
     }
 
 

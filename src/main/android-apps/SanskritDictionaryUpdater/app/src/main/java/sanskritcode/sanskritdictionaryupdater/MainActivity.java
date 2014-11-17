@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.loopj.android.http.AsyncHttpClient;
@@ -43,52 +44,14 @@ public class MainActivity extends ActionBarActivity {
     private static final String DOWNLOAD_LOCATION = "dict";
 
     private TextView topText;
+    private Button button;
     private File sdcard;
     private File downloadsDir;
     private File dictDir;
     private List<String> dictUrls = new ArrayList<String>();
+    private List<boolean> dictFailure = new ArrayList<boolean>();
     private List<String> dictFiles = new ArrayList<String>();
     protected static AsyncHttpClient asyncHttpClient = new AsyncHttpClient();
-
-    protected void downloadDict(final int index) {
-        final String url = dictUrls.get(index);
-        final String fileName = FilenameUtils.getName(url);
-        topText.setText("Getting " + fileName);
-        Log.d("downloadDict", "Getting " + fileName);
-        asyncHttpClient.get(url, new FileAsyncHttpResponseHandler(new File(downloadsDir, fileName)) {
-            @Override
-            public void onSuccess(int statusCode, Header[] headers, File response) {
-                dictFiles.add(fileName);
-                getDictionaries(index + 1);
-            }
-
-            @Override
-            public void onFailure(int statusCode, Header[] headers, Throwable throwable, File file) {
-                String message = "Failed to get " + fileName;
-                topText.setText(message);
-                Log.w("downloadDict", message + ":" + throwable.getStackTrace().toString());
-                getDictionaries(index + 1);
-            }
-        });
-    }
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        asyncHttpClient.getHttpClient().getParams().setParameter(ClientPNames.ALLOW_CIRCULAR_REDIRECTS, true);
-        setContentView(R.layout.activity_main);
-        topText = (TextView) findViewById(R.id.textView);
-        sdcard = Environment.getExternalStorageDirectory();
-        downloadsDir = new File (sdcard.getAbsolutePath() + "/Download/dicttars");
-        if(downloadsDir.exists()==false) {
-            downloadsDir.mkdirs();
-        }
-        dictDir = new File (sdcard.getAbsolutePath() + "/dictdata");
-        if(dictDir.exists()==false) {
-            dictDir.mkdirs();
-        }
-    }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -113,9 +76,30 @@ public class MainActivity extends ActionBarActivity {
     }
 
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        asyncHttpClient.getHttpClient().getParams().setParameter(ClientPNames.ALLOW_CIRCULAR_REDIRECTS, true);
+        setContentView(R.layout.activity_main);
+        topText = (TextView) findViewById(R.id.textView);
+        button = (Button) findViewById(R.id.button);
+        sdcard = Environment.getExternalStorageDirectory();
+        downloadsDir = new File (sdcard.getAbsolutePath() + "/Download/dicttars");
+        if(downloadsDir.exists()==false) {
+            downloadsDir.mkdirs();
+        }
+        dictDir = new File (sdcard.getAbsolutePath() + "/dictdata");
+        if(dictDir.exists()==false) {
+            dictDir.mkdirs();
+        }
+    }
+
+
     public void buttonPressed1(View v) {
         DictUrlGetter dictUrlGetter = new DictUrlGetter();
         dictUrlGetter.execute(DICTIONARY_LIST_URL);
+        button.setText(getString(R.string.buttonWorking));
+        button.setEnabled(false);
     }
 
     protected void getDictionaries(int index) {
@@ -129,10 +113,42 @@ public class MainActivity extends ActionBarActivity {
     protected void extractDicts(int index) {
         if(index >= dictFiles.size()) {
             topText.setText(getString(R.string.finalMessage));
+            for(int i = 0; i < dictFiles.size(); i++) {
+                if(dictFailure.get(i)) {
+
+                    topText.append("\n" + "Failed on " + dictUrls.get(i));
+                } else {
+                }
+            }
+            button.setText(getString(R.string.buttonDone));
             return;
         } else {
             new DictExtracter().execute(index);
         }
+    }
+
+    protected void downloadDict(final int index) {
+        final String url = dictUrls.get(index);
+        final String fileName = FilenameUtils.getName(url);
+        topText.setText("Getting " + fileName);
+        Log.d("downloadDict", "Getting " + fileName);
+        asyncHttpClient.get(url, new FileAsyncHttpResponseHandler(new File(downloadsDir, fileName)) {
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, File response) {
+                dictFiles.add(fileName);
+                getDictionaries(index + 1);
+                dictFailure.set(index,false);
+            }
+
+            @Override
+            public void onFailure(int statusCode, Header[] headers, Throwable throwable, File file) {
+                String message = "Failed to get " + fileName;
+                topText.setText(message);
+                Log.w("downloadDict", message + ":" + throwable.getStackTrace().toString());
+                getDictionaries(index + 1);
+                dictFailure.set(index,true);
+            }
+        });
     }
 
     protected class DictUrlGetter extends AsyncTask<String, Integer, Integer> {
@@ -196,14 +212,15 @@ public class MainActivity extends ActionBarActivity {
         }
         @Override
         protected Integer doInBackground(Integer... params) {
-            String fileName = dictFiles.get(params[0]);
+            int index = params[0];
+            String fileName = dictFiles.get(index);
             String sourceFile = FilenameUtils.concat(downloadsDir.toString(), fileName);
             final String baseName = FilenameUtils.getBaseName(FilenameUtils.getBaseName(fileName));
             final String destDir = FilenameUtils.concat(dictDir.toString(), baseName);
             new File(destDir).mkdirs();
             String message2 = "Destination directory " + destDir;
             Log.d("DictExtracter", message2);
-            topText.append(message2);
+            topText.append("\n" + message2);
             try {
                 TarArchiveInputStream tarInput =
                         new TarArchiveInputStream(new GzipCompressorInputStream(new FileInputStream(sourceFile)));
@@ -222,11 +239,13 @@ public class MainActivity extends ActionBarActivity {
                     fos.close();
                 }
                 tarInput.close();
+                dictFailure.set(index,false);
             } catch (Exception e) {
                 Log.w("DictExtracter", "IOEx:" + e.getStackTrace());
+                dictFailure.set(index,true);
             }
             // deleteTarFile(sourceFile);
-            return params[0];
+            return index;
         }
     }
 

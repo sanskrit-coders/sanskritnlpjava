@@ -50,116 +50,6 @@ public class MainActivity extends ActionBarActivity {
     private List<String> dictFiles = new ArrayList<String>();
     protected static AsyncHttpClient asyncHttpClient = new AsyncHttpClient();
 
-    protected class DictUrlGetter extends AsyncTask<String, Integer, Integer> {
-        private final String DICT_URL_GETTER = DictUrlGetter.class.getName();
-
-        @Override
-        public Integer doInBackground(String... dictionaryListUrls) {
-            Log.i(DICT_URL_GETTER, getString(R.string.use_n_dictionary_indexes) + dictionaryListUrls.length);
-            dictUrls = new ArrayList();
-            for (String url : dictionaryListUrls) {
-                Log.i(DICT_URL_GETTER, url);
-                try {
-                    DefaultHttpClient httpclient = new DefaultHttpClient();
-                    HttpGet httppost = new HttpGet(url);
-                    HttpResponse response = httpclient.execute(httppost);
-                    HttpEntity ht = response.getEntity();
-
-                    BufferedHttpEntity buf = new BufferedHttpEntity(ht);
-
-                    InputStream is = buf.getContent();
-                    BufferedReader r = new BufferedReader(new InputStreamReader(is));
-
-                    String line;
-                    while ((line = r.readLine()) != null) {
-                        String dictUrl = line.replace("<", "").replace(">", "");
-                        dictUrls.add(dictUrl);
-                        Log.d(DICT_URL_GETTER, getString(R.string.added_dictionary_url) + dictUrl);
-                        publishProgress(dictUrls.size());
-                    }
-                } catch (IOException e) {
-                    Log.e(DICT_URL_GETTER, "Failed " + e.getStackTrace());
-                }
-            }
-            Log.i(DICT_URL_GETTER, getString(R.string.added_n_dictionary_urls) + dictUrls.size());
-            return dictUrls.size();
-        }
-        @Override
-        protected void onPostExecute(Integer result) {
-            String message = R.string.added_n_dictionary_urls + dictUrls.size() + " " +
-                    getString(R.string.download_dictionaries);
-            topText.setText(message);
-            extractDicts(0);
-        }
-
-    }
-
-    protected void extractDicts(int index) {
-        if(index >= dictUrls.size()) {
-            extractDicts(0);
-        } else {
-            downloadDict(index);
-        }
-    }
-    protected void getDictionaries(int index) {
-        if(index >= dictUrls.size()) {
-            extractDicts(0);
-        } else {
-            downloadDict(index);
-        }
-    }
-
-    protected class DictExtracter extends AsyncTask<Integer, Integer, Integer> {
-
-        protected void deleteTarFile(String sourceFile) {
-            String message4 = "Deleting " + sourceFile + " " + new File(sourceFile).delete();
-            // topText.append(message4);
-            Log.d("DictExtracter", message4);
-
-        }
-        @Override
-        protected void onPostExecute(Integer result) {
-            String message1 = "Extracted.";
-            Log.d("DictExtracter", message1);
-            topText.setText(message1);
-            extractDicts(result + 1);
-        }
-        @Override
-        protected Integer doInBackground(Integer... params) {
-            String fileName = dictFiles.get(params[0]);
-            String sourceFile = FilenameUtils.concat(downloadsDir.toString(), fileName);
-            final String baseName = FilenameUtils.getBaseName(FilenameUtils.getBaseName(fileName));
-            final String destDir = FilenameUtils.concat(dictDir.toString(), baseName);
-            new File(destDir).mkdirs();
-            String message2 = "Destination directory " + destDir;
-            Log.d("DictExtracter", message2);
-            topText.append(message2);
-            try {
-                TarArchiveInputStream tarInput =
-                        new TarArchiveInputStream(new GzipCompressorInputStream(new FileInputStream(sourceFile)));
-
-                final byte[] buffer = new byte[50000];
-                TarArchiveEntry currentEntry = null;
-                while((currentEntry = (TarArchiveEntry) tarInput.getNextEntry()) != null) {
-                    String destFile = FilenameUtils.concat(destDir, currentEntry.getName());
-                    FileOutputStream fos = new FileOutputStream(destFile);
-                    String message3 = "Destination: " + destFile;
-                    Log.d("DictExtracter", message3);
-                    int n = 0;
-                    while (-1 != (n = tarInput.read(buffer))) {
-                        fos.write(buffer, 0, n);
-                    }
-                    fos.close();
-                }
-                tarInput.close();
-            } catch (Exception e) {
-                Log.w("DictExtracter", "IOEx:" + e.getStackTrace());
-            }
-            // deleteTarFile(sourceFile);
-            return params[0];
-        }
-    }
-
     protected void downloadDict(final int index) {
         final String url = dictUrls.get(index);
         final String fileName = FilenameUtils.getName(url);
@@ -223,8 +113,121 @@ public class MainActivity extends ActionBarActivity {
     }
 
 
-    public void putDictionaries(View v) {
+    public void buttonPressed1(View v) {
         DictUrlGetter dictUrlGetter = new DictUrlGetter();
         dictUrlGetter.execute(DICTIONARY_LIST_URL);
     }
+
+    protected void getDictionaries(int index) {
+        if(index >= dictUrls.size()) {
+            extractDicts(0);
+        } else {
+            downloadDict(index);
+        }
+    }
+
+    protected void extractDicts(int index) {
+        if(index >= dictFiles.size()) {
+            topText.setText(getString(R.string.finalMessage));
+            return;
+        } else {
+            new DictExtracter().execute(index);
+        }
+    }
+
+    protected class DictUrlGetter extends AsyncTask<String, Integer, Integer> {
+        private final String DICT_URL_GETTER = DictUrlGetter.class.getName();
+
+        @Override
+        public Integer doInBackground(String... dictionaryListUrls) {
+            Log.i(DICT_URL_GETTER, getString(R.string.use_n_dictionary_indexes) + dictionaryListUrls.length);
+            dictUrls = new ArrayList();
+            for (String url : dictionaryListUrls) {
+                Log.i(DICT_URL_GETTER, url);
+                try {
+                    DefaultHttpClient httpclient = new DefaultHttpClient();
+                    HttpGet httppost = new HttpGet(url);
+                    HttpResponse response = httpclient.execute(httppost);
+                    HttpEntity ht = response.getEntity();
+
+                    BufferedHttpEntity buf = new BufferedHttpEntity(ht);
+
+                    InputStream is = buf.getContent();
+                    BufferedReader r = new BufferedReader(new InputStreamReader(is));
+
+                    String line;
+                    while ((line = r.readLine()) != null) {
+                        String dictUrl = line.replace("<", "").replace(">", "");
+                        dictUrls.add(dictUrl);
+                        Log.d(DICT_URL_GETTER, getString(R.string.added_dictionary_url) + dictUrl);
+                        publishProgress(dictUrls.size());
+                    }
+                } catch (IOException e) {
+                    Log.e(DICT_URL_GETTER, "Failed " + e.getStackTrace());
+                }
+            }
+            Log.i(DICT_URL_GETTER, getString(R.string.added_n_dictionary_urls) + dictUrls.size());
+            return dictUrls.size();
+        }
+        @Override
+        protected void onPostExecute(Integer result) {
+            String message = R.string.added_n_dictionary_urls + dictUrls.size() + " " +
+                    getString(R.string.download_dictionaries);
+            topText.setText(message);
+            getDictionaries(0);
+        }
+
+    }
+
+    protected class DictExtracter extends AsyncTask<Integer, Integer, Integer> {
+
+        protected void deleteTarFile(String sourceFile) {
+            String message4 = "Deleting " + sourceFile + " " + new File(sourceFile).delete();
+            // topText.append(message4);
+            Log.d("DictExtracter", message4);
+
+        }
+        @Override
+        protected void onPostExecute(Integer result) {
+            String message1 = "Extracted.";
+            Log.d("DictExtracter", message1);
+            topText.setText(message1);
+            extractDicts(result + 1);
+        }
+        @Override
+        protected Integer doInBackground(Integer... params) {
+            String fileName = dictFiles.get(params[0]);
+            String sourceFile = FilenameUtils.concat(downloadsDir.toString(), fileName);
+            final String baseName = FilenameUtils.getBaseName(FilenameUtils.getBaseName(fileName));
+            final String destDir = FilenameUtils.concat(dictDir.toString(), baseName);
+            new File(destDir).mkdirs();
+            String message2 = "Destination directory " + destDir;
+            Log.d("DictExtracter", message2);
+            topText.append(message2);
+            try {
+                TarArchiveInputStream tarInput =
+                        new TarArchiveInputStream(new GzipCompressorInputStream(new FileInputStream(sourceFile)));
+
+                final byte[] buffer = new byte[50000];
+                TarArchiveEntry currentEntry = null;
+                while((currentEntry = (TarArchiveEntry) tarInput.getNextEntry()) != null) {
+                    String destFile = FilenameUtils.concat(destDir, currentEntry.getName());
+                    FileOutputStream fos = new FileOutputStream(destFile);
+                    String message3 = "Destination: " + destFile;
+                    Log.d("DictExtracter", message3);
+                    int n = 0;
+                    while (-1 != (n = tarInput.read(buffer))) {
+                        fos.write(buffer, 0, n);
+                    }
+                    fos.close();
+                }
+                tarInput.close();
+            } catch (Exception e) {
+                Log.w("DictExtracter", "IOEx:" + e.getStackTrace());
+            }
+            // deleteTarFile(sourceFile);
+            return params[0];
+        }
+    }
+
 }

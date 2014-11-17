@@ -12,5 +12,6 @@
     <string name="added_n_dictionary_urls">"Added so many dictionary urls: "</string>
     <string name="download_dictionaries">Now we download the dictionaries.</string>
     <string name="use_n_dictionary_indexes">"Will get dictionaries from "</string>
+    <string name="finalMessage">We\'re done!! Get a stardict-compatible dictionary app (eg: ColorDict, Goldendict), if you don\'t already have one. Then reindex all your dictionaries.</string>
 
 </resources>

@@ -1,9 +1,9 @@
 package sanskritcode.sanskritdictionaryupdater;
 
 import android.os.AsyncTask;
+import android.os.Bundle;
 import android.os.Environment;
 import android.support.v7.app.ActionBarActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -13,6 +13,9 @@ import android.widget.TextView;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.FileAsyncHttpResponseHandler;
 
+import org.apache.commons.compress.archivers.tar.TarArchiveEntry;
+import org.apache.commons.compress.archivers.tar.TarArchiveInputStream;
+import org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;
@@ -24,6 +27,8 @@ import org.apache.http.impl.client.DefaultHttpClient;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -36,14 +41,13 @@ public class MainActivity extends ActionBarActivity {
     private static final String DICTIONARY_LIST_URL = "https://raw.githubusercontent.com/vvasuki/stardict-sanskrit/master/sa-head/tars/tars.MD";
     private static final String DICTIONARY_LOCATION = "dict";
     private static final String DOWNLOAD_LOCATION = "dict";
-    // private final TarGZipUnArchiver ua = new TarGZipUnArchiver();
-
 
     private TextView topText;
     private File sdcard;
     private File downloadsDir;
     private File dictDir;
-    public List<String> dictUrls;
+    private List<String> dictUrls = new ArrayList<String>();
+    private List<String> dictFiles = new ArrayList<String>();
     protected static AsyncHttpClient asyncHttpClient = new AsyncHttpClient();
 
     protected class DictUrlGetter extends AsyncTask<String, Integer, Integer> {
@@ -85,19 +89,75 @@ public class MainActivity extends ActionBarActivity {
             String message = R.string.added_n_dictionary_urls + dictUrls.size() + " " +
                     getString(R.string.download_dictionaries);
             topText.setText(message);
-            getDictionaries(0);
+            extractDicts(0);
         }
 
     }
 
+    protected void extractDicts(int index) {
+        if(index >= dictUrls.size()) {
+            extractDicts(0);
+        } else {
+            downloadDict(index);
+        }
+    }
     protected void getDictionaries(int index) {
-        if(index >= dictUrls.size()) return;
-        downloadDict(index);
+        if(index >= dictUrls.size()) {
+            extractDicts(0);
+        } else {
+            downloadDict(index);
+        }
     }
 
-    protected void extractDict(final String fileName) {
-        Log.d("extractDict", "Extracting " + fileName);
-        topText.setText("Extracting " + fileName);
+    protected class DictExtracter extends AsyncTask<Integer, Integer, Integer> {
+
+        protected void deleteTarFile(String sourceFile) {
+            String message4 = "Deleting " + sourceFile + " " + new File(sourceFile).delete();
+            // topText.append(message4);
+            Log.d("DictExtracter", message4);
+
+        }
+        @Override
+        protected void onPostExecute(Integer result) {
+            String message1 = "Extracted.";
+            Log.d("DictExtracter", message1);
+            topText.setText(message1);
+            extractDicts(result + 1);
+        }
+        @Override
+        protected Integer doInBackground(Integer... params) {
+            String fileName = dictFiles.get(params[0]);
+            String sourceFile = FilenameUtils.concat(downloadsDir.toString(), fileName);
+            final String baseName = FilenameUtils.getBaseName(FilenameUtils.getBaseName(fileName));
+            final String destDir = FilenameUtils.concat(dictDir.toString(), baseName);
+            new File(destDir).mkdirs();
+            String message2 = "Destination directory " + destDir;
+            Log.d("DictExtracter", message2);
+            topText.append(message2);
+            try {
+                TarArchiveInputStream tarInput =
+                        new TarArchiveInputStream(new GzipCompressorInputStream(new FileInputStream(sourceFile)));
+
+                final byte[] buffer = new byte[50000];
+                TarArchiveEntry currentEntry = null;
+                while((currentEntry = (TarArchiveEntry) tarInput.getNextEntry()) != null) {
+                    String destFile = FilenameUtils.concat(destDir, currentEntry.getName());
+                    FileOutputStream fos = new FileOutputStream(destFile);
+                    String message3 = "Destination: " + destFile;
+                    Log.d("DictExtracter", message3);
+                    int n = 0;
+                    while (-1 != (n = tarInput.read(buffer))) {
+                        fos.write(buffer, 0, n);
+                    }
+                    fos.close();
+                }
+                tarInput.close();
+            } catch (Exception e) {
+                Log.w("DictExtracter", "IOEx:" + e.getStackTrace());
+            }
+            // deleteTarFile(sourceFile);
+            return params[0];
+        }
     }
 
     protected void downloadDict(final int index) {
@@ -108,7 +168,7 @@ public class MainActivity extends ActionBarActivity {
         asyncHttpClient.get(url, new FileAsyncHttpResponseHandler(new File(downloadsDir, fileName)) {
             @Override
             public void onSuccess(int statusCode, Header[] headers, File response) {
-                extractDict(fileName);
+                dictFiles.add(fileName);
                 getDictionaries(index + 1);
             }
 
@@ -116,7 +176,8 @@ public class MainActivity extends ActionBarActivity {
             public void onFailure(int statusCode, Header[] headers, Throwable throwable, File file) {
                 String message = "Failed to get " + fileName;
                 topText.setText(message);
-                Log.w(MAIN_ACTIVITY, message + ":" + throwable.getStackTrace());
+                Log.w("downloadDict", message + ":" + throwable.getStackTrace().toString());
+                getDictionaries(index + 1);
             }
         });
     }

@@ -13,7 +13,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.common.base.Function;
-import com.google.common.collect.Iterables;
 import com.google.common.collect.Lists;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.FileAsyncHttpResponseHandler;
@@ -39,16 +38,14 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Flow: OnCreate -> buttonPressed1 -> DictUrlGetter -> (getDictionaries <-> downloadDict) -> (extractDict <-> DictExtracter)
  */
 public class MainActivity extends ActionBarActivity {
     private static final String MAIN_ACTIVITY = "MainActivity";
-    private static final String DICTIONARY_LIST_URL = "https://raw.githubusercontent.com/vvasuki/stardict-sanskrit/master/sa-head/tars/tars.MD";
+    private static final String[] DICTIONARY_INDEXES = {"https://raw.githubusercontent.com/vvasuki/stardict-sanskrit/master/sa-head/tars/tars.MD", "https://raw.githubusercontent.com/vvasuki/stardict-sanskrit/master/en-head/tars/tars.MD" };
     private static final String DICTIONARY_LOCATION = "dict";
     private static final String DOWNLOAD_LOCATION = "dict";
 
@@ -107,7 +104,7 @@ public class MainActivity extends ActionBarActivity {
 
     public void buttonPressed1(View v) {
         DictUrlGetter dictUrlGetter = new DictUrlGetter();
-        dictUrlGetter.execute(DICTIONARY_LIST_URL);
+        dictUrlGetter.execute(DICTIONARY_INDEXES);
         button.setText(getString(R.string.buttonWorking));
         button.setEnabled(false);
     }

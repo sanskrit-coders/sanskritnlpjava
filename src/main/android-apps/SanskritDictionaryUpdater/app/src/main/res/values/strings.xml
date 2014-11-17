@@ -3,9 +3,11 @@
 
     <string name="app_name">Sanskrit Dictionary Updater</string>
     <string name="permission_request">Shall we update your Sanskrit Dictionary files?\n\n
-        (This program downloads latest dictionary files from the internet, and stores it in the appropriate folder for stardict apps to use.\n
-        This will take some time.)
+        This program downloads latest dictionary files from the internet, and stores it in the SDCARD/dictdata folder, for Stardict apps to use. This will take some time.
+        We use the index maintained by the stardict-sanskrit project (See: https://github.com/vvasuki/stardict-sanskrit https://sites.google.com/site/sanskritcode/ ).
+        !!!Don\'t navigate away or we\'ll need to restart!!!
     </string>
+    <string name="dont_navigate_away">!!!Don\'t navigate away or we\'ll need to restart!!!</string>
     <string name="action_settings">Settings</string>
     <string name="proceed_button">Proceed?</string>
     <string name="added_dictionary_url">"Added dictionary: "</string>
@@ -15,5 +17,6 @@
     <string name="finalMessage">We\'re done!! Get a stardict-compatible dictionary app (eg: ColorDict, Goldendict), if you don\'t already have one. Then reindex all your dictionaries.</string>
     <string name="buttonWorking">Working</string>
     <string name="buttonDone">Done!</string>
+    <string name="txtTryAgain">\n Do you want to try again?</string>
 
 </resources>

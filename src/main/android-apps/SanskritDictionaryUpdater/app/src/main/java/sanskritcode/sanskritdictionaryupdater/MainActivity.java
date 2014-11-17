@@ -34,9 +34,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
-
+/**
+ * Flow: OnCreate -> buttonPressed1 -> DictUrlGetter -> (getDictionaries <-> downloadDict) -> (extractDict <-> DictExtracter)
+ */
 public class MainActivity extends ActionBarActivity {
     private static final String MAIN_ACTIVITY = "MainActivity";
     private static final String DICTIONARY_LIST_URL = "https://raw.githubusercontent.com/vvasuki/stardict-sanskrit/master/sa-head/tars/tars.MD";
@@ -49,7 +52,7 @@ public class MainActivity extends ActionBarActivity {
     private File downloadsDir;
     private File dictDir;
     private List<String> dictUrls = new ArrayList<String>();
-    private List<boolean> dictFailure = new ArrayList<boolean>();
+    private List<Boolean> dictFailure = new ArrayList<Boolean>();
     private List<String> dictFiles = new ArrayList<String>();
     protected static AsyncHttpClient asyncHttpClient = new AsyncHttpClient();
 
@@ -103,52 +106,48 @@ public class MainActivity extends ActionBarActivity {
     }
 
     protected void getDictionaries(int index) {
-        if(index >= dictUrls.size()) {
-            extractDicts(0);
+        if(dictUrls.size() == 0) {
+            topText.append(getString(R.string.txtTryAgain));
+            button.setText(R.string.proceed_button);
+            button.setEnabled(true);
         } else {
-            downloadDict(index);
+            if(index >= dictUrls.size()) {
+                extractDicts(0);
+            } else {
+                topText.setText("Getting " + dictUrls.get(index));
+                topText.append("\n" + getString(R.string.dont_navigate_away));
+                Log.d("downloadDict", topText.getText().toString());
+                downloadDict(index);
+            }
         }
     }
 
     protected void extractDicts(int index) {
         if(index >= dictFiles.size()) {
             topText.setText(getString(R.string.finalMessage));
+            topText.append("\n" + "Failed on:");
             for(int i = 0; i < dictFiles.size(); i++) {
                 if(dictFailure.get(i)) {
-
-                    topText.append("\n" + "Failed on " + dictUrls.get(i));
+                    topText.append("\n" + dictUrls.get(i));
                 } else {
+                }
+            }
+            topText.append("\n" + "Succeeded on:" );
+            for(int i = 0; i < dictFiles.size(); i++) {
+                if(dictFailure.get(i)) {
+                } else {
+                    topText.append("\n" + dictUrls.get(i));
                 }
             }
             button.setText(getString(R.string.buttonDone));
             return;
         } else {
+            String message1 = "Extracting " + dictUrls.get(index);
+            Log.d("DictExtracter", message1);
+            topText.setText(message1);
+            topText.append("\n" + getString(R.string.dont_navigate_away));
             new DictExtracter().execute(index);
         }
-    }
-
-    protected void downloadDict(final int index) {
-        final String url = dictUrls.get(index);
-        final String fileName = FilenameUtils.getName(url);
-        topText.setText("Getting " + fileName);
-        Log.d("downloadDict", "Getting " + fileName);
-        asyncHttpClient.get(url, new FileAsyncHttpResponseHandler(new File(downloadsDir, fileName)) {
-            @Override
-            public void onSuccess(int statusCode, Header[] headers, File response) {
-                dictFiles.add(fileName);
-                getDictionaries(index + 1);
-                dictFailure.set(index,false);
-            }
-
-            @Override
-            public void onFailure(int statusCode, Header[] headers, Throwable throwable, File file) {
-                String message = "Failed to get " + fileName;
-                topText.setText(message);
-                Log.w("downloadDict", message + ":" + throwable.getStackTrace().toString());
-                getDictionaries(index + 1);
-                dictFailure.set(index,true);
-            }
-        });
     }
 
     protected class DictUrlGetter extends AsyncTask<String, Integer, Integer> {
@@ -183,6 +182,7 @@ public class MainActivity extends ActionBarActivity {
                 }
             }
             Log.i(DICT_URL_GETTER, getString(R.string.added_n_dictionary_urls) + dictUrls.size());
+            dictFailure = new ArrayList<Boolean>(Collections.nCopies(dictUrls.size(), false));
             return dictUrls.size();
         }
         @Override
@@ -195,6 +195,28 @@ public class MainActivity extends ActionBarActivity {
 
     }
 
+    protected void downloadDict(final int index) {
+        final String url = dictUrls.get(index);
+        final String fileName = FilenameUtils.getName(url);
+        asyncHttpClient.get(url, new FileAsyncHttpResponseHandler(new File(downloadsDir, fileName)) {
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, File response) {
+                dictFiles.add(fileName);
+                dictFailure.set(index,false);
+                getDictionaries(index + 1);
+            }
+
+            @Override
+            public void onFailure(int statusCode, Header[] headers, Throwable throwable, File file) {
+                String message = "Failed to get " + fileName;
+                topText.setText(message);
+                Log.w("downloadDict", message + ":" + throwable.getStackTrace().toString());
+                dictFailure.set(index,true);
+                getDictionaries(index + 1);
+            }
+        });
+    }
+
     protected class DictExtracter extends AsyncTask<Integer, Integer, Integer> {
 
         protected void deleteTarFile(String sourceFile) {
@@ -205,7 +227,8 @@ public class MainActivity extends ActionBarActivity {
         }
         @Override
         protected void onPostExecute(Integer result) {
-            String message1 = "Extracted.";
+            String fileName = dictFiles.get(result);
+            String message1 = "Extracted " + fileName;
             Log.d("DictExtracter", message1);
             topText.setText(message1);
             extractDicts(result + 1);
@@ -220,7 +243,6 @@ public class MainActivity extends ActionBarActivity {
             new File(destDir).mkdirs();
             String message2 = "Destination directory " + destDir;
             Log.d("DictExtracter", message2);
-            topText.append("\n" + message2);
             try {
                 TarArchiveInputStream tarInput =
                         new TarArchiveInputStream(new GzipCompressorInputStream(new FileInputStream(sourceFile)));
@@ -244,7 +266,7 @@ public class MainActivity extends ActionBarActivity {
                 Log.w("DictExtracter", "IOEx:" + e.getStackTrace());
                 dictFailure.set(index,true);
             }
-            // deleteTarFile(sourceFile);
+            deleteTarFile(sourceFile);
             return index;
         }
     }

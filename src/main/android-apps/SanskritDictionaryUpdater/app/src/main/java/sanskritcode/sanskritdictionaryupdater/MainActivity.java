@@ -4,6 +4,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.v7.app.ActionBarActivity;
+import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -11,6 +12,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.common.base.Function;
+import com.google.common.collect.Iterables;
+import com.google.common.collect.Lists;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.FileAsyncHttpResponseHandler;
 
@@ -35,7 +39,9 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Flow: OnCreate -> buttonPressed1 -> DictUrlGetter -> (getDictionaries <-> downloadDict) -> (extractDict <-> DictExtracter)
@@ -85,6 +91,7 @@ public class MainActivity extends ActionBarActivity {
         asyncHttpClient.getHttpClient().getParams().setParameter(ClientPNames.ALLOW_CIRCULAR_REDIRECTS, true);
         setContentView(R.layout.activity_main);
         topText = (TextView) findViewById(R.id.textView);
+        topText.setMovementMethod(new ScrollingMovementMethod());
         button = (Button) findViewById(R.id.button);
         sdcard = Environment.getExternalStorageDirectory();
         downloadsDir = new File (sdcard.getAbsolutePath() + "/Download/dicttars");
@@ -125,20 +132,28 @@ public class MainActivity extends ActionBarActivity {
     protected void extractDicts(int index) {
         if(index >= dictFiles.size()) {
             topText.setText(getString(R.string.finalMessage));
-            topText.append("\n" + "Failed on:");
-            for(int i = 0; i < dictFiles.size(); i++) {
+            List<String> dictNames = Lists.transform(dictUrls, new Function<String, String>() {
+                public String apply(String in) {
+                    return FilenameUtils.getBaseName(in);
+                }
+            });
+            StringBuffer failures = new StringBuffer("");
+            for(int i = 0; i < dictNames.size(); i++) {
                 if(dictFailure.get(i)) {
-                    topText.append("\n" + dictUrls.get(i));
+                    failures.append("\n" + dictNames.get(i));
                 } else {
                 }
             }
-            topText.append("\n" + "Succeeded on:" );
-            for(int i = 0; i < dictFiles.size(); i++) {
+            if(failures.length() > 0) topText.append("\n" + "Failed on:" + failures);
+            StringBuffer successes = new StringBuffer("");
+            for(int i = 0; i < dictNames.size(); i++) {
                 if(dictFailure.get(i)) {
                 } else {
-                    topText.append("\n" + dictUrls.get(i));
+                    successes.append("\n" + dictNames.get(i));
                 }
             }
+            if(successes.length() > 0) topText.append("\n" + "Succeeded on:" + successes);
+
             button.setText(getString(R.string.buttonDone));
             return;
         } else {

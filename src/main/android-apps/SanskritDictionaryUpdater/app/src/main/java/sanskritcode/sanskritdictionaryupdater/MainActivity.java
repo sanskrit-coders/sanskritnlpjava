@@ -103,10 +103,10 @@ public class MainActivity extends ActionBarActivity {
 
 
     public void buttonPressed1(View v) {
-        DictUrlGetter dictUrlGetter = new DictUrlGetter();
-        dictUrlGetter.execute(DICTIONARY_INDEXES);
         button.setText(getString(R.string.buttonWorking));
         button.setEnabled(false);
+        DictUrlGetter dictUrlGetter = new DictUrlGetter();
+        dictUrlGetter.execute(DICTIONARY_INDEXES);
     }
 
     protected void getDictionaries(int index) {
@@ -151,7 +151,7 @@ public class MainActivity extends ActionBarActivity {
             }
             if(successes.length() > 0) topText.append("\n" + "Succeeded on:" + successes);
 
-            button.setText(getString(R.string.buttonDone));
+            button.setVisibility(View.GONE);
             return;
         } else {
             String message1 = "Extracting " + dictUrls.get(index);
@@ -197,8 +197,16 @@ public class MainActivity extends ActionBarActivity {
             dictFailure = new ArrayList<Boolean>(Collections.nCopies(dictUrls.size(), false));
             return dictUrls.size();
         }
+        // A method used for debugging
+        protected void retainOnlyOneDictForDebugging() {
+            Log.i(DICT_URL_GETTER, "DEBUGGING!");
+            String firstDict = dictUrls.get(0);
+            dictUrls.clear();
+            dictUrls.add(firstDict);
+        }
         @Override
         protected void onPostExecute(Integer result) {
+            // retainOnlyOneDictForDebugging();
             String message = R.string.added_n_dictionary_urls + dictUrls.size() + " " +
                     getString(R.string.download_dictionaries);
             topText.setText(message);

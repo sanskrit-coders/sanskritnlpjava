@@ -1,5 +1,7 @@
+The corresponding webserver hosts pages such as: <sanskritnlp.appspot.com/forms/Chandas-de.htm> etc..
+
 Where is the code?
-src/main/ has subfolders called java, perl, scala. They respectively contain code written in those languages.
+src/main/ has subfolders called java, scala. They respectively contain code written in those languages.
 
 Javascript code is in war/js.
 

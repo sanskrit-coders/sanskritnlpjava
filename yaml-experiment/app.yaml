@@ -1,0 +1,23 @@
+application: sanskritnlp
+version: 1
+runtime: java
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: .*/
+  static_files: index.html
+
+- url: /
+  static_dir: fonts
+  static_dir: js
+  static_dir: books
+
+- url: pratyAhArI
+  servlet: sanskritnlp.servlet.pratyAhArI
+
+- url: trans
+  servlet: sanskritnlp.servlet.Transliterate
+
+
+

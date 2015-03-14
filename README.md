@@ -11,5 +11,7 @@ Scala programming tips:
 * Building with maven:
   * mvn3 clean install
 * Using Eclipse: Just use eclipse with the scalaIDE plugin. Set output folder WEB-INF/classes.
-* Using IntelliJ Idea IDE : use provided directories.
+* Using IntelliJ Idea IDE : 
+  * use provided project file. Install the scala plugin. Set up the source folders in the module.
+  * Open any valid singleton with a main function. Run it using Ctrl Shift F10.
 

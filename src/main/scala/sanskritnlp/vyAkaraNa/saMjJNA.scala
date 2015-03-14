@@ -18,12 +18,12 @@ object shivasUtra {
 
   val itaH = halitaH ++ List("अँ")
   
-  var sUtra_symbols = sUtra.replace(" ", "")
+  var sUtra_symbols = sUtra.replaceAll(" ", "")
   // तस्य  लोपः॥ - तस्य इतो लोपः।
   itaH.foreach(y => {
     var x = y;
     if(x.last ==  'ँ') x = x.last.toString;
-    sUtra_symbols = sUtra_symbols.replace(x, "")
+    sUtra_symbols = sUtra_symbols.replaceAll(x, "")
     })
 
   val itsaMkhyA = gaNAntimAkShara.map(x => sUtra_symbols.lastIndexOf(x)) ++ List(sUtra_symbols.indexOf("ल"))

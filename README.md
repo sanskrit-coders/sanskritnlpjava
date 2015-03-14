@@ -8,6 +8,8 @@ Javascript code is in war/js.
 HTML forms are found in war/forms.
 
 Scala programming tips:
-* Just use eclipse with the scalaIDE plugin.
-* Set output folder WEB-INF/classes.
+* Building with maven:
+  * mvn3 clean install
+* Using Eclipse: Just use eclipse with the scalaIDE plugin. Set output folder WEB-INF/classes.
+* Using IntelliJ Idea IDE : use provided directories.
 

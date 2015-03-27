@@ -11,6 +11,31 @@ trait RomanScript {
   val romanToDevaContextFreeReplacements: Map[String, String] = null
   val devaToRoman: Map[String, String] = null
 
+
+  def replaceKeys(str_in: String, mapping: Map[String, String]): String = {
+    val keysWithoutWildcards = mapping.keys.filterNot(_.contains("."))
+    val keysWithWildCards = mapping.keys.filter(_.contains("."))
+    val regexKeys = ("(" + keysWithoutWildcards.mkString("|") + ")").r
+    // println(regexKeys)
+    var output = str_in
+    output = regexKeys.replaceAllIn(output, _ match { case regexKeys(key) => mapping(key) })
+    keysWithWildCards.foreach(x => output = output.replaceAllLiterally(x, mapping(x)))
+    output
+  }
+
+  def replaceKeysLongestFirst(str_in: String, mapping: Map[String, String]): String = {
+    var output = str_in
+    val keyLengths = mapping.keys.map(_.length).toList.distinct.sorted.reverse
+    // The above yields List(3, 2, 1) for HK.
+
+    keyLengths.foreach(x => {
+      val mapping_length_x = mapping.filter(t => (t._1.length() == x))
+      // println(mapping)
+      output = replaceKeys(output, mapping_length_x)
+    })
+    output
+  }
+
   def replaceRomanIndependentVowels(str_in: String, vowelMap: Map[String, String]): String = {
     val regex_independent_vowels = ("([^a-zA-Z])(" + vowelMap.keys.mkString("|") + ")").r
     var output = str_in
@@ -35,30 +60,6 @@ trait RomanScript {
   def test_replaceRomanIndependentVowels(str_in: String): Unit = {
     println("Test string : " + str_in)
     println("Result : " + replaceRomanIndependentVowels(str_in))
-  }
-
-  def replaceKeys(str_in: String, mapping: Map[String, String]): String = {
-    val keysWithoutWildcards = mapping.keys.filterNot(_.contains("."))
-    val keysWithWildCards = mapping.keys.filter(_.contains("."))
-    val regexKeys = ("(" + keysWithoutWildcards.mkString("|") + ")").r
-    // println(regexKeys)
-    var output = str_in
-    output = regexKeys.replaceAllIn(output, _ match { case regexKeys(key) => mapping(key) })
-    keysWithWildCards.foreach(x => output = output.replaceAllLiterally(x, mapping(x)))
-    output
-  }
-
-  def replaceKeysLongestFirst(str_in: String, mapping: Map[String, String]): String = {
-    var output = str_in
-    val keyLengths = mapping.keys.map(_.length).toList.distinct.sorted.reverse
-    // The above yields List(3, 2, 1) for HK.
-
-    keyLengths.foreach(x => {
-      val mapping = mapping.filter(t => (t._1.length() == x))
-      // println(mapping)
-      output = replaceKeys(output, mapping)
-    })
-    output
   }
 
   def test_replaceRomanDependentVowels(str_in: String): Unit = {
@@ -104,11 +105,21 @@ trait RomanScript {
     output
   }
 
+  def fromDevanagari(str_in: String): String = {
+    var output = str_in
+    output = replaceKeysLongestFirst(output, devaToRoman)
+    output
+  }
+
   def test_toDevanagari(str_in : String) = {
     test_replaceRomanIndependentVowels(str_in)
     test_replaceRomanDependentVowels(str_in)
     test_replaceRomanConsonantsFollowedByVowels(str_in)
     println(toDevanagari(str_in))
+  }
+
+  def test_fromDevanagari(str_in : String = "असय औषधिः ग्रन्थः! ॡकारो।अस्ति। नास्ति लेशो।अपि संशयः। कष्ठं भोः। १२३४५") = {
+    println(fromDevanagari(str_in))
   }
 }
 
@@ -156,8 +167,9 @@ object harvardKyoto extends RomanScript {
     "3"-> "३", "4"-> "४", "5"-> "५",
     "6"-> "६", "7"-> "७", "8"-> "८", "9"-> "९")
 
+  // TODO: Fix the below. Virama not handled.
   override val devaToRoman = romanToDevaIndependentVowels.map(_.swap) ++ romanToDevaDependentVowels.map(_.swap) ++
-    romanToDevaConsonants.map(_.swap) ++ romanToDevaContextFreeReplacements(_.swap)
+    romanToDevaConsonants.map(_.swap) ++ romanToDevaContextFreeReplacements.map(_.swap)
 
   def test_toDevanagari(): Unit = {
     val hkText = "asaya auSadhiH granthaH! lRRkAro.asti. nAsti lezo.api saMzayaH. kaSThaM bhoH. 12345"
@@ -170,5 +182,6 @@ object harvardKyoto extends RomanScript {
 object romanScriptTest {
   def main(args: Array[String]): Unit = {
     harvardKyoto.test_toDevanagari()
+    harvardKyoto.test_fromDevanagari()
   }
 }

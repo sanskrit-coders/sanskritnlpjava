@@ -64,7 +64,7 @@ object kannaDa extends IndicScript{
   '६'-> '೬', '७'-> '೭', '८'-> '೮', '९'-> '೯'
   )
 
-  override val mapToDevanagari = (mapFromDevanagari.values zip mapFromDevanagari.keys).toMap
+  override val mapToDevanagari = mapFromDevanagari.map(_.swap)
 
 }
 
@@ -118,7 +118,7 @@ object telugu extends IndicScript{
   '६'-> '౬', '७'-> '౭', '८'-> '౮', '९'-> '౯'
   )
 
-override val mapToDevanagari = (mapFromDevanagari.values zip mapFromDevanagari.keys).toMap
+override val mapToDevanagari = mapFromDevanagari.map(_.swap)
 
 }
 

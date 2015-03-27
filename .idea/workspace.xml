@@ -1,69 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03e2d041-0687-403b-85c3-f957bf435f1c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanIndependentVowels$1$$anonfun$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanKeys$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanKeys$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanKeysLongestFirst$1$$anonfun$6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanKeysLongestFirst$1.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/AdditionalChecks.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/AdditionalChecks.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/AjadiAntaSandhi.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/AjadiAntaSandhi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/transliteratorAsSwing/AkrutiToeLatin.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/transliteratorAsSwing/AkrutiToeLatin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/notes/Comments.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/notes/Comments.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/ConsonantSandhi.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/ConsonantSandhi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/DisplayMessage.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/DisplayMessage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/transliteration/DvnToSLP.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/transliteration/DvnToSLP.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/menu/FileMenu.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/menu/FileMenu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/HelpFrame.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/HelpFrame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/menu/HelpMenu.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/menu/HelpMenu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/IndicScript$$anonfun$fromDevanagari$1$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/IndicScript$$anonfun$fromDevanagari$1$$anonfun$apply$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/IndicScript$$anonfun$toDevanagari$1$$anonfun$apply$2.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/IndicScript$$anonfun$toDevanagari$1$$anonfun$apply$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/transliteration/IndicUnicodeTransformer.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/transliteration/IndicUnicodeTransformer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/Launcher2.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/Launcher2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/chanda/MetricAnalyzer.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/chanda/MetricAnalyzer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/util/MetricUtil.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/util/MetricUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/MixedSandhi.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/MixedSandhi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/menu/OptionsMenu.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/menu/OptionsMenu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/pratyahara/PratyahaarJFrame.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/pratyahara/PratyahaarJFrame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/util/ProjectTypeEnum.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/util/ProjectTypeEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$3.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$5.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$7.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$8.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanConsonantsFollowedByVowels$1$$anonfun$9.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanConsonantsFollowedByVowels$1$$anonfun$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanConsonantsFollowedByVowels$1.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanConsonantsFollowedByVowels$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanConsonantsFollowedByVowels$2.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanConsonantsFollowedByVowels$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanIndependentVowels$1.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanIndependentVowels$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanIndependentVowels$2.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanIndependentVowels$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanIndependentVowels$3.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanIndependentVowels$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$class.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$class.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/transliteration/SLPToBangla.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/transliteration/SLPToBangla.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/transliteration/SLPToDevanagari.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/transliteration/SLPToDevanagari.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/gssmurthy/Sandhi5b3m.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/gssmurthy/Sandhi5b3m.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/SandhiJFrame.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/SandhiJFrame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/panel/SandhiOptionsPanel.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/panel/SandhiOptionsPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/pratyahara/StandalonePratyahara.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/pratyahara/StandalonePratyahara.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/TransliterationSchemeDisplay.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/TransliterationSchemeDisplay.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/transliteratorAsSwing/TransliteratorJFrame.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/transliteratorAsSwing/TransliteratorJFrame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/pratyahara/UditSavarna.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/pratyahara/UditSavarna.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/VisargaDisplay.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/VisargaDisplay.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/VowelConsonantSandhi.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/VowelConsonantSandhi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/VowelSandhi.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/VowelSandhi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/harvardKyoto$.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/harvardKyoto$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/harvardKyoto.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/harvardKyoto.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/kannaDa$.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/kannaDa$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/kannaDa.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/kannaDa.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/romanScriptTest$.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/romanScriptTest$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/telugu$.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/telugu$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/telugu.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/telugu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/indicMaps.scala" afterPath="$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/indicMaps.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/romanScripts.scala" afterPath="$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/romanScripts.scala" />
+    <list default="true" id="ac05e739-ded8-465e-b65f-6eff68c25840" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/PadFilenames.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sanskritnlp.iml" afterPath="$PROJECT_DIR$/sanskritnlp.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sanskritnlpjava.iws" />
@@ -89,28 +31,8 @@
       <file leaf-file-name="romanScripts.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/romanScripts.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.60650885">
-              <caret line="169" column="45" selection-start-line="169" selection-start-column="45" selection-end-line="169" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="indicMaps.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/indicMaps.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="120" column="60" selection-start-line="120" selection-start-column="60" selection-end-line="120" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="120" column="59" selection-start-line="120" selection-start-column="59" selection-end-line="120" selection-end-column="59" />
+            <state vertical-scroll-proportion="0.16424116">
+              <caret line="125" column="7" selection-start-line="125" selection-start-column="7" selection-end-line="125" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -126,25 +48,11 @@
       <projects_view />
     </option>
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/indicMaps.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/romanScripts.scala" />
-      </list>
-    </option>
-  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="Bundled (Maven 3)" />
       </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
     </option>
   </component>
   <component name="NamedScopeManager">
@@ -152,53 +60,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="24" />
-    <option name="width" value="1855" />
-    <option name="height" value="1176" />
-  </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>Android Lint</id>
-          </State>
-          <State>
-            <id>Bitwise operation issuesJava</id>
-          </State>
-          <State>
-            <id>Class metricsJava</id>
-          </State>
-          <State>
-            <id>Class structureJava</id>
-          </State>
-          <State>
-            <id>Code style issuesJava</id>
-          </State>
-          <State>
-            <id>General</id>
-          </State>
-          <State>
-            <id>J2ME issuesJava</id>
-          </State>
-          <State>
-            <id>Java</id>
-          </State>
-          <State>
-            <id>Modularization issuesJava</id>
-          </State>
-          <State>
-            <id>Packaging issuesJava</id>
-          </State>
-          <State>
-            <id>Performance issuesJava</id>
-          </State>
-        </expanded-state>
-      </profile-state>
-    </entry>
+    <option name="y" value="-4" />
+    <option name="width" value="2495" />
+    <option name="height" value="1604" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -223,11 +87,9 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -257,72 +119,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sanskritnlpjava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sanskritnlpjava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sanskritnlp-1.0-SNAPSHOT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sanskritnlpjava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sanskritnlpjava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sanskritnlp-1.0-SNAPSHOT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sanskritnlpjava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sanskritnlpjava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sanskritnlp-1.0-SNAPSHOT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -367,6 +163,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sanskritnlp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vyAkaraNa" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -433,10 +233,6 @@
               <option name="myItemId" value="transliteration" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="indicMaps.scala" />
-              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -463,35 +259,14 @@
               <option name="myItemId" value="sanskritnlp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="GoToClass.includeLibraries" value="false" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="restartRequiresConfirmation" value="true" />
-    <property name="options.lastSelected" value="preferences.pluginManager" />
-    <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="FullScreen" value="false" />
     <property name="dynamic.classpath" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RunManager" selected="Application.romanScriptTest">
     <configuration default="false" name="romanScriptTest" type="Application" factoryName="Application" temporary="true">
@@ -512,80 +287,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="sanskritnlp" />
       <envs />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="sanskritNlpTest" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="sanskritnlp.app.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="sanskritnlp.app.sanskritNlpTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="sanskritnlp" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="sanskritNlpTest (1)" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="sanskritnlp.app.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="sanskritnlp.app.sanskritNlpTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="sanskritNlp" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="sanskritnlp.app.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="sanskritnlp.app.sanskritNlp" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="sanskritnlp" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -636,12 +337,11 @@
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
-      <module />
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <module />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -675,24 +375,6 @@
       </ExternalSystemSettings>
       <method />
     </configuration>
-    <configuration default="true" type="GriffonRunConfigurationType" factoryName="Griffon">
-      <module name="" />
-      <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
-      <setting name="depsClasspath" value="true" />
-      <setting name="passParentEnv" value="true" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <method />
-    </configuration>
-    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$" />
-      <setting name="debug" value="false" />
-      <method />
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -719,50 +401,12 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list />
-            </option>
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <method />
-    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console">
-      <module name="" />
-      <setting name="vmparams4" value="-Djline.terminal=NONE" />
-      <setting name="workingDirectory" value="$PROJECT_DIR$" />
-      <setting name="consoleArgs" value="-usejavacp" />
-      <method />
-    </configuration>
-    <configuration default="true" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="consoleargs" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="$PROJECT_DIR$" />
       <method />
     </configuration>
     <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
@@ -841,28 +485,12 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="Unnamed" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console">
-      <module name="sanskritnlp" />
-      <setting name="vmparams4" value="-Djline.terminal=NONE" />
-      <setting name="workingDirectory" value="$PROJECT_DIR$" />
-      <setting name="consoleArgs" value="-usejavacp" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Scala Console.Unnamed" />
-      <item index="1" class="java.lang.String" itemvalue="Application.romanScriptTest" />
-      <item index="2" class="java.lang.String" itemvalue="Application.sanskritNlpTest" />
-      <item index="3" class="java.lang.String" itemvalue="Application.sanskritNlpTest (1)" />
-      <item index="4" class="java.lang.String" itemvalue="Application.sanskritNlp" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Application.romanScriptTest" />
     </list>
     <recent_temporary>
-      <list size="4">
+      <list size="1">
         <item index="0" class="java.lang.String" itemvalue="Application.romanScriptTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.sanskritNlp" />
-        <item index="2" class="java.lang.String" itemvalue="Application.sanskritNlpTest" />
-        <item index="3" class="java.lang.String" itemvalue="Application.sanskritNlpTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -872,78 +500,46 @@
     </option>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="03e2d041-0687-403b-85c3-f957bf435f1c" name="Default" comment="" />
-      <created>1426366929825</created>
+      <changelist id="ac05e739-ded8-465e-b65f-6eff68c25840" name="Default" comment="" />
+      <created>1427496279389</created>
       <option name="number" value="Default" />
-      <updated>1426366929825</updated>
+      <updated>1427496279389</updated>
     </task>
-    <task id="LOCAL-00001" summary="Null">
-      <created>1427495664255</created>
-      <option name="number" value="00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1427495664255</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="TodoView" selected-index="3">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1855" height="1176" extended-state="0" />
-    <editor active="true" />
+    <frame x="65" y="-4" width="2495" height="1604" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298479" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3998195" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298479" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889733" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23859316" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19347706" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32889733" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24989791" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32972974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
-  <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USER_GROUPS">
-      <collection />
-    </option>
-    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-      <collection />
-    </option>
-  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Null" />
-    <option name="LAST_COMMIT_MESSAGE" value="Null" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -956,219 +552,11 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/romanScripts.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.16424116">
+          <caret line="125" column="7" selection-start-line="125" selection-start-column="7" selection-end-line="125" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/indicMaps.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="63" column="44" selection-start-line="59" selection-start-column="25" selection-end-line="63" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="120" column="59" selection-start-line="120" selection-start-column="59" selection-end-line="120" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/romanScripts.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/app/SanskritNlp.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/romanScripts.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/app/SanskritNlp.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/romanScripts.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/app/SanskritNlp.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/romanScripts.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/romanScripts.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/app/SanskritNlp.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2932961">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="120" column="59" selection-start-line="120" selection-start-column="59" selection-end-line="120" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sanskritnlpjava.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/indicMaps.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="120" column="60" selection-start-line="120" selection-start-column="60" selection-end-line="120" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/romanScripts.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60650885">
-          <caret line="169" column="45" selection-start-line="169" selection-start-column="45" selection-end-line="169" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>scala-sdk-2.10.3</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>sanskritnlp</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: ch.qos.logback:logback-classic:0.9.29</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

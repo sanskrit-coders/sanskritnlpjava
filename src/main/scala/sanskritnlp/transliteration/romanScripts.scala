@@ -9,6 +9,7 @@ trait RomanScript {
   val romanToDevaDependentVowels: Map[String, String] = null
   val romanToDevaConsonants: Map[String, String] = null
   val romanToDevaContextFreeReplacements: Map[String, String] = null
+  val devaToRoman: Map[String, String] = null
 
   def replaceRomanIndependentVowels(str_in: String, vowelMap: Map[String, String]): String = {
     val regex_independent_vowels = ("([^a-zA-Z])(" + vowelMap.keys.mkString("|") + ")").r
@@ -36,33 +37,33 @@ trait RomanScript {
     println("Result : " + replaceRomanIndependentVowels(str_in))
   }
 
-  def replaceRomanKeys(str_in: String, romanToDevaMap: Map[String, String]): String = {
-    val keysWithoutWildcards = romanToDevaMap.keys.filterNot(_.contains("."))
-    val keysWithWildCards = romanToDevaMap.keys.filter(_.contains("."))
+  def replaceKeys(str_in: String, mapping: Map[String, String]): String = {
+    val keysWithoutWildcards = mapping.keys.filterNot(_.contains("."))
+    val keysWithWildCards = mapping.keys.filter(_.contains("."))
     val regexKeys = ("(" + keysWithoutWildcards.mkString("|") + ")").r
     // println(regexKeys)
     var output = str_in
-    output = regexKeys.replaceAllIn(output, _ match { case regexKeys(key) => romanToDevaMap(key) })
-    keysWithWildCards.foreach(x => output = output.replaceAllLiterally(x, romanToDevaMap(x)))
+    output = regexKeys.replaceAllIn(output, _ match { case regexKeys(key) => mapping(key) })
+    keysWithWildCards.foreach(x => output = output.replaceAllLiterally(x, mapping(x)))
     output
   }
 
-  def replaceRomanKeysLongestFirst(str_in: String, romanToDevaMap: Map[String, String]): String = {
+  def replaceKeysLongestFirst(str_in: String, mapping: Map[String, String]): String = {
     var output = str_in
-    val keyLengths = romanToDevaMap.keys.map(_.length).toList.distinct.sorted.reverse
+    val keyLengths = mapping.keys.map(_.length).toList.distinct.sorted.reverse
     // The above yields List(3, 2, 1) for HK.
 
     keyLengths.foreach(x => {
-      val mapping = romanToDevaMap.filter(t => (t._1.length() == x))
+      val mapping = mapping.filter(t => (t._1.length() == x))
       // println(mapping)
-      output = replaceRomanKeys(output, mapping)
+      output = replaceKeys(output, mapping)
     })
     output
   }
 
   def test_replaceRomanDependentVowels(str_in: String): Unit = {
     println("Test string : " + str_in)
-    println("Result : " + replaceRomanKeysLongestFirst(replaceRomanIndependentVowels(str_in, romanToDevaDependentVowels), romanToDevaDependentVowels))
+    println("Result : " + replaceKeysLongestFirst(replaceRomanIndependentVowels(str_in, romanToDevaDependentVowels), romanToDevaDependentVowels))
   }
 
   def replaceRomanConsonantsFollowedByVowels(str_in: String, consonantMapNoVirama: Map[String, String]): String = {
@@ -90,16 +91,16 @@ trait RomanScript {
 
   def test_replaceRomanConsonantsFollowedByVowels(str_in: String): Unit = {
     println("Test string : " + str_in)
-    println("Result : " + replaceRomanConsonantsFollowedByVowels(replaceRomanKeysLongestFirst(replaceRomanIndependentVowels(str_in), romanToDevaDependentVowels)))
+    println("Result : " + replaceRomanConsonantsFollowedByVowels(replaceKeysLongestFirst(replaceRomanIndependentVowels(str_in), romanToDevaDependentVowels)))
   }
 
   def toDevanagari(str_in: String): String = {
     var output = str_in
     output = replaceRomanIndependentVowels(output)
-    output = replaceRomanKeysLongestFirst(output, romanToDevaDependentVowels)
+    output = replaceKeysLongestFirst(output, romanToDevaDependentVowels)
     output = replaceRomanConsonantsFollowedByVowels(output)
-    output = replaceRomanKeysLongestFirst(output, romanToDevaConsonants)
-    output = replaceRomanKeysLongestFirst(output, romanToDevaContextFreeReplacements)
+    output = replaceKeysLongestFirst(output, romanToDevaConsonants)
+    output = replaceKeysLongestFirst(output, romanToDevaContextFreeReplacements)
     output
   }
 
@@ -154,6 +155,9 @@ object harvardKyoto extends RomanScript {
     "0" -> "०", "1"-> "१", "2"-> "२",
     "3"-> "३", "4"-> "४", "5"-> "५",
     "6"-> "६", "7"-> "७", "8"-> "८", "9"-> "९")
+
+  override val devaToRoman = romanToDevaIndependentVowels.map(_.swap) ++ romanToDevaDependentVowels.map(_.swap) ++
+    romanToDevaConsonants.map(_.swap) ++ romanToDevaContextFreeReplacements(_.swap)
 
   def test_toDevanagari(): Unit = {
     val hkText = "asaya auSadhiH granthaH! lRRkAro.asti. nAsti lezo.api saMzayaH. kaSThaM bhoH. 12345"

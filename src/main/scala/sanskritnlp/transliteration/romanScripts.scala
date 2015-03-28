@@ -8,8 +8,16 @@ trait RomanScript {
 
   val romanToDevaDependentVowels: Map[String, String] = null
   val romanToDevaConsonants: Map[String, String] = null
+  val romanToDevaConsonantsNoVirama: Map[String, String] = null
   val romanToDevaContextFreeReplacements: Map[String, String] = null
-  val devaToRoman: Map[String, String] = null
+
+  val devaConsonantsNoViramaToRomanVirama: Map[String, String] = null
+  val devaConsonantsNoViramaToRoman: Map[String, String] = null
+  val devaIndependentVowelsToRoman: Map[String, String] = null
+  val devaDependentVowelsToRoman: Map[String, String] = null
+  val devaConsonantsToRoman: Map[String, String] = null
+  val aToRoman: String = null
+  val devaToRomanGeneral: Map[String, String] = null
 
 
   def replaceKeys(str_in: String, mapping: Map[String, String]): String = {
@@ -68,7 +76,7 @@ trait RomanScript {
   }
 
   def replaceRomanConsonantsFollowedByVowels(str_in: String, consonantMapNoVirama: Map[String, String]): String = {
-    val regex_consonant_vowel = ("(" + consonantMapNoVirama.keys.mkString("|") +")(a|" + romanToDevaDependentVowels.values.mkString("|") + ")").r
+    val regex_consonant_vowel = ("(" + consonantMapNoVirama.keys.mkString("|") +")($aToRoman%s|" + romanToDevaDependentVowels.values.mkString("|") + ")").r
     var output = str_in
     output = regex_consonant_vowel.replaceAllIn(output, _ match { case regex_consonant_vowel(consonant, vowel) => consonantMapNoVirama(consonant) + vowel.replaceAll("a", "") })
     output
@@ -77,7 +85,6 @@ trait RomanScript {
   // Assumption: This should only be called after replaceRomanDependentVowels .
   def replaceRomanConsonantsFollowedByVowels(str_in: String): String = {
     var output = str_in
-    val romanToDevaConsonantsNoVirama = romanToDevaConsonants.mapValues(_.replaceAll("्", ""))
     val keyLengths = romanToDevaConsonantsNoVirama.keys.map(_.length).toList.distinct.sorted.reverse
     // The above yields List(3, 2, 1) for HK.
     // println(keyLengths)
@@ -105,9 +112,33 @@ trait RomanScript {
     output
   }
 
+  def replaceDevanagariConsonantsFollowedByVowels(str_in: String): String = {
+    val pattern = ("(" + devaConsonantsNoViramaToRomanVirama.keys.mkString("|") + ")(" +
+      devaDependentVowelsToRoman.keys.mkString("|") + ")").r
+    println(devaConsonantsNoViramaToRomanVirama)
+    var output = str_in
+    output = pattern.replaceAllIn(output, _ match { case pattern(consonant, vowel) =>
+      devaConsonantsNoViramaToRomanVirama(consonant) + devaDependentVowelsToRoman(vowel) })
+    output
+  }
+
   def fromDevanagari(str_in: String): String = {
     var output = str_in
-    output = replaceKeysLongestFirst(output, devaToRoman)
+
+    // Replace consonants followed by dependent vowel signs first.
+    output = replaceDevanagariConsonantsFollowedByVowels(output)
+    println(output)
+
+    // Replace consonants followed by virAma next.
+    output = replaceKeysLongestFirst(output, devaConsonantsToRoman)
+    println(output)
+
+    output = replaceKeysLongestFirst(output, devaConsonantsNoViramaToRoman)
+    println(output)
+
+    output = replaceKeysLongestFirst(output, devaIndependentVowelsToRoman)
+    println(output)
+    output = replaceKeysLongestFirst(output, devaToRomanGeneral)
     output
   }
 
@@ -119,69 +150,7 @@ trait RomanScript {
   }
 
   def test_fromDevanagari(str_in : String = "असय औषधिः ग्रन्थः! ॡकारो।अस्ति। नास्ति लेशो।अपि संशयः। कष्ठं भोः। १२३४५") = {
+    println("Input: " + str_in)
     println(fromDevanagari(str_in))
-  }
-}
-
-object harvardKyoto extends RomanScript {
-	override val romanToDevaIndependentVowels = Map(
-  "a" -> "अ", "A" -> "आ",  "i" -> "इ", "I" -> "ई",
-  "u" -> "उ", "U" -> "ऊ",
-  "R" -> "ऋ", "RR" -> "ॠ", "lR" -> "ऌ", "lRR" -> "ॡ", 
-  "e" -> "ए",
-  "ai" -> "ऐ",
-  "o" -> "ओ", "au" -> "औ")
-  
-  override val romanToDevaDependentVowels = Map(
-  "A" -> "ा",
-  "i" -> "ि", 
-  "I" -> "ी",
-  "u" -> "ु", "U" -> "ू",
-  "R" -> "ृ", "RR" -> "ॄ",
-  "lR" -> "ॢ", "lRR" -> "ॣ",
-  "e" -> "े",
-  "ai" ->  "ै",
-  "o" -> "ो",  "au" -> "ौ")
-
-  override val romanToDevaConsonants = Map(
-    "h" -> "ह्", "y" -> "य्", "v" -> "व्", "r" -> "र्", "l" -> "ल्",
-    "J" -> "ञ्",
-    "G" -> "ङ्",
-    "m" -> "म्",
-    "N" -> "ण्",
-    "n" -> "न्",
-    "jh" -> "झ्", "bh" -> "भ्",
-    "gh" -> "घ्", "Dh" -> "ढ्", "dh" -> "ध्",
-    "j" -> "ज्", "b" -> "ब्", "g" -> "ग्",
-    "D" -> "ड्", "d" -> "द्",
-    "kh" -> "ख्",
-    "ph" -> "फ्", "ch" -> "छ्", "Th" -> "ठ्",
-    "th" -> "थ्", "c" -> "च्", "T" -> "ट्", "t" -> "त्",
-    "k" -> "क्", "p" -> "प्",
-    "z" -> "श्", "S" -> "ष्", "s" -> "स्",
-    "L" -> "ळ्")
-  override val romanToDevaContextFreeReplacements = Map(
-    "M" -> "ं",  "H" -> "ः",
-    "'" -> "ऽ", "." -> "।",
-    "0" -> "०", "1"-> "१", "2"-> "२",
-    "3"-> "३", "4"-> "४", "5"-> "५",
-    "6"-> "६", "7"-> "७", "8"-> "८", "9"-> "९")
-
-  // TODO: Fix the below. Virama not handled.
-  override val devaToRoman = romanToDevaIndependentVowels.map(_.swap) ++ romanToDevaDependentVowels.map(_.swap) ++
-    romanToDevaConsonants.map(_.swap) ++ romanToDevaContextFreeReplacements.map(_.swap)
-
-  def test_toDevanagari(): Unit = {
-    val hkText = "asaya auSadhiH granthaH! lRRkAro.asti. nAsti lezo.api saMzayaH. kaSThaM bhoH. 12345"
-    println("HK Tests.")
-    test_toDevanagari(hkText)
-  }
-
-}
-
-object romanScriptTest {
-  def main(args: Array[String]): Unit = {
-    harvardKyoto.test_toDevanagari()
-    harvardKyoto.test_fromDevanagari()
   }
 }

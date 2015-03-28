@@ -2,10 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac05e739-ded8-465e-b65f-6eff68c25840" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/PadFilenames.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sanskritnlp.iml" afterPath="$PROJECT_DIR$/sanskritnlp.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/harvardKyoto.scala" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanConsonantsFollowedByVowels$1$$anonfun$9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/harvardKyoto$$anonfun$10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/harvardKyoto$$anonfun$11.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/harvardKyoto$$anonfun$12.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/harvardKyoto$$anonfun$13.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/romanScriptTest$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/romanScriptTest.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$2.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$3.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$5.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$7.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceKeys$1.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceKeys$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceKeys$2.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceKeys$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceKeysLongestFirst$1$$anonfun$4.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceKeysLongestFirst$1$$anonfun$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceKeysLongestFirst$1.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceKeysLongestFirst$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanConsonantsFollowedByVowels$1.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanConsonantsFollowedByVowels$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanConsonantsFollowedByVowels$2.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanConsonantsFollowedByVowels$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanIndependentVowels$1$$anonfun$6.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanIndependentVowels$1$$anonfun$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanIndependentVowels$1.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanIndependentVowels$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanIndependentVowels$2.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanIndependentVowels$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanIndependentVowels$3.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanIndependentVowels$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$class.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$class.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/harvardKyoto$.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/harvardKyoto$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/harvardKyoto.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/harvardKyoto.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/romanScripts.scala" afterPath="$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/romanScripts.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sanskritnlpjava.iws" />
@@ -28,11 +53,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="romanScripts.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="romanScripts.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/romanScripts.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.16424116">
-              <caret line="125" column="7" selection-start-line="125" selection-start-column="7" selection-end-line="125" selection-end-column="7" />
+            <state vertical-scroll-proportion="-26.35484">
+              <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="harvardKyoto.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/harvardKyoto.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5530146">
+              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -46,6 +81,14 @@
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/romanScripts.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/harvardKyoto.scala" />
+      </list>
     </option>
   </component>
   <component name="MavenImportPreferences">
@@ -267,6 +310,14 @@
   <component name="PropertiesComponent">
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="sanskritnlp.transliteration" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.romanScriptTest">
     <configuration default="false" name="romanScriptTest" type="Application" factoryName="Application" temporary="true">
@@ -276,12 +327,12 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="sanskritnlp.transliteration.romanScriptTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="MAIN_CLASS_NAME" value="sanskritnlp.transliteration.harvardKyotoTest" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -500,6 +551,9 @@
     </option>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="ac05e739-ded8-465e-b65f-6eff68c25840" name="Default" comment="" />
@@ -518,31 +572,41 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24989791" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32972974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -552,8 +616,16 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/romanScripts.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16424116">
-          <caret line="125" column="7" selection-start-line="125" selection-start-column="7" selection-end-line="125" selection-end-column="7" />
+        <state vertical-scroll-proportion="-26.35484">
+          <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/harvardKyoto.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5530146">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
           <folding />
         </state>
       </provider>

@@ -1,5 +1,7 @@
 package sanskritnlp.transliteration
 
+import scala.util.matching.Regex.Match
+
 // Point of entry: toDevanagari()
 // Read that function, and the logic will be clear.
 
@@ -76,7 +78,8 @@ trait RomanScript {
   }
 
   def replaceRomanConsonantsFollowedByVowels(str_in: String, consonantMapNoVirama: Map[String, String]): String = {
-    val regex_consonant_vowel = ("(" + consonantMapNoVirama.keys.mkString("|") +")($aToRoman%s|" + romanToDevaDependentVowels.values.mkString("|") + ")").r
+    val regex_consonant_vowel = ("(" + consonantMapNoVirama.keys.mkString("|") + ")"
+      + s"($aToRoman|" + romanToDevaDependentVowels.values.mkString("|") + ")").r
     var output = str_in
     output = regex_consonant_vowel.replaceAllIn(output, _ match { case regex_consonant_vowel(consonant, vowel) => consonantMapNoVirama(consonant) + vowel.replaceAll("a", "") })
     output
@@ -104,38 +107,45 @@ trait RomanScript {
 
   def toDevanagari(str_in: String): String = {
     var output = str_in
+    output = replaceKeysLongestFirst(output, romanToDevaContextFreeReplacements)
     output = replaceRomanIndependentVowels(output)
     output = replaceKeysLongestFirst(output, romanToDevaDependentVowels)
     output = replaceRomanConsonantsFollowedByVowels(output)
     output = replaceKeysLongestFirst(output, romanToDevaConsonants)
-    output = replaceKeysLongestFirst(output, romanToDevaContextFreeReplacements)
     output
   }
 
-  def replaceDevanagariConsonantsFollowedByVowels(str_in: String): String = {
-    val pattern = ("(" + devaConsonantsNoViramaToRomanVirama.keys.mkString("|") + ")(" +
-      devaDependentVowelsToRoman.keys.mkString("|") + ")").r
-    println(devaConsonantsNoViramaToRomanVirama)
+  def replaceDevanagariConsonants(str_in: String): String = {
     var output = str_in
-    output = pattern.replaceAllIn(output, _ match { case pattern(consonant, vowel) =>
-      devaConsonantsNoViramaToRomanVirama(consonant) + devaDependentVowelsToRoman(vowel) })
+
+    // First add a few virAma-s.
+    val VIRAMA = "्"
+    val consonantVowelPattern = (
+      "(" + devaConsonantsNoViramaToRomanVirama.keys.mkString("|") + ")"
+      + "(" + devaDependentVowelsToRoman.keys.mkString("|") + ")").r
+    output = consonantVowelPattern.replaceAllIn(output, _ match { case consonantVowelPattern(consonant, vowel) =>
+      consonant + VIRAMA + vowel})
+    val consonantNonVowelPattern = (
+      "(" + devaConsonantsNoViramaToRomanVirama.keys.mkString("|") + ")"
+        + s"(?=[^$VIRAMA" + devaDependentVowelsToRoman.keys.mkString("") + "])").r
+    println(consonantNonVowelPattern)
+    output = consonantNonVowelPattern.replaceAllIn(output, (m:Match) => {m.group(0) + VIRAMA + aToRoman})
+    if(romanToDevaConsonantsNoVirama.values.toList.contains(output.last.toString)) {
+      output = output + VIRAMA + aToRoman
+    }
+    println("After virAma addition: " + output.mkString("-"))
+    output = replaceKeysLongestFirst(output, devaConsonantsToRoman)
     output
   }
 
   def fromDevanagari(str_in: String): String = {
     var output = str_in
 
-    // Replace consonants followed by dependent vowel signs first.
-    output = replaceDevanagariConsonantsFollowedByVowels(output)
-    println(output)
+    output = replaceDevanagariConsonants(output)
+    println("Consonant replacement: " + output)
 
-    // Replace consonants followed by virAma next.
-    output = replaceKeysLongestFirst(output, devaConsonantsToRoman)
+    output = replaceKeysLongestFirst(output, devaDependentVowelsToRoman)
     println(output)
-
-    output = replaceKeysLongestFirst(output, devaConsonantsNoViramaToRoman)
-    println(output)
-
     output = replaceKeysLongestFirst(output, devaIndependentVowelsToRoman)
     println(output)
     output = replaceKeysLongestFirst(output, devaToRomanGeneral)
@@ -149,8 +159,8 @@ trait RomanScript {
     println(toDevanagari(str_in))
   }
 
-  def test_fromDevanagari(str_in : String = "असय औषधिः ग्रन्थः! ॡकारो।अस्ति। नास्ति लेशो।अपि संशयः। कष्ठं भोः। १२३४५") = {
+  def test_fromDevanagari(str_in : String = "असय औषधिः ग्रन्थः! ॡकारो।अस्ति। नास्ति लेशोऽअपि संशयः। कष्ठं भोः। १२३४५.. ॐ तत्।") = {
     println("Input: " + str_in)
-    println(fromDevanagari(str_in))
+    println("Output: " + fromDevanagari(str_in))
   }
 }

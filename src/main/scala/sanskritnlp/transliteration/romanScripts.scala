@@ -21,13 +21,27 @@ trait RomanScript {
   val aToRoman: String = null
   val devaToRomanGeneral: Map[String, String] = null
 
+  val caseNeutral = false
+
+  val devaIndependentToDependent: Map[String, String] = Map(
+    "अ" -> "",
+    "आ" -> "ा",
+    "इ" -> "ि",
+    "ई" -> "ी",
+    "उ" -> "ु", "ऊ" -> "ू",
+    "ऋ" -> "ृ", "ॠ" -> "ॄ",
+    "ऌ" -> "ॢ", "ॡ" -> "ॣ",
+    "ए" -> "े",
+    "ऐ" ->  "ै",
+    "ओ" -> "ो",  "औ" -> "ौ")
+
 
   def replaceKeys(str_in: String, mapping: Map[String, String]): String = {
     val keysWithoutWildcards = mapping.keys.filterNot(_.contains("."))
     val keysWithWildCards = mapping.keys.filter(_.contains("."))
     val regexKeys = ("(" + keysWithoutWildcards.mkString("|") + ")").r
     // println(regexKeys)
-    var output = str_in
+    var output = str_in;
     output = regexKeys.replaceAllIn(output, _ match { case regexKeys(key) => mapping(key) })
     keysWithWildCards.foreach(x => output = output.replaceAllLiterally(x, mapping(x)))
     output
@@ -107,11 +121,14 @@ trait RomanScript {
 
   def toDevanagari(str_in: String): String = {
     var output = str_in
-    output = replaceKeysLongestFirst(output, romanToDevaContextFreeReplacements)
+    if (caseNeutral) {
+      output = output.toLowerCase
+    }
     output = replaceRomanIndependentVowels(output)
     output = replaceKeysLongestFirst(output, romanToDevaDependentVowels)
     output = replaceRomanConsonantsFollowedByVowels(output)
     output = replaceKeysLongestFirst(output, romanToDevaConsonants)
+    output = replaceKeysLongestFirst(output, romanToDevaContextFreeReplacements)
     output
   }
 
@@ -159,7 +176,7 @@ trait RomanScript {
     println(toDevanagari(str_in))
   }
 
-  def test_fromDevanagari(str_in : String = "असय औषधिः ग्रन्थः! ॡकारो।अस्ति। नास्ति लेशोऽअपि संशयः। कष्ठं भोः। १२३४५.. ॐ तत्।") = {
+  def test_fromDevanagari(str_in : String = "असय औषधिः ग्रन्थः! ॡकारो।ऽस्ति। नास्ति लेशोऽपि संशयः। कष्ठं भोः। १२३४५.. ॐ तत्।") = {
     println("Input: " + str_in)
     println("Output: " + fromDevanagari(str_in))
   }

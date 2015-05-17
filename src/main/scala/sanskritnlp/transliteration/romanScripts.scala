@@ -51,7 +51,6 @@ trait RomanScript {
     var output = str_in
     val keyLengths = mapping.keys.map(_.length).toList.distinct.sorted.reverse
     // The above yields List(3, 2, 1) for HK.
-
     keyLengths.foreach(x => {
       val mapping_length_x = mapping.filter(t => (t._1.length() == x))
       // println(mapping)
@@ -60,35 +59,28 @@ trait RomanScript {
     output
   }
 
-  def replaceRomanIndependentVowels(str_in: String, vowelMap: Map[String, String]): String = {
-    val regex_independent_vowels = ("([^a-zA-Z])(" + vowelMap.keys.mkString("|") + ")").r
+  def replaceRomanDependentVowels(str_in: String, vowelMap: Map[String, String]): String = {
+    val regex_dependent_vowels = ("(" + romanToDevaConsonantsNoVirama.keys.mkString("|") + ")" + "(" + vowelMap.keys.mkString("|") + ")").r
     var output = str_in
-    output = regex_independent_vowels.replaceAllIn(output, _ match { case regex_independent_vowels(c1, key) => c1 + vowelMap(key) })
-    val regex_independent_vowels_at_beginning = ("^(" + vowelMap.keys.mkString("|") + ")").r
-    output = regex_independent_vowels_at_beginning.replaceAllIn(output, _ match { case regex_independent_vowels_at_beginning(key) => vowelMap(key) })
+    output = regex_dependent_vowels.replaceAllIn(output, _ match { case regex_dependent_vowels(c1, key) => c1 + vowelMap(key) })
     output
   }
 
-  def replaceRomanIndependentVowels(str_in: String): String = {
+  def replaceRomanDependentVowels(str_in: String): String = {
     var output = str_in
-    val keyLengths = romanToDevaIndependentVowels.keys.map(_.length).toList.distinct.sorted.reverse
+    val keyLengths = romanToDevaDependentVowels.keys.map(_.length).toList.distinct.sorted.reverse
     // The above yields List(3, 2, 1) for HK.
 
     keyLengths.foreach(x => {
-      val vowelMap = romanToDevaIndependentVowels.filter(t => (t._1.length() == x))
-      output = replaceRomanIndependentVowels(output, vowelMap)
+      val vowelMap = romanToDevaDependentVowels.filter(t => (t._1.length() == x))
+      output = replaceRomanDependentVowels(output, vowelMap)
     })
     output
   }
 
-  def test_replaceRomanIndependentVowels(str_in: String): Unit = {
-    println("Test string : " + str_in)
-    println("Result : " + replaceRomanIndependentVowels(str_in))
-  }
-
   def test_replaceRomanDependentVowels(str_in: String): Unit = {
     println("Test string : " + str_in)
-    println("Result : " + replaceKeysLongestFirst(replaceRomanIndependentVowels(str_in, romanToDevaDependentVowels), romanToDevaDependentVowels))
+    println("Result : " + replaceRomanDependentVowels(str_in))
   }
 
   def replaceRomanConsonantsFollowedByVowels(str_in: String, consonantMapNoVirama: Map[String, String]): String = {
@@ -116,7 +108,7 @@ trait RomanScript {
 
   def test_replaceRomanConsonantsFollowedByVowels(str_in: String): Unit = {
     println("Test string : " + str_in)
-    println("Result : " + replaceRomanConsonantsFollowedByVowels(replaceKeysLongestFirst(replaceRomanIndependentVowels(str_in), romanToDevaDependentVowels)))
+    println("Result : " + replaceRomanConsonantsFollowedByVowels(replaceKeysLongestFirst(replaceRomanDependentVowels(str_in), romanToDevaDependentVowels)))
   }
 
   def toDevanagari(str_in: String): String = {
@@ -124,11 +116,9 @@ trait RomanScript {
     if (caseNeutral) {
       output = output.toLowerCase
     }
-    output = replaceRomanIndependentVowels(output)
-    output = replaceKeysLongestFirst(output, romanToDevaDependentVowels)
+    output = replaceRomanDependentVowels(output)
     output = replaceRomanConsonantsFollowedByVowels(output)
-    output = replaceKeysLongestFirst(output, romanToDevaConsonants)
-    output = replaceKeysLongestFirst(output, romanToDevaContextFreeReplacements)
+    output = replaceKeysLongestFirst(output, romanToDevaConsonants ++ romanToDevaContextFreeReplacements ++ romanToDevaIndependentVowels)
     output
   }
 
@@ -170,7 +160,6 @@ trait RomanScript {
   }
 
   def test_toDevanagari(str_in : String) = {
-    test_replaceRomanIndependentVowels(str_in)
     test_replaceRomanDependentVowels(str_in)
     test_replaceRomanConsonantsFollowedByVowels(str_in)
     println(toDevanagari(str_in))

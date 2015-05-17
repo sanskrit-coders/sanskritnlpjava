@@ -20,9 +20,9 @@ object as extends RomanScript {
     "n2" -> "ण्",
     "n" -> "न्",
     "jh" -> "झ्", "bh" -> "भ्",
-    "gh" -> "घ्", "Dh" -> "ढ्", "dh" -> "ध्",
+    "gh" -> "घ्", "d2h" -> "ढ्", "dh" -> "ध्",
     "j" -> "ज्", "b" -> "ब्", "g" -> "ग्",
-    "D" -> "ड्", "d" -> "द्",
+    "d2" -> "ड्", "d" -> "द्",
     "kh" -> "ख्",
     "ph" -> "फ्", "ch" -> "छ्", "t2h" -> "ठ्",
     "th" -> "थ्", "c" -> "च्", "t2" -> "ट्", "t" -> "त्",
@@ -45,7 +45,8 @@ object as extends RomanScript {
   override val devaToRomanGeneral = romanToDevaContextFreeReplacements.map(_.swap) ++ Map("ऽ" -> "")
 
   def test_toDevanagari(): Unit = {
-    val romanText = "asaya auS2adhih2 granthah2! l2kAro`sti. na1sti les4o`pi sam2s4ayah2. Kas2t2ham2 bhoh2. 12345"
+    val romanText = "asaya auS2adhih2 granthah2! l2kAro`sti. na1sti les4o`pi sam2s4ayah2. Kas2t2ham2 bhoh2. 12345" +
+        "Am2kus4es4varam. id2a1"
     println("AS Tests.")
     test_toDevanagari(romanText)
   }

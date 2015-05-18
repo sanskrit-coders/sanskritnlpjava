@@ -1,11 +1,12 @@
 package sanskritnlp.transliteration
 
-object as extends RomanScript {
+object iast extends RomanScript {
   override val caseNeutral = true
+  override val distinctCharacters = List("ṇ", "ṃ", "ś", "ñ", "u1", "ṣ", "ḥ", "ṭ", "ī", "ṝ", "ḍ", "ḷ", "ḹ", "ṛ", "ā", "ṅ")
   override val romanToDevaIndependentVowels = Map(
-    "a" -> "अ", "a1" -> "आ",  "i" -> "इ", "i1" -> "ई",
+    "a" -> "अ", "ā" -> "आ",  "i" -> "इ", "ī" -> "ई",
     "u" -> "उ", "u1" -> "ऊ",
-    "r2" -> "ऋ", "r4" -> "ॠ", "l2" -> "ऌ", "l4" -> "ॡ",
+    "ṛ" -> "ऋ", "ṝ" -> "ॠ", "ḷ" -> "ऌ", "ḹ" -> "ॡ",
     "e" -> "ए",
     "ai" -> "ऐ",
     "o" -> "ओ", "au" -> "औ")
@@ -14,23 +15,23 @@ object as extends RomanScript {
 
   override val romanToDevaConsonants = Map(
     "h" -> "ह्", "y" -> "य्", "v" -> "व्", "r" -> "र्", "l" -> "ल्",
-    "n5" -> "ञ्",
-    "n3" -> "ङ्",
+    "ñ" -> "ञ्",
+    "ṅ" -> "ङ्",
     "m" -> "म्",
-    "n2" -> "ण्",
+    "ṇ" -> "ण्",
     "n" -> "न्",
     "jh" -> "झ्", "bh" -> "भ्",
-    "gh" -> "घ्", "d2h" -> "ढ्", "dh" -> "ध्",
+    "gh" -> "घ्", "ḍh" -> "ढ्", "dh" -> "ध्",
     "j" -> "ज्", "b" -> "ब्", "g" -> "ग्",
-    "d2" -> "ड्", "d" -> "द्",
+    "ḍ" -> "ड्", "d" -> "द्",
     "kh" -> "ख्",
-    "ph" -> "फ्", "ch" -> "छ्", "t2h" -> "ठ्",
-    "th" -> "थ्", "c" -> "च्", "t2" -> "ट्", "t" -> "त्",
+    "ph" -> "फ्", "ch" -> "छ्", "ṭh" -> "ठ्",
+    "th" -> "थ्", "c" -> "च्", "ṭ" -> "ट्", "t" -> "त्",
     "k" -> "क्", "p" -> "प्",
-    "s4" -> "श्", "s2" -> "ष्", "s" -> "स्")
+    "ś" -> "श्", "ṣ" -> "ष्", "s" -> "स्")
   override val romanToDevaConsonantsNoVirama = romanToDevaConsonants.mapValues(_.replaceAll("्", ""))
   override val romanToDevaContextFreeReplacements = Map(
-    "m2" -> "ं",  "h2" -> "ः",
+    "ṃ" -> "ं",  "ḥ" -> "ः",
     "`" -> "ऽ", "." -> "।",
     "0" -> "०", "1"-> "१", "2"-> "२",
     "3"-> "३", "4"-> "४", "5"-> "५",
@@ -44,22 +45,19 @@ object as extends RomanScript {
   override val devaConsonantsToRoman = romanToDevaConsonants.map(_.swap)
   override val devaToRomanGeneral = romanToDevaContextFreeReplacements.map(_.swap) ++ Map("ऽ" -> "")
 
-  override val distinctCharacters = (romanToDevaIndependentVowels ++ romanToDevaConsonants ++ romanToDevaContextFreeReplacements) .keys.filter(_.matches(""".+?\d""")).toList
-
   def test_toDevanagari(): Unit = {
-    val romanText = "asaya auS2adhih2 granthah2! l2kAro`sti. na1sti les4o`pi sam2s4ayah2. Kas2t2ham2 bhoh2. 12345" +
-        "Am2kus4es4varam. id2a1"
-    println("AS Tests.")
+    val romanText = "Asaya auṣadhiḥ granthaḥ! l2kAro`sti. nāsti les4o`pi saṃśayaḥ. Kaaṣṭhaḥ bhoḥ. 12345" +
+      "Aṃkuśeśvaram. iḍā"
+    println("IAST Tests.")
     test_toDevanagari(romanText)
   }
 
 }
 
-object asTest {
+object iastTest {
   def main(args: Array[String]): Unit = {
-    as.test_toDevanagari()
-    as.test_fromDevanagari()
-    println(as.distinctCharacters)
-    println(as.distinctCharacters.toList.map(x => iast.fromDevanagari(as.toDevanagari(x))) )
+    iast.test_toDevanagari()
+    iast.test_fromDevanagari()
   }
 }
+

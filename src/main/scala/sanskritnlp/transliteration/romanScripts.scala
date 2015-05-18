@@ -1,5 +1,7 @@
 package sanskritnlp.transliteration
 
+import java.util.Collections
+
 import scala.util.matching.Regex.Match
 
 // Point of entry: toDevanagari()
@@ -20,6 +22,7 @@ trait RomanScript {
   val devaConsonantsToRoman: Map[String, String] = null
   val aToRoman: String = null
   val devaToRomanGeneral: Map[String, String] = null
+  val distinctCharacters: List[String] = null
 
   val caseNeutral = false
 
@@ -135,12 +138,12 @@ trait RomanScript {
     val consonantNonVowelPattern = (
       "(" + devaConsonantsNoViramaToRomanVirama.keys.mkString("|") + ")"
         + s"(?=[^$VIRAMA" + devaDependentVowelsToRoman.keys.mkString("") + "])").r
-    println(consonantNonVowelPattern)
+    // println(consonantNonVowelPattern)
     output = consonantNonVowelPattern.replaceAllIn(output, (m:Match) => {m.group(0) + VIRAMA + aToRoman})
     if(romanToDevaConsonantsNoVirama.values.toList.contains(output.last.toString)) {
       output = output + VIRAMA + aToRoman
     }
-    println("After virAma addition: " + output.mkString("-"))
+    // println("After virAma addition: " + output.mkString("-"))
     output = replaceKeysLongestFirst(output, devaConsonantsToRoman)
     output
   }
@@ -149,12 +152,12 @@ trait RomanScript {
     var output = str_in
 
     output = replaceDevanagariConsonants(output)
-    println("Consonant replacement: " + output)
+    // println("Consonant replacement: " + output)
 
     output = replaceKeysLongestFirst(output, devaDependentVowelsToRoman)
-    println(output)
+    // println(output)
     output = replaceKeysLongestFirst(output, devaIndependentVowelsToRoman)
-    println(output)
+    // println(output)
     output = replaceKeysLongestFirst(output, devaToRomanGeneral)
     output
   }

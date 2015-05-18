@@ -40,8 +40,10 @@ trait RomanScript {
 
 
   def replaceKeys(str_in: String, mapping: Map[String, String]): String = {
-    val keysWithoutWildcards = mapping.keys.filterNot(_.contains("."))
-    val keysWithWildCards = mapping.keys.filter(_.contains("."))
+    def containsWildcard(x:String): Boolean = {x.contains(".") || x.contains("|")}
+
+    val keysWithoutWildcards = mapping.keys.filterNot(x => containsWildcard(x))
+    val keysWithWildCards = mapping.keys.filter(x => containsWildcard(x))
     val regexKeys = ("(" + keysWithoutWildcards.mkString("|") + ")").r
     // println(regexKeys)
     var output = str_in;
@@ -160,6 +162,29 @@ trait RomanScript {
     // println(output)
     output = replaceKeysLongestFirst(output, devaToRomanGeneral)
     output
+  }
+
+  def restoreEscapeSequences(str_in: String): String = {
+    var output = str_in
+    val escapePattern = """\\(.्?)""".r
+    output = escapePattern.replaceAllIn(output, _ match { case escapePattern(matched) => """\\""" + fromDevanagari(matched) })
+    output
+  }
+  def test_restoreEscapeSequences() = {
+    val str1 = """हरिः ॐ १ 1ad\न् \त्"""
+    println(restoreEscapeSequences(str1))
+  }
+
+  // ASSUMPTION: Escape characters appropriately in romanStart and romanEnd.
+  def restoreRomanBetweenStrings(str_in: String, romanStart: String, romanEnd: String): String = {
+    var output = str_in
+    val escapePattern = (romanStart + """(.+?)""" + romanEnd).r
+    output = escapePattern.replaceAllIn(output, _ match { case escapePattern(matched) => romanStart + fromDevanagari(matched) + romanEnd})
+    output
+  }
+  def test_restoreRomanBetweenStrings() = {
+    val str1 = """हरिः ॐ १ {#Pअगे#} 1ad {#आन्द्#} \न् \त्"""
+    println(restoreRomanBetweenStrings(str1, "\\{#", "#\\}"))
   }
 
   def test_toDevanagari(str_in : String) = {

@@ -4,7 +4,9 @@ object harvardKyoto extends RomanScript {
   override val romanToDevaIndependentVowels = Map(
     "a" -> "अ", "A" -> "आ",  "i" -> "इ", "I" -> "ई",
     "u" -> "उ", "U" -> "ऊ",
-    "R" -> "ऋ", "RR" -> "ॠ", "lR" -> "ऌ", "lRR" -> "ॡ",
+    "R" -> "ऋ", "RR" -> "ॠ",
+    ".r" -> "ऋ", // In TITUS
+    "lR" -> "ऌ", "lRR" -> "ॡ",
     "e" -> "ए",
     "ai" -> "ऐ",
     "o" -> "ओ", "au" -> "औ")
@@ -14,7 +16,9 @@ object harvardKyoto extends RomanScript {
   override val romanToDevaConsonants = Map(
     "h" -> "ह्", "y" -> "य्", "v" -> "व्", "r" -> "र्", "l" -> "ल्",
     "J" -> "ञ्",
+    "~N" -> "ङ्", // In TITUS
     "G" -> "ङ्",
+    ".N" -> "ङ्", // In TITUS
     "m" -> "म्",
     "N" -> "ण्",
     "n" -> "न्",
@@ -27,6 +31,7 @@ object harvardKyoto extends RomanScript {
     "th" -> "थ्", "c" -> "च्", "T" -> "ट्", "t" -> "त्",
     "k" -> "क्", "p" -> "प्",
     "z" -> "श्", "S" -> "ष्", "s" -> "स्",
+    ".l" -> "ळ्", // In TITUS
     "L" -> "ळ्")
   override val romanToDevaConsonantsNoVirama = romanToDevaConsonants.mapValues(_.replaceAll("्", ""))
   override val romanToDevaContextFreeReplacements = Map(

@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$USER_HOME$/stardict-sanskrit/sa-head/kRdanta-rUpa-mAlA/kRdanta-rUpa-mAlA.iml" filepath="$USER_HOME$/stardict-sanskrit/sa-head/kRdanta-rUpa-mAlA/kRdanta-rUpa-mAlA.iml" />
+      <module fileurl="file://$USER_HOME$/stardict-sanskrit/sa-head/kalpadruma-sa/kalpadruma-sa.iml" filepath="$USER_HOME$/stardict-sanskrit/sa-head/kalpadruma-sa/kalpadruma-sa.iml" />
       <module fileurl="file://$USER_HOME$/stardict-sanskrit/sa-head/rv-base/rv-base.iml" filepath="$USER_HOME$/stardict-sanskrit/sa-head/rv-base/rv-base.iml" />
       <module fileurl="file://$PROJECT_DIR$/sanskritnlp.iml" filepath="$PROJECT_DIR$/sanskritnlp.iml" />
       <module fileurl="file://$USER_HOME$/stardict-sanskrit/en-head/shabda-sAgara/shabda-sAgara.iml" filepath="$USER_HOME$/stardict-sanskrit/en-head/shabda-sAgara/shabda-sAgara.iml" />

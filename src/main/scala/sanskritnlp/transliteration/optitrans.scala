@@ -30,7 +30,7 @@ object optitrans extends RomanScript {
     "th" -> "थ्", "c" -> "च्", "ch" -> "च्", "T" -> "ट्", "t" -> "त्",
     "k" -> "क्", "p" -> "प्",
     "sh" -> "श्", "S" -> "ष्", "Sh" -> "ष्", "s" -> "स्",
-    "L" -> "ळ्",
+    // "L" -> "ळ्", // Removed to prevent erroneous output.
     "x" -> "क्ष्",
     "nk" -> "ङ्क्", "nK" -> "ङ्ख््", "nkh" -> "ङ्ख््",
     "ng" -> "ङ्ग्", "nG" -> "ङ्ख््",  "ngh" -> "ङ्ख््",
@@ -67,7 +67,7 @@ object optitrans extends RomanScript {
 
   def test_toDevanagari(): Unit = {
     val text = "asaya auSadhiH auShadhiH granthaH! LLIkAro.asti. nAsti lesho.api saMshayaH. kaSThaM bhoH. shankara! sanjIvaya. 12345"
-    // Error output: असय औषधिः औषधिः ग्रन्थः! ळ्ळीकारो।अस्ति। नास्ति लेशो।अपि संzअयः। कष्ठं भोः। शङकर! सञजीवय। १२३४५
+    // Error output if L=ळ is enabled: असय औषधिः औषधिः ग्रन्थः! ळ्ळीकारोऽस्ति। नास्ति लेशोऽपि संशयः। कष्ठं भोः। शङ्कर! सञ्जीवय। १२३४५
     println("OPTITRANS Tests.")
     test_toDevanagari(text)
   }

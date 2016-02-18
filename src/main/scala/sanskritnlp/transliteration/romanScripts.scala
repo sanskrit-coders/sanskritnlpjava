@@ -193,7 +193,7 @@ trait RomanScript {
     println(toDevanagari(str_in))
   }
 
-  def test_fromDevanagari(str_in : String = "असय औषधिः ग्रन्थः! ॡकारो।ऽस्ति। नास्ति लेशोऽपि संशयः। कष्ठं भोः। १२३४५.. ॐ तत्।") = {
+  def test_fromDevanagari(str_in : String = "असय औषधिः ग्रन्थः! ॡकारो।ऽस्ति। नास्ति लेशोऽपि संशयः। कीलकम्? कूपिः?  कष्ठं भोः। शङकर! सञजीवय। १२३४५.. ॐ तत्।") = {
     println("Input: " + str_in)
     println("Output: " + fromDevanagari(str_in))
   }

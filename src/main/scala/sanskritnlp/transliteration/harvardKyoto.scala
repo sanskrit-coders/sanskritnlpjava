@@ -33,7 +33,7 @@ object harvardKyoto extends RomanScript {
     "z" -> "श्", "S" -> "ष्", "s" -> "स्",
     ".l" -> "ळ्", // In TITUS
     "L" -> "ळ्")
-  override val romanToDevaConsonantsNoVirama = romanToDevaConsonants.mapValues(_.replaceAll("्", ""))
+  override val romanToDevaConsonantsNoVirama = romanToDevaConsonants.mapValues(_.replaceAll("(.+)्$", "$1"))
   override val romanToDevaContextFreeReplacements = Map(
     "M" -> "ं",  "H" -> "ः",
     "'" -> "ऽ", "." -> "।", "|" -> "।",

@@ -29,7 +29,7 @@ object iast extends RomanScript {
     "th" -> "थ्", "c" -> "च्", "ṭ" -> "ट्", "t" -> "त्",
     "k" -> "क्", "p" -> "प्",
     "ś" -> "श्", "ṣ" -> "ष्", "s" -> "स्")
-  override val romanToDevaConsonantsNoVirama = romanToDevaConsonants.mapValues(_.replaceAll("्", ""))
+  override val romanToDevaConsonantsNoVirama = romanToDevaConsonants.mapValues(_.replaceAll("(.+)्$", "$1"))
   override val romanToDevaContextFreeReplacements = Map(
     "ṃ" -> "ं",  "ḥ" -> "ः",
     "`" -> "ऽ", "." -> "।",

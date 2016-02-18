@@ -45,12 +45,12 @@ object optitrans extends RomanScript {
     "3"-> "३", "4"-> "४", "5"-> "५",
     "6"-> "६", "7"-> "७", "8"-> "८", "9"-> "९", "OM" -> "ॐ")
 
-  override val devaDependentVowelsToRoman = romanToDevaDependentVowels.map(_.swap)
+  override val devaDependentVowelsToRoman = romanToDevaDependentVowels.filterKeys(key => !(List("A", "I", "U") contains key)).map(_.swap)
   override val devaIndependentVowelsToRoman = romanToDevaIndependentVowels.map(_.swap)
   override val aToRoman = devaIndependentVowelsToRoman("अ")
-  override val devaConsonantsNoViramaToRomanVirama = romanToDevaConsonantsNoVirama.map(_.swap)
+  override val devaConsonantsToRoman = romanToDevaConsonants.filterKeys(key => !(List("K", "G", "c", "C", "J", "S") contains key)).map(_.swap)
+  override val devaConsonantsNoViramaToRomanVirama = romanToDevaConsonantsNoVirama.filterKeys(key => !(List("K", "G", "c", "C", "J", "S") contains key)).map(_.swap)
   override val devaConsonantsNoViramaToRoman = devaConsonantsNoViramaToRomanVirama.mapValues(_ + aToRoman)
-  override val devaConsonantsToRoman = romanToDevaConsonants.map(_.swap)
   override val devaToRomanGeneral = romanToDevaContextFreeReplacements.map(_.swap)
 
 

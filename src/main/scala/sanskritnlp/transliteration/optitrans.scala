@@ -4,8 +4,8 @@ package sanskritnlp.transliteration
 object optitrans extends RomanScript {
   override val romanToDevaIndependentVowels = Map(
     "a" -> "अ", "A" -> "आ",  "aa" -> "आ",
-    "i" -> "इ", "I" -> "ई",
-    "u" -> "उ", "U" -> "ऊ",
+    "i" -> "इ", "I" -> "ई",  "ii" -> "ई",
+    "u" -> "उ", "U" -> "ऊ", "uu" -> "ऊ",
     "R" -> "ऋ", "RR" -> "ॠ",
     "LLi" -> "ऌ", "LLI" -> "ॡ",
     "e" -> "ए",

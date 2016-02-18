@@ -51,19 +51,8 @@ object optitrans extends RomanScript {
   override val devaConsonantsNoViramaToRomanVirama = romanToDevaConsonantsNoVirama.map(_.swap)
   override val devaConsonantsNoViramaToRoman = devaConsonantsNoViramaToRomanVirama.mapValues(_ + aToRoman)
   override val devaConsonantsToRoman = romanToDevaConsonants.map(_.swap)
-  override val devaToRomanGeneral = romanToDevaContextFreeReplacements.map(_.swap) ++ Map("ऽ" -> "")
+  override val devaToRomanGeneral = romanToDevaContextFreeReplacements.map(_.swap)
 
-
-  override def toDevanagari(str_in: String): String = {
-    var output = str_in
-    if (caseNeutral) {
-      output = output.toLowerCase
-    }
-    output = replaceRomanDependentVowels(output)
-    output = replaceRomanConsonantsFollowedByVowels(output)
-    output = replaceKeysLongestFirst(output, romanToDevaConsonants ++ romanToDevaContextFreeReplacements ++ romanToDevaIndependentVowels)
-    output
-  }
 
   def test_toDevanagari(): Unit = {
     val text = "asaya auSadhiH auShadhiH granthaH! LLIkAro.asti. nAsti lesho.api saMshayaH. kaSThaM bhoH. shankara! sanjIvaya. 12345"

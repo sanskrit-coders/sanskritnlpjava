@@ -21,5 +21,6 @@
     <orderEntry type="library" name="Maven: org.scala-lang:scala-library:2.10.3" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.google.appengine:appengine-testing:1.9.15" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.google.appengine:appengine-api-stubs:1.9.15" level="project" />
+    <orderEntry type="library" name="scala-sdk-2.10.3 (2)" level="application" />
   </component>
 </module>

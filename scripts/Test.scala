@@ -7,3 +7,8 @@ val consonantNonVowelPattern = s"(थ|ठ|छ|स|ब|घ|ण|ट|ज|ग|न|�
 var output = "असय रामः "
 output = consonantNonVowelPattern.replaceAllIn(output, (m:Match) => {m.group(0) + VIRAMA})
 println("After virAma addition: " + output.mkString("-"))
+
+import sanskritnlp.transliteration._
+println(optitrans.toDevanagari("hello"))
+
+

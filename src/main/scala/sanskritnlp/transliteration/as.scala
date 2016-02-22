@@ -113,6 +113,6 @@ object asTest {
     as.test_toDevanagari()
     as.test_fromDevanagari()
     println(as.distinctCharacters)
-    println(as.distinctCharacters.toList.map(x => iast.fromDevanagari(as.toDevanagari(x))) )
+    println(as.distinctCharacters.toList.map(x => iast.fromDevanagari(as.toDevanagari(x).get)) )
   }
 }

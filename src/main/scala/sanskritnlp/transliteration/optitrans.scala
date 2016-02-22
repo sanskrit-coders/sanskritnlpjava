@@ -35,7 +35,7 @@ object optitrans extends RomanScript {
     "nk" -> "ङ्क्", "nK" -> "ङ्ख््", "nkh" -> "ङ्ख््",
     "ng" -> "ङ्ग्", "nG" -> "ङ्ख््",  "ngh" -> "ङ्ख््",
     "nc" -> "ञ्च्", "nC" -> "ञ्छ्", "nc" -> "ञ्च्", "nCh" -> "ञ्छ्",
-    "nj" -> "ञ्ज्", "nJ" -> "ञ्झ्", "njh" -> "ञ्झ्"
+    "nj" -> "ञ्ज्", "nJ" -> "ञ्झ्", "njh" -> "ञ्झ्", "JN" -> "ज्ञ्"
   )
   override val romanToDevaConsonantsNoVirama = romanToDevaConsonants.mapValues(_.replaceAll("(.+)्$", "$1"))
   override val romanToDevaContextFreeReplacements = Map(

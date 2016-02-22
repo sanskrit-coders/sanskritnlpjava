@@ -2,6 +2,7 @@ package sanskritnlp.transliteration
 
 import java.util.Collections
 
+import scala.util.matching.Regex
 import scala.util.matching.Regex.Match
 
 // Point of entry: toDevanagari()
@@ -38,18 +39,24 @@ trait RomanScript {
     "ऐ" ->  "ै",
     "ओ" -> "ो",  "औ" -> "ौ")
 
+  def debugString() = {
+    println(romanToDevaIndependentVowels)
+    println(romanToDevaDependentVowels)
+    println(romanToDevaConsonants)
+    println(romanToDevaConsonantsNoVirama)
+    println(romanToDevaContextFreeReplacements)
+    println(devaConsonantsNoViramaToRomanVirama)
+    println(devaConsonantsNoViramaToRoman)
+    println(devaDependentVowelsToRoman)
+    println(aToRoman)
+    println(devaToRomanGeneral)
+  }
 
-  def replaceKeys(str_in: String, mapping: Map[String, String]): String = {
-    def containsWildcard(x:String): Boolean = {x.contains(".") || x.contains("|")}
-
-    val keysWithoutWildcards = mapping.keys.filterNot(x => containsWildcard(x))
-    val keysWithWildCards = mapping.keys.filter(x => containsWildcard(x))
-    val regexKeys = ("(" + keysWithoutWildcards.mkString("|") + ")").r
-    // println(regexKeys)
-    var output = str_in;
-    output = regexKeys.replaceAllIn(output, _ match { case regexKeys(key) => mapping(key) })
-    keysWithWildCards.foreach(x => output = output.replaceAllLiterally(x, mapping(x)))
-    output
+  def makeRegexFromKeys(keys: Iterable[String]): Regex = {
+    def escapeWildcardsForRegex(input: String): String = {
+      input.replaceAllLiterally(".", "\\.").replaceAllLiterally("|", "\\|")
+    }
+    ("(" + keys.map(escapeWildcardsForRegex).mkString("|") + ")").r
   }
 
   def replaceKeysLongestFirst(str_in: String, mapping: Map[String, String]): String = {
@@ -59,15 +66,19 @@ trait RomanScript {
     keyLengths.foreach(x => {
       val mapping_length_x = mapping.filter(t => (t._1.length() == x))
       // println(mapping)
-      output = replaceKeys(output, mapping_length_x)
+      val regexFromKeys = makeRegexFromKeys(mapping_length_x.keys)
+      output = regexFromKeys.replaceAllIn(output, _ match { case regexFromKeys(key) => mapping(key) })
     })
     output
   }
 
   def replaceRomanDependentVowels(str_in: String, vowelMap: Map[String, String]): String = {
-    val regex_dependent_vowels = ("(" + romanToDevaConsonantsNoVirama.keys.mkString("|") + ")" + "(" + vowelMap.keys.mkString("|") + ")").r
+    val regex_dependent_vowels = (makeRegexFromKeys(romanToDevaConsonantsNoVirama.keys).toString() + makeRegexFromKeys(vowelMap.keys).toString()).r
     var output = str_in
-    output = regex_dependent_vowels.replaceAllIn(output, _ match { case regex_dependent_vowels(c1, key) => c1 + vowelMap(key) })
+    output = regex_dependent_vowels.replaceAllIn(output, _ match { case regex_dependent_vowels(c1, key) =>
+      {
+        c1 + vowelMap(key)
+      }})
     output
   }
 
@@ -89,8 +100,8 @@ trait RomanScript {
   }
 
   def replaceRomanConsonantsFollowedByVowels(str_in: String, consonantMapNoVirama: Map[String, String]): String = {
-    val regex_consonant_vowel = ("(" + consonantMapNoVirama.keys.mkString("|") + ")"
-      + s"($aToRoman|" + romanToDevaDependentVowels.values.mkString("|") + ")").r
+    val regex_consonant_vowel = (makeRegexFromKeys(consonantMapNoVirama.keys).toString()
+      +  makeRegexFromKeys(romanToDevaDependentVowels.values ++ List(aToRoman)).toString()).r
     var output = str_in
     output = regex_consonant_vowel.replaceAllIn(output, _ match { case regex_consonant_vowel(consonant, vowel) => consonantMapNoVirama(consonant) + vowel.replaceAll("a", "") })
     output
@@ -116,15 +127,21 @@ trait RomanScript {
     println("Result : " + replaceRomanConsonantsFollowedByVowels(replaceKeysLongestFirst(replaceRomanDependentVowels(str_in), romanToDevaDependentVowels)))
   }
 
-  def toDevanagari(str_in: String): String = {
+  def toDevanagari(str_in: String): Option[String] = {
     var output = str_in
     if (caseNeutral) {
       output = output.toLowerCase
     }
-    output = replaceRomanDependentVowels(output)
-    output = replaceRomanConsonantsFollowedByVowels(output)
-    output = replaceKeysLongestFirst(output, romanToDevaConsonants ++ romanToDevaContextFreeReplacements ++ romanToDevaIndependentVowels)
-    output
+    try {
+      output = replaceRomanDependentVowels(output)
+      output = replaceRomanConsonantsFollowedByVowels(output)
+      output = replaceKeysLongestFirst(output, romanToDevaConsonants ++ romanToDevaContextFreeReplacements ++ romanToDevaIndependentVowels)
+      Some(output)
+    } catch {
+      case e: java.util.NoSuchElementException => {
+        return None
+      }
+    }
   }
 
   def replaceDevanagariConsonants(str_in: String): String = {
@@ -190,10 +207,10 @@ trait RomanScript {
   def test_toDevanagari(str_in : String) = {
     test_replaceRomanDependentVowels(str_in)
     test_replaceRomanConsonantsFollowedByVowels(str_in)
-    println(toDevanagari(str_in))
+    println(toDevanagari(str_in).get)
   }
 
-  def test_fromDevanagari(str_in : String = "असय औषधिः ग्रन्थः! ॡकारो।ऽस्ति। नास्ति लेशोऽपि संशयः। कीलकम्? कूपिः?  कष्ठं भोः। शङ्कर! सञ्जीवय। १२३४५.. ॐ तत्।") = {
+  def test_fromDevanagari(str_in : String = "असय औषधिः ग्रन्थः! ॡकारो।ऽस्ति। नास्ति लेशोऽपि संशयः। कीलकम्? कूपिः?  कष्ठं भोः। शङ्कर! ज्ञानम्।  सञ्जीवय। १२३४५.. ॐ तत्।") = {
     println("Input: " + str_in)
     println("Output: " + fromDevanagari(str_in))
   }

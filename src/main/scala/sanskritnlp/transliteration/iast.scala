@@ -5,7 +5,7 @@ object iast extends RomanScript {
   override val distinctCharacters = List("ṇ", "ṃ", "ś", "ñ", "u1", "ṣ", "ḥ", "ṭ", "ī", "ṝ", "ḍ", "ḷ", "ḹ", "ṛ", "ā", "ṅ")
   override val romanToDevaIndependentVowels = Map(
     "a" -> "अ", "ā" -> "आ",  "i" -> "इ", "ī" -> "ई",
-    "u" -> "उ", "u1" -> "ऊ",
+    "u" -> "उ", "ū" -> "ऊ",
     "ṛ" -> "ऋ", "ṝ" -> "ॠ", "ḷ" -> "ऌ", "ḹ" -> "ॡ",
     "e" -> "ए",
     "ai" -> "ऐ",

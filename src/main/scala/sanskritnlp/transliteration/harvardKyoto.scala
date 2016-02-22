@@ -33,7 +33,7 @@ object harvardKyoto extends RomanScript {
     "z" -> "श्", "S" -> "ष्", "s" -> "स्",
     ".l" -> "ळ्", // In TITUS
     "L" -> "ळ्")
-  override val romanToDevaConsonantsNoVirama = romanToDevaConsonants.mapValues(_.replaceAll("(.+)्$", "$1"))
+  override val romanToDevaConsonantsNoVirama = romanToDevaConsonants.mapValues(_.replaceAll("(.+?)्$", "$1"))
   override val romanToDevaContextFreeReplacements = Map(
     "M" -> "ं",  "H" -> "ः",
     "'" -> "ऽ", "." -> "।", "|" -> "।",
@@ -50,7 +50,7 @@ object harvardKyoto extends RomanScript {
   override val devaToRomanGeneral = romanToDevaContextFreeReplacements.map(_.swap) ++ Map("ऽ" -> "")
 
   def test_toDevanagari(): Unit = {
-    val hkText = "asaya auSadhiH granthaH! lRRkAro'sti. nAsti lezo'pi saMzayaH. kaSThaM bhoH. 12345"
+    val hkText = "asaya auSadhiH granthaH! lRRkAro'sti. nAsti lezo'pi saMzayaH. kaSThaM bhoH. abala 12345"
     println("HK Tests.")
     test_toDevanagari(hkText)
   }
@@ -59,6 +59,7 @@ object harvardKyoto extends RomanScript {
 
 object harvardKyotoTest {
   def main(args: Array[String]): Unit = {
+    harvardKyoto.debugString()
     harvardKyoto.test_toDevanagari()
     harvardKyoto.test_fromDevanagari()
     harvardKyoto.test_restoreEscapeSequences()

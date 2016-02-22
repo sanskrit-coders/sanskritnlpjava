@@ -10,5 +10,3 @@ println("After virAma addition: " + output.mkString("-"))
 
 import sanskritnlp.transliteration._
 println(optitrans.toDevanagari("hello"))
-
-

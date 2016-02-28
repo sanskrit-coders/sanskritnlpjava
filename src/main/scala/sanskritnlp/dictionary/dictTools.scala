@@ -1,4 +1,4 @@
-package sanskritnlp.transliteration
+package sanskritnlp.dictionary
 
 /*
 Run this:
@@ -6,8 +6,11 @@ PATH_TO_SANSKRITNLPJAVA=/home/vvasuki/sanskritnlpjava/target
 scala -classpath "$PATH_TO_SANSKRITNLPJAVA/sanskritnlp-1.0-SNAPSHOT/WEB-INF/lib/*:$PATH_TO_SANSKRITNLPJAVA/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes" sanskritnlp.transliteration.dictTools.sutraNumbersToDevanagari  nyasa/nyasa.babylon
  */*/
 
-import scala.io.Source
 import java.io._
+
+import sanskritnlp.transliteration.{as, optitrans, transliterator}
+
+import scala.io.Source
 
 /**
   * Created by vvasuki on 2/20/16.

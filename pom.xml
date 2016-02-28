@@ -52,7 +52,7 @@
 
         <!--
          Evaluation: https://www.mediawiki.org/wiki/API:Client_code/Evaluations/Java_Wiki_Bot_Framework_(JWBF)
-         
+         Javadoc here: http://jwbf.sourceforge.net/doc/ , especially Article class.
         -->
         <dependency>
             <groupId>net.sourceforge</groupId>

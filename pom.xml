@@ -34,22 +34,31 @@
 		
     <dependencies>
         <!-- Compile/runtime dependencies -->
-				<dependency>
-					<groupId>org.apache.commons</groupId>
-					<artifactId>commons-lang3</artifactId>
-					<version>3.3.2</version>
-				</dependency>
-				<dependency>
-					<groupId>ch.qos.logback</groupId>
-					<artifactId>logback-classic</artifactId>
-					<version>0.9.29</version>
-				</dependency>
-				<dependency>
-					<groupId>ch.qos.logback</groupId>
-					<artifactId>logback-core</artifactId>
-					<version>0.9.29</version>
-				</dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.3.2</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>0.9.29</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>0.9.29</version>
+        </dependency>
 
+        <!--
+         Evaluation: https://www.mediawiki.org/wiki/API:Client_code/Evaluations/Java_Wiki_Bot_Framework_(JWBF)
+         
+        -->
+        <dependency>
+            <groupId>net.sourceforge</groupId>
+            <artifactId>jwbf</artifactId>
+            <version>3.0.0</version>
+        </dependency>
         <dependency>
             <groupId>com.google.appengine</groupId>
             <artifactId>appengine-api-1.0-sdk</artifactId>

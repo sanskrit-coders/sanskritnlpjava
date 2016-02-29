@@ -2,6 +2,8 @@ package sanskritnlp.transliteration
 
 import java.util.Collections
 
+import org.slf4j.LoggerFactory
+
 import scala.util.matching.Regex
 import scala.util.matching.Regex.Match
 
@@ -9,6 +11,7 @@ import scala.util.matching.Regex.Match
 // Read that function, and the logic will be clear.
 
 trait RomanScript {
+  val log = LoggerFactory.getLogger(this.getClass)
   val romanToDevaIndependentVowels: Map[String, String] = null
 
   val romanToDevaDependentVowels: Map[String, String] = null
@@ -65,7 +68,7 @@ trait RomanScript {
     // The above yields List(3, 2, 1) for HK.
     keyLengths.foreach(x => {
       val mapping_length_x = mapping.filter(t => (t._1.length() == x))
-      // println(mapping)
+      // log.info(mapping)
       val regexFromKeys = makeRegexFromKeys(mapping_length_x.keys)
       output = regexFromKeys.replaceAllIn(output, _ match { case regexFromKeys(key) => mapping(key) })
     })
@@ -95,8 +98,8 @@ trait RomanScript {
   }
 
   def test_replaceRomanDependentVowels(str_in: String): Unit = {
-    println("Test string : " + str_in)
-    println("Result : " + replaceRomanDependentVowels(str_in))
+    log.info("Test string : " + str_in)
+    log.info("Result : " + replaceRomanDependentVowels(str_in))
   }
 
   def replaceRomanConsonantsFollowedByVowels(str_in: String, consonantMapNoVirama: Map[String, String]): String = {
@@ -112,19 +115,19 @@ trait RomanScript {
     var output = str_in
     val keyLengths = romanToDevaConsonantsNoVirama.keys.map(_.length).toList.distinct.sorted.reverse
     // The above yields List(3, 2, 1) for HK.
-    // println(keyLengths)
+    // log.info(keyLengths)
 
     keyLengths.foreach(x => {
       val mapping = romanToDevaConsonantsNoVirama.filter(t => (t._1.length() == x))
-      // println(mapping)
+      // log.info(mapping)
       output = replaceRomanConsonantsFollowedByVowels(output, mapping)
     })
     output
   }
 
   def test_replaceRomanConsonantsFollowedByVowels(str_in: String): Unit = {
-    println("Test string : " + str_in)
-    println("Result : " + replaceRomanConsonantsFollowedByVowels(replaceKeysLongestFirst(replaceRomanDependentVowels(str_in), romanToDevaDependentVowels)))
+    log.info("Test string : " + str_in)
+    log.info("Result : " + replaceRomanConsonantsFollowedByVowels(replaceKeysLongestFirst(replaceRomanDependentVowels(str_in), romanToDevaDependentVowels)))
   }
 
   def toDevanagari(str_in: String): Option[String] = {
@@ -157,12 +160,12 @@ trait RomanScript {
     val consonantNonVowelPattern = (
       "(" + devaConsonantsNoViramaToRomanVirama.keys.mkString("|") + ")"
         + s"(?=[^$VIRAMA" + devaDependentVowelsToRoman.keys.mkString("") + "])").r
-    // println(consonantNonVowelPattern)
+    // log.info(consonantNonVowelPattern)
     output = consonantNonVowelPattern.replaceAllIn(output, (m:Match) => {m.group(0) + VIRAMA + aToRoman})
     if(romanToDevaConsonantsNoVirama.values.toList.contains(output.last.toString)) {
       output = output + VIRAMA + aToRoman
     }
-    // println("After virAma addition: " + output.mkString("-"))
+    // log.info("After virAma addition: " + output.mkString("-"))
     output = replaceKeysLongestFirst(output, devaConsonantsToRoman)
     output
   }
@@ -171,12 +174,12 @@ trait RomanScript {
     var output = str_in
 
     output = replaceDevanagariConsonants(output)
-    // println("Consonant replacement: " + output)
+    // log.info("Consonant replacement: " + output)
 
     output = replaceKeysLongestFirst(output, devaDependentVowelsToRoman)
-    // println(output)
+    // log.info(output)
     output = replaceKeysLongestFirst(output, devaIndependentVowelsToRoman)
-    // println(output)
+    // log.info(output)
     output = replaceKeysLongestFirst(output, devaToRomanGeneral)
     output
   }
@@ -189,7 +192,7 @@ trait RomanScript {
   }
   def test_restoreEscapeSequences() = {
     val str1 = """हरिः ॐ १ 1ad\न् \त्"""
-    println(restoreEscapeSequences(str1))
+    log.info(restoreEscapeSequences(str1))
   }
 
   // ASSUMPTION: Escape characters appropriately in romanStart and romanEnd.
@@ -201,17 +204,17 @@ trait RomanScript {
   }
   def test_restoreRomanBetweenStrings() = {
     val str1 = """हरिः ॐ १ {#Pअगे#} 1ad {#आन्द्#} \न् \त्"""
-    println(restoreRomanBetweenStrings(str1, "\\{#", "#\\}"))
+    log.info(restoreRomanBetweenStrings(str1, "\\{#", "#\\}"))
   }
 
   def test_toDevanagari(str_in : String) = {
     test_replaceRomanDependentVowels(str_in)
     test_replaceRomanConsonantsFollowedByVowels(str_in)
-    println(toDevanagari(str_in).get)
+    log.info(toDevanagari(str_in).get)
   }
 
   def test_fromDevanagari(str_in : String = "असय औषधिः ग्रन्थः! ॡकारो।ऽस्ति। नास्ति लेशोऽपि संशयः। कीलकम्? कूपिः?  कष्ठं भोः। शङ्कर! ज्ञानम्।  सञ्जीवय। १२३४५.. ॐ तत्।") = {
-    println("Input: " + str_in)
-    println("Output: " + fromDevanagari(str_in))
+    log.info("Input: " + str_in)
+    log.info("Output: " + fromDevanagari(str_in))
   }
 }

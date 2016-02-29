@@ -35,7 +35,7 @@ trait wikiBot {
   def test() = {
     //Javadoc here: http://jwbf.sourceforge.net/doc/
     val article = bot.readData("Wiktionary:Sandbox")
-    log info article.getText()
+    log info "|" + article.getText() + "|"
     // bot.delete("Wiktionary:Sandbox")
   }
 

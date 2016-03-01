@@ -51,6 +51,7 @@ object wikisource extends wikiBot {
     getIndexedPages("ADictionaryOfSanskritGrammarByMahamahopadhyayaKashinathVasudevAbhyankar.djvu", 20, 30, numberLanguage = "sa")
   }
 
+  // Bot approval request: https://en.wikipedia.org/wiki/Wikipedia:Bots/Requests_for_approval/sanskritnlpbot
   def fillIndexedPages(ocrOutput: GocrOutputIterator, startPage: Int, endPage: Int,
                        numberLanguage: String = "", fileTitle: String, overwrite: Boolean = false, dryRun: Boolean = true): Unit = {
     ocrOutput.skipNPages(startPage - 1)

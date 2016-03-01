@@ -20,6 +20,7 @@ trait wikiBot {
   var passwd = ""
   val sandboxPage: String = s"$wikiSiteName:Sandbox"
 
+  // Bot policy: https://en.wikipedia.org/wiki/Wikipedia:Bot_policy
   // see https://www.mediawiki.org/wiki/Manual:$wgRateLimits
   // But 60/8 results in rate limiting.
   val minGapBetweenEdits: Int = (math.ceil(60/4) + 1).toInt

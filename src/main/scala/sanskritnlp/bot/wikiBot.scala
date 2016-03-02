@@ -4,6 +4,7 @@ package sanskritnlp.bot
 import java.text.SimpleDateFormat
 import java.util.Calendar
 
+import net.sourceforge.jwbf.mediawiki.actions.util.ApiException
 import sanskritnlp.app._
 import net.sourceforge.jwbf.mediawiki.bots.MediaWikiBot
 import net.sourceforge.jwbf.core.contentRep.SimpleArticle
@@ -24,7 +25,6 @@ trait wikiBot {
   // Bot policy: https://en.wikipedia.org/wiki/Wikipedia:Bot_policy
   // see https://www.mediawiki.org/wiki/Manual:$wgRateLimits
   // But 60/8 results in rate limiting.
-  // 60/4 resulted in java.lang.IllegalStateException: invalid status: HTTP/1.1 503 Service Unavailable.
   val minGapBetweenEdits: Int = (math.ceil(60/1) + 1).toInt
 
   def login = {
@@ -56,8 +56,17 @@ trait wikiBot {
       bot writeContent article
       // log info article.getText()
     } catch {
+      // To deal with java.lang.IllegalStateException: invalid status: HTTP/1.1 503 Service Unavailable.
       case e: IllegalStateException => {
         log.warn(e.getMessage)
+        if (num_retries > 0) {
+          edit(title = title, text = text, summary = summary, isMinor = isMinor, num_retries = num_retries - 1)
+        }
+      }
+      // To deal with: net.sourceforge.jwbf.mediawiki.actions.util.ApiException: API ERROR CODE: badtoken VALUE: Invalid token
+      case e: ApiException => {
+        log.warn(e.getMessage)
+        login
         if (num_retries > 0) {
           edit(title = title, text = text, summary = summary, isMinor = isMinor, num_retries = num_retries - 1)
         }

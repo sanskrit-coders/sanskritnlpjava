@@ -87,7 +87,7 @@ object wikisource extends wikiBot {
 
   def fillIndexedPagesTest = {
     val gocrOut = new GocrOutputIterator("/home/vvasuki/sanskrit-ocr-r0/vaak/vyAkaraNam/abhyankar-grammar/abhyankar-grammar-gocr.txt")
-    fillIndexedPages(gocrOut, startPage = 62, endPage = 430, numberLanguage = "sa",
+    fillIndexedPages(gocrOut, startPage = 197, endPage = 430, numberLanguage = "sa",
       fileTitle = "ADictionaryOfSanskritGrammarByMahamahopadhyayaKashinathVasudevAbhyankar.djvu", overwrite = true, dryRun = false)
   }
 

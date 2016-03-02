@@ -9,6 +9,7 @@ import net.sourceforge.jwbf.mediawiki.bots.MediaWikiBot
 import net.sourceforge.jwbf.core.contentRep.SimpleArticle
 import org.slf4j.LoggerFactory
 import sanskritnlp.app.sanskritNlp
+import scala.annotation.tailrec
 
 trait wikiBot {
   val log = LoggerFactory.getLogger(this.getClass)
@@ -23,7 +24,8 @@ trait wikiBot {
   // Bot policy: https://en.wikipedia.org/wiki/Wikipedia:Bot_policy
   // see https://www.mediawiki.org/wiki/Manual:$wgRateLimits
   // But 60/8 results in rate limiting.
-  val minGapBetweenEdits: Int = (math.ceil(60/4) + 1).toInt
+  // 60/4 resulted in java.lang.IllegalStateException: invalid status: HTTP/1.1 503 Service Unavailable.
+  val minGapBetweenEdits: Int = (math.ceil(60/1) + 1).toInt
 
   def login = {
     bot = new MediaWikiBot(s"http://$languageCode.$wikiSiteName.org/w/")
@@ -36,22 +38,31 @@ trait wikiBot {
   }
 
   var prevEditTime = System.currentTimeMillis / 1000
-  def edit(title: String, text: String, summary: String, isMinor: Boolean = false) = {
-    val article = bot.readData(title)
-    article.setText(text)
-    article.setEditSummary(summary)
+  @tailrec final def edit(title: String, text: String, summary: String, isMinor: Boolean = false, num_retries: Int = 3): Unit = {
+    try{
+      val article = bot.readData(title)
+      article.setText(text)
+      article.setEditSummary(summary)
 
-    // Deal with timeouts
-    var nowTime = System.currentTimeMillis / 1000
-    if (nowTime - prevEditTime < minGapBetweenEdits) {
-      log info s"sleeping for $minGapBetweenEdits secs"
-      Thread.sleep(minGapBetweenEdits * 1000)
+      // Deal with timeouts
+      var nowTime = System.currentTimeMillis / 1000
+      if (nowTime - prevEditTime < minGapBetweenEdits) {
+        log info s"sleeping for $minGapBetweenEdits secs"
+        Thread.sleep(minGapBetweenEdits * 1000)
+      }
+
+      prevEditTime = nowTime
+      // Finally do the edit.
+      bot writeContent article
+      // log info article.getText()
+    } catch {
+      case e: IllegalStateException => {
+        log.warn(e.getMessage)
+        if (num_retries > 0) {
+          edit(title = title, text = text, summary = summary, isMinor = isMinor, num_retries = num_retries - 1)
+        }
+      }
     }
-
-    prevEditTime = nowTime
-    // Finally do the edit.
-    bot writeContent article
-    // log info article.getText()
   }
 
   def test() = {

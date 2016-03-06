@@ -6,8 +6,8 @@ import sanskritnlp.transliteration.harvardKyoto
 import scala.io.Source
 import scala.util.matching.Regex
 
-class GocrOutputIterator(ocrFileName: String) {
-  val log = LoggerFactory.getLogger(this.getClass)
+class GocrOutputIterator(ocrFileName: String) extends ocrOutputIterator {
+  override val log = LoggerFactory.getLogger(this.getClass)
 
   val linesIter = Source.fromFile(ocrFileName, "utf8").getLines()
 
@@ -15,34 +15,10 @@ class GocrOutputIterator(ocrFileName: String) {
   // {{{{{{/cns/oe-d/home/vvasuki/abhyankar/abhyankar_images-004.png}}}}}}
   val imageIdPattern = """\{\{\{\{\{\{.+-(\d\d\d)\.png\}\}\}\}\}\}""".r
 
-  def pageNumFromLine(line: String): Int = {
-    line match {
-      case imageIdPattern(matched) => {
-        return matched.toInt
-      }
-    }
-  }
+  override def hasNext: Boolean = linesIter.hasNext
 
-  var pagesElapsed = 0
-
-  def hasNext: Boolean = linesIter.hasNext
-
-  def logPagesElapsed = {
-    log info s"Pages elapsed: $pagesElapsed"
-  }
-
-  def skipNPages(numToSkip: Int) = {
-    logPagesElapsed
-    Range(1, numToSkip + 1).foreach(x =>
-      if (hasNext) {
-        nextPage
-      }
-    )
-    logPagesElapsed
-  }
-
-  def nextPage: String = {
-    if(!linesIter.hasNext) {
+  override def nextPage: String = {
+    if(!hasNext) {
       return ""
     }
     if (pagesElapsed == 0) {

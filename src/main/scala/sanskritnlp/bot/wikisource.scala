@@ -2,7 +2,7 @@ package sanskritnlp.bot
 
 import net.sourceforge.jwbf.mediawiki.bots.MediaWikiBot
 import org.slf4j.LoggerFactory
-import sanskritnlp.ocr.GocrOutputIterator
+import sanskritnlp.ocr.{SanskritOCROutputIterator, GocrOutputIterator, ocrOutputIterator}
 import sanskritnlp.transliteration.optitrans
 
 /**
@@ -52,7 +52,7 @@ object wikisource extends wikiBot {
   }
 
   // Bot approval request: https://en.wikipedia.org/wiki/Wikipedia:Bots/Requests_for_approval/sanskritnlpbot
-  def fillIndexedPages(ocrOutput: GocrOutputIterator, startPage: Int, endPage: Int,
+  def fillIndexedPages(ocrOutput: ocrOutputIterator, startPage: Int, endPage: Int,
                        numberLanguage: String = "", fileTitle: String, overwrite: Boolean = false, dryRun: Boolean = true): Unit = {
     ocrOutput.skipNPages(startPage - 1)
     Range(startPage, endPage+1).foreach(pageNum => {
@@ -85,10 +85,16 @@ object wikisource extends wikiBot {
     })
   }
 
-  def fillIndexedPagesTest = {
+  def fillIndexedPagesGocr = {
     val gocrOut = new GocrOutputIterator("/home/vvasuki/sanskrit-ocr-r0/vaak/vyAkaraNam/abhyankar-grammar/abhyankar-grammar-gocr.txt")
     fillIndexedPages(gocrOut, startPage = 197, endPage = 430, numberLanguage = "sa",
       fileTitle = "ADictionaryOfSanskritGrammarByMahamahopadhyayaKashinathVasudevAbhyankar.djvu", overwrite = true, dryRun = false)
+  }
+
+  def fillIndexedPagesSanskritocr = {
+    val gocrOut = new SanskritOCROutputIterator("/home/vvasuki/sanskrit-ocr-r0/vaak/vyAkaraNam/ganaratnamahodadhi/SanskritOCR/")
+    fillIndexedPages(gocrOut, startPage = 9, endPage = 330, numberLanguage = "sa",
+      fileTitle = "Ganaratnamahodadhi.pdf", overwrite = true, dryRun = false)
   }
 
   def main(args: Array[String]): Unit = {
@@ -96,6 +102,6 @@ object wikisource extends wikiBot {
     login
     // test
     // indexPageTests
-    fillIndexedPagesTest
+    fillIndexedPagesSanskritocr
   }
 }

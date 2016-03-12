@@ -93,7 +93,7 @@ object wikisource extends wikiBot {
 
   def fillIndexedPagesSanskritocr = {
     val gocrOut = new SanskritOCROutputIterator("/home/vvasuki/sanskrit-ocr-r0/vaak/vyAkaraNam/ganaratnamahodadhi/SanskritOCR/")
-    fillIndexedPages(gocrOut, startPage = 9, endPage = 330, numberLanguage = "sa",
+    fillIndexedPages(gocrOut, startPage = 13, endPage = 330, numberLanguage = "sa",
       fileTitle = "Ganaratnamahodadhi.pdf", overwrite = true, dryRun = false)
   }
 

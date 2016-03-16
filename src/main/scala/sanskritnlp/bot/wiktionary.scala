@@ -7,7 +7,8 @@ object wiktionary extends wikiBot {
   override val wikiSiteName = "wiktionary"
 
   def main(args: Array[String]): Unit = {
+    passwd = ""
     login
-    test
+    testEditSection
   }
 }

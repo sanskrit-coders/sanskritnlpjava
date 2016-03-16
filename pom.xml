@@ -53,6 +53,9 @@
         <!--
          Evaluation: https://www.mediawiki.org/wiki/API:Client_code/Evaluations/Java_Wiki_Bot_Framework_(JWBF)
          Javadoc here: http://jwbf.sourceforge.net/doc/ , especially Article class.
+         Parsers (very complicated):
+         https://www.mediawiki.org/wiki/Alternative_parsers
+         http://stackoverflow.com/questions/11612118/java-wikitext-parser
         -->
         <dependency>
             <groupId>net.sourceforge</groupId>

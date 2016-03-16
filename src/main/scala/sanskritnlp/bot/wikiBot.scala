@@ -12,6 +12,12 @@ import org.slf4j.LoggerFactory
 import sanskritnlp.app.sanskritNlp
 import scala.annotation.tailrec
 
+class Section {
+  var title = ""
+  var text = ""
+  var subSections = List[Section]()
+}
+
 trait wikiBot {
   val log = LoggerFactory.getLogger(this.getClass)
   val languageCode: String = null
@@ -38,9 +44,8 @@ trait wikiBot {
   }
 
   var prevEditTime = System.currentTimeMillis / 1000
-  @tailrec final def edit(title: String, text: String, summary: String, isMinor: Boolean = false, num_retries: Int = 3): Unit = {
+  @tailrec final def editArticle(article: SimpleArticle, text: String, summary: String, isMinor: Boolean = false, num_retries: Int = 3): Unit = {
     try{
-      val article = bot.readData(title)
       article.setText(text)
       article.setEditSummary(summary)
 
@@ -60,7 +65,7 @@ trait wikiBot {
       case e: IllegalStateException => {
         log.warn(e.getMessage)
         if (num_retries > 0) {
-          edit(title = title, text = text, summary = summary, isMinor = isMinor, num_retries = num_retries - 1)
+          editArticle(article = article, text = text, summary = summary, isMinor = isMinor, num_retries = num_retries - 1)
         }
       }
       // To deal with: net.sourceforge.jwbf.mediawiki.actions.util.ApiException: API ERROR CODE: badtoken VALUE: Invalid token
@@ -68,10 +73,27 @@ trait wikiBot {
         log.warn(e.getMessage)
         login
         if (num_retries > 0) {
-          edit(title = title, text = text, summary = summary, isMinor = isMinor, num_retries = num_retries - 1)
+          editArticle(article = article, text = text, summary = summary, isMinor = isMinor, num_retries = num_retries - 1)
         }
       }
     }
+  }
+
+  final def edit(title: String, text: String, summary: String, isMinor: Boolean = false): Unit = {
+    val article = bot.readData(title)
+    editArticle(article = article, text = text, summary = summary, isMinor = isMinor)
+  }
+
+  def editSection(title: String, section: String, text: String, summary: String, bAppend: Boolean = true, isMinor: Boolean = false) = {
+    val sectionTitlePattern = "(/[^/]+)".r
+    val sectionIndexList = sectionTitlePattern.findAllIn(section).zipWithIndex
+    sectionIndexList.foreach(x => log.info(x._1))
+
+    // editArticle(article = article, text = text, summary = summary, isMinor = isMinor)
+  }
+
+  def testEditSection() = {
+    editSection(title = sandboxPage, section = "/परीक्षाविभागः", text = "नूतनपाठः", summary = "परीक्षाविभागयोगः")
   }
 
   def test() = {

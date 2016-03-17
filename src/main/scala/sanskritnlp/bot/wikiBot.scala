@@ -12,9 +12,15 @@ import org.slf4j.LoggerFactory
 import sanskritnlp.app.sanskritNlp
 import scala.annotation.tailrec
 
+/*
+A valid Mediawiki section is a new line of the following form: ==+[^=]+==+\s+.
+Note: there can't be space in the beginning, nor non space characters in the end.
+A malformed section has unequal prefix and suffix =-strings - in that case, Mediawiki simply uses the least number of equals to make sense of it.
+ */
 class Section {
   var title = ""
   var text = ""
+  var headText = ""
   var subSections = List[Section]()
 }
 

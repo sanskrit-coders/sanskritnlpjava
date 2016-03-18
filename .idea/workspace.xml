@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac05e739-ded8-465e-b65f-6eff68c25840" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/sanskritnlp/bot/Section.scala" afterPath="$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/Section.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/sanskritnlp/bot/wikiBot.scala" afterPath="$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wikiBot.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/sanskritnlp/bot/wikisource.scala" afterPath="$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wikisource.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/sanskritnlp/bot/wiktionary.scala" afterPath="$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wiktionary.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wikiBot.scala" afterPath="$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wikiBot.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wiktionary.scala" afterPath="$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wiktionary.scala" />
     </list>
     <ignored path="sanskritnlpjava.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -86,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wiktionary.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="wiktionary.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wiktionary.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2972561">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -111,18 +108,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
-              <folding>
-                <element signature="e#32#66#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wikiBot.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="wikiBot.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wikiBot.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.451612">
-              <caret line="109" column="22" selection-start-line="109" selection-start-column="22" selection-end-line="109" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.04">
+              <caret line="87" column="50" selection-start-line="87" selection-start-column="50" selection-end-line="87" selection-end-column="50" />
               <folding>
                 <element signature="e#30#87#0" expanded="true" />
               </folding>
@@ -133,11 +128,9 @@
       <file leaf-file-name="Section.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/Section.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-50.741936">
+            <state vertical-scroll-proportion="0.0">
               <caret line="117" column="1" selection-start-line="117" selection-start-column="1" selection-end-line="117" selection-end-column="1" />
-              <folding>
-                <element signature="e#26#56#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -196,8 +189,8 @@
         <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/wikiBot.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wikisource.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/Section.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wikiBot.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wiktionary.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wikiBot.scala" />
       </list>
     </option>
   </component>
@@ -244,6 +237,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -308,10 +304,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="wiki" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Section.scala" />
-              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -470,9 +462,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1087,15 +1076,15 @@
       <item index="3" class="java.lang.String" itemvalue="Application.sectionTest" />
       <item index="4" class="java.lang.String" itemvalue="Application.gocr" />
       <item index="5" class="java.lang.String" itemvalue="Application.sanskritocr" />
-      <item index="6" class="java.lang.String" itemvalue="Application.harvardKyotoTest" />
-      <item index="7" class="java.lang.String" itemvalue="Application.asTest" />
-      <item index="8" class="java.lang.String" itemvalue="Application.iastTest" />
-      <item index="9" class="java.lang.String" itemvalue="Application.wikisource" />
-      <item index="10" class="java.lang.String" itemvalue="Scala Script.Test" />
-      <item index="11" class="java.lang.String" itemvalue="Scala Script.filenamesToNumber" />
-      <item index="12" class="java.lang.String" itemvalue="Scala Script.kalpadruma-to-dev" />
-      <item index="13" class="java.lang.String" itemvalue="Scala Script.rv make_padapATha_index_dev" />
-      <item index="14" class="java.lang.String" itemvalue="Scala Script.rv make_padapATha_index_hk.scala" />
+      <item index="6" class="java.lang.String" itemvalue="Scala Script.Test" />
+      <item index="7" class="java.lang.String" itemvalue="Scala Script.filenamesToNumber" />
+      <item index="8" class="java.lang.String" itemvalue="Scala Script.kalpadruma-to-dev" />
+      <item index="9" class="java.lang.String" itemvalue="Scala Script.rv make_padapATha_index_dev" />
+      <item index="10" class="java.lang.String" itemvalue="Scala Script.rv make_padapATha_index_hk.scala" />
+      <item index="11" class="java.lang.String" itemvalue="Application.harvardKyotoTest" />
+      <item index="12" class="java.lang.String" itemvalue="Application.asTest" />
+      <item index="13" class="java.lang.String" itemvalue="Application.iastTest" />
+      <item index="14" class="java.lang.String" itemvalue="Application.wikisource" />
     </list>
     <recent_temporary>
       <list size="4">
@@ -1530,31 +1519,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/dictionary/dictTools.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/dictionary/BabylonDictionary.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
-          <folding>
-            <element signature="e#32#66#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/Section.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-50.741936">
+        <state vertical-scroll-proportion="0.0">
           <caret line="117" column="1" selection-start-line="117" selection-start-column="1" selection-end-line="117" selection-end-column="1" />
-          <folding>
-            <element signature="e#26#56#0" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wiktionary.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/dictionary/dictTools.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1570,19 +1563,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wikiBot.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.451612">
-          <caret line="109" column="22" selection-start-line="109" selection-start-column="22" selection-end-line="109" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.04">
+          <caret line="87" column="50" selection-start-line="87" selection-start-column="50" selection-end-line="87" selection-end-column="50" />
           <folding>
             <element signature="e#30#87#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wiktionary.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2972561">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

@@ -19,12 +19,12 @@ trait wikiBot {
 
   val userName = sanskritNlp.props.getProperty("WIKI_USER_NAME")
   var passwd = ""
-  val sandboxPage: String = s"$wikiSiteName:Sandbox"
+  def getSandboxPage: String = s"$wikiSiteName:Sandbox"
 
   // Bot policy: https://en.wikipedia.org/wiki/Wikipedia:Bot_policy
   // see https://www.mediawiki.org/wiki/Manual:$wgRateLimits
   // But 60/8 results in rate limiting.
-  val minGapBetweenEdits: Int = (math.ceil(60/1) + 1).toInt
+  val minGapBetweenEdits: Int = (math.ceil(60/60) + 1).toInt
 
   def login = {
     bot = new MediaWikiBot(s"http://$languageCode.$wikiSiteName.org/w/")
@@ -81,8 +81,8 @@ trait wikiBot {
     val article = bot.readData(title)
     log.info("Getting " + title)
     lstTitlesVisited += title
-    val redirectPattern = "#redirect\\s+\\[\\[(.+?)\\]\\].*".r
-    article.getText.trim.toLowerCase match {
+    val redirectPattern = "#[rR][eE][dD][iI][rR][eE][cC][tT]\\s+\\[\\[(.+?)\\]\\].*".r
+    article.getText.trim match {
       case redirectPattern(newTitle) => {
         log.info("redirected to " + newTitle)
         if (lstTitlesVisited.contains(newTitle)) {
@@ -108,12 +108,12 @@ trait wikiBot {
   }
 
   def testEditSection() = {
-    editSection(title = sandboxPage + "2", sectionPath = "/परीक्षाविभागः", text = "नूतनपाठः2", summary = "परीक्षाविभागयोगः")
+    editSection(title = getSandboxPage + "2", sectionPath = "/परीक्षाविभागः", text = "नूतनपाठः2", summary = "परीक्षाविभागयोगः")
   }
 
   def test() = {
     //Javadoc here: http://jwbf.sourceforge.net/doc/
-    val article = bot.readData(sandboxPage)
+    val article = bot.readData(getSandboxPage)
     log info "|" + article.getText() + "|"
     // bot.delete("Wiktionary:Sandbox")
   }

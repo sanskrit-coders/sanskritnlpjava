@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac05e739-ded8-465e-b65f-6eff68c25840" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/sanskritnlp/bot/Section.scala" afterPath="$PROJECT_DIR$/src/main/scala/sanskritnlp/bot/Section.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/sanskritnlp/bot/wikiBot.scala" afterPath="$PROJECT_DIR$/src/main/scala/sanskritnlp/bot/wikiBot.scala" />
     </list>
     <ignored path="sanskritnlpjava.iws" />
@@ -75,9 +76,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="101" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-              <folding>
-                <element signature="e#25#80#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -95,8 +94,8 @@
       <file leaf-file-name="wikiBot.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/bot/wikiBot.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47408536">
-              <caret line="82" column="40" selection-start-line="82" selection-start-column="40" selection-end-line="82" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.5884146">
+              <caret line="87" column="65" selection-start-line="87" selection-start-column="65" selection-end-line="87" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -105,8 +104,8 @@
       <file leaf-file-name="Section.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/bot/Section.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+            <state vertical-scroll-proportion="-8.451612">
+              <caret line="99" column="24" selection-start-line="99" selection-start-column="6" selection-end-line="99" selection-end-column="24" />
               <folding>
                 <element signature="e#25#55#0" expanded="true" />
               </folding>
@@ -210,6 +209,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -314,9 +316,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -929,15 +928,15 @@
       <item index="3" class="java.lang.String" itemvalue="Application.sectionTest" />
       <item index="4" class="java.lang.String" itemvalue="Application.gocr" />
       <item index="5" class="java.lang.String" itemvalue="Application.sanskritocr" />
-      <item index="6" class="java.lang.String" itemvalue="Application.harvardKyotoTest" />
-      <item index="7" class="java.lang.String" itemvalue="Application.asTest" />
-      <item index="8" class="java.lang.String" itemvalue="Application.iastTest" />
-      <item index="9" class="java.lang.String" itemvalue="Application.wikisource" />
-      <item index="10" class="java.lang.String" itemvalue="Scala Script.Test" />
-      <item index="11" class="java.lang.String" itemvalue="Scala Script.filenamesToNumber" />
-      <item index="12" class="java.lang.String" itemvalue="Scala Script.kalpadruma-to-dev" />
-      <item index="13" class="java.lang.String" itemvalue="Scala Script.rv make_padapATha_index_dev" />
-      <item index="14" class="java.lang.String" itemvalue="Scala Script.rv make_padapATha_index_hk.scala" />
+      <item index="6" class="java.lang.String" itemvalue="Scala Script.Test" />
+      <item index="7" class="java.lang.String" itemvalue="Scala Script.filenamesToNumber" />
+      <item index="8" class="java.lang.String" itemvalue="Scala Script.kalpadruma-to-dev" />
+      <item index="9" class="java.lang.String" itemvalue="Scala Script.rv make_padapATha_index_dev" />
+      <item index="10" class="java.lang.String" itemvalue="Scala Script.rv make_padapATha_index_hk.scala" />
+      <item index="11" class="java.lang.String" itemvalue="Application.harvardKyotoTest" />
+      <item index="12" class="java.lang.String" itemvalue="Application.asTest" />
+      <item index="13" class="java.lang.String" itemvalue="Application.iastTest" />
+      <item index="14" class="java.lang.String" itemvalue="Application.wikisource" />
     </list>
     <recent_temporary>
       <list size="4">
@@ -1354,9 +1353,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="101" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-          <folding>
-            <element signature="e#25#80#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1385,16 +1382,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/bot/Section.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding>
-            <element signature="e#25#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/bot/wiktionary.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1403,10 +1390,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/bot/Section.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.451612">
+          <caret line="99" column="24" selection-start-line="99" selection-start-column="6" selection-end-line="99" selection-end-column="24" />
+          <folding>
+            <element signature="e#25#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/bot/wikiBot.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47408536">
-          <caret line="82" column="40" selection-start-line="82" selection-start-column="40" selection-end-line="82" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.5884146">
+          <caret line="87" column="65" selection-start-line="87" selection-start-column="65" selection-end-line="87" selection-end-column="65" />
           <folding />
         </state>
       </provider>

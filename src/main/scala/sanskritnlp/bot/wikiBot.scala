@@ -79,10 +79,13 @@ trait wikiBot {
     editArticle(article = article, text = text, summary = summary, isMinor = isMinor)
   }
 
-  def editSection(title: String, section: String, text: String, summary: String, bAppend: Boolean = true, isMinor: Boolean = false) = {
-    val sectionList = section.split("/")
-
-    // editArticle(article = article, text = text, summary = summary, isMinor = isMinor)
+  def editSection(title: String, sectionPath: String, text: String, summary: String, bAppend: Boolean = true, isMinor: Boolean = false) = {
+    val article = bot.readData(title)
+    val articleSection = new Section
+    articleSection.parse(lines = article.getText.split("\n"))
+    val section = articleSection.getOrCreateSection(sectionPath)
+    section.headText = text
+    editArticle(article = article, text = articleSection.toString, summary = summary, isMinor = isMinor)
   }
 
   def testEditSection() = {

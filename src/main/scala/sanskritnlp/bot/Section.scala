@@ -7,10 +7,18 @@ import scala.collection.mutable.ListBuffer
 
 class Section {
   val log = LoggerFactory.getLogger(this.getClass)
+
+  // Use SetAttributes instead of setting these directly.
   var title = ""
   var levelText = ""
+
   var headText = ""
   var subSections = ListBuffer[Section]()
+
+  def setAttributes(titleIn: String, levelTextIn: String, headTextIn: String = "") = {
+    title = titleIn
+    levelText = levelTextIn
+  }
 
   @tailrec final def getParentForSection(section: Section): Section = {
     if (subSections.size == 0 || section.levelText.length <= subSections.last.levelText.length) {
@@ -48,8 +56,7 @@ class Section {
   // Stops when a higher level section is encountered.
   // Returns number of lines consumed.
   def parse(titleIn: String = "", levelTextIn: String = "", lines: Array[String]): Unit = {
-    title = titleIn
-    levelText = levelTextIn
+    setAttributes(titleIn = titleIn, levelTextIn = levelTextIn)
     headText = ""
 
     /*
@@ -89,6 +96,25 @@ class Section {
     }
     return
   }
+
+  def getOrCreateSection(sectionPath: String): Section = {
+    val sectionList = sectionPath.split("/").filter(_ != "")
+    assert(sectionList.length > 0)
+    val headSectionList = subSections.filter(_.title == sectionList.head)
+    var headSection: Section = null
+    if (headSectionList.length > 0) {
+      headSection = headSectionList.head
+    } else {
+      headSection = new Section
+      headSection.setAttributes(titleIn = sectionList.head, levelTextIn = levelText + "=")
+      subSections += headSection
+    }
+    if (sectionList.tail.length > 0) {
+      return headSection.getOrCreateSection(sectionList.tail.mkString("/"))
+    } else {
+      return headSection
+    }
+  }
 }
 
 object sectionTest {
@@ -118,6 +144,10 @@ object sectionTest {
         |""".stripMargin
     val article = new Section()
     article.parse(lines = wikiText.split("\n"))
+    log.info (article.toString)
+
+    val section = article.getOrCreateSection("/विभागः २/विभागः २.1/विभागः २.1.1")
+    section.headText = "In " + section.title
     log.info (article.toString)
   }
 }

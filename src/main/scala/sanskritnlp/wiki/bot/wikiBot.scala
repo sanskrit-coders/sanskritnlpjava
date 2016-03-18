@@ -1,15 +1,12 @@
-package sanskritnlp.bot
+package sanskritnlp.wiki.bot
 
-
-import java.text.SimpleDateFormat
-import java.util.Calendar
-
-import net.sourceforge.jwbf.mediawiki.actions.util.ApiException
-import sanskritnlp.app._
-import net.sourceforge.jwbf.mediawiki.bots.MediaWikiBot
 import net.sourceforge.jwbf.core.contentRep.SimpleArticle
+import net.sourceforge.jwbf.mediawiki.actions.util.ApiException
+import net.sourceforge.jwbf.mediawiki.bots.MediaWikiBot
 import org.slf4j.LoggerFactory
 import sanskritnlp.app.sanskritNlp
+import sanskritnlp.wiki.Section
+
 import scala.annotation.tailrec
 import scala.collection.mutable.ListBuffer
 
@@ -82,11 +79,14 @@ trait wikiBot {
 
   @tailrec final def getArticle(title:String, lstTitlesVisited: ListBuffer[String] = ListBuffer()): SimpleArticle = {
     val article = bot.readData(title)
+    log.info("Getting " + title)
     lstTitlesVisited += title
-    val redirectPattern = "[[redirect(.+)]]".r
+    val redirectPattern = "#redirect\\s+\\[\\[(.+?)\\]\\].*".r
     article.getText.trim.toLowerCase match {
       case redirectPattern(newTitle) => {
+        log.info("redirected to " + newTitle)
         if (lstTitlesVisited.contains(newTitle)) {
+          log.error("cyclically redirected to " + newTitle)
           return null
         } else {
           return getArticle(newTitle, lstTitlesVisited)
@@ -108,7 +108,7 @@ trait wikiBot {
   }
 
   def testEditSection() = {
-    editSection(title = sandboxPage, section = "/परीक्षाविभागः", text = "नूतनपाठः", summary = "परीक्षाविभागयोगः")
+    editSection(title = sandboxPage + "2", sectionPath = "/परीक्षाविभागः", text = "नूतनपाठः2", summary = "परीक्षाविभागयोगः")
   }
 
   def test() = {

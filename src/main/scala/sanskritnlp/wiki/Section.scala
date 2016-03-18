@@ -1,4 +1,4 @@
-package sanskritnlp.bot
+package sanskritnlp.wiki
 
 import org.slf4j.LoggerFactory
 
@@ -69,7 +69,7 @@ class Section {
     lines.foreach(line =>
       line match {
         case sectionPattern(levelTextPre, titleMatch, levelTextSuffix) => {
-          log info ("found section line!")
+          // log info ("found section line!")
           if (currentSection != this) {
             addSection(currentSection)
           }
@@ -87,7 +87,7 @@ class Section {
         }
         case _ => {
           currentSection.headText = currentSection.headText + s"$line\n"
-          log info ("added line: " + line)
+          // log info ("added line: " + line)
         }
       }
     )

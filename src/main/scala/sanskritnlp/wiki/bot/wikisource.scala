@@ -1,8 +1,7 @@
-package sanskritnlp.bot
+package sanskritnlp.wiki.bot
 
-import net.sourceforge.jwbf.mediawiki.bots.MediaWikiBot
 import org.slf4j.LoggerFactory
-import sanskritnlp.ocr.{SanskritOCROutputIterator, GocrOutputIterator, ocrOutputIterator}
+import sanskritnlp.ocr.{GocrOutputIterator, SanskritOCROutputIterator, ocrOutputIterator}
 import sanskritnlp.transliteration.optitrans
 
 /**

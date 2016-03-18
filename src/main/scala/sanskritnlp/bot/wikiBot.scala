@@ -11,6 +11,7 @@ import net.sourceforge.jwbf.core.contentRep.SimpleArticle
 import org.slf4j.LoggerFactory
 import sanskritnlp.app.sanskritNlp
 import scala.annotation.tailrec
+import scala.collection.mutable.ListBuffer
 
 
 trait wikiBot {
@@ -75,12 +76,30 @@ trait wikiBot {
   }
 
   final def edit(title: String, text: String, summary: String, isMinor: Boolean = false): Unit = {
-    val article = bot.readData(title)
+    val article = getArticle(title)
     editArticle(article = article, text = text, summary = summary, isMinor = isMinor)
   }
 
-  def editSection(title: String, sectionPath: String, text: String, summary: String, bAppend: Boolean = true, isMinor: Boolean = false) = {
+  @tailrec final def getArticle(title:String, lstTitlesVisited: ListBuffer[String] = ListBuffer()): SimpleArticle = {
     val article = bot.readData(title)
+    lstTitlesVisited += title
+    val redirectPattern = "[[redirect(.+)]]".r
+    article.getText.trim.toLowerCase match {
+      case redirectPattern(newTitle) => {
+        if (lstTitlesVisited.contains(newTitle)) {
+          return null
+        } else {
+          return getArticle(newTitle, lstTitlesVisited)
+        }
+      }
+      case _ => {
+        return article
+      }
+    }
+  }
+
+  def editSection(title: String, sectionPath: String, text: String, summary: String, bAppend: Boolean = true, isMinor: Boolean = false) = {
+    val article = getArticle(title)
     val articleSection = new Section
     articleSection.parse(lines = article.getText.split("\n"))
     val section = articleSection.getOrCreateSection(sectionPath)

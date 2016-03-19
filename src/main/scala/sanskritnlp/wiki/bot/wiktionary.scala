@@ -19,9 +19,16 @@ object wiktionary extends wikiBot {
       if (wordsSeen contains head) {
         appendToSection(title = head, sectionPath = sectionPath, summary = "अर्थनिवेशः", text = s"\n\n$section_text" )
       } else {
-        editSection(title = head, sectionPath = sectionPath, summary = "अर्थनिवेशः", text = s"$head_text\n\n$section_text")
+        replaceSectionText(title = head, sectionPath = sectionPath, summary = "अर्थनिवेशः", text = s"$head_text\n\n$section_text")
       }
       // log info section_text
+    })
+  }
+
+  def replaceBadText(headwords: Array[String]) = {
+    log.info(headwords.mkString(","))
+    headwords.foreach(head => {
+      replaceRegex(head, "= कोशोद्धरणम् यन्त्रोपारोपितम् =", "= यन्त्रोपारोपितकोशांशः =")
     })
   }
 
@@ -46,9 +53,9 @@ object wiktionary extends wikiBot {
   def main(args: Array[String]): Unit = {
     passwd = ""
     login
-    // testEditSection
+    // testEditSection 7031
     uploadFromBabylonDict(filePath = "/home/vvasuki/stardict-sanskrit/sa-head/kalpadruma-sa/kalpadruma-sa.babylon_final",
-      sectionPath = "/कोशोद्धरणम् यन्त्रोपारोपितम्/कल्पद्रुमः",
-      start_word_index = 1, end_word_index =  100000, dict_source = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html")
+      sectionPath = "/यन्त्रोपारोपितकोशांशः/कल्पद्रुमः",
+      start_word_index = 33560, end_word_index =  100000, dict_source = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html")
   }
 }

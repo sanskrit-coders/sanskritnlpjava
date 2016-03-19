@@ -9,6 +9,7 @@ import sanskritnlp.wiki.Section
 
 import scala.annotation.tailrec
 import scala.collection.mutable.ListBuffer
+import scala.util.matching.Regex
 
 
 trait wikiBot {
@@ -21,10 +22,11 @@ trait wikiBot {
   var passwd = ""
   def getSandboxPage: String = s"$wikiSiteName:Sandbox"
 
-  // Bot policy: https://en.wikipedia.org/wiki/Wikipedia:Bot_policy
+  // Bot policy (differs in different wiki sites): https://en.wikipedia.org/wiki/Wikipedia:Bot_policy
   // see https://www.mediawiki.org/wiki/Manual:$wgRateLimits
-  // But 60/8 results in rate limiting.
-  val minGapBetweenEdits: Int = (math.ceil(60/360)).toInt
+  // But 60/8 results in rate limiting without botflag.
+  // Observed edit rate with bot flag: 5 per second.
+  val minGapBetweenEditsSec: Int = (math.ceil(60/720)).toInt
 
   def login = {
     bot = new MediaWikiBot(s"http://$languageCode.$wikiSiteName.org/w/")
@@ -44,9 +46,9 @@ trait wikiBot {
 
       // Deal with timeouts
       var nowTime = System.currentTimeMillis / 1000
-      if (nowTime - prevEditTime < minGapBetweenEdits) {
-        log info s"sleeping for $minGapBetweenEdits secs"
-        Thread.sleep(minGapBetweenEdits * 1000)
+      if (nowTime - prevEditTime < minGapBetweenEditsSec) {
+        log info s"sleeping for $minGapBetweenEditsSec secs"
+        Thread.sleep(minGapBetweenEditsSec * 1000)
       }
 
       prevEditTime = nowTime
@@ -98,13 +100,19 @@ trait wikiBot {
     }
   }
 
-  def editSection(title: String, sectionPath: String, text: String, summary: String, bAppend: Boolean = true, isMinor: Boolean = false) = {
+  def replaceSectionText(title: String, sectionPath: String, text: String, summary: String, bAppend: Boolean = true, isMinor: Boolean = false) = {
     val article = getArticle(title)
     val articleSection = new Section
     articleSection.parse(lines = article.getText.split("\n"))
     val section = articleSection.getOrCreateSection(sectionPath)
     section.headText = text
     editArticle(article = article, text = articleSection.toString, summary = summary, isMinor = isMinor)
+  }
+
+  def replaceRegex(title: String, regex: String, replacement: String) = {
+    val article = getArticle(title)
+    val replacementText = article.getText.replaceAll(regex, replacement)
+    editArticle(article = article, text = replacementText, summary = s"replace $regex with $replacement")
   }
 
   def appendToSection(title: String, sectionPath: String, text: String, summary: String, bAppend: Boolean = true, isMinor: Boolean = false) = {
@@ -129,7 +137,7 @@ trait wikiBot {
   }
 
   def testEditSection() = {
-    editSection(title = getSandboxPage + "2", sectionPath = "/परीक्षाविभागः", text = "नूतनपाठः2", summary = "परीक्षाविभागयोगः")
+    replaceSectionText(title = getSandboxPage + "2", sectionPath = "/परीक्षाविभागः", text = "नूतनपाठः2", summary = "परीक्षाविभागयोगः")
   }
 
   def test() = {

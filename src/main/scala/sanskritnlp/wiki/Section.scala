@@ -50,7 +50,7 @@ class Section {
     }
     val subSectionText = subSections.map(_.toString).mkString("\n")
     text = s"$text$headText\n$subSectionText"
-    return text
+    return text.replaceAll("\\n\\n+", "\n\n")
   }
 
   // Stops when a higher level section is encountered.
@@ -97,6 +97,19 @@ class Section {
     return
   }
 
+  def deleteSection(sectionPath: String): Unit = {
+    val sectionList = sectionPath.split("/").filter(_ != "")
+    assert(sectionList.length > 0)
+    val headSectionList = subSections.filter(_.title == sectionList.head)
+    headSectionList.foreach(headSection => {
+      if (sectionList.length > 1) {
+        headSection.deleteSection(sectionList.tail.mkString("/"))
+      } else {
+        subSections = subSections.filterNot(headSectionList contains _)
+      }
+    })
+  }
+
   def getOrCreateSection(sectionPath: String): Section = {
     val sectionList = sectionPath.split("/").filter(_ != "")
     assert(sectionList.length > 0)
@@ -125,6 +138,7 @@ object sectionTest {
         |परीक्षार्थं सृष्टमिदम्।
         |== विभागः १ ==
         |असदफ़
+        |nn== संस्कृतम् ==nn=== अक्षरम् ===
         |
         |=== उपविभागः १ ===
         |
@@ -148,6 +162,9 @@ object sectionTest {
 
     val section = article.getOrCreateSection("/विभागः २/विभागः २.1/विभागः २.1.1")
     section.headText = "In " + section.title
+    log.info (article.toString)
+
+    article.deleteSection(sectionPath = "/विभागः २/विभागः २.1/विभागः २.1.1")
     log.info (article.toString)
   }
 }

@@ -24,7 +24,7 @@ trait wikiBot {
   // Bot policy: https://en.wikipedia.org/wiki/Wikipedia:Bot_policy
   // see https://www.mediawiki.org/wiki/Manual:$wgRateLimits
   // But 60/8 results in rate limiting.
-  val minGapBetweenEdits: Int = (math.ceil(60/60)).toInt
+  val minGapBetweenEdits: Int = (math.ceil(60/120)).toInt
 
   def login = {
     bot = new MediaWikiBot(s"http://$languageCode.$wikiSiteName.org/w/")
@@ -101,10 +101,18 @@ trait wikiBot {
   def editSection(title: String, sectionPath: String, text: String, summary: String, bAppend: Boolean = true, isMinor: Boolean = false) = {
     val article = getArticle(title)
     val articleSection = new Section
-    articleSection.parse(lines = article.getText.split("\n"))
+    articleSection.parse(lines = article.getText.replace("nn", "\n\n").split("\n"))
     val section = articleSection.getOrCreateSection(sectionPath)
     section.headText = text
     editArticle(article = article, text = articleSection.toString, summary = summary, isMinor = isMinor)
+  }
+
+  def deleteSection(title: String, sectionPath: String) = {
+    val article = getArticle(title)
+    val articleSection = new Section
+    articleSection.parse(lines = article.getText.replace("nn", "\n\n").split("\n"))
+    articleSection.deleteSection(sectionPath)
+    editArticle(article = article, text = articleSection.toString, summary = s"अस्य भागस्य निष्कासनम् - $sectionPath")
   }
 
   def testEditSection() = {

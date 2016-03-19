@@ -13,7 +13,8 @@ object wiktionary extends wikiBot {
     val tail_text = s"[[वर्गः: यन्त्रोपारोपितकोशांशः '$dict_name'-तः]]"
     val section_text = s"$head_text\n\n$meaning\n\n$tail_text"
     headwords.foreach(head => {
-      editSection(title = head, sectionPath = sectionPath, summary = "अर्थनिवेशः", text = section_text)
+      // editSection(title = head, sectionPath = sectionPath, summary = "अर्थनिवेशः", text = section_text)
+      deleteSection(head, sectionPath)
       // log info section_text
     })
   }
@@ -40,6 +41,6 @@ object wiktionary extends wikiBot {
     // testEditSection
     uploadFromBabylonDict(filePath = "/home/vvasuki/stardict-sanskrit/sa-head/kalpadruma-sa/kalpadruma-sa.babylon_final",
       sectionPath = "/कोशोद्धरणम् यन्त्रोपारोपितम्/कल्पद्रुमः",
-      start_word_index = 1, end_word_index =  10, dict_source = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html")
+      start_word_index = 1, end_word_index =  4, dict_source = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html")
   }
 }

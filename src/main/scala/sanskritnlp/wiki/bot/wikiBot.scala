@@ -24,7 +24,7 @@ trait wikiBot {
   // Bot policy: https://en.wikipedia.org/wiki/Wikipedia:Bot_policy
   // see https://www.mediawiki.org/wiki/Manual:$wgRateLimits
   // But 60/8 results in rate limiting.
-  val minGapBetweenEdits: Int = (math.ceil(60/60) + 1).toInt
+  val minGapBetweenEdits: Int = (math.ceil(60/60)).toInt
 
   def login = {
     bot = new MediaWikiBot(s"http://$languageCode.$wikiSiteName.org/w/")

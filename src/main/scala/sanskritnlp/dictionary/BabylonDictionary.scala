@@ -17,7 +17,7 @@ class BabylonDictionary() {
     return linesIter.hasNext
   }
   def next(): (Array[String], String) = {
-    val returnTuple = (linesIter.next().split("|"), linesIter.next)
+    val returnTuple = (linesIter.next().split('|'), linesIter.next)
     assert(linesIter.next() == "")
     return returnTuple
   }

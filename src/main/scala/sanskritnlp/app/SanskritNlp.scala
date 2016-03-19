@@ -2,7 +2,6 @@ package sanskritnlp.app
 
 import sanskritnlp.vyAkaraNa._
 import sanskritnlp.transliteration._
-import sanskritnlp.bot._
 import org.slf4j.LoggerFactory
 
 object sanskritNlp {

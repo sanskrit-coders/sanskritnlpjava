@@ -40,7 +40,7 @@ class Section {
       log error("Cant find parent!")
     }
     parentSection.subSections += currentSection
-    log info ("added section: " + currentSection)
+    // log info ("added section: " + currentSection)
   }
 
   override def toString: String = {

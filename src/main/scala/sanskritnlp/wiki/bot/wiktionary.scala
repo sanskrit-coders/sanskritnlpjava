@@ -11,10 +11,13 @@ object wiktionary extends wikiBot {
 
   def addDictionaryMeaning(headwords: Array[String], meaning: String, sectionPath: String, dict_source: String, wordsSeen: mutable.HashSet[String]) = {
     log.info(headwords.mkString(","))
-    val dict_name = sectionPath.split('/').last
     val head_text = s"{{फलकम्:यन्त्रशोधितकोशार्थः|कोशमूलम् = $dict_source}}"
-    val tail_text = s"[[वर्गः: यन्त्रोपारोपितकोशांशः '$dict_name'-तः]]"
+
+    val category_name = sectionPath.split('/').filterNot(_ == "").mkString("-")
+    val tail_text = s"[[वर्गः: $category_name]"
+
     val section_text = s"$meaning\n\n$tail_text"
+
     headwords.foreach(head => {
       if (wordsSeen contains head) {
         appendToSection(title = head, sectionPath = sectionPath, summary = "अर्थनिवेशः", text = s"\n\n$section_text" )
@@ -44,7 +47,8 @@ object wiktionary extends wikiBot {
       if (word_index >= start_word_index) {
         // log.info(headwords.mkString(","))
         val sktHeadwords = headwords.filter(_ matches "\\p{IsDevanagari}+")
-        addDictionaryMeaning(sktHeadwords, meaning, sectionPath, dict_source, wordsSeen)
+        // addDictionaryMeaning(sktHeadwords, meaning, sectionPath, dict_source, wordsSeen)
+        replaceBadText(sktHeadwords)
         wordsSeen ++=  sktHeadwords
       }
     }
@@ -56,6 +60,6 @@ object wiktionary extends wikiBot {
     // testEditSection 7031
     uploadFromBabylonDict(filePath = "/home/vvasuki/stardict-sanskrit/sa-head/kalpadruma-sa/kalpadruma-sa.babylon_final",
       sectionPath = "/यन्त्रोपारोपितकोशांशः/कल्पद्रुमः",
-      start_word_index = 33560, end_word_index =  100000, dict_source = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html")
+      start_word_index = 1, end_word_index =  7031, dict_source = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html")
   }
 }

@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac05e739-ded8-465e-b65f-6eff68c25840" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/sanskritnlp/dictionary/BabylonDictionary.scala" afterPath="$PROJECT_DIR$/src/main/scala/sanskritnlp/dictionary/BabylonDictionary.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wikiBot.scala" afterPath="$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wikiBot.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wiktionary.scala" afterPath="$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wiktionary.scala" />
     </list>
     <ignored path="sanskritnlpjava.iws" />
@@ -30,7 +28,7 @@
       <file leaf-file-name="romanScripts.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/romanScripts.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2280">
+            <state relative-caret-position="0">
               <caret line="157" column="45" selection-start-line="157" selection-start-column="35" selection-end-line="157" selection-end-column="45" />
               <folding>
                 <element signature="e#37#65#0" expanded="false" />
@@ -64,20 +62,20 @@
       <file leaf-file-name="wikisource.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wikisource.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+            <state relative-caret-position="165">
+              <caret line="13" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wiktionary.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="wiktionary.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wiktionary.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+            <state relative-caret-position="105">
+              <caret line="7" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
-                <element signature="e#30#77#0" expanded="true" />
+                <element signature="e#30#60#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,12 +91,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BabylonDictionary.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BabylonDictionary.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/dictionary/BabylonDictionary.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="17" column="91" selection-start-line="17" selection-start-column="91" selection-end-line="17" selection-end-column="91" />
-              <folding />
+            <state relative-caret-position="674">
+              <caret line="76" column="43" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
+              <folding>
+                <element signature="e#32#66#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,7 +106,7 @@
       <file leaf-file-name="wikiBot.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wikiBot.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
+            <state relative-caret-position="397">
               <caret line="129" column="6" selection-start-line="129" selection-start-column="6" selection-end-line="129" selection-end-column="6" />
               <folding />
             </state>
@@ -178,8 +178,8 @@
         <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/app/SanskritNlp.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/Section.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wikiBot.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/dictionary/BabylonDictionary.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wiktionary.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/dictionary/BabylonDictionary.scala" />
       </list>
     </option>
   </component>
@@ -509,7 +509,7 @@
       <recent name="sanskritnlp.transliteration" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.wiktionary">
+  <component name="RunManager" selected="Application.babylonDictTest">
     <configuration default="false" name="harvardKyotoTest" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -593,6 +593,26 @@
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="sanskritnlp" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="babylonDictTest" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="sanskritnlp.dictionary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="sanskritnlp.dictionary.babylonDictTest" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -1074,7 +1094,7 @@
       <envs />
       <method />
     </configuration>
-    <list size="15">
+    <list size="16">
       <item index="0" class="java.lang.String" itemvalue="Scala Script.Test" />
       <item index="1" class="java.lang.String" itemvalue="Scala Script.filenamesToNumber" />
       <item index="2" class="java.lang.String" itemvalue="Scala Script.kalpadruma-to-dev" />
@@ -1090,13 +1110,15 @@
       <item index="12" class="java.lang.String" itemvalue="Application.asTest" />
       <item index="13" class="java.lang.String" itemvalue="Application.iastTest" />
       <item index="14" class="java.lang.String" itemvalue="Application.wikisource" />
+      <item index="15" class="java.lang.String" itemvalue="Application.babylonDictTest" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Application.wikisource" />
-        <item index="1" class="java.lang.String" itemvalue="Application.harvardKyotoTest" />
-        <item index="2" class="java.lang.String" itemvalue="Application.asTest" />
-        <item index="3" class="java.lang.String" itemvalue="Application.iastTest" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.babylonDictTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.wikisource" />
+        <item index="2" class="java.lang.String" itemvalue="Application.harvardKyotoTest" />
+        <item index="3" class="java.lang.String" itemvalue="Application.asTest" />
+        <item index="4" class="java.lang.String" itemvalue="Application.iastTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1142,7 +1164,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6617238" sideWeight="0.5140962" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18796296" sideWeight="0.4859038" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37407407" sideWeight="0.4859038" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993513" sideWeight="0.49806523" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1184,13 +1206,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/harvardKyoto.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="47" column="51" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/as.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1477,7 +1492,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/romanScripts.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2280">
+        <state relative-caret-position="0">
           <caret line="157" column="45" selection-start-line="157" selection-start-column="35" selection-end-line="157" selection-end-column="45" />
           <folding>
             <element signature="e#37#65#0" expanded="false" />
@@ -1489,13 +1504,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/app/SanskritNlp.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1519,22 +1527,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wikisource.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wikiBot.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="129" column="6" selection-start-line="129" selection-start-column="6" selection-end-line="129" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="65">
@@ -1551,20 +1543,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/dictionary/BabylonDictionary.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/app/SanskritNlp.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+          <folding>
+            <element signature="e#25#55#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wikisource.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="17" column="91" selection-start-line="17" selection-start-column="91" selection-end-line="17" selection-end-column="91" />
+          <caret line="13" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.10.3/scala-library-2.10.3.jar!/scala/collection/Iterator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wikiBot.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="129" column="6" selection-start-line="129" selection-start-column="6" selection-end-line="129" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wiktionary.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+        <state relative-caret-position="105">
+          <caret line="7" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <element signature="e#30#77#0" expanded="true" />
+            <element signature="e#30#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/dictionary/BabylonDictionary.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="674">
+          <caret line="76" column="43" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
+          <folding>
+            <element signature="e#32#66#0" expanded="true" />
           </folding>
         </state>
       </provider>

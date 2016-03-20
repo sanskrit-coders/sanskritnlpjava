@@ -3,7 +3,6 @@ package sanskritnlp.dictionary
 import java.io.{File, PrintWriter}
 
 import org.slf4j.LoggerFactory
-import sanskritnlp.wiki.bot.wiktionary._
 
 import scala.collection.mutable.ListBuffer
 import scala.collection.immutable.HashMap
@@ -11,7 +10,7 @@ import scala.collection.mutable
 import scala.io.{BufferedSource, Source}
 
 class BabylonDictionary(name_in: String, source_in: String = "") {
-  var wordToLocations = new HashMap[String, ListBuffer[Int]]
+  var wordToLocations: HashMap[String, ListBuffer[Int]] = new HashMap[String, ListBuffer[Int]]
   val log = LoggerFactory.getLogger(this.getClass)
 
   val dict_name = name_in
@@ -28,6 +27,7 @@ class BabylonDictionary(name_in: String, source_in: String = "") {
   var src: Source = null
 
   def fromFile(infileStr: String) = {
+    log info s"Reading $infileStr for $dict_name"
     fileLocation = infileStr
     word_index = 0
     src = Source.fromFile(infileStr, "utf8")
@@ -52,6 +52,7 @@ class BabylonDictionary(name_in: String, source_in: String = "") {
   }
 
   def makeWordToLocationMap() = {
+    log info s"Making wordToLocationMap for $dict_name"
     word_index = 0
     while (hasNext()) {
       val (headwords, meaning) = next()
@@ -81,6 +82,16 @@ class BabylonDictionary(name_in: String, source_in: String = "") {
     }
     val definition_locus_list = wordToLocations.getOrElse(word, ListBuffer[Int]())
     return definition_locus_list.map(getMeaningAtIndex(_))
+  }
+
+  def getWikitext(word: String): String = {
+    val meanings = getMeanings(word).mkString("\n\n")
+    val head_text = s"{{फलकम्:यन्त्रशोधितकोशार्थः|कोशमूलम् = $source}}"
+    val sectionPath = s"/यन्त्रोपारोपितकोशांशः/${dict_name}"
+    val category_name = sectionPath.split('/').filterNot(_ == "").mkString("-")
+    val tail_text = s"[[वर्गः: $category_name]]"
+
+    return s"$head_text\n\n$meanings\n\n$tail_text"
   }
 }
 

@@ -6,9 +6,8 @@ import sanskritnlp.dictionary.BabylonDictionary
 import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
 
-object wiktionary extends wikiBot {
+trait wiktionary extends wikiBot {
   override val log = LoggerFactory.getLogger(this.getClass)
-  override val languageCode = "sa"
   override val wikiSiteName = "wiktionary"
 
   def replaceBadText(headwords: Array[String], regexMap: Map[String, String]) = {
@@ -22,7 +21,6 @@ object wiktionary extends wikiBot {
     val dict_source = dictionary.source
     log.info(s"Adding $head")
     val head_text = s"{{फलकम्:यन्त्रशोधितकोशार्थः|कोशमूलम् = $dict_source}}"
-
     val sectionPath = s"/यन्त्रोपारोपितकोशांशः/${dictionary.dict_name}"
     val category_name = sectionPath.split('/').filterNot(_ == "").mkString("-")
     val tail_text = s"[[वर्गः: $category_name]]"
@@ -65,26 +63,43 @@ object wiktionary extends wikiBot {
 
 
   def uploadFromBabylonDictsCombined(dictList: List[BabylonDictionary]) = {
+    val wordToDicts = new mutable.HashMap[String, Set[BabylonDictionary]]()
     dictList.foreach(dictionary => {
-
+      dictionary.makeWordToLocationMap()
+      dictionary.wordToLocations.keys.foreach(word => {
+        var dictSet = wordToDicts.getOrElse(word, Set[BabylonDictionary]())
+        dictSet = dictSet + dictionary
+        wordToDicts += (word -> dictSet)
+      })
+    })
+    wordToDicts.keys.foreach(word => {
+      log info s"word is present in ${wordToDicts.getOrElse(word, Set[BabylonDictionary]()).map(_.dict_name).mkString(" ")}"
     })
   }
+}
+
+
+object sa_wiktionary extends wiktionary {
+  override val languageCode = "sa"
+  override val log = LoggerFactory.getLogger(this.getClass)
+
+  val kalpadruma = new BabylonDictionary(name_in = "कल्पद्रुमः", source_in = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html")
+  kalpadruma.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-head/kalpadruma-sa/kalpadruma-sa.babylon_final")
+  val amara = new BabylonDictionary(name_in = "अमरकोशः", source_in = "http://github.com/sanskrit-coders/stardict-sanskrit/tree/master/sa-head/amara-onto")
+  amara.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-head/amara-onto/amara-onto.babylon_final")
+  val vAcas = new BabylonDictionary(name_in = "वाचस्पत्यम्", source_in = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html")
+  vAcas.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-head/vAchaspatyam-sa/vAchaspatyam-sa.babylon_final")
+  val mw = new BabylonDictionary(name_in = "Monier-Williams", source_in = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html")
+  mw.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-head/mw-sa/mw-sa.babylon_final")
+  val apte = new BabylonDictionary(name_in = "Apte", source_in = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html")
+  apte.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-head/apte-sa/apte-sa.babylon_final")
+  val shabdasAgara = new BabylonDictionary(name_in = "शब्दसागरः", source_in = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html")
+  apte.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-head/shabda-sAgara/shabda-sAgara.babylon_final")
+
 
   def main(args: Array[String]): Unit = {
     passwd = ""
     login
-    val kalpadruma = new BabylonDictionary(name_in = "कल्पद्रुमः", source_in = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html")
-    kalpadruma.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-head/kalpadruma-sa/kalpadruma-sa.babylon_final")
-    val amara = new BabylonDictionary(name_in = "अमरकोशः", source_in = "http://github.com/sanskrit-coders/stardict-sanskrit/tree/master/sa-head/amara-onto")
-    amara.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-head/amara-onto/amara-onto.babylon_final")
-    val vAcas = new BabylonDictionary(name_in = "वाचस्पत्यम्", source_in = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html")
-    vAcas.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-head/vAchaspatyam-sa/vAchaspatyam-sa.babylon_final")
-    val mw = new BabylonDictionary(name_in = "Monier-Williams", source_in = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html")
-    mw.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-head/mw-sa/mw-sa.babylon_final")
-    val apte = new BabylonDictionary(name_in = "Apte", source_in = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html")
-    apte.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-head/apte-sa/apte-sa.babylon_final")
-    val kRdanta = new BabylonDictionary(name_in = "Apte", source_in = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html")
-    kRdanta.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-head/kRdanta-rUpa-mAlA/kRdanta-rUpa-mAlA.babylon_final")
-    uploadFromBabylonDictsSerial(List(vAcas, mw, apte))
+    uploadFromBabylonDictsCombined(List(vAcas, shabdasAgara, mw, apte))
   }
 }

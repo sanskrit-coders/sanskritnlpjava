@@ -109,10 +109,13 @@ trait wikiBot {
     editArticle(article = article, text = articleSection.toString, summary = summary, isMinor = isMinor)
   }
 
-  def replaceRegex(title: String, regex: String, replacement: String) = {
+  def replaceRegex(title: String, regexMap: Map[String, String]) = {
     val article = getArticle(title)
-    val replacementText = article.getText.replaceAll(regex, replacement)
-    editArticle(article = article, text = replacementText, summary = s"replace $regex with $replacement")
+    var replacementText = article.getText
+    regexMap.keys.foreach(regex => {
+      replacementText = replacementText.replaceAll(regex, regexMap(regex))
+    })
+    editArticle(article = article, text = replacementText, summary = s"replace ${regexMap.keys.mkString(",")} with ${regexMap.values.mkString(",")}")
   }
 
   def appendToSection(title: String, sectionPath: String, text: String, summary: String, bAppend: Boolean = true, isMinor: Boolean = false) = {

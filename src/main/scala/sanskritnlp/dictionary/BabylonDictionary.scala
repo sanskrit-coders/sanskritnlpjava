@@ -16,7 +16,6 @@ class BabylonDictionary(name_in: String, source_in: String = "") {
 
   val dict_name = name_in
   val source = source_in
-  var fileLocation = ""
 
   // Maintained by external users of this dictionary - not here. Kept here for conveneince.
   val wordsSeen = new mutable.HashSet[String]
@@ -24,12 +23,14 @@ class BabylonDictionary(name_in: String, source_in: String = "") {
   var end_word_index: Int = 100000
   var word_index = 0
 
+  var fileLocation = ""
   var linesIter: Iterator[String] = null
+  var src: Source = null
 
   def fromFile(infileStr: String) = {
     fileLocation = infileStr
     word_index = 0
-    val src = Source.fromFile(infileStr, "utf8")
+    src = Source.fromFile(infileStr, "utf8")
     linesIter = src.getLines
   }
 
@@ -67,7 +68,7 @@ class BabylonDictionary(name_in: String, source_in: String = "") {
   }
 
   def getMeaningAtIndex(locus: Int): String = {
-    log info(s"locus: $locus")
+    // log info(s"locus: $locus")
     take(locus - 1)
     val (_, meaning_line) = next()
     fromFile(fileLocation)
@@ -89,6 +90,8 @@ object babylonDictTest {
   def main(args: Array[String]) {
     val kalpadruma = new BabylonDictionary(name_in = "कल्पद्रुमः", source_in = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html")
     kalpadruma.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-head/kalpadruma-sa/kalpadruma-sa.babylon_final")
+    log info kalpadruma.getMeanings("इ").mkString("\n\n")
     log info kalpadruma.getMeanings("अ").mkString("\n\n")
+    log info kalpadruma.getMeanings("उ").mkString("\n\n")
   }
 }

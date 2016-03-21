@@ -1,7 +1,9 @@
 package sanskritnlp.wiki.bot
 
+import net.sourceforge.jwbf.core.contentRep.SimpleArticle
 import org.slf4j.LoggerFactory
 import sanskritnlp.dictionary.BabylonDictionary
+import sanskritnlp.wiki.Section
 
 import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
@@ -62,20 +64,34 @@ trait wiktionary extends wikiBot {
   }
 
 
-  def uploadFromBabylonDictsCombined(dictList: List[BabylonDictionary]) = {
-    val wordToDicts = new mutable.HashMap[String, Set[BabylonDictionary]]()
+  def uploadFromBabylonDictsCombined(dictList: List[BabylonDictionary], start_index: Int = 1) = {
+    val wordToDicts = new mutable.HashMap[String, ListBuffer[BabylonDictionary]]()
     dictList.foreach(dictionary => {
       dictionary.makeWordToLocationMap()
       dictionary.wordToLocations.keys.foreach(word => {
-        var dictSet = wordToDicts.getOrElse(word, Set[BabylonDictionary]())
-        dictSet = dictSet + dictionary
-        wordToDicts += (word -> dictSet)
+        var dictList = wordToDicts.getOrElse(word, ListBuffer[BabylonDictionary]())
+        dictList += dictionary
+        wordToDicts += (word -> dictList)
       })
     })
-    wordToDicts.keys.foreach(word => {
-      log info s"word is present in ${wordToDicts.getOrElse(word, Set[BabylonDictionary]()).map(_.dict_name).mkString(" ")}"
+
+    var word_index = 0
+    // use drop to skip n items.
+    wordToDicts.keys.toList.drop(start_index - 1).sorted.foreach(word => {
+      word_index = word_index + 1
+      log info s"$word (index: $word_index of ${wordToDicts.size}) is present in ${wordToDicts.getOrElse(word, Set[BabylonDictionary]()).map(_.dict_name).mkString(", ")}"
+      val (article: SimpleArticle, articleSection: Section) = getArticleSection(word)
+      wordToDicts.getOrElse(word, null).foreach(dictionary => {
+        val (sectionPath, text) = getWikiEntry(dictionary, word)
+        val section = articleSection.getOrCreateSection(sectionPath)
+        section.headText = text
+      })
+      // log info articleSection.toString()
+      editArticle(article = article, text = articleSection.toString, summary = s"(re)add ${dictList.mkString(", ")}")
     })
   }
+
+  def getWikiEntry(dictionary: BabylonDictionary, word: String): (String, String) = null
 }
 
 
@@ -94,12 +110,21 @@ object sa_wiktionary extends wiktionary {
   val apte = new BabylonDictionary(name_in = "Apte", source_in = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html")
   apte.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-head/apte-sa/apte-sa.babylon_final")
   val shabdasAgara = new BabylonDictionary(name_in = "शब्दसागरः", source_in = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html")
-  apte.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-head/shabda-sAgara/shabda-sAgara.babylon_final")
+  shabdasAgara.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-head/shabda-sAgara/shabda-sAgara.babylon_final")
 
+  override def getWikiEntry(dictionary: BabylonDictionary, word: String): (String, String) = {
+    val head_text = s"{{फलकम्:यन्त्रशोधितकोशार्थः|कोशमूलम् = ${dictionary.source}}}"
+    val sectionPath = s"/यन्त्रोपारोपितकोशांशः/${dictionary.dict_name}"
+    val category_name = sectionPath.split('/').filterNot(_ == "").mkString("-")
+    val tail_text = s"[[वर्गः: $category_name]]"
+    val meanings = dictionary.getMeanings(word).mkString("\n\n")
+    val text = s"$head_text\n\n$meanings\n\n$tail_text".replaceAll("\\{@|@\\}", "'''")
+    return (sectionPath, text)
+  }
 
   def main(args: Array[String]): Unit = {
     passwd = ""
     login
-    uploadFromBabylonDictsCombined(List(vAcas, shabdasAgara, mw, apte))
+    uploadFromBabylonDictsCombined(List(vAcas, shabdasAgara, apte, mw), start_index = 44)
   }
 }

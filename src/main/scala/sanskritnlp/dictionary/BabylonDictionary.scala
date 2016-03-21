@@ -27,7 +27,7 @@ class BabylonDictionary(name_in: String, source_in: String = "") {
   var src: Source = null
 
   def fromFile(infileStr: String) = {
-    log info s"Reading $infileStr for $dict_name"
+    // log info s"Reading $infileStr for $dict_name"
     fileLocation = infileStr
     word_index = 0
     src = Source.fromFile(infileStr, "utf8")
@@ -84,15 +84,6 @@ class BabylonDictionary(name_in: String, source_in: String = "") {
     return definition_locus_list.map(getMeaningAtIndex(_))
   }
 
-  def getWikitext(word: String): String = {
-    val meanings = getMeanings(word).mkString("\n\n")
-    val head_text = s"{{फलकम्:यन्त्रशोधितकोशार्थः|कोशमूलम् = $source}}"
-    val sectionPath = s"/यन्त्रोपारोपितकोशांशः/${dict_name}"
-    val category_name = sectionPath.split('/').filterNot(_ == "").mkString("-")
-    val tail_text = s"[[वर्गः: $category_name]]"
-
-    return s"$head_text\n\n$meanings\n\n$tail_text"
-  }
 }
 
 object babylonDictTest {

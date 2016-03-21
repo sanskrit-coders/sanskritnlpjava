@@ -100,10 +100,15 @@ trait wikiBot {
     }
   }
 
-  def replaceSectionText(title: String, sectionPath: String, text: String, summary: String, bAppend: Boolean = true, isMinor: Boolean = false) = {
+  def getArticleSection(title: String): (SimpleArticle, Section) = {
     val article = getArticle(title)
     val articleSection = new Section
     articleSection.parse(lines = article.getText.split("\n"))
+    (article, articleSection)
+  }
+
+  def replaceSectionText(title: String, sectionPath: String, text: String, summary: String, bAppend: Boolean = true, isMinor: Boolean = false) = {
+    val (article: SimpleArticle, articleSection: Section) = getArticleSection(title)
     val section = articleSection.getOrCreateSection(sectionPath)
     section.headText = text
     editArticle(article = article, text = articleSection.toString, summary = summary, isMinor = isMinor)
@@ -119,18 +124,16 @@ trait wikiBot {
   }
 
   def appendToSection(title: String, sectionPath: String, text: String, summary: String, bAppend: Boolean = true, isMinor: Boolean = false) = {
-    val article = getArticle(title)
-    val articleSection = new Section
-    articleSection.parse(lines = article.getText.split("\n"))
+    val (article: SimpleArticle, articleSection: Section) = getArticleSection(title)
+
     val section = articleSection.getOrCreateSection(sectionPath)
     section.headText += text
     editArticle(article = article, text = articleSection.toString, summary = summary, isMinor = isMinor)
   }
 
   def deleteSection(title: String, sectionPath: String) = {
-    val article = getArticle(title)
-    val articleSection = new Section
-    articleSection.parse(lines = article.getText.split("\n"))
+    val (article: SimpleArticle, articleSection: Section) = getArticleSection(title)
+
     articleSection.deleteSection(sectionPath)
     var textPostDeletion = articleSection.toString
     if (textPostDeletion matches "\\s*") {

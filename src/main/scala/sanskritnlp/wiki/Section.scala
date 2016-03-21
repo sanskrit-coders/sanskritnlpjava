@@ -112,7 +112,7 @@ class Section {
     })
   }
 
-  def getOrCreateSection(sectionPath: String): Section = {
+  def getOrCreateSection(sectionPath: String, defaultSection: Section = new Section): Section = {
     val sectionList = sectionPath.split("/").filter(_ != "")
     assert(sectionList.length > 0)
     val headSectionList = subSections.filter(_.title == sectionList.head)
@@ -120,7 +120,7 @@ class Section {
     if (headSectionList.length > 0) {
       headSection = headSectionList.head
     } else {
-      headSection = new Section
+      headSection = defaultSection
       headSection.setAttributes(titleIn = sectionList.head, levelTextIn = levelText + "=")
       subSections += headSection
     }

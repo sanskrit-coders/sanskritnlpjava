@@ -64,10 +64,10 @@ trait wiktionary extends wikiBot {
   }
 
 
-  def uploadFromBabylonDictsCombined(dictList: List[BabylonDictionary], start_index: Int = 1) = {
+  def uploadFromBabylonDictsCombined(dictList: List[BabylonDictionary], headword_pattern: String = "\\p{IsDevanagari}+", start_index: Int = 1) = {
     val wordToDicts = new mutable.HashMap[String, ListBuffer[BabylonDictionary]]()
     dictList.foreach(dictionary => {
-      dictionary.makeWordToLocationMap()
+      dictionary.makeWordToLocationMap(headword_pattern = "\\p{IsDevanagari}+")
       dictionary.wordToLocations.keys.foreach(word => {
         var dictList = wordToDicts.getOrElse(word, ListBuffer[BabylonDictionary]())
         dictList += dictionary
@@ -75,9 +75,9 @@ trait wiktionary extends wikiBot {
       })
     })
 
-    var word_index = 0
+    var word_index = start_index - 1
     // use drop to skip n items.
-    wordToDicts.keys.toList.drop(start_index - 1).sorted.foreach(word => {
+    wordToDicts.keys.toList.sorted.drop(word_index).foreach(word => {
       word_index = word_index + 1
       log info s"$word (index: $word_index of ${wordToDicts.size}) is present in ${wordToDicts.getOrElse(word, Set[BabylonDictionary]()).map(_.dict_name).mkString(", ")}"
       val (article: SimpleArticle, articleSection: Section) = getArticleSection(word)
@@ -125,6 +125,6 @@ object sa_wiktionary extends wiktionary {
   def main(args: Array[String]): Unit = {
     passwd = ""
     login
-    uploadFromBabylonDictsCombined(List(vAcas, shabdasAgara, apte, mw), start_index = 44)
+    uploadFromBabylonDictsCombined(List(vAcas, shabdasAgara, apte, mw), start_index = 1)
   }
 }

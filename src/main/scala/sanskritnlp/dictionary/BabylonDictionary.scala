@@ -51,15 +51,15 @@ class BabylonDictionary(name_in: String, source_in: String = "") {
     }
   }
 
-  def makeWordToLocationMap() = {
+  def makeWordToLocationMap(headword_pattern: String = ".+") = {
     log info s"Making wordToLocationMap for $dict_name"
     word_index = 0
     while (hasNext()) {
       val (headwords, meaning) = next()
       word_index = word_index + 1
       // log.info(s"word_index : $word_index")
-      val sktHeadwords = headwords.filter(_ matches "\\p{IsDevanagari}+")
-      sktHeadwords.foreach(word => {
+      val filtered_headwords = headwords.filter(_ matches headword_pattern)
+      filtered_headwords.foreach(word => {
         val locus_list = wordToLocations.getOrElse(word, ListBuffer[Int]())
         locus_list += word_index
         wordToLocations += (word -> locus_list)

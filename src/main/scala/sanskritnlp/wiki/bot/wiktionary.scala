@@ -37,12 +37,6 @@ trait wiktionary extends wikiBot {
     dictionary.wordsSeen += head
   }
 
-  def deleteSection(headwords: Array[String], sectionPath: String): Unit = {
-    headwords.foreach(head => {
-      deleteSection(head, sectionPath)
-    })
-  }
-
   def uploadFromBabylonDict(dictionary: BabylonDictionary, headword_pattern: String = "\\p{IsDevanagari}+") = {
     dictionary.word_index = 0
     while (dictionary.hasNext() && dictionary.word_index + 1 <= dictionary.end_word_index) {
@@ -53,6 +47,7 @@ trait wiktionary extends wikiBot {
         // log.info(headwords.mkString(","))
         val sktHeadwords = headwords.filter(_ matches headword_pattern)
         sktHeadwords.foreach(addDictionaryMeaning(_, meaning, dictionary))
+        sktHeadwords.foreach(deleteSection(_, "/यन्त्रोपारोपितकोशांशः/शब्दसागरः"))
       }
     }
   }
@@ -64,11 +59,12 @@ trait wiktionary extends wikiBot {
   }
 
 
-  def uploadFromBabylonDictsCombined(dictList: List[BabylonDictionary], headword_pattern: String = "\\p{IsDevanagari}+", start_index: Int = 1) = {
+  def uploadFromBabylonDictsCombined(dictList: List[BabylonDictionary], start_index: Int = 1, end_index: Int = 1000000, headword_pattern: String) = {
     val wordToDicts = new mutable.HashMap[String, ListBuffer[BabylonDictionary]]()
     dictList.foreach(dictionary => {
-      dictionary.makeWordToLocationMap(headword_pattern = "\\p{IsDevanagari}+")
-      dictionary.wordToLocations.keys.foreach(word => {
+      // dictionary.makeWordToLocationMap(headword_pattern = "\\p{IsDevanagari}+")
+      dictionary.makeWordToMeaningsMap(headword_pattern)
+      dictionary.getWords.foreach(word => {
         var dictList = wordToDicts.getOrElse(word, ListBuffer[BabylonDictionary]())
         dictList += dictionary
         wordToDicts += (word -> dictList)
@@ -77,9 +73,9 @@ trait wiktionary extends wikiBot {
 
     var word_index = start_index - 1
     // use drop to skip n items.
-    wordToDicts.keys.toList.sorted.drop(word_index).foreach(word => {
+    wordToDicts.keys.toList.sorted.drop(word_index).take(end_index - start_index + 1).foreach(word => {
       word_index = word_index + 1
-      log info s"$word (index: $word_index of ${wordToDicts.size}) is present in ${wordToDicts.getOrElse(word, Set[BabylonDictionary]()).map(_.dict_name).mkString(", ")}"
+      log info s"$word (index: $word_index of $end_index <= ${wordToDicts.size}) is present in ${wordToDicts.getOrElse(word, Set[BabylonDictionary]()).map(_.dict_name).mkString(", ")}"
       val (article: SimpleArticle, articleSection: Section) = getArticleSection(word)
       wordToDicts.getOrElse(word, null).foreach(dictionary => {
         val (sectionPath, text) = getWikiEntry(dictionary, word)
@@ -99,18 +95,21 @@ object sa_wiktionary extends wiktionary {
   override val languageCode = "sa"
   override val log = LoggerFactory.getLogger(this.getClass)
 
-  val kalpadruma = new BabylonDictionary(name_in = "कल्पद्रुमः", source_in = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html")
+  val kalpadruma = new BabylonDictionary(name_in = "कल्पद्रुमः", source_in = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html", head_language= "sa")
   kalpadruma.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-head/kalpadruma-sa/kalpadruma-sa.babylon_final")
-  val amara = new BabylonDictionary(name_in = "अमरकोशः", source_in = "http://github.com/sanskrit-coders/stardict-sanskrit/tree/master/sa-head/amara-onto")
+  val amara = new BabylonDictionary(name_in = "अमरकोशः", source_in = "http://github.com/sanskrit-coders/stardict-sanskrit/tree/master/sa-head/amara-onto", head_language= "sa")
   amara.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-head/amara-onto/amara-onto.babylon_final")
-  val vAcas = new BabylonDictionary(name_in = "वाचस्पत्यम्", source_in = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html")
+  val vAcas = new BabylonDictionary(name_in = "वाचस्पत्यम्", source_in = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html", head_language= "sa")
   vAcas.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-head/vAchaspatyam-sa/vAchaspatyam-sa.babylon_final")
-  val mw = new BabylonDictionary(name_in = "Monier-Williams", source_in = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html")
+  val mw = new BabylonDictionary(name_in = "Monier-Williams", source_in = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html", head_language= "sa")
   mw.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-head/mw-sa/mw-sa.babylon_final")
-  val apte = new BabylonDictionary(name_in = "Apte", source_in = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html")
+  val apte = new BabylonDictionary(name_in = "Apte", source_in = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html", head_language= "sa")
   apte.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-head/apte-sa/apte-sa.babylon_final")
-  val shabdasAgara = new BabylonDictionary(name_in = "शब्दसागरः", source_in = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html")
+  val shabdasAgara = new BabylonDictionary(name_in = "शब्दसागरः", source_in = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html", head_language= "sa")
   shabdasAgara.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-head/shabda-sAgara/shabda-sAgara.babylon_final")
+  val AkhyAtachandrikA = new BabylonDictionary(name_in = "आख्यातचन्द्रिका", source_in = "http://github.com/sanskrit-coders/stardict-sanskrit/tree/master/sa-head/AkhyAtachandrikA", head_language= "sa")
+  AkhyAtachandrikA.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-head/AkhyAtachandrikA/AkhyAtachandrikA.babylon_final")
+
 
   override def getWikiEntry(dictionary: BabylonDictionary, word: String): (String, String) = {
     val head_text = s"{{फलकम्:यन्त्रशोधितकोशार्थः|कोशमूलम् = ${dictionary.source}}}"
@@ -125,6 +124,8 @@ object sa_wiktionary extends wiktionary {
   def main(args: Array[String]): Unit = {
     passwd = ""
     login
-    uploadFromBabylonDictsCombined(List(vAcas, shabdasAgara, apte, mw), start_index = 1)
+    // Done 075001-94454 100001-end
+    // uploadFromBabylonDictsCombined(List(dict_list = vAcas, shabdasAgara, apte, mw), start_index = 94454, end_index = 100000, headword_pattern = "\\p{IsDevanagari}+")
+    uploadFromBabylonDict(dictionary = AkhyAtachandrikA, headword_pattern = "\\p{IsDevanagari}+")
   }
 }

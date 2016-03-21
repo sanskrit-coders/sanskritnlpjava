@@ -19,45 +19,28 @@ trait wiktionary extends wikiBot {
     })
   }
 
-  def addDictionaryMeaning(head: String, meaning: String, dictionary: BabylonDictionary) = {
+  def addDictionaryMeaning(head: String, dictionary: BabylonDictionary) = {
     val dict_source = dictionary.source
     log.info(s"Adding $head")
-    val head_text = s"{{फलकम्:यन्त्रशोधितकोशार्थः|कोशमूलम् = $dict_source}}"
-    val sectionPath = s"/यन्त्रोपारोपितकोशांशः/${dictionary.dict_name}"
-    val category_name = sectionPath.split('/').filterNot(_ == "").mkString("-")
-    val tail_text = s"[[वर्गः: $category_name]]"
-
-    val section_text = s"$meaning\n\n$tail_text"
-    if (dictionary.wordsSeen contains head) {
-      appendToSection(title = head, sectionPath = sectionPath, summary = "अर्थनिवेशः", text = s"\n\n$section_text" )
-    } else {
-      replaceSectionText(title = head, sectionPath = sectionPath, summary = "अर्थनिवेशः", text = s"$head_text\n\n$section_text")
-    }
-    // log info section_text
-    dictionary.wordsSeen += head
+    val (sectionPath, text) = getWikiEntry(dictionary, head)
+    replaceSectionText(title = head, sectionPath = sectionPath, summary = "अर्थनिवेशः", text = text)
   }
 
-  def uploadFromBabylonDict(dictionary: BabylonDictionary, headword_pattern: String = "\\p{IsDevanagari}+") = {
-    dictionary.word_index = 0
-    while (dictionary.hasNext() && dictionary.word_index + 1 <= dictionary.end_word_index) {
-      val (headwords, meaning) = dictionary.next()
-      dictionary.word_index = dictionary.word_index + 1
-      log.info(s"${dictionary.dict_name} word_index : ${dictionary.word_index}")
-      if (dictionary.word_index >= dictionary.start_word_index) {
-        // log.info(headwords.mkString(","))
-        val sktHeadwords = headwords.filter(_ matches headword_pattern)
-        sktHeadwords.foreach(addDictionaryMeaning(_, meaning, dictionary))
-        sktHeadwords.foreach(deleteSection(_, "/यन्त्रोपारोपितकोशांशः/शब्दसागरः"))
+  // Used dictionaryUsed's name instead of dictionary's name?
+  def fixDictNameMixup(dictionary: BabylonDictionary, dictionaryUsed: BabylonDictionary, headword_pattern: String = "\\p{IsDevanagari}+") = {
+    dictionaryUsed.makeWordToLocationMap(headword_pattern)
+    dictionary.makeWordToLocationMap(headword_pattern)
+    dictionary.getWords.foreach(word => {
+      addDictionaryMeaning(word, dictionary)
+      deleteSection(word, getSectionPath(dictionaryUsed))
+      val meanings: ListBuffer[String] = dictionaryUsed.getMeanings(word)
+      // log info meanings.mkString(", ")
+      if ( meanings != null && meanings.size > 0) {
+        log info s"found $word in ${dictionaryUsed.dict_name}"
+        addDictionaryMeaning(word, dictionaryUsed)
       }
-    }
-  }
-
-  def uploadFromBabylonDictsSerial(dictList: List[BabylonDictionary]) = {
-    dictList.foreach(dictionary => {
-      uploadFromBabylonDict(dictionary)
     })
   }
-
 
   def uploadFromBabylonDictsCombined(dictList: List[BabylonDictionary], start_index: Int = 1, end_index: Int = 1000000, headword_pattern: String) = {
     val wordToDicts = new mutable.HashMap[String, ListBuffer[BabylonDictionary]]()
@@ -88,6 +71,7 @@ trait wiktionary extends wikiBot {
   }
 
   def getWikiEntry(dictionary: BabylonDictionary, word: String): (String, String) = null
+  def getSectionPath(dictionary: BabylonDictionary): (String) = null
 }
 
 
@@ -110,10 +94,20 @@ object sa_wiktionary extends wiktionary {
   val AkhyAtachandrikA = new BabylonDictionary(name_in = "आख्यातचन्द्रिका", source_in = "http://github.com/sanskrit-coders/stardict-sanskrit/tree/master/sa-head/AkhyAtachandrikA", head_language= "sa")
   AkhyAtachandrikA.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-head/AkhyAtachandrikA/AkhyAtachandrikA.babylon_final")
 
+  /* These don't yet exist:
+  val mw_eng = new BabylonDictionary(name_in = "Monier Williams (en-sa)", source_in = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html", head_language= "en")
+  mw_eng.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/en-head/mw-bi-itrans-dev/mw-bi-itrans-dev.babylon_final")
+  val apte_eng = new BabylonDictionary(name_in = "Apte (en-sa)", source_in = "http://github.com/sanskrit-coders/stardict-sanskrit/tree/master/sa-head/AkhyAtachandrikA", head_language= "sa")
+  apte_eng.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/en-head/apte-bi/apte-bi.babylon_final")
+  */
+  val computer_shrIkAnta = new BabylonDictionary(name_in = "आङ्ग्लसंस्कृतसङ्गणककोशः श्रीकान्तस्य", source_in = "http://github.com/sanskrit-coders/stardict-sanskrit/tree/master/en-head/computer-shrIkAnta", head_language= "en")
+  computer_shrIkAnta.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/en-head/computer-shrIkAnta/computer-shrIkAnta.babylon")
 
+
+  override def getSectionPath(dictionary: BabylonDictionary): (String) = s"/यन्त्रोपारोपितकोशांशः/${dictionary.dict_name}"
   override def getWikiEntry(dictionary: BabylonDictionary, word: String): (String, String) = {
     val head_text = s"{{फलकम्:यन्त्रशोधितकोशार्थः|कोशमूलम् = ${dictionary.source}}}"
-    val sectionPath = s"/यन्त्रोपारोपितकोशांशः/${dictionary.dict_name}"
+    val sectionPath = getSectionPath(dictionary)
     val category_name = sectionPath.split('/').filterNot(_ == "").mkString("-")
     val tail_text = s"[[वर्गः: $category_name]]"
     val meanings = dictionary.getMeanings(word).mkString("\n\n")
@@ -124,8 +118,7 @@ object sa_wiktionary extends wiktionary {
   def main(args: Array[String]): Unit = {
     passwd = ""
     login
-    // Done 075001-94454 100001-end
-    // uploadFromBabylonDictsCombined(List(dict_list = vAcas, shabdasAgara, apte, mw), start_index = 94454, end_index = 100000, headword_pattern = "\\p{IsDevanagari}+")
-    uploadFromBabylonDict(dictionary = AkhyAtachandrikA, headword_pattern = "\\p{IsDevanagari}+")
+    uploadFromBabylonDictsCombined(dictList = List(computer_shrIkAnta), headword_pattern = "[a-z]+")
+    // fixDictNameMixup(dictionary = AkhyAtachandrikA, dictionaryUsed = shabdasAgara, headword_pattern = "\\p{IsDevanagari}+")
   }
 }

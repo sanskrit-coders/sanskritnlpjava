@@ -99,17 +99,19 @@ class Section {
     return
   }
 
-  def deleteSection(sectionPath: String): Unit = {
+  // returns true if a section was found and deleted.
+  def deleteSection(sectionPath: String): Boolean = {
     val sectionList = sectionPath.split("/").filter(_ != "")
     assert(sectionList.length > 0)
     val headSectionList = subSections.filter(_.title == sectionList.head)
-    headSectionList.foreach(headSection => {
+    return headSectionList.map(headSection => {
       if (sectionList.length > 1) {
-        headSection.deleteSection(sectionList.tail.mkString("/"))
+        return headSection.deleteSection(sectionList.tail.mkString("/"))
       } else {
         subSections = subSections.filterNot(headSectionList contains _)
+        return !headSectionList.isEmpty
       }
-    })
+    }).fold(false)((a, b) => a|b)
   }
 
   def getOrCreateSection(sectionPath: String, defaultSection: Section = new Section): Section = {
@@ -166,7 +168,8 @@ object sectionTest {
     section.headText = "In " + section.title
     log.info (article.toString)
 
-    article.deleteSection(sectionPath = "/विभागः २/विभागः २.1/विभागः २.1.1")
+    assert(article.deleteSection(sectionPath = "/विभागः २/विभागः २.1/विभागः २.1.1"))
+    assert(!article.deleteSection(sectionPath = "/विभागः २/विभागः २.1/विभागः २.1.234"))
     log.info (article.toString)
   }
 }

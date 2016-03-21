@@ -134,12 +134,13 @@ trait wikiBot {
   def deleteSection(title: String, sectionPath: String) = {
     val (article: SimpleArticle, articleSection: Section) = getArticleSection(title)
 
-    articleSection.deleteSection(sectionPath)
-    var textPostDeletion = articleSection.toString
-    if (textPostDeletion matches "\\s*") {
-      textPostDeletion = "[सद्यः पूरयिष्यते]"
+    if (articleSection.deleteSection(sectionPath)) {
+      var textPostDeletion = articleSection.toString
+      if (textPostDeletion matches "\\s*") {
+        textPostDeletion = "[सद्यः पूरयिष्यते]"
+      }
+      editArticle(article = article, text = textPostDeletion, summary = s"अस्य भागस्य निष्कासनम् - $sectionPath")
     }
-    editArticle(article = article, text = textPostDeletion, summary = s"अस्य भागस्य निष्कासनम् - $sectionPath")
   }
 
   def testEditSection() = {

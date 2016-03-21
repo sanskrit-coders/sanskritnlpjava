@@ -17,11 +17,7 @@ class BabylonDictionary(name_in: String, source_in: String = "", head_language: 
   val dict_name = name_in
   val source = source_in
 
-  // Maintained by external users of this dictionary - not here. Kept here for conveneince.
-  val wordsSeen = new mutable.HashSet[String]
-  var start_word_index: Int = 1
-  var end_word_index: Int = 100000
-  var word_index = 0
+  var words_taken = 0
 
   var fileLocation = ""
   var linesIter: Iterator[String] = null
@@ -30,7 +26,7 @@ class BabylonDictionary(name_in: String, source_in: String = "", head_language: 
   def fromFile(infileStr: String) = {
     // log info s"Reading $infileStr for $dict_name"
     fileLocation = infileStr
-    word_index = 0
+    words_taken = 0
     src = Source.fromFile(infileStr, "utf8")
     linesIter = src.getLines
   }
@@ -40,29 +36,28 @@ class BabylonDictionary(name_in: String, source_in: String = "", head_language: 
   }
 
   def next(): (Array[String], String) = {
+    words_taken = words_taken + 1
     val returnTuple = (linesIter.next().split('|'), linesIter.next)
     assert(linesIter.next() == "")
     return returnTuple
   }
 
   def take(entriesToSkip: Int) = {
-    while(hasNext() && word_index < entriesToSkip) {
+    while(hasNext() && words_taken < entriesToSkip) {
       next()
-      word_index = word_index + 1
     }
   }
 
   def makeWordToLocationMap(headword_pattern: String = ".+") = {
     log info s"Making wordToLocationMap for $dict_name"
-    word_index = 0
+    fromFile(fileLocation)
     while (hasNext()) {
       val (headwords, meaning) = next()
-      word_index = word_index + 1
       // log.info(s"word_index : $word_index")
       val filtered_headwords = headwords.filter(_ matches headword_pattern)
       filtered_headwords.foreach(word => {
         val locus_list = wordToLocations.getOrElse(word, ListBuffer[Int]())
-        locus_list += word_index
+        locus_list += words_taken
         wordToLocations += (word -> locus_list)
       })
     }
@@ -70,10 +65,11 @@ class BabylonDictionary(name_in: String, source_in: String = "", head_language: 
   }
 
   def getMeaningAtIndex(locus: Int): String = {
-    // log info(s"locus: $locus")
+//    log info(s"locus: $locus")
+//    log info(s"words_taken: $words_taken")
+    fromFile(fileLocation)
     take(locus - 1)
     val (_, meaning_line) = next()
-    fromFile(fileLocation)
     return meaning_line
   }
 
@@ -89,21 +85,19 @@ class BabylonDictionary(name_in: String, source_in: String = "", head_language: 
     }
   }
 
-  def getWords: Iterable[String] = {
+  def getWords: List[String] = {
     if (wordToMeanings.size == 0) {
-      return wordToLocations.keys
+      return wordToLocations.keys.toList.sorted
     } else {
-      return wordToMeanings.keys
+      return wordToMeanings.keys.toList.sorted
     }
 
   }
 
   def makeWordToMeaningsMap(headword_pattern: String = ".+") = {
     log info s"Making wordToMeanings for $dict_name"
-    word_index = 0
     while (hasNext()) {
       val (headwords, meaning) = next()
-      word_index = word_index + 1
       // log.info(s"word_index : $word_index")
       val filtered_headwords = headwords.filter(_ matches headword_pattern)
       filtered_headwords.foreach(word => {
@@ -125,5 +119,7 @@ object babylonDictTest {
     log info kalpadruma.getMeanings("इ").mkString("\n\n")
     log info kalpadruma.getMeanings("अ").mkString("\n\n")
     log info kalpadruma.getMeanings("उ").mkString("\n\n")
+    log info kalpadruma.getMeanings("इ").mkString("\n\n")
+    log info kalpadruma.getMeanings("अ").mkString("\n\n")
   }
 }

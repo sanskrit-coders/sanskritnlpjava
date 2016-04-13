@@ -58,15 +58,19 @@ trait wiktionary extends wikiBot {
     // use drop to skip n items.
     wordToDicts.keys.toList.sorted.drop(word_index).take(end_index - start_index + 1).foreach(word => {
       word_index = word_index + 1
-      log info s"$word (index: $word_index of $end_index <= ${wordToDicts.size}) is present in ${wordToDicts.getOrElse(word, Set[BabylonDictionary]()).map(_.dict_name).mkString(", ")}"
-      val (article: SimpleArticle, articleSection: Section) = getArticleSection(word)
-      wordToDicts.getOrElse(word, null).foreach(dictionary => {
-        val (sectionPath, text) = getWikiEntry(dictionary, word)
-        val section = articleSection.getOrCreateSection(sectionPath)
-        section.headText = text
-      })
-      // log info articleSection.toString()
-      editArticle(article = article, text = articleSection.toString, summary = s"(re)add ${dictList.mkString(", ")}")
+      val fix_messup = false
+      // replaceRegex(word, Map("प्रकाशितकोशो" -> "प्रकाशितकोशों"))
+      if (!fix_messup) {
+        log info s"$word (index: $word_index of $end_index <= ${wordToDicts.size}) is present in ${wordToDicts.getOrElse(word, Set[BabylonDictionary]()).map(_.dict_name).mkString(", ")}"
+        val (article: SimpleArticle, articleSection: Section) = getArticleSection(word)
+        wordToDicts.getOrElse(word, null).foreach(dictionary => {
+          val (sectionPath, text) = getWikiEntry(dictionary, word)
+          val section = articleSection.getOrCreateSection(sectionPath)
+          section.headText = text
+        })
+        // log info articleSection.toString()
+        editArticle(article = article, text = articleSection.toString, summary = s"(re)add ${dictList.mkString(", ")}")
+      }
     })
   }
 
@@ -119,6 +123,32 @@ object sa_wiktionary extends wiktionary {
     passwd = ""
     login
     uploadFromBabylonDictsCombined(dictList = List(computer_shrIkAnta), headword_pattern = "[a-z]+")
+    // fixDictNameMixup(dictionary = AkhyAtachandrikA, dictionaryUsed = shabdasAgara, headword_pattern = "\\p{IsDevanagari}+")
+  }
+}
+
+object hi_wiktionary extends wiktionary {
+  override val languageCode = "hi"
+  override val log = LoggerFactory.getLogger(this.getClass)
+
+  val shabdasAgara = new BabylonDictionary(name_in = "शब्दसागर", head_language= "hi")
+  shabdasAgara.fromFile(infileStr = "/home/vvasuki/stardict-hindi/hi-head/hi-shabdasAgar/hi-shabdasagar.babylon_final")
+
+
+  override def getSectionPath(dictionary: BabylonDictionary): (String) = s"/प्रकाशितकोशों से अर्थ/${dictionary.dict_name}"
+  override def getWikiEntry(dictionary: BabylonDictionary, word: String): (String, String) = {
+    val sectionPath = getSectionPath(dictionary)
+    val category_name = sectionPath.split('/').filterNot(_ == "").mkString("-")
+    val tail_text = s"[[श्रेणी: $category_name]]"
+    val meanings = dictionary.getMeanings(word).mkString("\n\n")
+    val text = s"$meanings\n\n$tail_text".replaceAll("\\{@|@\\}", "'''")
+    return (sectionPath, text)
+  }
+
+  def main(args: Array[String]): Unit = {
+    passwd = ""
+    login
+    uploadFromBabylonDictsCombined(dictList = List(shabdasAgara), headword_pattern = "\\p{IsDevanagari}+", end_index = 5)
     // fixDictNameMixup(dictionary = AkhyAtachandrikA, dictionaryUsed = shabdasAgara, headword_pattern = "\\p{IsDevanagari}+")
   }
 }

@@ -51,7 +51,7 @@ object wikisource extends wikiBot {
   }
 
   // Bot approval request: https://en.wikipedia.org/wiki/Wikipedia:Bots/Requests_for_approval/sanskritnlpbot
-  def fillIndexedPages(ocrOutput: ocrOutputIterator, startPage: Int, endPage: Int,
+  def fillIndexedPages(ocrOutput: ocrOutputIterator, startPage: Int = 1, endPage: Int,
                        numberLanguage: String = "", fileTitle: String, overwrite: Boolean = false, dryRun: Boolean = true): Unit = {
     ocrOutput.skipNPages(startPage - 1)
     Range(startPage, endPage+1).foreach(pageNum => {
@@ -85,9 +85,9 @@ object wikisource extends wikiBot {
   }
 
   def fillIndexedPagesGocr = {
-    val gocrOut = new GocrOutputIterator("/home/vvasuki/sanskrit-ocr-r0/vaak/vyAkaraNam/abhyankar-grammar/abhyankar-grammar-gocr.txt")
-    fillIndexedPages(gocrOut, startPage = 197, endPage = 430, numberLanguage = "sa",
-      fileTitle = "ADictionaryOfSanskritGrammarByMahamahopadhyayaKashinathVasudevAbhyankar.djvu", overwrite = true, dryRun = false)
+    val gocrOut = new GocrOutputIterator("/home/vvasuki/sanskrit-ocr-r0/kAvyam/subhAShita-bhANDAgAra/ocr_output.txt-00000-of-00001.txt")
+    fillIndexedPages(gocrOut, startPage = 1, endPage = 513, numberLanguage = "sa",
+      fileTitle = "सुभाषितरत्नभाण्डागारम्.djvu", overwrite = true, dryRun = false)
   }
 
   def fillIndexedPagesSanskritocr = {
@@ -101,6 +101,7 @@ object wikisource extends wikiBot {
     login
     // test
     // indexPageTests
-    fillIndexedPagesSanskritocr
+    // fillIndexedPagesSanskritocr
+    fillIndexedPagesGocr
   }
 }

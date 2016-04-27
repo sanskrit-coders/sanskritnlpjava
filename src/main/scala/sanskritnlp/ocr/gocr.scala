@@ -13,7 +13,7 @@ class GocrOutputIterator(ocrFileName: String) extends ocrOutputIterator {
 
   // identify lines like:
   // {{{{{{/cns/oe-d/home/vvasuki/abhyankar/abhyankar_images-004.png}}}}}}
-  val imageIdPattern = """\{\{\{\{\{\{.+-(\d\d\d)\.png\}\}\}\}\}\}""".r
+  val imageIdPattern = """\{\{\{\{\{\{.+-(\d+)\.png\}\}\}\}\}\}""".r
 
   override def hasNext: Boolean = linesIter.hasNext
 

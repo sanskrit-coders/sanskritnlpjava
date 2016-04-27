@@ -85,9 +85,9 @@ object wikisource extends wikiBot {
   }
 
   def fillIndexedPagesGocr = {
-    val gocrOut = new GocrOutputIterator("/home/vvasuki/sanskrit-ocr-r0/kAvyam/subhAShita-bhANDAgAra/ocr_output.txt-00000-of-00001.txt")
-    fillIndexedPages(gocrOut, startPage = 1, endPage = 513, numberLanguage = "sa",
-      fileTitle = "सुभाषितरत्नभाण्डागारम्.djvu", overwrite = true, dryRun = false)
+    val gocrOut = new GocrOutputIterator("/home/vvasuki/sanskrit-ocr-r0/kAvyam/laTakamelaka/ocr_output.txt-00000-of-00001")
+    fillIndexedPages(gocrOut, startPage = 1, endPage = 37, numberLanguage = "sa",
+      fileTitle = "Latakamelaka_Prahasana_Shankadhara.pdf", overwrite = true, dryRun = false)
   }
 
   def fillIndexedPagesSanskritocr = {

@@ -2,6 +2,7 @@ package sanskritnlp.wiki
 
 // To new users: See sectionTest at the bottom for usage example, and all should be clear.
 
+import net.sourceforge.jwbf.core.contentRep.SimpleArticle
 import org.slf4j.LoggerFactory
 
 import scala.annotation.tailrec
@@ -97,6 +98,11 @@ class Section {
       addSection(currentSection)
     }
     return
+  }
+
+  def this(article: SimpleArticle) = {
+    this()
+    parse(lines = article.getText.split("\n"))
   }
 
   // returns true if a section was found and deleted.

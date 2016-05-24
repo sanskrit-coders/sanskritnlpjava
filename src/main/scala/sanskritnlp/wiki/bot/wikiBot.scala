@@ -100,39 +100,37 @@ trait wikiBot {
     }
   }
 
-  def getArticleSection(title: String): (SimpleArticle, Section) = {
+  private def getArticleSection(title: String): (SimpleArticle, Section) = {
     val article = getArticle(title)
-    val articleSection = new Section
-    articleSection.parse(lines = article.getText.split("\n"))
+    val articleSection = new Section(article)
     (article, articleSection)
   }
 
-  def replaceSectionText(title: String, sectionPath: String, text: String, summary: String, bAppend: Boolean = true, isMinor: Boolean = false) = {
-    val (article: SimpleArticle, articleSection: Section) = getArticleSection(title)
+  def replaceSectionText(article: SimpleArticle, sectionPath: String, text: String, summary: String, bAppend: Boolean = true, isMinor: Boolean = false) = {
+    val articleSection = new Section(article)
     val section = articleSection.getOrCreateSection(sectionPath)
     section.headText = text
     editArticle(article = article, text = articleSection.toString, summary = summary, isMinor = isMinor)
   }
 
-  def replaceRegex(title: String, regexMap: Map[String, String]) = {
-    val article = getArticle(title)
+  def replaceRegex(article: SimpleArticle, regexMap: Map[String, String]) = {
     var replacementText = article.getText
     regexMap.keys.foreach(regex => {
       replacementText = replacementText.replaceAll(regex, regexMap(regex))
     })
-    editArticle(article = article, text = replacementText, summary = s"replace ${regexMap.keys.mkString(",")} with ${regexMap.values.mkString(",")}")
+    article.setText(replacementText)
   }
 
-  def appendToSection(title: String, sectionPath: String, text: String, summary: String, bAppend: Boolean = true, isMinor: Boolean = false) = {
-    val (article: SimpleArticle, articleSection: Section) = getArticleSection(title)
+  def appendToSection(article: SimpleArticle, sectionPath: String, text: String, summary: String, bAppend: Boolean = true, isMinor: Boolean = false) = {
+    val articleSection = new Section(article)
 
     val section = articleSection.getOrCreateSection(sectionPath)
     section.headText += text
     editArticle(article = article, text = articleSection.toString, summary = summary, isMinor = isMinor)
   }
 
-  def deleteSection(title: String, sectionPath: String) = {
-    val (article: SimpleArticle, articleSection: Section) = getArticleSection(title)
+  def deleteSection(article: SimpleArticle, sectionPath: String) = {
+    val articleSection = new Section(article)
 
     if (articleSection.deleteSection(sectionPath)) {
       var textPostDeletion = articleSection.toString
@@ -144,7 +142,7 @@ trait wikiBot {
   }
 
   def testEditSection() = {
-    replaceSectionText(title = getSandboxPage + "2", sectionPath = "/परीक्षाविभागः", text = "नूतनपाठः2", summary = "परीक्षाविभागयोगः")
+    replaceSectionText(article = getArticle(getSandboxPage + "2"), sectionPath = "/परीक्षाविभागः", text = "नूतनपाठः2", summary = "परीक्षाविभागयोगः")
   }
 
   def test() = {

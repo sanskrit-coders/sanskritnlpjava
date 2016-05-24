@@ -15,7 +15,7 @@ trait wiktionary extends wikiBot {
   def replaceBadText(headwords: Array[String], regexMap: Map[String, String]) = {
     log.info(headwords.mkString(","))
     headwords.foreach(head => {
-      replaceRegex(head, regexMap)
+      replaceRegex(getArticle(head), regexMap)
     })
   }
 
@@ -23,7 +23,7 @@ trait wiktionary extends wikiBot {
     val dict_source = dictionary.source
     log.info(s"Adding $head")
     val (sectionPath, text) = getWikiEntry(dictionary, head)
-    replaceSectionText(title = head, sectionPath = sectionPath, summary = "अर्थनिवेशः", text = text)
+    replaceSectionText(article = getArticle(head), sectionPath = sectionPath, summary = "अर्थनिवेशः", text = text)
   }
 
   // Used dictionaryUsed's name instead of dictionary's name?
@@ -32,7 +32,7 @@ trait wiktionary extends wikiBot {
     dictionary.makeWordToLocationMap(headword_pattern)
     dictionary.getWords.foreach(word => {
       addDictionaryMeaning(word, dictionary)
-      deleteSection(word, getSectionPath(dictionaryUsed))
+      deleteSection(article = getArticle(word), getSectionPath(dictionaryUsed))
       val meanings: ListBuffer[String] = dictionaryUsed.getMeanings(word)
       // log info meanings.mkString(", ")
       if ( meanings != null && meanings.size > 0) {
@@ -42,7 +42,7 @@ trait wiktionary extends wikiBot {
     })
   }
 
-  def uploadFromBabylonDictsCombined(dictList: List[BabylonDictionary], start_index: Int = 1, end_index: Int = 1000000, headword_pattern: String) = {
+  def mapWordToDicts(dictList: List[BabylonDictionary], headword_pattern: String):  mutable.HashMap[String, ListBuffer[BabylonDictionary]] = {
     val wordToDicts = new mutable.HashMap[String, ListBuffer[BabylonDictionary]]()
     dictList.foreach(dictionary => {
       // dictionary.makeWordToLocationMap(headword_pattern = "\\p{IsDevanagari}+")
@@ -53,24 +53,41 @@ trait wiktionary extends wikiBot {
         wordToDicts += (word -> dictList)
       })
     })
+    return wordToDicts
+  }
 
+  def fixWikiError(dictList: List[BabylonDictionary], start_index: Int = 1, end_index: Int = -1, headword_pattern: String) = {
+    val wordToDicts = mapWordToDicts(dictList, headword_pattern)
     var word_index = start_index - 1
     // use drop to skip n items.
     wordToDicts.keys.toList.sorted.drop(word_index).take(end_index - start_index + 1).foreach(word => {
       word_index = word_index + 1
-      val fix_messup = false
-      // replaceRegex(word, Map("प्रकाशितकोशो" -> "प्रकाशितकोशों"))
-      if (!fix_messup) {
-        log info s"$word (index: $word_index of $end_index <= ${wordToDicts.size}) is present in ${wordToDicts.getOrElse(word, Set[BabylonDictionary]()).map(_.dict_name).mkString(", ")}"
-        val (article: SimpleArticle, articleSection: Section) = getArticleSection(word)
-        wordToDicts.getOrElse(word, null).foreach(dictionary => {
-          val (sectionPath, text) = getWikiEntry(dictionary, word)
-          val section = articleSection.getOrCreateSection(sectionPath)
-          section.headText = text
-        })
-        // log info articleSection.toString()
-        editArticle(article = article, text = articleSection.toString, summary = s"(re)add ${dictList.mkString(", ")}")
-      }
+      deleteSection(article = getArticle(word), sectionPath = s"/प्रकाशितकोशों से अर्थ/")
+    })
+  }
+
+  def setWordMeanings(word: String, wordToDicts: mutable.HashMap[String, ListBuffer[BabylonDictionary]]) = {
+    val article = getArticle(word)
+    replaceRegex(article, Map({"=हिन्दी=" -> "={{हिन्दी}}="}))
+    val articleSection = new Section(article)
+    val dictionaries = wordToDicts.getOrElse(word, null)
+    dictionaries.foreach(dictionary => {
+      val (sectionPath, text) = getWikiEntry(dictionary, word)
+      val section = articleSection.getOrCreateSection(sectionPath)
+      section.headText = text
+    })
+    // log info articleSection.toString()
+    editArticle(article = article, text = articleSection.toString, summary = s"(re)add ${dictionaries.mkString(", ")}")
+  }
+
+  def uploadFromBabylonDictsCombined(dictList: List[BabylonDictionary], start_index: Int = 1, end_index: Int = 1000000, headword_pattern: String) = {
+    val wordToDicts = mapWordToDicts(dictList, headword_pattern)
+    var word_index = start_index - 1
+    // use drop to skip n items.
+    wordToDicts.keys.toList.sorted.drop(word_index).take(end_index - start_index + 1).foreach(word => {
+      word_index = word_index + 1
+      log info s"$word (index: $word_index of $end_index <= ${wordToDicts.size}) is present in ${wordToDicts.getOrElse(word, Set[BabylonDictionary]()).map(_.dict_name).mkString(", ")}"
+      setWordMeanings(word, wordToDicts)
     })
   }
 
@@ -135,10 +152,10 @@ object hi_wiktionary extends wiktionary {
   shabdasAgara.fromFile(infileStr = "/home/vvasuki/stardict-hindi/hi-head/hi-shabdasAgar/hi-shabdasagar.babylon_final")
 
 
-  override def getSectionPath(dictionary: BabylonDictionary): (String) = s"/प्रकाशितकोशों से अर्थ/${dictionary.dict_name}"
+  override def getSectionPath(dictionary: BabylonDictionary): (String) = s"/{{हिन्दी}}/प्रकाशितकोशों से अर्थ/${dictionary.dict_name}"
   override def getWikiEntry(dictionary: BabylonDictionary, word: String): (String, String) = {
     val sectionPath = getSectionPath(dictionary)
-    val category_name = sectionPath.split('/').filterNot(_ == "").mkString("-")
+    val category_name = sectionPath.split('/').filterNot(_ == "").mkString("-").replaceAll("[{}]", "")
     val tail_text = s"[[श्रेणी: $category_name]]"
     val meanings = dictionary.getMeanings(word).mkString("\n\n")
     val text = s"$meanings\n\n$tail_text".replaceAll("\\{@|@\\}", "'''")
@@ -148,7 +165,9 @@ object hi_wiktionary extends wiktionary {
   def main(args: Array[String]): Unit = {
     passwd = ""
     login
-    uploadFromBabylonDictsCombined(dictList = List(shabdasAgara), headword_pattern = "\\p{IsDevanagari}+", end_index = 5)
+    // fixWikiError(dictList = List(shabdasAgara), headword_pattern = "\\p{IsDevanagari}+", end_index = 5)
+    // uploadFromBabylonDictsCombined(dictList = List(shabdasAgara), headword_pattern = "\\p{IsDevanagari}+", end_index = 5)
+    setWordMeanings(word="आ", mapWordToDicts(dictList = List(shabdasAgara), headword_pattern = "\\p{IsDevanagari}+"))
     // fixDictNameMixup(dictionary = AkhyAtachandrikA, dictionaryUsed = shabdasAgara, headword_pattern = "\\p{IsDevanagari}+")
   }
 }

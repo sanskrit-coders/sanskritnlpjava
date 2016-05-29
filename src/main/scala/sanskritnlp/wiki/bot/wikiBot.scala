@@ -29,7 +29,7 @@ trait wikiBot {
   val minGapBetweenEditsSec: Int = (math.ceil(60/720)).toInt
 
   def login = {
-    bot = new MediaWikiBot(s"http://$languageCode.$wikiSiteName.org/w/")
+    bot = new MediaWikiBot(s"https://$languageCode.$wikiSiteName.org/w/")
     // न भेतव्यम् इति केन दीक्षितेनोक्तम्?
     if (passwd.isEmpty) {
       passwd = readLine("passwd?").trim

@@ -91,8 +91,8 @@ object wikisource extends wikiBot {
   }
 
   def fillIndexedPagesSanskritocr = {
-    val gocrOut = new SanskritOCROutputIterator("/home/vvasuki/sanskrit-ocr-r0/vaak/vyAkaraNam/ganaratnamahodadhi/SanskritOCR/")
-    fillIndexedPages(gocrOut, startPage = 13, endPage = 330, numberLanguage = "sa",
+    val gocrOut = new SanskritOCROutputIterator("/home/vvasuki/sanskrit-ocr-r0/jyotiSha/vedA~NgajyautiSha/jyotiShavedA~Ngam_sudhAkarabhAShyam/")
+    fillIndexedPages(gocrOut, startPage = 10, endPage = 330, numberLanguage = "sa",
       fileTitle = "Ganaratnamahodadhi.pdf", overwrite = true, dryRun = false)
   }
 
@@ -101,7 +101,7 @@ object wikisource extends wikiBot {
     login
     // test
     // indexPageTests
-    // fillIndexedPagesSanskritocr
-    fillIndexedPagesGocr
+     fillIndexedPagesSanskritocr
+    // fillIndexedPagesGocr
   }
 }

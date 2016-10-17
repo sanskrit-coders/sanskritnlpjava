@@ -26,9 +26,9 @@ def vedaFilesRename() = {
   val dir = "/home/vvasuki/Videos/ihg"
   val files = recursiveListFiles(new File(dir))
   println(files.length)
-  val regex_part_file = """00-Part(\d+)(.+)""".r
-  val regex_topic_file = """00-Topic(\d+)(.+)""".r
-  val regex_overview_file = """00([^\d]+)Overview(.+)""".r
+  val regex_part_file = """Part(\d+)(.+)""".r
+  val regex_topic_file = """Topic(\d+)(.+)""".r
+  val regex_overview_file = """([^\d]+)Overview(.+)""".r
   files.filter(_.getName contains "mp3").foreach(file => {
     var newFileName = "UNKNOWN " + file.getName
     file.getName match {

@@ -1,8 +1,12 @@
 package sanskritnlp.wiki.bot
 
+import java.io.{File, PrintWriter}
+
 import org.slf4j.LoggerFactory
 import sanskritnlp.ocr.{GocrOutputIterator, SanskritOCROutputIterator, ocrOutputIterator}
 import sanskritnlp.transliteration.optitrans
+
+import scala.io.Source
 
 /**
   * Created by vvasuki on 2/28/16.
@@ -12,12 +16,14 @@ object wikisource extends wikiBot {
   override val wikiSiteName = "wikisource"
   override val log = LoggerFactory.getLogger(this.getClass)
 
+  // Example of an index page: https://sa.wikisource.org/wiki/%E0%A4%85%E0%A4%A8%E0%A5%81%E0%A4%95%E0%A5%8D%E0%A4%B0%E0%A4%AE%E0%A4%A3%E0%A4%BF%E0%A4%95%E0%A4%BE:ADictionaryOfSanskritGrammarByMahamahopadhyayaKashinathVasudevAbhyankar.djvu
   def getIndexPage(fileTitle: String) = {
     var article = bot.readData(s"index:$fileTitle")
     log info article.getRevisionId.toString
     log info article.getText
     // TODO: Do more here?
   }
+
   def getIndexedPageTitle(fileTitle: String, pageNum: Int, numberLanguage: String = ""): String = {
     var pageString = pageNum.toString
     if (numberLanguage == "sa") {
@@ -26,17 +32,26 @@ object wikisource extends wikiBot {
     return s"page:$fileTitle/$pageString"
   }
 
-  def getIndexedPage(fileTitle: String, pageNum: Int, numberLanguage: String = "") = {
+  def getIndexedPage(fileTitle: String, pageNum: Int, numberLanguage: String = ""): String = {
     var article = bot.readData(getIndexedPageTitle(fileTitle, pageNum, numberLanguage))
     log info fileTitle
-    log info article.getRevisionId.toString
-    log info article.getText
+    // log info article.getRevisionId.toString
+    // log info article.getText
+    return article.getText
     // TODO: Do more here?
   }
 
-  def getIndexedPages(fileTitle: String, startPage: Int, endPage: Int, numberLanguage: String = "") = {
+  def getIndexedPages(fileTitle: String, startPage: Int, endPage: Int, numberLanguage: String = "", outfileStr: String = "") = {
+    var destination = new PrintWriter("/tmp/wikisource.txt")
+    if(outfileStr != "") {
+      destination.close()
+      val outFileObj = new File(outfileStr)
+      new File(outFileObj.getParent).mkdirs
+      destination = new PrintWriter(outFileObj)
+    }
     Range(startPage, endPage+1).foreach(pageNum => {
-      getIndexedPage(fileTitle = fileTitle, pageNum = pageNum, numberLanguage = numberLanguage)
+      val pageText = getIndexedPage(fileTitle = fileTitle, pageNum = pageNum, numberLanguage = numberLanguage)
+      destination.print(pageText)
     })
   }
 
@@ -47,7 +62,7 @@ object wikisource extends wikiBot {
     // getIndexedPage("मेघसन्देशः - दक्षिणावर्तनाथः - १९१९.djvu", 100)
     // getIndexedPage("Ganaratnamahodadhi.pdf", 10)
     // log info getIndexedPageTitle("ADictionaryOfSanskritGrammarByMahamahopadhyayaKashinathVasudevAbhyankar.djvu", 432, numberLanguage = "sa")
-    getIndexedPages("ADictionaryOfSanskritGrammarByMahamahopadhyayaKashinathVasudevAbhyankar.djvu", 20, 30, numberLanguage = "sa")
+    getIndexedPages("ADictionaryOfSanskritGrammarByMahamahopadhyayaKashinathVasudevAbhyankar.djvu", 1, 124, numberLanguage = "sa")
   }
 
   // Bot approval request: https://en.wikipedia.org/wiki/Wikipedia:Bots/Requests_for_approval/sanskritnlpbot
@@ -101,7 +116,10 @@ object wikisource extends wikiBot {
     login
     // test
     // indexPageTests
-     fillIndexedPagesSanskritocr
+    // fillIndexedPagesSanskritocr
     // fillIndexedPagesGocr
+
+    // outfileStr = "/home/vvasuki/stardict-sanskrit/sa-vyAkaraNa/abhyankara-grammar/abhyankara-grammar.txt"
+    getIndexedPages("ADictionaryOfSanskritGrammarByMahamahopadhyayaKashinathVasudevAbhyankar.djvu", 221, 230, numberLanguage = "sa")
   }
 }

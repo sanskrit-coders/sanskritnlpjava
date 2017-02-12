@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$USER_HOME$/stardict-sanskrit/sa-vyAkaraNa/abhyankara-grammar/abhyankara-grammar.iml" filepath="$USER_HOME$/stardict-sanskrit/sa-vyAkaraNa/abhyankara-grammar/abhyankara-grammar.iml" />
       <module fileurl="file://$USER_HOME$/stardict-sanskrit/sa-head/kRdanta-rUpa-mAlA/kRdanta-rUpa-mAlA.iml" filepath="$USER_HOME$/stardict-sanskrit/sa-head/kRdanta-rUpa-mAlA/kRdanta-rUpa-mAlA.iml" />
       <module fileurl="file://$USER_HOME$/stardict-sanskrit/sa-head/kalpadruma-sa/kalpadruma-sa.iml" filepath="$USER_HOME$/stardict-sanskrit/sa-head/kalpadruma-sa/kalpadruma-sa.iml" />
       <module fileurl="file://$USER_HOME$/stardict-sanskrit/sa-head/purANa-index-dev/mUlam/purANa-index.iml" filepath="$USER_HOME$/stardict-sanskrit/sa-head/purANa-index-dev/mUlam/purANa-index.iml" />

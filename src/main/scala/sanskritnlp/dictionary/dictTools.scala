@@ -8,6 +8,7 @@ scala -classpath "$PATH_TO_SANSKRITNLPJAVA/sanskritnlp-1.0-SNAPSHOT/WEB-INF/lib/
 
 import java.io._
 
+import org.slf4j.LoggerFactory
 import sanskritnlp.transliteration.{as, optitrans, transliterator}
 
 import scala.io.Source
@@ -17,6 +18,7 @@ import scala.io.Source
   */
 object dictTools {
 
+  val log = LoggerFactory.getLogger("dictTools")
   def sutraNumbersToDevanagari(infileStr: String): Unit = {
     println("Processing " + infileStr)
     val outfileStr = infileStr.replaceFirst(".babylon$", ".babylon_dev_sutra")
@@ -49,12 +51,19 @@ object dictTools {
     src.getLines.zipWithIndex.foreach( t => {
       val line = t._1
       val index = t._2
-      if(index % 3 == 0) {
-        val headwords_original = line.split('|')
-        val headwords_transliterated = headwords_original.map(transliterator.transliterate(_, sourceScheme, destScheme))
-        destination.println((headwords_original ++ headwords_transliterated).toSet.toList.sorted.mkString("|"))
-      } else {
-        destination.println(line)
+      try {
+        if(index % 3 == 0) {
+          val headwords_original = line.split('|')
+          val headwords_transliterated = headwords_original.map(transliterator.transliterate(_, sourceScheme, destScheme))
+          destination.println((headwords_original ++ headwords_transliterated).toSet.toList.sorted.mkString("|"))
+        } else {
+          destination.println(line)
+        }
+      } catch {
+        case ex: Exception => {
+          log error ex.toString
+          log error "line: " + t.toString()
+        }
       }
     })
     destination.close()

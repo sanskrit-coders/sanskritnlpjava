@@ -33,6 +33,16 @@
     </pluginRepositories>
 		
     <dependencies>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>2.11.8</version>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-xml</artifactId>
+            <version>2.11.0-M4</version>
+        </dependency>
         <!-- Compile/runtime dependencies -->
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -78,12 +88,18 @@
             <artifactId>jstl</artifactId>
             <version>1.2</version>
         </dependency>
-				<dependency>
-            <groupId>org.scala-lang</groupId>
-            <artifactId>scala-library</artifactId>
-            <version>2.10.3</version>
+        <!-- https://mvnrepository.com/artifact/net.liftweb/lift-json -->
+        <dependency>
+            <groupId>net.liftweb</groupId>
+            <artifactId>lift-json_2.11.8</artifactId>
+            <version>3.0.1</version>
         </dependency>
-
+        <!-- https://mvnrepository.com/artifact/com.thoughtworks.paranamer/paranamer Needed for lift to work. -->
+        <dependency>
+            <groupId>com.thoughtworks.paranamer</groupId>
+            <artifactId>paranamer</artifactId>
+            <version>2.7</version>
+        </dependency>
         <!-- Test Dependencies -->
         <dependency>
             <groupId>com.google.appengine</groupId>

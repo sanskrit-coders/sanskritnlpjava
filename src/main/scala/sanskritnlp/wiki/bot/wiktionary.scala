@@ -86,7 +86,7 @@ trait wiktionary extends wikiBot {
     // use drop to skip n items.
     wordToDicts.keys.toList.sorted.drop(word_index).take(end_index - start_index + 1).foreach(word => {
       word_index = word_index + 1
-      log info s"$word (index: $word_index of $end_index <= ${wordToDicts.size}) is present in ${wordToDicts.getOrElse(word, Set[BabylonDictionary]()).map(_.dict_name).mkString(", ")}"
+      log info s"$word (index: $word_index of $end_index >= ${wordToDicts.size}) is present in ${wordToDicts.getOrElse(word, Set[BabylonDictionary]()).map(_.dict_name).mkString(", ")}"
       setWordMeanings(word, wordToDicts)
     })
   }
@@ -100,7 +100,9 @@ object sa_wiktionary extends wiktionary {
   override val languageCode = "sa"
   override val log = LoggerFactory.getLogger(this.getClass)
 
-  /*al kalpadruma = new BabylonDictionary(name_in = "कल्पद्रुमः", source_in = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html", head_language= "sa")
+  /*
+  In sa-head:
+  val kalpadruma = new BabylonDictionary(name_in = "कल्पद्रुमः", source_in = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html", head_language= "sa")
   kalpadruma.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-head/kalpadruma-sa/kalpadruma-sa.babylon_final")
   val amara = new BabylonDictionary(name_in = "अमरकोशः", source_in = "http://github.com/sanskrit-coders/stardict-sanskrit/tree/master/sa-head/amara-onto", head_language= "sa")
   amara.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-head/amara-onto/amara-onto.babylon_final")
@@ -114,24 +116,57 @@ object sa_wiktionary extends wiktionary {
   shabdasAgara.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-head/shabda-sAgara/shabda-sAgara.babylon_final")
   val AkhyAtachandrikA = new BabylonDictionary(name_in = "आख्यातचन्द्रिका", source_in = "http://github.com/sanskrit-coders/stardict-sanskrit/tree/master/sa-head/AkhyAtachandrikA", head_language= "sa")
   AkhyAtachandrikA.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-vyAkaraNa/AkhyAtachandrikA/AkhyAtachandrikA.babylon_final")
-  */
 
+  These don't yet exist fully:
+  dcs frequency
+  kRdanta-rUpa-mAlA
+
+  In sa-kAvya:
   val purANa_index = new BabylonDictionary(name_in = "Purana index", source_in = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/indtml", head_language= "sa")
   purANa_index.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-kAvya/purANa-index-dev/purANa-index-dev.babylon_final")
   val purANa_encyclopedia = new BabylonDictionary(name_in = "Purana Encyclopedia", source_in = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html", head_language= "sa")
   purANa_encyclopedia.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-kAvya/purANa-encyclopedia/PuraNa_encyclopedia.babylon")
   val mahabharata_cultural_index = new BabylonDictionary(name_in = "Mahabharata Cultural Index", source_in = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html", head_language= "sa")
   mahabharata_cultural_index.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-kAvya/mahabharata_cultural_index/mahabharata_cultural_index.babylon")
+  val vedic_index = new BabylonDictionary(name_in = "Vedic Index of Names and Subjects", source_in = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html", head_language= "sa")
+  vedic_index.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-kAvya/vedic_index/vedic_index.wiki")
 
-  /* These don't yet exist:
+  To upload:
+  Chandas
+  rv-padasvara
+
+  These don't yet exist fully:
+  mbh name index
+
+  In sa-vyAkaraNa:
+  To upload:
+  Declensions
+  Conjugations
+  kShIratarangiNI
+  mAdhavIya-vRtti
+  dhAtupradIpa
+  jnu-tiNanta
+
+  These don't yet exist fully:
+  abhyankara grammar
+  dhaval-tiNanta
+  dhAturUpamAlA
+  bRhad-dhAtu-kusumAkara
+  */
+
+  val vedic_rituals = new BabylonDictionary(name_in = "Vedic Rituals Hindi", source_in = "http://github.com/sanskrit-coders/stardict-sanskrit/tree/master/sa-head/vedic-rituals-hi", head_language= "sa")
+  vedic_rituals.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit//sa-head/vedic-rituals-hi/vedic-rituals-hi.babylon")
+
+  /*
+  val computer_shrIkAnta = new BabylonDictionary(name_in = "आङ्ग्लसंस्कृतसङ्गणककोशः श्रीकान्तस्य", source_in = "http://github.com/sanskrit-coders/stardict-sanskrit/tree/master/en-head/computer-shrIkAnta", head_language= "en")
+  computer_shrIkAnta.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/en-head/computer-shrIkAnta/computer-shrIkAnta.babylon")
+
+  These don't yet exist:
   val mw_eng = new BabylonDictionary(name_in = "Monier Williams (en-sa)", source_in = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html", head_language= "en")
   mw_eng.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/en-head/mw-bi-itrans-dev/mw-bi-itrans-dev.babylon_final")
   val apte_eng = new BabylonDictionary(name_in = "Apte (en-sa)", source_in = "http://github.com/sanskrit-coders/stardict-sanskrit/tree/master/sa-head/AkhyAtachandrikA", head_language= "sa")
   apte_eng.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/en-head/apte-bi/apte-bi.babylon_final")
   */
-
-  val computer_shrIkAnta = new BabylonDictionary(name_in = "आङ्ग्लसंस्कृतसङ्गणककोशः श्रीकान्तस्य", source_in = "http://github.com/sanskrit-coders/stardict-sanskrit/tree/master/en-head/computer-shrIkAnta", head_language= "en")
-  computer_shrIkAnta.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/en-head/computer-shrIkAnta/computer-shrIkAnta.babylon")
 
 
   override def getSectionPath(dictionary: BabylonDictionary): (String) = s"/यन्त्रोपारोपितकोशांशः/${dictionary.dict_name}"
@@ -140,7 +175,7 @@ object sa_wiktionary extends wiktionary {
     val sectionPath = getSectionPath(dictionary)
     val category_name = sectionPath.split('/').filterNot(_ == "").mkString("-")
     var tail_text = s"[[वर्गः: $category_name]]"
-    if (List(computer_shrIkAnta.dict_name).contains(dictionary.dict_name)) {
+    if (List("आङ्ग्लसंस्कृतसङ्गणककोशः श्रीकान्तस्य").contains(dictionary.dict_name)) {
       tail_text = tail_text + "[[वर्गः:आङ्गलपदानि]]"
     } else {
       tail_text = tail_text + "[[वर्गः:संस्कतशब्दाः]]"
@@ -151,10 +186,10 @@ object sa_wiktionary extends wiktionary {
   }
 
   def main(args: Array[String]): Unit = {
-    passwd = ""
+    passwd = "nIlakaNTha"
     login
     // uploadFromBabylonDictsCombined(dictList = List(computer_shrIkAnta), headword_pattern = "[a-z]+")
-    uploadFromBabylonDictsCombined(dictList = List(mahabharata_cultural_index), headword_pattern = "\\p{IsDevanagari}+")
+    uploadFromBabylonDictsCombined(dictList = List(vedic_rituals), headword_pattern = "\\p{IsDevanagari}+")
     // fixDictNameMixup(dictionary = AkhyAtachandrikA, dictionaryUsed = shabdasAgara, headword_pattern = "\\p{IsDevanagari}+")
   }
 }
@@ -184,5 +219,6 @@ object hi_wiktionary extends wiktionary {
     uploadFromBabylonDictsCombined(dictList = List(shabdasAgara), start_index=142149, headword_pattern = "\\p{IsDevanagari}+")
     // setWordMeanings(word="आ", mapWordToDicts(dictList = List(shabdasAgara), headword_pattern = "\\p{IsDevanagari}+"))
     // fixDictNameMixup(dictionary = AkhyAtachandrikA, dictionaryUsed = shabdasAgara, headword_pattern = "\\p{IsDevanagari}+")
+
   }
 }

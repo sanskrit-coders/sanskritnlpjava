@@ -186,7 +186,7 @@ object sa_wiktionary extends wiktionary {
   }
 
   def main(args: Array[String]): Unit = {
-    passwd = "nIlakaNTha"
+    passwd = ""
     login
     // uploadFromBabylonDictsCombined(dictList = List(computer_shrIkAnta), headword_pattern = "[a-z]+")
     uploadFromBabylonDictsCombined(dictList = List(vedic_rituals), headword_pattern = "\\p{IsDevanagari}+")

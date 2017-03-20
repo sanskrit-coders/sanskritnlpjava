@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/sanskritnlp.iml" filepath="$PROJECT_DIR$/sanskritnlp.iml" />
       <module fileurl="file://$USER_HOME$/stardict-sanskrit/sa-head/shabda-sAgara/mUlam/shabda-sAgara.iml" filepath="$USER_HOME$/stardict-sanskrit/sa-head/shabda-sAgara/mUlam/shabda-sAgara.iml" />
       <module fileurl="file://$USER_HOME$/stardict-sanskrit/bin/stardict_sanskrit_bin.iml" filepath="$USER_HOME$/stardict-sanskrit/bin/stardict_sanskrit_bin.iml" />
+      <module fileurl="file://$USER_HOME$/subhAShita-db-sanskrit/subhAShita-db-sanskrit.iml" filepath="$USER_HOME$/subhAShita-db-sanskrit/subhAShita-db-sanskrit.iml" />
     </modules>
   </component>
 </project>

@@ -27,9 +27,11 @@ object transliterator {
     }
   }
 
+  // Transliterate among roman schemes + devanAgarI via devanAgarI.
   def transliterate(in_str: String, sourceScheme: String, destScheme: String): String = {
     // println("input string: " + in_str)
     var schemeOpt = scriptFromString(sourceScheme)
+    var devanAgarIout = in_str
     if (schemeOpt.isDefined) {
       val return_opt = schemeOpt.get.toDevanagari(in_str)
       // println("return_opt: " + return_opt)
@@ -37,12 +39,15 @@ object transliterator {
         throw new IllegalArgumentException("Could not transliterate " + in_str)
         return in_str
       } else {
-        return return_opt.get
+        devanAgarIout = return_opt.get
       }
+    }
+    schemeOpt = scriptFromString(destScheme)
+    if (schemeOpt.isDefined) {
+      return schemeOpt.get.fromDevanagari(devanAgarIout)
     } else {
-      schemeOpt = scriptFromString(destScheme)
-      if (schemeOpt.isDefined) {
-        return schemeOpt.get.fromDevanagari(in_str)
+      if (destScheme == "dev") {
+        return devanAgarIout
       } else {
         throw new IllegalArgumentException("Could not transliterate " + in_str)
       }

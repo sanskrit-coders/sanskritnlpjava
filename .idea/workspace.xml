@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac05e739-ded8-465e-b65f-6eff68c25840" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="ac05e739-ded8-465e-b65f-6eff68c25840" name="Default" comment="" />
     <ignored path="sanskritnlpjava.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dictionary.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Dictionary.scala" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/stardict-sanskrit/bin/scripts/stardict_sanskrit/Dictionary.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="536">
-              <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+            <state relative-caret-position="874">
+              <caret line="103" column="21" lean-forward="false" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
               <folding>
                 <element signature="e#27#46#0" expanded="true" />
               </folding>
@@ -45,31 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tsv_to_stardict.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/stardict-sanskrit/bin/tsv_to_stardict.sh">
+      <file leaf-file-name="make_tarballs.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/stardict-sanskrit/bin/make_tarballs.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="babylon_add_devanAgarI.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/stardict-sanskrit/bin/babylon_add_devanAgarI.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tsv_to_babylon.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/stardict-sanskrit/bin/tsv_to_babylon.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="615">
+              <caret line="41" column="0" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="41" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -178,7 +156,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/dictTools.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/harvardKyoto.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/iast.scala" />
         <option value="$PROJECT_DIR$/src/main/resources/default/runtimeSettings.properties" />
@@ -228,6 +205,7 @@
         <option value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/dbMaker.scala" />
         <option value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/Subhashita.scala" />
         <option value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/SubhashitaList.scala" />
+        <option value="$USER_HOME$/stardict-sanskrit/bin/tsv_to_stardict.sh" />
         <option value="$USER_HOME$/stardict-sanskrit/bin/scripts/stardict_sanskrit/Dictionary.scala" />
       </list>
     </option>
@@ -1329,12 +1307,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1176" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931355" sideWeight="0.49806523" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32745826" sideWeight="0.38584852" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32745826" sideWeight="0.38584852" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1385,7 +1363,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/stardict-sanskrit/sa-kAvya/dcs-frequency/scripts/mkBabylon.scala" />
     <entry file="file://$USER_HOME$/stardict-sanskrit/sa-kAvya/dcs-frequency/scripts/make_babylon.scala" />
     <entry file="file://$USER_HOME$/stardict-sanskrit/sa-head/vedic-rituals-hi/scripts/make_babylon.scala">
       <provider selected="true" editor-type-id="text-editor">
@@ -1666,22 +1643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/stardict-sanskrit/bin/babylon_add_devanAgarI.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/stardict-sanskrit/bin/tsv_to_babylon.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/SubhashitaList.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1704,19 +1665,43 @@
     </entry>
     <entry file="file://$USER_HOME$/stardict-sanskrit/bin/tsv_to_stardict.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="16" />
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/stardict-sanskrit/bin/babylon_add_devanAgarI.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/stardict-sanskrit/bin/tsv_to_babylon.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/stardict-sanskrit/bin/scripts/stardict_sanskrit/Dictionary.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+        <state relative-caret-position="874">
+          <caret line="103" column="21" lean-forward="false" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
           <folding>
             <element signature="e#27#46#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/stardict-sanskrit/bin/make_tarballs.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="41" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

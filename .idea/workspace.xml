@@ -2,38 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac05e739-ded8-465e-b65f-6eff68c25840" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary$$anonfun$$lessinit$greater$1.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary$$anonfun$$lessinit$greater$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary$$anonfun$$lessinit$greater$2.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary$$anonfun$$lessinit$greater$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary$$anonfun$$lessinit$greater$3.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary$$anonfun$$lessinit$greater$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary$$anonfun$$lessinit$greater$4.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary$$anonfun$$lessinit$greater$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary$$anonfun$$lessinit$greater$5.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary$$anonfun$$lessinit$greater$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary$$anonfun$$lessinit$greater$6.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary$$anonfun$$lessinit$greater$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary$$anonfun$$lessinit$greater$7.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary$$anonfun$$lessinit$greater$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$1.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$2.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$3.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$4.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$5.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$6.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$7.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$8.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$9.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$addOptitrans$1.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$addOptitrans$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$addOptitrans$2.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$addOptitrans$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$addOptitrans$3.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$addOptitrans$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$addOptitrans$4.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$addOptitrans$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeStardict$1.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeStardict$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeStardict$2.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeStardict$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeStardict$3.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeStardict$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeStardict$4.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeStardict$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeStardict$5.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeStardict$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeStardict$6.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeStardict$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeStardict$7.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeStardict$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeStardict$8.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeStardict$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeStardict$9.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeStardict$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sanskritnlpjava.iws" />
@@ -68,11 +36,21 @@
       <file leaf-file-name="Dictionary.scala" pinned="false" current-in-tab="true">
         <entry file="file://$USER_HOME$/stardict-sanskrit/bin/scripts/stardict_sanskrit/Dictionary.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="649">
-              <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+            <state relative-caret-position="619">
+              <caret line="92" column="53" lean-forward="true" selection-start-line="92" selection-start-column="53" selection-end-line="92" selection-end-column="53" />
               <folding>
                 <element signature="e#27#46#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tsv_to_stardict.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/stardict-sanskrit/bin/tsv_to_stardict.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="279" lean-forward="true" selection-start-line="4" selection-start-column="279" selection-end-line="4" selection-end-column="279" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -92,9 +70,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-              <folding>
-                <element signature="e#20#50#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -104,9 +80,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
               <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding>
-                <element signature="e#20#45#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -239,8 +213,8 @@
         <option value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/dbMaker.scala" />
         <option value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/Subhashita.scala" />
         <option value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/SubhashitaList.scala" />
-        <option value="$USER_HOME$/stardict-sanskrit/bin/tsv_to_stardict.sh" />
         <option value="$USER_HOME$/stardict-sanskrit/bin/scripts/stardict_sanskrit/Dictionary.scala" />
+        <option value="$USER_HOME$/stardict-sanskrit/bin/tsv_to_stardict.sh" />
       </list>
     </option>
   </component>
@@ -253,9 +227,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-3775" />
-    <option name="y" value="24" />
+    <option name="y" value="-4" />
     <option name="width" value="1855" />
-    <option name="height" value="1176" />
+    <option name="height" value="1204" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -275,8 +249,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -388,6 +360,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1306,7 +1280,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3775" y="24" width="1855" height="1176" extended-state="6" />
+    <frame x="-3775" y="-4" width="1855" height="1204" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1324,7 +1298,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931355" sideWeight="0.48479822" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25870648" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26147044" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2498618" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1601,69 +1575,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/optitrans.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="56" lean-forward="false" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/transliterator.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/indicMaps.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-csv/1.4/commons-csv-1.4.jar!/org/apache/commons/csv/CSVFormat.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="423">
           <caret line="261" column="21" lean-forward="false" selection-start-line="261" selection-start-column="21" selection-end-line="261" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/dbMaker.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/SubhashitaList.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#20#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/Subhashita.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding>
-            <element signature="e#20#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/stardict-sanskrit/bin/tsv_to_stardict.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1689,10 +1604,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/indicMaps.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/transliterator.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/optitrans.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="56" lean-forward="false" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/SubhashitaList.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/Subhashita.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/dbMaker.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/stardict-sanskrit/bin/tsv_to_stardict.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="279" lean-forward="true" selection-start-line="4" selection-start-column="279" selection-end-line="4" selection-end-column="279" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/stardict-sanskrit/bin/scripts/stardict_sanskrit/Dictionary.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="649">
-          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+        <state relative-caret-position="619">
+          <caret line="92" column="53" lean-forward="true" selection-start-line="92" selection-start-column="53" selection-end-line="92" selection-end-column="53" />
           <folding>
             <element signature="e#27#46#0" expanded="true" />
           </folding>

@@ -1,6 +1,6 @@
 # Users
 ## Library users
-* Maven repository being built..
+* Maven repository [here](http://search.maven.org/#artifactdetails%7Ccom.github.sanskrit-coders%7Csanskritnlp%7C1.0%7Cjar) .
 
 ### Built output
 * Final jar files
@@ -62,13 +62,15 @@
 
 ### Releasing to maven.
 * Note that we're using appengine-maven-plugin in <pom.xml>.
-* Snapshots are deployed to < https://oss.sonatype.org/content/repositories/snapshots/com/github/sanskrit-coders/sanskritnlp>.
+* Deploy snapshot artifacts into repository <https://oss.sonatype.org/content/repositories/snapshots/com/github/sanskrit-coders/sanskritnlp>.
   * Version number ends with -SNAPSHOT. Eg. 1.0-SNAPSHOT
   * Build target: clean deploy.
-* Release: Repeat the same with a non snapshot version number.
-* Releasing to central:
+* Deploy release artifacts into the [staging repository](https://oss.sonatype.org/content/repositories/releases/com/github/sanskrit-coders/sanskritnlp/) and [here](http://repo1.maven.org/maven2/com/github/sanskrit-coders/sanskritnlp/) :
+  * Repeat the same with a non snapshot version number.
+* Releasing to central (if it does not automatically happen):
   * Notes: <http://central.sonatype.org/pages/releasing-the-deployment.html> TODO.
-  * Artifacts can be examined on Sonatype [here](https://oss.sonatype.org/#nexus-search;quick~sanskrit) .
+  * Artifacts can be examined on Sonatype [here](https://oss.sonatype.org/#nexus-search;quick~sanskrit) and released - if the staging repository is visible there.
+  * Maven target can be used: nexus-staging:release
 * Project was created under Sonatype:  [here](https://issues.sonatype.org/browse/OSSRH-29183) .
 
 ### Building a jar.

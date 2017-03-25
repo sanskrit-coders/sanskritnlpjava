@@ -7,27 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac05e739-ded8-465e-b65f-6eff68c25840" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/apidocs/options" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/apidocs/packages" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-sources.jar" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-sources.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0.war" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0.war" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/sktutilities/panel/ControlPanel.html" afterPath="$PROJECT_DIR$/target/apidocs/com/sktutilities/panel/ControlPanel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/sktutilities/panel/EncodingPanel.html" afterPath="$PROJECT_DIR$/target/apidocs/com/sktutilities/panel/EncodingPanel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/sktutilities/panel/EncodingPanelForPratyahara.html" afterPath="$PROJECT_DIR$/target/apidocs/com/sktutilities/panel/EncodingPanelForPratyahara.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/sktutilities/panel/EncodingPanelForSandhi.html" afterPath="$PROJECT_DIR$/target/apidocs/com/sktutilities/panel/EncodingPanelForSandhi.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/sktutilities/pratyahara/HelpItem.html" afterPath="$PROJECT_DIR$/target/apidocs/com/sktutilities/pratyahara/HelpItem.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/sktutilities/pratyahara/PratyahaarJFrame.html" afterPath="$PROJECT_DIR$/target/apidocs/com/sktutilities/pratyahara/PratyahaarJFrame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/sktutilities/pratyahara/PratyaharaDecoder.html" afterPath="$PROJECT_DIR$/target/apidocs/com/sktutilities/pratyahara/PratyaharaDecoder.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/sktutilities/pratyahara/SUPAffixes.html" afterPath="$PROJECT_DIR$/target/apidocs/com/sktutilities/pratyahara/SUPAffixes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/sktutilities/pratyahara/SivaSutra.html" afterPath="$PROJECT_DIR$/target/apidocs/com/sktutilities/pratyahara/SivaSutra.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/sktutilities/pratyahara/SivaSutraInfo.html" afterPath="$PROJECT_DIR$/target/apidocs/com/sktutilities/pratyahara/SivaSutraInfo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/sktutilities/pratyahara/StandalonePratyahara.html" afterPath="$PROJECT_DIR$/target/apidocs/com/sktutilities/pratyahara/StandalonePratyahara.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/sktutilities/pratyahara/TingAffixes.html" afterPath="$PROJECT_DIR$/target/apidocs/com/sktutilities/pratyahara/TingAffixes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/sktutilities/pratyahara/UditSavarna.html" afterPath="$PROJECT_DIR$/target/apidocs/com/sktutilities/pratyahara/UditSavarna.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
     </list>
     <ignored path="sanskritnlpjava.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,8 +34,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="520">
-                <caret line="69" column="82" lean-forward="false" selection-start-line="69" selection-start-column="82" selection-end-line="69" selection-end-column="82" />
+              <first_editor relative-caret-position="30">
+                <caret line="2" column="121" lean-forward="false" selection-start-line="2" selection-start-column="121" selection-end-line="2" selection-end-column="121" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -86,8 +68,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="865">
+              <caret line="236" column="32" lean-forward="true" selection-start-line="236" selection-start-column="32" selection-end-line="236" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -134,6 +116,8 @@
       <find>shita</find>
       <find>configuration</find>
       <find>appId</find>
+      <find>google</find>
+      <find>nexus-staging-maven</find>
     </findStrings>
     <replaceStrings>
       <replace>$USER_HOME$/stardict-sanskrit/sa-vyAkaraNa/abhyankara-grammar</replace>
@@ -205,8 +189,8 @@
         <option value="$PROJECT_DIR$/src/main/webapp/forms/pratyAhAra.htm" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$USER_HOME$/.m2/settings.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/pom-war.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -219,8 +203,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-3775" />
-    <option name="y" value="24" />
+    <option name="x" value="65" />
+    <option name="y" value="1224" />
     <option name="width" value="1855" />
     <option name="height" value="1176" />
   </component>
@@ -275,6 +259,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sanskritnlpjava" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sanskritnlpjava" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sanskritnlpjava" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -434,7 +432,7 @@
       <recent name="$USER_HOME$/stardict-sanskrit/sa-vyAkaraNa/abhyankara-grammar/scripts" />
     </key>
   </component>
-  <component name="RunManager" selected="Maven.google-appengine">
+  <component name="RunManager" selected="Maven.mvn nexus-staging:release">
     <configuration default="false" name="harvardKyotoTest" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1209,6 +1207,30 @@
         <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean deploy" />
       </method>
     </configuration>
+    <configuration default="false" name="mvn nexus-staging:release" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method>
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="nexus-staging:release" />
+      </method>
+    </configuration>
     <configuration default="false" name="Test" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
       <module name="sanskritnlp" />
       <setting name="path" value="$PROJECT_DIR$/src/main/scala/sanskritnlp/dictionary/babylonTools.scala" />
@@ -1300,7 +1322,7 @@
       <setting name="workingDirectory" value="$USER_HOME$/stardict-sanskrit/sa-vyAkaraNa/abhyankara-grammar" />
       <method />
     </configuration>
-    <list size="27">
+    <list size="28">
       <item index="0" class="java.lang.String" itemvalue="Application.babylonDictTest" />
       <item index="1" class="java.lang.String" itemvalue="Application.slpTest" />
       <item index="2" class="java.lang.String" itemvalue="Application.optitransTest" />
@@ -1314,20 +1336,21 @@
       <item index="10" class="java.lang.String" itemvalue="Application.sanskritocr" />
       <item index="11" class="java.lang.String" itemvalue="Maven.google-appengine" />
       <item index="12" class="java.lang.String" itemvalue="Maven.mvn delpoy" />
-      <item index="13" class="java.lang.String" itemvalue="Scala Script.Test" />
-      <item index="14" class="java.lang.String" itemvalue="Scala Script.PadFilenames" />
-      <item index="15" class="java.lang.String" itemvalue="Scala Script.kalpadruma-to-dev" />
-      <item index="16" class="java.lang.String" itemvalue="Scala Script.rv make_padapATha_index_dev" />
-      <item index="17" class="java.lang.String" itemvalue="Scala Script.rv make_padapATha_index_hk.scala" />
-      <item index="18" class="java.lang.String" itemvalue="Scala Script.vedic-rituals-hi mkbaby" />
-      <item index="19" class="java.lang.String" itemvalue="Scala Script.DCS" />
-      <item index="20" class="java.lang.String" itemvalue="Scala Script.Chandas" />
-      <item index="21" class="java.lang.String" itemvalue="Scala Script.abhyankar-make-baby" />
-      <item index="22" class="java.lang.String" itemvalue="Application.harvardKyotoTest" />
-      <item index="23" class="java.lang.String" itemvalue="Application.asTest" />
-      <item index="24" class="java.lang.String" itemvalue="Application.wikisource" />
-      <item index="25" class="java.lang.String" itemvalue="Application.shAstraPodcastMaker" />
-      <item index="26" class="java.lang.String" itemvalue="Scala Console.Scala Console" />
+      <item index="13" class="java.lang.String" itemvalue="Maven.mvn nexus-staging:release" />
+      <item index="14" class="java.lang.String" itemvalue="Scala Script.Test" />
+      <item index="15" class="java.lang.String" itemvalue="Scala Script.PadFilenames" />
+      <item index="16" class="java.lang.String" itemvalue="Scala Script.kalpadruma-to-dev" />
+      <item index="17" class="java.lang.String" itemvalue="Scala Script.rv make_padapATha_index_dev" />
+      <item index="18" class="java.lang.String" itemvalue="Scala Script.rv make_padapATha_index_hk.scala" />
+      <item index="19" class="java.lang.String" itemvalue="Scala Script.vedic-rituals-hi mkbaby" />
+      <item index="20" class="java.lang.String" itemvalue="Scala Script.DCS" />
+      <item index="21" class="java.lang.String" itemvalue="Scala Script.Chandas" />
+      <item index="22" class="java.lang.String" itemvalue="Scala Script.abhyankar-make-baby" />
+      <item index="23" class="java.lang.String" itemvalue="Application.harvardKyotoTest" />
+      <item index="24" class="java.lang.String" itemvalue="Application.asTest" />
+      <item index="25" class="java.lang.String" itemvalue="Application.wikisource" />
+      <item index="26" class="java.lang.String" itemvalue="Application.shAstraPodcastMaker" />
+      <item index="27" class="java.lang.String" itemvalue="Scala Console.Scala Console" />
     </list>
     <recent_temporary>
       <list size="5">
@@ -1397,7 +1420,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3775" y="24" width="1855" height="1176" extended-state="6" />
+    <frame x="65" y="1224" width="1855" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1828,8 +1851,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="865">
+          <caret line="236" column="32" lean-forward="true" selection-start-line="236" selection-start-column="32" selection-end-line="236" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -1843,8 +1866,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="520">
-            <caret line="69" column="82" lean-forward="false" selection-start-line="69" selection-start-column="82" selection-end-line="69" selection-end-column="82" />
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="121" lean-forward="false" selection-start-line="2" selection-start-column="121" selection-end-line="2" selection-end-column="121" />
             <folding />
           </first_editor>
           <second_editor>

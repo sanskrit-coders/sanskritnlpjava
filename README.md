@@ -1,3 +1,14 @@
+# Introduction
+A collection of scala and java classes for some basic natural language processing (NLP) for the Sanskrit language, contributed by the open source SanskritNLP project and friends.
+Some notable facilities:
+* Transliterate text from one script or encoding scheme to another.
+* Deal with babylon dictionaries.
+* Use bots to write to wiki projects (wiktionary, wikisource etc..).
+* Basic metre identification.
+* Some grammar simulation.
+
+Contributions and suggestions are invited at https://github.com/sanskrit-coders/sanskritnlpjava . (Sister projects there may also be of interest.)
+
 # Users
 ## Library users
 * Maven repository [here](http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22sanskritnlp%22) .

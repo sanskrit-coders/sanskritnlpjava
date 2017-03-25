@@ -1,0 +1,24 @@
+-classpath
+'/home/vvasuki/sanskritnlpjava/target/sanskritnlp-1.0/WEB-INF/classes:/home/vvasuki/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/home/vvasuki/.m2/repository/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar:/home/vvasuki/.m2/repository/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar:/home/vvasuki/.m2/repository/commons-codec/commons-codec/1.6/commons-codec-1.6.jar:/home/vvasuki/.m2/repository/ch/qos/logback/logback-core/0.9.29/logback-core-0.9.29.jar:/home/vvasuki/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/home/vvasuki/.m2/repository/com/google/appengine/appengine-api-1.0-sdk/1.9.15/appengine-api-1.0-sdk-1.9.15.jar:/home/vvasuki/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.4.3/jackson-databind-2.4.3.jar:/home/vvasuki/.m2/repository/org/jdom/jdom2/2.0.5/jdom2-2.0.5.jar:/home/vvasuki/.m2/repository/jstl/jstl/1.2/jstl-1.2.jar:/home/vvasuki/.m2/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar:/home/vvasuki/.m2/repository/org/apache/httpcomponents/httpmime/4.3.4/httpmime-4.3.4.jar:/home/vvasuki/.m2/repository/org/apache/httpcomponents/fluent-hc/4.3.4/fluent-hc-4.3.4.jar:/home/vvasuki/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.4.0/jackson-annotations-2.4.0.jar:/home/vvasuki/.m2/repository/org/scala-lang/scala-xml/2.11.0-M4/scala-xml-2.11.0-M4.jar:/home/vvasuki/.m2/repository/org/apache/httpcomponents/httpcore/4.3.2/httpcore-4.3.2.jar:/home/vvasuki/.m2/repository/org/apache/httpcomponents/httpclient/4.3.4/httpclient-4.3.4.jar:/home/vvasuki/.m2/repository/ch/qos/logback/logback-classic/0.9.29/logback-classic-0.9.29.jar:/home/vvasuki/.m2/repository/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar:/home/vvasuki/.m2/repository/com/google/code/findbugs/jsr305/3.0.0/jsr305-3.0.0.jar:/home/vvasuki/.m2/repository/net/sourceforge/jwbf/3.0.0/jwbf-3.0.0.jar:/home/vvasuki/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.4.3/jackson-core-2.4.3.jar:/home/vvasuki/.m2/repository/com/google/guava/guava/18.0/guava-18.0.jar'
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'/home/vvasuki/sanskritnlpjava/src/main/java:/home/vvasuki/sanskritnlpjava/src/main/scala'
+-author
+-bottom
+'Copyright &#169; 2017. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/vvasuki/sanskritnlpjava/target/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Sanskrit NLP scala and java library 1.0 API'
+-linkoffline
+'http://docs.oracle.com/javase/7/docs/api' '/home/vvasuki/sanskritnlpjava/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'Sanskrit NLP scala and java library 1.0 API'

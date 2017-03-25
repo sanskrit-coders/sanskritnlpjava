@@ -49,7 +49,7 @@
   * In intellij: Don't be fooled by weird messages in the Run widget - look at the messages widget.
 
 ### Deploying to google cloud.
-* Note that we're using appengine-maven-plugin in <pom.xml>.
+* Note that we're using appengine-maven-plugin in <pom-war.xml>. In intellij pass this file explicitly with -f pom-war.xml.
   * It's use is described [here](https://cloud.google.com/appengine/docs/standard/java/tools/maven).
 * `mvn appengine:update` should do the trick - if you have right maven version.
   * If you are doing this from intellij:
@@ -61,11 +61,14 @@
 * Manage online at <https://console.cloud.google.com> . Navigate around a bit.
 
 ### Releasing to maven.
-* [Under construction.]
+* Note that we're using appengine-maven-plugin in <pom.xml>.
 * Snapshots are deployed to < https://oss.sonatype.org/content/repositories/snapshots/com/github/sanskrit-coders/sanskritnlp>.
   * Version number ends with -SNAPSHOT. Eg. 1.0-SNAPSHOT
   * Build target: clean deploy.
 * Release: Repeat the same with a non snapshot version number.
+* Releasing to central:
+  * Notes: <http://central.sonatype.org/pages/releasing-the-deployment.html> TODO.
+  * Artifacts can be examined on Sonatype [here](https://oss.sonatype.org/#nexus-search;quick~sanskrit) .
 * Project was created under Sonatype:  [here](https://issues.sonatype.org/browse/OSSRH-29183) .
 
 ### Building a jar.

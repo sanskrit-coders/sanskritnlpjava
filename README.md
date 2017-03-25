@@ -2,6 +2,20 @@
 ## Library users
 * Maven repository being built..
 
+### Built output
+* Final jar files
+  * out/*.jar
+  * target/*.jar
+* War files
+  * target/
+* Classes
+  * out/production/*/
+  * target/.../classes
+
+### Some known users
+* [stardict-sanskrit]() and sister stardict-.* projects.
+
+
 ## Web-UI users
 * The corresponding webserver hosts pages such as: <http://sanskritnlp.appspot.com/forms/Chandas-de.htm> etc..
     * (These are listed from <https://sites.google.com/site/sanskritcode/projects>.)
@@ -23,19 +37,23 @@
 ## Deployment
 * Regarding **maven targets**: You can set up a maven goal in intellij as well.
 
-### Deploying to appspot.
-* Note that we're using appengine-maven-plugin in <./pom.xml>.
+### Deploying to google cloud.
+* Note that we're using appengine-maven-plugin in <pom.xml>.
   * It's use is described [here](https://cloud.google.com/appengine/docs/standard/java/tools/maven).
 * `mvn appengine:update` should do the trick - if you have right maven version.
   * If you are doing this from intellij:
     * a browser window will pop up, get SSO authentication done,
     * give you a code to paste in the maven widget.
 * Local build: `mvn clean install`
+  * Files are output in target/ .
 * Local dev server run: `mvn appengine:devserver`
+* Manage online at <https://console.cloud.google.com> . Navigate around a bit.
+
 
 
 ### Releasing to maven.
 * [Under construction.]
 
 ### Building a jar.
-*
+* Simplest way is to set up a build artifact in intellij IDea.
+* There is also a maven target in pom.xml which I've used occasionally.

@@ -4,13 +4,13 @@
 
 ### Built output
 * Final jar files
-  * out/*.jar
-  * target/*.jar
+  * out/*.jar [all modules in intellij project]
+  * target/*.jar [sanskritnlp module only]
 * War files
-  * target/
+  * target/ [sanskritnlp module only]
 * Classes
-  * out/production/*/
-  * target/.../classes
+  * out/production/*/ [Modules other than sanskritnlp.]
+  * target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes [sanskritnlp module output.]
 
 ### Some known users
 * [stardict-sanskrit]() and sister stardict-.* projects.

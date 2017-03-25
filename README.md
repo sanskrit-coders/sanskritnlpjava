@@ -1,6 +1,6 @@
 # Users
 ## Library users
-* Maven repository [here](http://search.maven.org/#artifactdetails%7Ccom.github.sanskrit-coders%7Csanskritnlp%7C1.0%7Cjar) .
+* Maven repository [here](http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22sanskritnlp%22) .
 
 ### Built output
 * Final jar files

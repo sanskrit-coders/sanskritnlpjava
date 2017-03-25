@@ -1,17 +1,41 @@
-The corresponding webserver hosts pages such as: http://sanskritnlp.appspot.com/forms/Chandas-de.htm etc.. (These are listed from [https://sites.google.com/site/sanskritcode/projects])
+# Users
+## Library users
+* Maven repository being built..
 
-Where is the code?
-src/main/ has subfolders called java, scala. They respectively contain code written in those languages.
+## Web-UI users
+* The corresponding webserver hosts pages such as: <http://sanskritnlp.appspot.com/forms/Chandas-de.htm> etc..
+    * (These are listed from <https://sites.google.com/site/sanskritcode/projects>.)
 
-Javascript code is in war/js.
+# Contributors
+## Where is the code?
+* src/main/ has subfolders called java, scala. They respectively contain code written in those languages.
+* Javascript code is in war/js.
+* HTML forms are found in war/forms.
 
-HTML forms are found in war/forms.
-
-Scala programming tips:
+## Scala programming tips:
+* Using IntelliJ Idea IDE :
+  * use provided project file. Install the scala plugin. Set up the source folders in the module.
+  * Open any valid singleton with a main function. Run it using Ctrl Shift F10.
 * Building with maven:
   * mvn3 clean install
 * Using Eclipse: Just use eclipse with the scalaIDE plugin. Set output folder WEB-INF/classes.
-* Using IntelliJ Idea IDE : 
-  * use provided project file. Install the scala plugin. Set up the source folders in the module.
-  * Open any valid singleton with a main function. Run it using Ctrl Shift F10.
 
+## Deployment
+* Regarding **maven targets**: You can set up a maven goal in intellij as well.
+
+### Deploying to appspot.
+* Note that we're using appengine-maven-plugin in <./pom.xml>.
+  * It's use is described [here](https://cloud.google.com/appengine/docs/standard/java/tools/maven).
+* `mvn appengine:update` should do the trick - if you have right maven version.
+  * If you are doing this from intellij:
+    * a browser window will pop up, get SSO authentication done,
+    * give you a code to paste in the maven widget.
+* Local build: `mvn clean install`
+* Local dev server run: `mvn appengine:devserver`
+
+
+### Releasing to maven.
+* [Under construction.]
+
+### Building a jar.
+*

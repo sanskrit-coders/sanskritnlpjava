@@ -7,10 +7,380 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac05e739-ded8-465e-b65f-6eff68c25840" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/audit.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT.war" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/appengine-web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/chanda/MetricAnalyzer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/frame/GenericJFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/junit/SandhiTester.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/menu/FileMenu.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/menu/HelpMenu.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/menu/OptionsMenu.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/menu/PratyaharaMenu.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/notes/Comments.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/panel/ControlPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/panel/EncodingPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/panel/EncodingPanelForPratyahara.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/panel/EncodingPanelForSandhi.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/panel/SandhiOptionsPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/panel/TrackingPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/pratyahara/HelpItem.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/pratyahara/PratyahaarJFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/pratyahara/PratyaharaDecoder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/pratyahara/SUPAffixes.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/pratyahara/SivaSutra.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/pratyahara/SivaSutraInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/pratyahara/StandalonePratyahara.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/pratyahara/TingAffixes.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/pratyahara/UditSavarna.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/AdditionalChecks.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/AjadiAntaSandhi.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/ConsonantSandhi.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/DisplayMessage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/HelpFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/InstallComplete.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/Launcher1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/Launcher2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/Launcher3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/MixedSandhi.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/SandhiBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/SandhiJFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/SandhiMaker.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/TransliterationSchemeDisplay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/VisargaDisplay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/VowelConsonantSandhi.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/sandhi/VowelSandhi.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/transliteration/DvnToSLP.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/transliteration/ElatinToUniformItrans.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/transliteration/HKToSLP.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/transliteration/IASTToSLP.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/transliteration/IndicUnicodeTransformer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/transliteration/ItransScheme.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/transliteration/ItransToSLPConverter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/transliteration/ItransToUniformItrans.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/transliteration/KrutiToeLatin.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/transliteration/Latin.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/transliteration/RTFDocsSwingDisplayer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/transliteration/SLPToBangla.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/transliteration/SLPToDevanagari.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/transliteration/SLPToHK.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/transliteration/SLPToIAST.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/transliteration/SLPToItrans.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/transliteratorAsSwing/AkrutiToeLatin.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/transliteratorAsSwing/TransliteratorJFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/util/ConsonantUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/util/EncodingUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/util/Log.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/util/MetricUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/util/ProjectTypeEnum.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/util/SandhiConstants.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/util/VarnaUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/util/VisargaUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/com/sktutilities/util/VowelUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/default/runtimeSettings.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/gssmurthy/Maatraa5d.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/gssmurthy/Sandhi5b3m.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/logback.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/app/sanskritNlp$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/app/sanskritNlp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/app/sanskritNlpTest$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/app/sanskritNlpTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/dictionary/BabylonDictionary$$anonfun$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/dictionary/BabylonDictionary$$anonfun$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/dictionary/BabylonDictionary$$anonfun$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/dictionary/BabylonDictionary$$anonfun$getMeanings$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/dictionary/BabylonDictionary$$anonfun$getMeanings$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/dictionary/BabylonDictionary$$anonfun$makeWordToLocationMap$1$$anonfun$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/dictionary/BabylonDictionary$$anonfun$makeWordToLocationMap$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/dictionary/BabylonDictionary$$anonfun$makeWordToMeaningsMap$1$$anonfun$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/dictionary/BabylonDictionary$$anonfun$makeWordToMeaningsMap$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/dictionary/BabylonDictionary$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/dictionary/BabylonDictionary.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/dictionary/babylonDictTest$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/dictionary/babylonDictTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/dictionary/babylonTools$$anonfun$addTransliteratedHeadwords$1$$anonfun$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/dictionary/babylonTools$$anonfun$addTransliteratedHeadwords$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/dictionary/babylonTools$$anonfun$asToDevanagari$1$$anonfun$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/dictionary/babylonTools$$anonfun$asToDevanagari$1$$anonfun$apply$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/dictionary/babylonTools$$anonfun$asToDevanagari$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/dictionary/babylonTools$$anonfun$sutraNumbersToDevanagari$1$$anonfun$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/dictionary/babylonTools$$anonfun$sutraNumbersToDevanagari$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/dictionary/babylonTools$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/dictionary/babylonTools.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/ocr/GocrOutputIterator$$anonfun$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/ocr/GocrOutputIterator$$anonfun$nextPage$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/ocr/GocrOutputIterator$$anonfun$nextPage$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/ocr/GocrOutputIterator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/ocr/SanskritOCROutputIterator$$anonfun$nextPage$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/ocr/SanskritOCROutputIterator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/ocr/gocr$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/ocr/gocr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/ocr/ocrOutputIterator$$anonfun$skipNPages$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/ocr/ocrOutputIterator$class.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/ocr/ocrOutputIterator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/ocr/sanskritocr$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/ocr/sanskritocr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/podcasting/Podcast$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/podcasting/Podcast.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/podcasting/shAstraPodcastMaker$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/podcasting/shAstraPodcastMaker.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/servlet/Transliterate.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/servlet/pratyAhArI.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/IndicScript$$anonfun$fromDevanagari$1$$anonfun$apply$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/IndicScript$$anonfun$fromDevanagari$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/IndicScript$$anonfun$toDevanagari$1$$anonfun$apply$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/IndicScript$$anonfun$toDevanagari$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/IndicScript$class.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/IndicScript.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$makeRegexFromKeys$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceDevanagariConsonants$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceDevanagariConsonants$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceKeysLongestFirst$1$$anonfun$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceKeysLongestFirst$1$$anonfun$apply$mcVI$sp$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceKeysLongestFirst$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanConsonantsFollowedByVowels$1$$anonfun$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanConsonantsFollowedByVowels$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanConsonantsFollowedByVowels$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanDependentVowels$1$$anonfun$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanDependentVowels$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$replaceRomanDependentVowels$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$restoreEscapeSequences$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$$anonfun$restoreRomanBetweenStrings$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript$class.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/RomanScript.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/as$$anonfun$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/as$$anonfun$10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/as$$anonfun$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/as$$anonfun$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/as$$anonfun$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/as$$anonfun$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/as$$anonfun$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/as$$anonfun$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/as$$anonfun$8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/as$$anonfun$9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/as$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/as.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/asTest$$anonfun$main$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/asTest$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/asTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/harvardKyoto$$anonfun$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/harvardKyoto$$anonfun$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/harvardKyoto$$anonfun$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/harvardKyoto$$anonfun$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/harvardKyoto$$anonfun$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/harvardKyoto$$anonfun$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/harvardKyoto$$anonfun$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/harvardKyoto$$anonfun$8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/harvardKyoto$$anonfun$9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/harvardKyoto$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/harvardKyoto.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/harvardKyotoTest$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/harvardKyotoTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/iast$$anonfun$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/iast$$anonfun$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/iast$$anonfun$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/iast$$anonfun$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/iast$$anonfun$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/iast$$anonfun$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/iast$$anonfun$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/iast$$anonfun$8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/iast$$anonfun$9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/iast$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/iast.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/iastTest$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/iastTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/kannaDa$$anonfun$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/kannaDa$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/kannaDa.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/optitrans$$anonfun$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/optitrans$$anonfun$10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/optitrans$$anonfun$11.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/optitrans$$anonfun$12.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/optitrans$$anonfun$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/optitrans$$anonfun$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/optitrans$$anonfun$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/optitrans$$anonfun$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/optitrans$$anonfun$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/optitrans$$anonfun$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/optitrans$$anonfun$8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/optitrans$$anonfun$9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/optitrans$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/optitrans.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/optitransTest$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/optitransTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/slp$$anonfun$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/slp$$anonfun$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/slp$$anonfun$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/slp$$anonfun$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/slp$$anonfun$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/slp$$anonfun$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/slp$$anonfun$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/slp$$anonfun$8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/slp$$anonfun$9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/slp$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/slp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/slpTest$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/slpTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/telugu$$anonfun$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/telugu$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/telugu.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/transliterator$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/transliteration/transliterator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/vyAkaraNa/Syllable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/vyAkaraNa/akSharasaMjJNA$$anonfun$fetch$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/vyAkaraNa/akSharasaMjJNA$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/vyAkaraNa/akSharasaMjJNA.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/vyAkaraNa/consonants$$anonfun$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/vyAkaraNa/consonants$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/vyAkaraNa/consonants.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/vyAkaraNa/devanAgarI$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/vyAkaraNa/devanAgarI.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/vyAkaraNa/shivasUtra$$anonfun$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/vyAkaraNa/shivasUtra$$anonfun$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/vyAkaraNa/shivasUtra$$anonfun$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/vyAkaraNa/shivasUtra$$anonfun$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/vyAkaraNa/shivasUtra$$anonfun$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/vyAkaraNa/shivasUtra$$anonfun$pratyAhAra$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/vyAkaraNa/shivasUtra$$anonfun$pratyAhAra$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/vyAkaraNa/shivasUtra$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/vyAkaraNa/shivasUtra.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/vyAkaraNa/symbols$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/vyAkaraNa/symbols$toneMarkers$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/vyAkaraNa/symbols.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/vyAkaraNa/vowels$$anonfun$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/vyAkaraNa/vowels$$anonfun$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/vyAkaraNa/vowels$$anonfun$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/vyAkaraNa/vowels$$anonfun$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/vyAkaraNa/vowels$$anonfun$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/vyAkaraNa/vowels$$anonfun$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/vyAkaraNa/vowels$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/vyAkaraNa/vowels$tone$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/vyAkaraNa/vowels.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/Section$$anonfun$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/Section$$anonfun$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/Section$$anonfun$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/Section$$anonfun$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/Section$$anonfun$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/Section$$anonfun$deleteSection$1$$anonfun$apply$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/Section$$anonfun$deleteSection$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/Section$$anonfun$deleteSection$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/Section$$anonfun$parse$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/Section.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/bot/hi_wiktionary$$anonfun$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/bot/hi_wiktionary$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/bot/hi_wiktionary.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/bot/sa_wiktionary$$anonfun$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/bot/sa_wiktionary$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/bot/sa_wiktionary.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/bot/wikiBot$$anonfun$replaceRegex$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/bot/wikiBot$class.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/bot/wikiBot.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/bot/wikisource$$anonfun$fillIndexedPages$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/bot/wikisource$$anonfun$getIndexedPages$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/bot/wikisource$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/bot/wikisource.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/bot/wiktionary$$anonfun$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/bot/wiktionary$$anonfun$fixDictNameMixup$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/bot/wiktionary$$anonfun$fixWikiError$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/bot/wiktionary$$anonfun$mapWordToDicts$1$$anonfun$apply$1$$anonfun$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/bot/wiktionary$$anonfun$mapWordToDicts$1$$anonfun$apply$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/bot/wiktionary$$anonfun$mapWordToDicts$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/bot/wiktionary$$anonfun$replaceBadText$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/bot/wiktionary$$anonfun$setWordMeanings$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/bot/wiktionary$$anonfun$uploadFromBabylonDictsCombined$1$$anonfun$apply$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/bot/wiktionary$$anonfun$uploadFromBabylonDictsCombined$1$$anonfun$apply$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/bot/wiktionary$$anonfun$uploadFromBabylonDictsCombined$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/bot/wiktionary$class.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/bot/wiktionary.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/sectionTest$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/wiki/sectionTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sktUtils/Daily Notes.doc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sktUtils/Notes on Vowel Sandhi.doc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sktUtils/SKT_TRNSL_SCHEME.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sktUtils/demo.rtf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sktUtils/hk.rtf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sktUtils/iast.rtf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sktUtils/icon_clipboard.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sktUtils/itrans.rtf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sktUtils/log4j.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sktUtils/notes_on_sandhi.rtf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sktUtils/notes_on_transliterator.rtf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sktUtils/siva.rtf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sktUtils/slp.rtf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sktUtils/wp_notes.rtf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/lib/appengine-api-1.0-sdk-1.9.15.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/lib/commons-codec-1.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/lib/commons-lang3-3.3.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.1.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/lib/fluent-hc-4.3.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/lib/guava-18.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/lib/httpclient-4.3.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/lib/httpcore-4.3.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/lib/httpmime-4.3.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.4.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.4.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.4.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/lib/javax.inject-1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/lib/jdom2-2.0.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/lib/jsr305-3.0.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/lib/jwbf-3.0.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/lib/logback-classic-0.9.29.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/lib/logback-core-0.9.29.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/lib/paranamer-2.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/lib/scala-library-2.10.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/lib/scala-library-2.11.8.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/lib/scala-xml-2.11.0-M4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.6.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/bottom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/contentStylesheet.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/fonts/1-devanagari.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/fonts/1-notosans-devanagari-github.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/fonts/1-notosans-devanagari.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/fonts/2-kannada.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/fonts/3-noto-deva-example.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/forms/Chandas-de.htm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/forms/DCS-de.htm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/forms/pratyAhAra.htm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/forms/transliterateIndic.htm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/index.htm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/js/dcs_dialect.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/js/sanscript.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/js/shrIvatsaTransliterator.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/optitrans.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/pageStats.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/css/maven-base.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/css/maven-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/css/print.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/css/site.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/dependencies.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/dependency-convergence.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/dependency-info.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/close.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/collapsed.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/expanded.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/external.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/icon_error_sml.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/icon_info_sml.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/icon_success_sml.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/icon_warning_sml.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/logos/build-by-maven-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/logos/build-by-maven-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/logos/maven-feather.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/images/newwindow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/plugin-management.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/plugins.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/project-info.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/project-summary.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
@@ -40,23 +410,13 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="813">
-                <caret line="57" column="14" lean-forward="false" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
+              <first_editor relative-caret-position="505">
+                <caret line="67" column="61" lean-forward="false" selection-start-line="67" selection-start-column="61" selection-end-line="67" selection-end-column="61" />
                 <folding />
               </first_editor>
               <second_editor>
                 <js_state />
               </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sanskritnlp-effective-pom.xml" pinned="false" current-in-tab="false">
-        <entry file="mock:///sanskritnlp-effective-pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" column="35" lean-forward="false" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -74,9 +434,34 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1620">
-              <caret line="108" column="67" lean-forward="false" selection-start-line="108" selection-start-column="62" selection-end-line="108" selection-end-column="67" />
+            <state relative-caret-position="75">
+              <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="16" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.m2/settings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor>
+                <js_state />
+              </second_editor>
             </state>
           </provider>
         </entry>
@@ -143,8 +528,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/bot/wikisource.java" />
-        <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/romanScripts.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/ocr/ocr.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/ocr/SanskritOCROutputIterator.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/bot/wikisource.scala" />
@@ -192,6 +575,8 @@
         <option value="$USER_HOME$/stardict-sanskrit/bin/scripts/stardict_sanskrit/Dictionary.scala" />
         <option value="$PROJECT_DIR$/src/main/webapp/forms/DCS-de.htm" />
         <option value="$PROJECT_DIR$/src/main/webapp/forms/pratyAhAra.htm" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$USER_HOME$/.m2/settings.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
@@ -206,9 +591,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="-4" />
+    <option name="y" value="1224" />
     <option name="width" value="1855" />
-    <option name="height" value="1204" />
+    <option name="height" value="1176" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -253,10 +638,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subhAShita" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -275,16 +656,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="dcs-frequency" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sanskritnlpjava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -309,6 +680,10 @@
     <property name="Repository.Attach.Sources" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$USER_HOME$/stardict-sanskrit/sa-kAvya/Chandas/scripts" />
+      <recent name="$USER_HOME$/stardict-sanskrit/sa-kAvya/dcs-frequency/scripts" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="subhAShita" />
       <recent name="sanskritnlp.wiki" />
@@ -321,12 +696,8 @@
       <recent name="$USER_HOME$/stardict-sanskrit/sa-kAvya/dcs-frequency/scripts" />
       <recent name="$USER_HOME$/stardict-sanskrit/sa-vyAkaraNa/abhyankara-grammar/scripts" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$USER_HOME$/stardict-sanskrit/sa-kAvya/Chandas/scripts" />
-      <recent name="$USER_HOME$/stardict-sanskrit/sa-kAvya/dcs-frequency/scripts" />
-    </key>
   </component>
-  <component name="RunManager" selected="Maven.google-appengine">
+  <component name="RunManager" selected="Maven.mvn delpoy">
     <configuration default="false" name="harvardKyotoTest" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -744,19 +1115,6 @@
       <module name="kRdanta-rUpa-mAlA" />
       <method />
     </configuration>
-    <configuration default="true" type="executeSpecs" factoryName="Gauge Execution">
-      <setting name="environment" value="" />
-      <setting name="specsToExecute" value="" />
-      <setting name="tags" value="" />
-      <setting name="parallelNodes" value="" />
-      <setting name="execInParallel" value="false" />
-      <setting name="programParameters" value="" />
-      <setting name="workingDirectory" value="" />
-      <setting name="moduleName" value="" />
-      <envMap />
-      <setting name="rowsRange" value="" />
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -1087,6 +1445,30 @@
         <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="appengine:update" />
       </method>
     </configuration>
+    <configuration default="false" name="mvn delpoy" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method>
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean deploy" />
+      </method>
+    </configuration>
     <configuration default="false" name="Test" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
       <module name="sanskritnlp" />
       <setting name="path" value="$PROJECT_DIR$/src/main/scala/sanskritnlp/dictionary/babylonTools.scala" />
@@ -1178,7 +1560,7 @@
       <setting name="workingDirectory" value="$USER_HOME$/stardict-sanskrit/sa-vyAkaraNa/abhyankara-grammar" />
       <method />
     </configuration>
-    <list size="26">
+    <list size="27">
       <item index="0" class="java.lang.String" itemvalue="Application.babylonDictTest" />
       <item index="1" class="java.lang.String" itemvalue="Application.slpTest" />
       <item index="2" class="java.lang.String" itemvalue="Application.optitransTest" />
@@ -1191,20 +1573,21 @@
       <item index="9" class="java.lang.String" itemvalue="Application.gocr" />
       <item index="10" class="java.lang.String" itemvalue="Application.sanskritocr" />
       <item index="11" class="java.lang.String" itemvalue="Maven.google-appengine" />
-      <item index="12" class="java.lang.String" itemvalue="Scala Script.Test" />
-      <item index="13" class="java.lang.String" itemvalue="Scala Script.PadFilenames" />
-      <item index="14" class="java.lang.String" itemvalue="Scala Script.kalpadruma-to-dev" />
-      <item index="15" class="java.lang.String" itemvalue="Scala Script.rv make_padapATha_index_dev" />
-      <item index="16" class="java.lang.String" itemvalue="Scala Script.rv make_padapATha_index_hk.scala" />
-      <item index="17" class="java.lang.String" itemvalue="Scala Script.vedic-rituals-hi mkbaby" />
-      <item index="18" class="java.lang.String" itemvalue="Scala Script.DCS" />
-      <item index="19" class="java.lang.String" itemvalue="Scala Script.Chandas" />
-      <item index="20" class="java.lang.String" itemvalue="Scala Script.abhyankar-make-baby" />
-      <item index="21" class="java.lang.String" itemvalue="Application.harvardKyotoTest" />
-      <item index="22" class="java.lang.String" itemvalue="Application.asTest" />
-      <item index="23" class="java.lang.String" itemvalue="Application.wikisource" />
-      <item index="24" class="java.lang.String" itemvalue="Application.shAstraPodcastMaker" />
-      <item index="25" class="java.lang.String" itemvalue="Scala Console.Scala Console" />
+      <item index="12" class="java.lang.String" itemvalue="Maven.mvn delpoy" />
+      <item index="13" class="java.lang.String" itemvalue="Scala Script.Test" />
+      <item index="14" class="java.lang.String" itemvalue="Scala Script.PadFilenames" />
+      <item index="15" class="java.lang.String" itemvalue="Scala Script.kalpadruma-to-dev" />
+      <item index="16" class="java.lang.String" itemvalue="Scala Script.rv make_padapATha_index_dev" />
+      <item index="17" class="java.lang.String" itemvalue="Scala Script.rv make_padapATha_index_hk.scala" />
+      <item index="18" class="java.lang.String" itemvalue="Scala Script.vedic-rituals-hi mkbaby" />
+      <item index="19" class="java.lang.String" itemvalue="Scala Script.DCS" />
+      <item index="20" class="java.lang.String" itemvalue="Scala Script.Chandas" />
+      <item index="21" class="java.lang.String" itemvalue="Scala Script.abhyankar-make-baby" />
+      <item index="22" class="java.lang.String" itemvalue="Application.harvardKyotoTest" />
+      <item index="23" class="java.lang.String" itemvalue="Application.asTest" />
+      <item index="24" class="java.lang.String" itemvalue="Application.wikisource" />
+      <item index="25" class="java.lang.String" itemvalue="Application.shAstraPodcastMaker" />
+      <item index="26" class="java.lang.String" itemvalue="Scala Console.Scala Console" />
     </list>
     <recent_temporary>
       <list size="5">
@@ -1274,14 +1657,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1204" extended-state="6" />
-    <editor active="true" />
+    <frame x="65" y="1224" width="1855" height="1176" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931355" sideWeight="0.49806523" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32745826" sideWeight="0.38584852" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32745826" sideWeight="0.38584852" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1293,8 +1676,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931355" sideWeight="0.48479822" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2714207" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283859" sideWeight="0.49585405" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27805418" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2498618" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1308,6 +1690,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2498618" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283859" sideWeight="0.49585405" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1364,27 +1747,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/stardict-sanskrit/sa-head/shabda-sAgara/mUlam/to_devanAgarI.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="49" lean-forward="true" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/stardict-sanskrit/sa-kAvya/dcs-frequency/dcs-frequency.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28980">
-          <caret line="1932" column="8" lean-forward="false" selection-start-line="1932" selection-start-column="0" selection-end-line="1932" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/podcasting/Podcast.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="6" lean-forward="false" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/stardict-sanskrit/sa-head/kalpadruma-sa/mUlam/kalpadruma-sa-v2.tsv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1582,7 +1944,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1590,7 +1951,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1515">
           <caret line="109" column="24" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1598,7 +1958,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1606,7 +1965,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="78" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1614,7 +1972,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1622,9 +1979,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="7" lean-forward="false" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-          <folding>
-            <element signature="e#30#64#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1632,9 +1986,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="6" lean-forward="false" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-          <folding>
-            <element signature="e#30#87#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1642,7 +1993,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="51" column="65" lean-forward="true" selection-start-line="51" selection-start-column="65" selection-end-line="51" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1650,9 +2000,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="30" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#xmp#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1660,7 +2007,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1668,7 +2014,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1676,7 +2021,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
           <caret line="37" column="63" lean-forward="false" selection-start-line="37" selection-start-column="63" selection-end-line="37" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1684,7 +2028,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1696,18 +2039,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1620">
-          <caret line="108" column="67" lean-forward="false" selection-start-line="108" selection-start-column="62" selection-end-line="108" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/stardict-sanskrit/bin/scripts/stardict_sanskrit/Dictionary.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1245">
           <caret line="148" column="39" lean-forward="false" selection-start-line="148" selection-start-column="39" selection-end-line="148" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.m2/settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1721,8 +2092,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="813">
-            <caret line="57" column="14" lean-forward="false" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
+          <first_editor relative-caret-position="505">
+            <caret line="67" column="61" lean-forward="false" selection-start-line="67" selection-start-column="61" selection-end-line="67" selection-end-column="61" />
             <folding />
           </first_editor>
           <second_editor>

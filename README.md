@@ -21,10 +21,18 @@
     * (These are listed from <https://sites.google.com/site/sanskritcode/projects>.)
 
 # Contributors
+## Setup
+* Strongly recomment Intellij Idea IDE.
+  * Just point it to the IML file and .idea/* files.
+* There are also eclipse files which haven't been used in a long time.
+
 ## Where is the code?
 * src/main/ has subfolders called java, scala. They respectively contain code written in those languages.
 * Javascript code is in war/js.
 * HTML forms are found in war/forms.
+
+## Adding libraries
+* Using IntelliJ Idea IDE : Don't muck around with pom.xml. Use project or module settings.
 
 ## Scala programming tips:
 * Using IntelliJ Idea IDE :
@@ -48,8 +56,6 @@
   * Files are output in target/ .
 * Local dev server run: `mvn appengine:devserver`
 * Manage online at <https://console.cloud.google.com> . Navigate around a bit.
-
-
 
 ### Releasing to maven.
 * [Under construction.]

@@ -12,6 +12,7 @@ Contributions and suggestions are invited at https://github.com/sanskrit-coders/
 # Users
 ## Library users
 * Maven repository [here](http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22sanskritnlp%22) .
+* Last update : 2017-03-23
 
 ### Built output
 * Final jar files
@@ -79,11 +80,19 @@ Contributions and suggestions are invited at https://github.com/sanskrit-coders/
 * Deploy release artifacts into the [staging repository](https://oss.sonatype.org/content/repositories/releases/com/github/sanskrit-coders/sanskritnlp/) and [here](http://repo1.maven.org/maven2/com/github/sanskrit-coders/sanskritnlp/) :
   * Repeat the same with a non snapshot version number.
 * Releasing to central (if it does not automatically happen):
-  * Notes: <http://central.sonatype.org/pages/releasing-the-deployment.html> TODO.
-  * Artifacts can be examined on Sonatype [here](https://oss.sonatype.org/#nexus-search;quick~sanskrit) and released - if the staging repository is visible there.
+  * Notes: <http://central.sonatype.org/pages/releasing-the-deployment.html>
+  * Artifacts can be examined on Sonatype [here](https://oss.sonatype.org/#nexus-search;quick~sanskrit) and released - if the staging repository is visible there. Otherwise, it may already be deployed in central!
   * Maven target can be used: nexus-staging:release
 * Project was created under Sonatype:  [here](https://issues.sonatype.org/browse/OSSRH-29183) .
 
 ### Building a jar.
 * Simplest way is to set up a build artifact in intellij IDea.
 * There was also a maven target in pom.xml which I've used occasionally.
+
+## Technical choices
+### Scala
+* One can write much more concise code (1/4th to 1/3rd relative to Java and 3/4ths to 5/6ths relative to Python, according to [this](http://bcomposes.com/2012/03/01/student-questions-about-scala-part-2/) )
+  * For example, the ease with which one can iterate in scala using higher order functions (the maps, filters and zips above) available with scala's excellent collections library.
+* while not sacrificing the ability to use java libraries, and readability/ speed of java.
+* It is increasing in popularity relative to competitors : scala vs clojure ( [Google trends](https://trends.google.com/trends/explore?date=all&q=Scala%20tutorial,Clojure%20tutorial) ), scala vs julia ( [Google trends](https://trends.google.com/trends/explore?date=all&q=Scala%20tutorial,Julia%20tutorial) ).
+* [Here](http://bcomposes.com/2011/08/22/first-steps-in-scala-for-first-time-programmers-part-1/) is a good series of blog posts which provide an introduction to Scala.

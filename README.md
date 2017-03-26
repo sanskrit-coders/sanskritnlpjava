@@ -83,6 +83,7 @@ Contributions and suggestions are invited at https://github.com/sanskrit-coders/
   * Notes: <http://central.sonatype.org/pages/releasing-the-deployment.html>
   * Artifacts can be examined on Sonatype [here](https://oss.sonatype.org/#nexus-search;quick~sanskrit) and released - if the staging repository is visible there. Otherwise, it may already be deployed in central!
   * Maven target can be used: nexus-staging:release
+  * "After you successfully release, your component will be published to Central, typically within 10 minutes, though updates to search.maven.org can take up to two hours."
 * Project was created under Sonatype:  [here](https://issues.sonatype.org/browse/OSSRH-29183) .
 
 ### Building a jar.

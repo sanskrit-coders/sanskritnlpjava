@@ -6,6 +6,7 @@ package sanskritnlp.transliteration
   */
 object transliterator {
   val scriptDevanAgarI = "dev"
+  val scriptUnknown = null
 
   def scriptFromString(schemeName: String) : Option[RomanScript] = {
     schemeName match {

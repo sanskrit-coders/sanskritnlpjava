@@ -48,11 +48,16 @@ case class QuoteText(scriptRenderings: List[ScriptRendering],
     key = rendering.getKey
   }
   def this(scriptRendering: ScriptRendering, language: Language) = this(scriptRendering::Nil, language=language)
+  def this(text: String, script: String, language: Language) =
+    this(scriptRendering=ScriptRendering(text=text,scheme=script), language=language)
 }
 
 
 case class Source(name: QuoteText, authors: List[QuoteText], var key: String = "") {
   key = s"${name.key}__${authors.sortBy(_.scriptRenderings.head.text).map(_.key).mkString("_")}"
+  def this(nameIn: String, author: String, script: String, language: String) =
+    this(name= new QuoteText(text=nameIn, script = script, language = Language(language)),
+      authors = new QuoteText(text=author, script = script, language = Language(language))::Nil)
 }
 
 case class Rating(rating: Int)
@@ -78,8 +83,7 @@ case class QuoteInfo(quoteText: QuoteText,
 
 object quoteTextHelper {
   def getSanskritDevangariiQuote(text: String): QuoteText =
-    QuoteText(scriptRenderings=ScriptRendering(text = text, scheme = transliterator.scriptDevanAgarI)::Nil,
-    language = Language("sa"))
+    new QuoteText(text = text, script=transliterator.scriptDevanAgarI, language = Language("sa"))
 }
 
 object sourceHelper {

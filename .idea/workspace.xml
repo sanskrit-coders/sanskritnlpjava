@@ -43,8 +43,8 @@
       <file leaf-file-name="Quote.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/quote/Quote.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="49" column="112" lean-forward="true" selection-start-line="49" selection-start-column="112" selection-end-line="49" selection-end-column="112" />
+            <state relative-caret-position="-482">
+              <caret line="77" column="1" lean-forward="true" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
               <folding>
                 <element signature="e#27#52#0" expanded="true" />
               </folding>
@@ -77,7 +77,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>करिणी</find>
       <find>/</find>
       <find>index</find>
       <find>noinclude</find>
@@ -107,6 +106,7 @@
       <find>नाभिषेको न संस्कारः सिंहस्य</find>
       <find>भाषा</find>
       <find>log</find>
+      <find>Sou</find>
     </findStrings>
     <replaceStrings>
       <replace>$USER_HOME$/stardict-sanskrit/sa-vyAkaraNa/abhyankara-grammar</replace>
@@ -194,7 +194,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-3775" />
-    <option name="y" value="1196" />
+    <option name="y" value="-4" />
     <option name="width" value="1855" />
     <option name="height" value="1204" />
   </component>
@@ -1462,8 +1462,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3775" y="1196" width="1855" height="1204" extended-state="6" />
-    <editor active="false" />
+    <frame x="-3775" y="-4" width="1855" height="1204" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931355" sideWeight="0.49806523" order="5" side_tool="false" content_ui="tabs" />
@@ -1842,14 +1842,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/transliterator.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -1918,10 +1910,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/transliterator.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-571">
+          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/quote/Quote.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="49" column="112" lean-forward="true" selection-start-line="49" selection-start-column="112" selection-end-line="49" selection-end-column="112" />
+        <state relative-caret-position="-482">
+          <caret line="77" column="1" lean-forward="true" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
           <folding>
             <element signature="e#27#52#0" expanded="true" />
           </folding>

@@ -5,6 +5,7 @@ package sanskritnlp.transliteration
   * Created by vvasuki on 2/21/16.
   */
 object transliterator {
+  val scriptDevanAgarI = "dev"
 
   def scriptFromString(schemeName: String) : Option[RomanScript] = {
     schemeName match {
@@ -46,7 +47,7 @@ object transliterator {
     if (schemeOpt.isDefined) {
       return schemeOpt.get.fromDevanagari(devanAgarIout)
     } else {
-      if (destScheme == "dev") {
+      if (destScheme == scriptDevanAgarI) {
         return devanAgarIout
       } else {
         throw new IllegalArgumentException("Could not transliterate " + in_str)

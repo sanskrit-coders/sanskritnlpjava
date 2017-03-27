@@ -112,7 +112,7 @@ object subhAShitaTest {
 
     val origin = OriginAnnotation(textKey = quoteText.key,
       source = sourceHelper.getSanskritDevanaagariiSource("विश्वाससङ्ग्रहः", List("विश्वासः")),
-      origin = sourceHelper.getSanskritDevanaagariiSource("क्वचित्", List("कश्चित्")),
+      origin = sourceHelper.getSanskritDevanaagariiSource("क्वचित्", List("कश्चित्"))
     )
     log info Serialization.writePretty(origin)
   }

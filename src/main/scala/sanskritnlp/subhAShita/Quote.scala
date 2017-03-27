@@ -5,21 +5,21 @@ import net.liftweb.json.Serialization
 import org.slf4j.LoggerFactory
 import sanskritnlp.transliteration.transliterator
 
-case class Source(name: String, authors: List[String])
-case class Rating(rating: Int)
-
-abstract class Annotation(val source: Source)
 case class ScriptRendering(text: String, scheme: String = transliterator.scriptUnknown,
                            var startLetter: String = "") {
   startLetter = text.toList.head.toString
 }
+case class Source(name: ScriptRendering, authors: List[ScriptRendering])
+case class Rating(rating: Int)
+
+abstract class Annotation(val key: String, val source: Source)
 case class Language(code: String)
 case class Topic(scriptRendering: ScriptRendering, language: Language = Language("UNK"))
-case class TopicAnnotation(override val source: Source, topics: List[Topic]) extends Annotation(source)
-case class MemorableBitsAnnotation(override val source: Source, memorableBits: List[ScriptRendering]) extends Annotation(source)
-case class RatingAnnotation(override val source: Source, overall: Rating) extends Annotation(source)
-case class DescriptionAnnotation(override val source: Source, description: String) extends Annotation(source)
-case class OriginAnnotation(override val source: Source, origin: Source) extends Annotation(source)
+case class TopicAnnotation(override val key: String, override val source: Source, topic: Topic) extends Annotation(key, source)
+case class MemorableBitsAnnotation(override val key: String, override val source: Source, memorableBits: List[ScriptRendering]) extends Annotation(key, source)
+case class RatingAnnotation(override val key: String, override val source: Source, overall: Rating) extends Annotation(key, source)
+case class DescriptionAnnotation(override val key: String, override val source: Source, translation: ScriptRendering, language: Language = Language("UNK")) extends Annotation(key, source)
+case class OriginAnnotation(override val key: String, override val source: Source, origin: Source) extends Annotation(key, source)
 
 case class QuoteText(scriptRenderings: List[ScriptRendering],
                      var key: String = "",
@@ -39,6 +39,8 @@ case class QuoteText(scriptRenderings: List[ScriptRendering],
   }
 }
 
+// We won't store this document in the database - we will use related documents strategy. See https://developer.couchbase.com/documentation/mobile/1.4/guides/couchbase-lite/native-api/data-modeling/index.html .
+// We just keep this since it's convenient for passing stuff around.
 case class QuoteInfo(quoteText: QuoteText,
                      originAnnotations: List[OriginAnnotation] = List(),
                      topicAnnotations: List[TopicAnnotation] = List(),
@@ -49,18 +51,20 @@ case class QuoteInfo(quoteText: QuoteText,
 object subhAShitaTest {
   val log = LoggerFactory.getLogger(getClass.getName)
   def quoteTest: Unit = {
-    val quoteInfo = QuoteInfo(
-      quoteText = QuoteText(
+    val quoteText = QuoteText(
         scriptRenderings = List(
           ScriptRendering(text = "दण्डः शास्ति प्रजाः सर्वाः दण्ड एवाभिरक्षति। दण्डः सुप्तेषु जागर्ति दण्डं धर्मं विदुर्बुधाः।। \tदण्डः\t",
             scheme = transliterator.scriptDevanAgarI)),
-        language = Language("sa")),
-      originAnnotations = List(
-        OriginAnnotation(source = Source("विश्वाससङ्ग्रहः", List("विश्वासः")), origin = Source("क्वचित्", List("कश्चित्")))
-      )
-    )
+        language = Language("sa"))
     implicit val formats = Serialization.formats(NoTypeHints)
-    log info Serialization.writePretty(quoteInfo)
+    log info Serialization.writePretty(quoteText)
+
+    val origin = OriginAnnotation(key = quoteText.key, source =
+      Source(ScriptRendering(text = "विश्वाससङ्ग्रहः", scheme = transliterator.scriptDevanAgarI),
+        authors = List(ScriptRendering(text = "विश्वासः", scheme = transliterator.scriptDevanAgarI))),
+      origin = Source(ScriptRendering(text = "kashcit", scheme = "en"),
+        authors = List(ScriptRendering(text = "kvacit", scheme = transliterator.scriptDevanAgarI))))
+    log info Serialization.writePretty(origin)
   }
 
   def main(args: Array[String]): Unit = {

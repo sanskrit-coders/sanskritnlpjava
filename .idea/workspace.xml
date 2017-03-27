@@ -8,8 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ac05e739-ded8-465e-b65f-6eff68c25840" name="Default" comment="">
       <change type="DELETED" beforePath="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/Subhashita.scala" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/sanskritnlp/subhAShita/Subhashita.scala" afterPath="$PROJECT_DIR$/src/main/scala/sanskritnlp/subhAShita/Subhashita.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/transliterator.scala" afterPath="$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/transliterator.scala" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/subhAShita-db-sanskrit/README.md" afterPath="$USER_HOME$/subhAShita-db-sanskrit/README.md" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/SubhashitaList.scala" afterPath="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/SubhashitaList.scala" />
     </list>
@@ -32,116 +30,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="2376">
-                <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor>
-                <js_state />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="437">
-                <caret line="41" column="93" lean-forward="true" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="93" />
-                <folding />
-              </first_editor>
-              <second_editor>
-                <js_state />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dbMaker.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/dbMaker.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Subhashita.scala" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/subhAShita/Subhashita.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="56" column="31" lean-forward="false" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
-              <folding>
-                <element signature="e#32#57#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="transliterator.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/transliterator.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Serialization.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-json_2.11/2.6/lift-json_2.11-2.6.jar!/net/liftweb/json/Serialization.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SubhashitaList.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SubhashitaList.scala" pinned="false" current-in-tab="true">
         <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/SubhashitaList.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+            <state relative-caret-position="144">
+              <caret line="6" column="39" lean-forward="false" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
               <folding>
                 <element signature="e#20#45#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mkBabylon.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/stardict-sanskrit/sa-kAvya/dcs-frequency/scripts/mkBabylon.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1896">
-              <caret line="87" column="48" lean-forward="false" selection-start-line="87" selection-start-column="48" selection-end-line="87" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NOTICE" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NOTICE">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5664">
-              <caret line="236" column="32" lean-forward="false" selection-start-line="236" selection-start-column="32" selection-end-line="236" selection-end-column="32" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -159,7 +55,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>$USER_HOME$/stardict-sanskrit/sa-head/vedic-rituals-hi</find>
       <find>outText</find>
       <find>outLine</find>
       <find>xml</find>
@@ -189,6 +84,7 @@
       <find>appId</find>
       <find>google</find>
       <find>nexus-staging-maven</find>
+      <find>language</find>
     </findStrings>
     <replaceStrings>
       <replace>$USER_HOME$/stardict-sanskrit/sa-vyAkaraNa/abhyankara-grammar</replace>
@@ -202,7 +98,7 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/subhAShita-db-sanskrit" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -249,7 +145,6 @@
         <option value="$USER_HOME$/stardict-sanskrit/bin/babylon_add_optitrans.sh" />
         <option value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/dbMaker.scala" />
         <option value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/Subhashita.scala" />
-        <option value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/SubhashitaList.scala" />
         <option value="$USER_HOME$/stardict-sanskrit/bin/tsv_to_stardict.sh" />
         <option value="$USER_HOME$/stardict-sanskrit/bin/make_tarballs.sh" />
         <option value="$USER_HOME$/stardict-sanskrit/bin/scripts/stardict_sanskrit/Dictionary.scala" />
@@ -263,6 +158,7 @@
         <option value="$USER_HOME$/subhAShita-db-sanskrit/README.md" />
         <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/transliterator.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/subhAShita/Subhashita.scala" />
+        <option value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/SubhashitaList.scala" />
       </list>
     </option>
   </component>
@@ -299,16 +195,6 @@
     <panes>
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sanskritnlpjava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="sanskritnlpjava" />
@@ -1951,16 +1837,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/SubhashitaList.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding>
-            <element signature="e#20#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/transliterator.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -1984,10 +1860,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/subhAShita/Subhashita.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="56" column="31" lean-forward="false" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
+        <state relative-caret-position="255">
+          <caret line="55" column="52" lean-forward="false" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="52" />
           <folding>
             <element signature="e#32#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/SubhashitaList.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="39" lean-forward="false" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+          <folding>
+            <element signature="e#20#45#0" expanded="true" />
           </folding>
         </state>
       </provider>

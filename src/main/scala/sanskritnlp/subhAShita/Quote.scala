@@ -56,7 +56,15 @@ object subhAShitaTest {
           ScriptRendering(text = "दण्डः शास्ति प्रजाः सर्वाः दण्ड एवाभिरक्षति। दण्डः सुप्तेषु जागर्ति दण्डं धर्मं विदुर्बुधाः।। \tदण्डः\t",
             scheme = transliterator.scriptDevanAgarI)),
         language = Language("sa"))
-    implicit val formats = Serialization.formats(NoTypeHints)
+    // implicit val formats = Serialization.formats(NoTypeHints)
+    implicit val formats = Serialization.formats(ShortTypeHints(
+      List(
+        classOf[QuoteText],
+        classOf[OriginAnnotation],
+        classOf[DescriptionAnnotation],
+        classOf[TopicAnnotation],
+        classOf[RatingAnnotation]
+      )))
     log info Serialization.writePretty(quoteText)
 
     val origin = OriginAnnotation(key = quoteText.key, source =

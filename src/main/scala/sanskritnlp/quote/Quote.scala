@@ -6,8 +6,9 @@ import org.slf4j.LoggerFactory
 import sanskritnlp.quote.subhAShitaTest.getClass
 import sanskritnlp.transliteration.transliterator
 
-case class Language(code: String, var canonicalScript: String = transliterator.scriptUnknown) {
+case class Language(code: String) {
   val log = LoggerFactory.getLogger(getClass.getName)
+  var canonicalScript: String = transliterator.scriptUnknown
   code match {
     case "sa" => canonicalScript = transliterator.scriptDevanAgarI
     case "en" => canonicalScript = "en"
@@ -47,62 +48,62 @@ case class QuoteText(scriptRenderings: List[ScriptRendering],
     val rendering = canonicalRendering.getOrElse(scriptRenderings.head)
     key = rendering.getKey
   }
-  def this(scriptRendering: ScriptRendering, language: Language) = this(scriptRendering::Nil, language=language)
   def this(text: String, script: String, language: Language) =
-    this(scriptRendering=ScriptRendering(text=text,scheme=script), language=language)
+    this(scriptRenderings=List(text).filter(_.nonEmpty).map(x => ScriptRendering(text=x,scheme=script)),
+      language=language)
+  def this(text: String) = this(text=text, script=transliterator.scriptUnknown, language = Language("UNK"))
 }
 
-
-case class Source(name: QuoteText, authors: List[QuoteText], var key: String = "") {
+case class Source(name: QuoteText, authors: List[QuoteText] = List[QuoteText](), var key: String = "") {
   key = s"${name.key}__${authors.sortBy(_.scriptRenderings.head.text).map(_.key).mkString("_")}"
-  def this(nameIn: String, author: String, script: String, language: String) =
-    this(name= new QuoteText(text=nameIn, script = script, language = Language(language)),
-      authors = new QuoteText(text=author, script = script, language = Language(language))::Nil)
+
+  // The below causes a mysterious failure (as of 20170326):
+  // lift json serialization stops working.
+  // Hence commenting out.
+//  def this(nameIn: String, author: String, script: String, language: String) =
+//    this(name= new QuoteText(text=nameIn, script = script, language = Language(language)),
+//      authors = List(author).filter(_.nonEmpty).map(x =>
+//        new QuoteText(text=x, script = script, language = Language(language))) )
 }
 
 case class Rating(rating: Int)
 
-abstract class Annotation(val textKey: String, val source: Source, var key: String = "") {
-  key = s"${textKey}__${source.key}"
-}
 case class Topic(scriptRendering: ScriptRendering, language: Language = Language("UNK"))
-case class TopicAnnotation(override val textKey: String, override val source: Source, topic: Topic) extends Annotation(textKey, source)
-case class MemorableBitsAnnotation(override val textKey: String, override val source: Source, memorableBits: List[ScriptRendering]) extends Annotation(textKey, source)
-case class RatingAnnotation(override val textKey: String, override val source: Source, overall: Rating) extends Annotation(textKey, source)
-case class DescriptionAnnotation(override val textKey: String, override val source: Source, translation: ScriptRendering, language: Language = Language("UNK")) extends Annotation(textKey, source)
-case class OriginAnnotation(override val textKey: String, override val source: Source, origin: Source) extends Annotation(textKey, source)
+case class TopicAnnotation(val textKey: String, val source: Source, topic: Topic)
+case class MemorableBitsAnnotation(val textKey: String, val source: Source, memorableBits: List[QuoteText])
+case class RatingAnnotation(val textKey: String, val source: Source, overall: Rating)
+case class OriginAnnotation(val textKey: String, val source: Source, origin: Source = sourceHelper.emptySource)
 
-// We won't store this document in the database - we will use related documents strategy. See https://developer.couchbase.com/documentation/mobile/1.4/guides/couchbase-lite/native-api/data-modeling/index.html .
-// We just keep this since it's convenient for passing stuff around.
-case class QuoteInfo(quoteText: QuoteText,
-                     originAnnotations: List[OriginAnnotation] = List(),
-                     topicAnnotations: List[TopicAnnotation] = List(),
-                     ratingAnnotations: List[RatingAnnotation] = List(),
-                     descriptionAnnotations: List[DescriptionAnnotation] = List()
+case class QuoteWithInfo(quoteText: QuoteText,
+                         originAnnotations: List[OriginAnnotation] = List(),
+                         topicAnnotations: List[TopicAnnotation] = List(),
+                         ratingAnnotations: List[RatingAnnotation] = List(),
+                         descriptionAnnotations: List[DescriptionAnnotation] = List()
                     )
+case class DescriptionAnnotation(val textKey: String, val source: Source, description: QuoteWithInfo)
 
 object quoteTextHelper {
+  val emptyText = new QuoteText("")
   def getSanskritDevangariiQuote(text: String): QuoteText =
     new QuoteText(text = text, script=transliterator.scriptDevanAgarI, language = Language("sa"))
 }
 
 object sourceHelper {
+  val emptySource = new Source(name = quoteTextHelper.emptyText)
   def getSanskritDevanaagariiSource(title: String, authors: List[String]): Source = {
-    return Source(quoteTextHelper.getSanskritDevangariiQuote(title),
-      authors=authors.map(quoteTextHelper.getSanskritDevangariiQuote(_))
+    return Source(name=quoteTextHelper.getSanskritDevangariiQuote(title),
+      authors=authors.filter(_.nonEmpty).map(quoteTextHelper.getSanskritDevangariiQuote(_))
     )
+  }
+  def fromAuthor(author: String): Source = {
+    return new Source(name = quoteTextHelper.emptyText,
+      authors = List(author).filter(_.nonEmpty).map(new QuoteText(_)))
   }
 }
 
 object subhAShitaTest {
   val log = LoggerFactory.getLogger(getClass.getName)
   def quoteTest: Unit = {
-    val quoteText = QuoteText(
-        scriptRenderings = List(
-          ScriptRendering(text = "दण्डः शास्ति प्रजाः सर्वाः दण्ड एवाभिरक्षति। दण्डः सुप्तेषु जागर्ति दण्डं धर्मं विदुर्बुधाः।। \tदण्डः\t",
-            scheme = transliterator.scriptDevanAgarI)),
-        language = Language("sa"))
-    // implicit val formats = Serialization.formats(NoTypeHints)
     implicit val formats = Serialization.formats(ShortTypeHints(
       List(
         classOf[QuoteText],
@@ -111,7 +112,16 @@ object subhAShitaTest {
         classOf[TopicAnnotation],
         classOf[RatingAnnotation]
       )))
+
+    val quoteText = QuoteText(
+      scriptRenderings = List(
+        ScriptRendering(text = "दण्डः शास्ति प्रजाः सर्वाः दण्ड एवाभिरक्षति। दण्डः सुप्तेषु जागर्ति दण्डं धर्मं विदुर्बुधाः।। \tदण्डः\t",
+          scheme = transliterator.scriptDevanAgarI)),
+      language = Language("sa"))
+    // implicit val formats = Serialization.formats(NoTypeHints)
     log info Serialization.writePretty(quoteText)
+    val source = Source(name=quoteTextHelper.emptyText)
+    log info Serialization.writePretty(source)
 
     val origin = OriginAnnotation(textKey = quoteText.key,
       source = sourceHelper.getSanskritDevanaagariiSource("विश्वाससङ्ग्रहः", List("विश्वासः")),

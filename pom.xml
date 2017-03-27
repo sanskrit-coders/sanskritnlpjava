@@ -153,8 +153,6 @@
     </distributionManagement>
 
     <build>
-
-        <!-- for hot reload of locally deployed web application-->
         <outputDirectory>${project.build.directory}/${project.build.finalName}/WEB-INF/classes</outputDirectory>
         <plugins>
             <!-- We have scala code..-->

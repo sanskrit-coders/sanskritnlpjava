@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="org.scala-lang:scala-library:2.12.1" type="repository">
+    <properties maven-id="org.scala-lang:scala-library:2.12.1" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.12.1/scala-library-2.12.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.12.1/scala-library-2.12.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

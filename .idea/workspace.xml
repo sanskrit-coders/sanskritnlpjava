@@ -7,7 +7,65 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac05e739-ded8-465e-b65f-6eff68c25840" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_liftweb_lift_json_2_11_2_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShita/vishvasaPriyaPadyani$$anonfun$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShita/vishvasaPriyaPadyani$$anonfun$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShita/vishvasaPriyaPadyani$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShita/vishvasaPriyaPadyani.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/Annotation$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/Annotation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/QuoteInfo$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/QuoteInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/Source$$anonfun$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/Source$$anonfun$4.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShita/QuoteList.class" afterPath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShita/QuoteList.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShita/dbMaker$.class" afterPath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShita/dbMaker$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShita/dbMaker.class" afterPath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShita/dbMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/DescriptionAnnotation$.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/DescriptionAnnotation$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/DescriptionAnnotation.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/DescriptionAnnotation.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/Language$.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/Language$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/Language.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/Language.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/MemorableBitsAnnotation$.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/MemorableBitsAnnotation$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/MemorableBitsAnnotation.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/MemorableBitsAnnotation.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/OriginAnnotation$.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/OriginAnnotation$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/OriginAnnotation.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/OriginAnnotation.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/QuoteText$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/QuoteText$$anonfun$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/QuoteText$$anonfun$2.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/QuoteText$$anonfun$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/QuoteText$.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/QuoteText$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/QuoteText.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/QuoteText.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/Rating$.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/Rating$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/Rating.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/Rating.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/RatingAnnotation$.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/RatingAnnotation$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/RatingAnnotation.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/RatingAnnotation.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/ScriptRendering$.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/ScriptRendering$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/ScriptRendering.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/ScriptRendering.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/Source$.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/Source$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/Source.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/Source.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/Topic$.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/Topic$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/Topic.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/Topic.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/TopicAnnotation$.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/TopicAnnotation$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/TopicAnnotation.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/TopicAnnotation.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/quoteTextHelper$.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/quoteTextHelper$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/quoteTextHelper.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/quoteTextHelper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/sourceHelper$$anonfun$getSanskritDevanaagariiSource$1.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/sourceHelper$$anonfun$getSanskritDevanaagariiSource$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/sourceHelper$.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/sourceHelper$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/sourceHelper.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/sourceHelper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/subhAShitaTest$.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/subhAShitaTest$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/wiki/bot/hi_wiktionary$$anonfun$4.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/wiki/bot/hi_wiktionary$$anonfun$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/wiki/bot/hi_wiktionary$.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/wiki/bot/hi_wiktionary$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/wiki/bot/sa_wiktionary$$anonfun$3.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/wiki/bot/sa_wiktionary$$anonfun$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/wiki/bot/sa_wiktionary$.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/wiki/bot/sa_wiktionary$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/wiki/bot/wiktionary$$anonfun$uploadFromBabylonDictsCombined$1$$anonfun$apply$2.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/wiki/bot/wiktionary$$anonfun$uploadFromBabylonDictsCombined$1$$anonfun$apply$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/wiki/bot/wiktionary$$anonfun$uploadFromBabylonDictsCombined$1$$anonfun$apply$3.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/wiki/bot/wiktionary$$anonfun$uploadFromBabylonDictsCombined$1$$anonfun$apply$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/wiki/bot/wiktionary$$anonfun$uploadFromBabylonDictsCombined$1.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/wiki/bot/wiktionary$$anonfun$uploadFromBabylonDictsCombined$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/wiki/bot/wiktionary$class.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/wiki/bot/wiktionary$class.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sanskritnlp.iml" afterPath="$PROJECT_DIR$/sanskritnlp.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/sanskritnlp/quote/Quote.scala" afterPath="$PROJECT_DIR$/src/main/scala/sanskritnlp/quote/Quote.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wiktionary.scala" afterPath="$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wiktionary.scala" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" afterPath="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/subhAShita-db-sanskrit/subhAShita-db-sanskrit.iml" afterPath="$USER_HOME$/subhAShita-db-sanskrit/subhAShita-db-sanskrit.iml" />
     </list>
     <ignored path="sanskritnlpjava.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,8 +89,8 @@
       <file leaf-file-name="QuoteList.scala" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+            <state relative-caret-position="199">
+              <caret line="22" column="47" lean-forward="false" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
               <folding>
                 <element signature="e#20#45#0" expanded="true" />
               </folding>
@@ -43,8 +101,8 @@
       <file leaf-file-name="Quote.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/quote/Quote.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-482">
-              <caret line="77" column="1" lean-forward="true" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
+            <state relative-caret-position="179">
+              <caret line="59" column="59" lean-forward="false" selection-start-line="59" selection-start-column="59" selection-end-line="59" selection-end-column="59" />
               <folding>
                 <element signature="e#27#52#0" expanded="true" />
               </folding>
@@ -52,11 +110,31 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="411">
+              <caret line="83" column="30" lean-forward="false" selection-start-line="83" selection-start-column="23" selection-end-line="83" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wiktionary.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wiktionary.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="89" column="24" lean-forward="false" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="dbMaker.scala" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/dbMaker.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="12" column="41" lean-forward="false" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+            <state relative-caret-position="648">
+              <caret line="27" column="54" lean-forward="true" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
               <folding>
                 <element signature="e#20#78#0" expanded="true" />
               </folding>
@@ -77,23 +155,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>/</find>
-      <find>index</find>
-      <find>noinclude</find>
-      <find>}}</find>
-      <find>babylong</find>
-      <find>files_to_proces</find>
-      <find>replace</find>
-      <find>matches</find>
-      <find>lift-json</find>
-      <find>scala</find>
-      <find>RELE</find>
-      <find>maven</find>
-      <find>arti</find>
-      <find>REL</find>
-      <find>jar</find>
-      <find>target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes</find>
-      <find>appeng</find>
       <find>shita</find>
       <find>configuration</find>
       <find>appId</find>
@@ -107,6 +168,23 @@
       <find>भाषा</find>
       <find>log</find>
       <find>Sou</find>
+      <find>origin</find>
+      <find>Origin</find>
+      <find>आउथ्</find>
+      <find>authors</find>
+      <find>null</find>
+      <find>source</find>
+      <find>scala</find>
+      <find>Repo</find>
+      <find>author</find>
+      <find>first</find>
+      <find>rating</find>
+      <find>debug</find>
+      <find>source =</find>
+      <find>new Sour</find>
+      <find>quote</find>
+      <find>Source</find>
+      <find>राजारामज</find>
     </findStrings>
     <replaceStrings>
       <replace>$USER_HOME$/stardict-sanskrit/sa-vyAkaraNa/abhyankara-grammar</replace>
@@ -149,7 +227,6 @@
         <option value="$USER_HOME$/stardict-sanskrit/sa-kAvya/Chandas/mUlam/Chandas छन्दः - मात्रिक.tsv" />
         <option value="$USER_HOME$/stardict-sanskrit/sa-kAvya/Chandas/Chandas.babylon" />
         <option value="$USER_HOME$/stardict-sanskrit/sa-kAvya/Chandas/mUlam/Chandas छन्दः - विषम.tsv" />
-        <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wiktionary.scala" />
         <option value="$USER_HOME$/stardict-sanskrit/sa-kAvya/Chandas/mUlam/Chandas छन्दः - अर्धसम.tsv" />
         <option value="$USER_HOME$/stardict-sanskrit/sa-kAvya/Chandas/scripts/make_babylon.scala" />
         <option value="$USER_HOME$/stardict-sanskrit/sa-vyAkaraNa/abhyankara-grammar/scripts/make_babylon.scala" />
@@ -170,17 +247,18 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$USER_HOME$/.m2/settings.xml" />
         <option value="$PROJECT_DIR$/pom-war.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$USER_HOME$/subhAShita-db-sanskrit/README.md" />
         <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/transliterator.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/subhAShita/Subhashita.scala" />
         <option value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/SubhashitaList.scala" />
         <option value="$USER_HOME$/subhAShita-db-sanskrit/mUlAni/vishvAsa-priya-padyAni/प्रिय-काव्यांशाः priya-kAvyAmshAH subhAShitAni सुभाषितानि - पद्यानि.tsv" />
-        <option value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/dbMaker.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/subhAShita/Quote.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/wuote/Quote.scala" />
         <option value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" />
+        <option value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/dbMaker.scala" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wiktionary.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/quote/Quote.scala" />
       </list>
     </option>
@@ -194,7 +272,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-3775" />
-    <option name="y" value="-4" />
+    <option name="y" value="1196" />
     <option name="width" value="1855" />
     <option name="height" value="1204" />
   </component>
@@ -268,6 +346,28 @@
               <option name="myItemId" value="subhAShita" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QuoteList.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sanskritnlpjava" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="subhAShita-db-sanskrit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="subhAShita" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -308,6 +408,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sanskritnlpjava" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sanskritnlpjava" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sanskritnlpjava" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -449,7 +563,7 @@
     <property name="last_directory_selection" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.3669355" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/scaladoc" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
@@ -474,7 +588,7 @@
       <recent name="$USER_HOME$/stardict-sanskrit/sa-vyAkaraNa/abhyankara-grammar/scripts" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.subhAShitaTest">
+  <component name="RunManager" selected="Application.dbMaker">
     <configuration default="false" name="harvardKyotoTest" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1462,23 +1576,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3775" y="-4" width="1855" height="1204" extended-state="6" />
-    <editor active="true" />
+    <frame x="-3775" y="1196" width="1855" height="1204" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931355" sideWeight="0.49806523" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32745826" sideWeight="0.38584852" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32745826" sideWeight="0.38584852" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32745826" sideWeight="0.6141515" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32745826" sideWeight="0.6141515" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2393321" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20222634" sideWeight="0.50248754" order="12" side_tool="false" content_ui="tabs" x="94" y="448" width="1809" height="403" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2393321" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25788498" sideWeight="0.50248754" order="13" side_tool="false" content_ui="tabs" x="94" y="448" width="1809" height="403" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931355" sideWeight="0.48479822" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32931355" sideWeight="0.48479822" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15312327" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1487,13 +1601,13 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39944392" sideWeight="0.49806523" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39888683" sideWeight="0.49806523" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2498618" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283859" sideWeight="0.49585405" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1543,7 +1657,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="17" />
+      <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1552,27 +1666,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wiktionary.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="189" column="9" lean-forward="true" selection-start-line="189" selection-start-column="9" selection-end-line="189" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/stardict-sanskrit/sa-kAvya/Chandas/mUlam/Chandas छन्दः - अर्धसम.tsv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="188" lean-forward="false" selection-start-line="0" selection-start-column="188" selection-end-line="0" selection-end-column="188" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/stardict-sanskrit/sa-kAvya/Chandas/scripts/make_babylon.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="91" column="2" lean-forward="false" selection-start-line="91" selection-start-column="2" selection-end-line="91" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/stardict-sanskrit/sa-vyAkaraNa/abhyankara-grammar/abhyankara-grammar.babylon">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1762,6 +1855,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="6" column="7" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1794,14 +1888,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5664">
-          <caret line="236" column="32" lean-forward="false" selection-start-line="236" selection-start-column="32" selection-end-line="236" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/stardict-sanskrit/sa-kAvya/dcs-frequency/scripts/mkBabylon.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1896">
@@ -1825,13 +1911,6 @@
         <state relative-caret-position="375">
           <caret line="25" column="79" lean-forward="false" selection-start-line="25" selection-start-column="79" selection-end-line="25" selection-end-column="79" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-json_2.11/2.6/lift-json_2.11-2.6.jar!/net/liftweb/json/Serialization.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1890,26 +1969,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding>
-            <element signature="e#20#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/dbMaker.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="41" lean-forward="false" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-          <folding>
-            <element signature="e#20#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/transliterator.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-571">
@@ -1918,10 +1977,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3/lib/maven-model-builder-3.3.9.jar!/org/apache/maven/model/pom-4.0.0.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-json_2.11/2.6/lift-json_2.11-2.6.jar!/net/liftweb/json/Serialization.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="381" column="29" lean-forward="false" selection-start-line="381" selection-start-column="29" selection-end-line="381" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wiktionary.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="89" column="24" lean-forward="false" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/dbMaker.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="27" column="54" lean-forward="true" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+          <folding>
+            <element signature="e#20#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="22" column="47" lean-forward="false" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+          <folding>
+            <element signature="e#20#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="83" column="30" lean-forward="false" selection-start-line="83" selection-start-column="23" selection-end-line="83" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/quote/Quote.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-482">
-          <caret line="77" column="1" lean-forward="true" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
+        <state relative-caret-position="179">
+          <caret line="59" column="59" lean-forward="false" selection-start-line="59" selection-start-column="59" selection-end-line="59" selection-end-column="59" />
           <folding>
             <element signature="e#27#52#0" expanded="true" />
           </folding>
@@ -1987,7 +2106,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.3669355" />
               </list>
             </option>
           </splitter-proportions>
@@ -2007,11 +2126,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: net.liftweb:lift-json_2.11:2.6</last-edited>
+          <last-edited>Maven: net.sourceforge:jwbf:3.0.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.3669355" />
               </list>
             </option>
           </splitter-proportions>

@@ -86,7 +86,8 @@ trait wiktionary extends wikiBot {
     // use drop to skip n items.
     wordToDicts.keys.toList.sorted.drop(word_index).take(end_index - start_index + 1).foreach(word => {
       word_index = word_index + 1
-      log info s"$word (index: $word_index of $end_index >= ${wordToDicts.size}) is present in ${wordToDicts.getOrElse(word, Set[BabylonDictionary]()).map(_.dict_name).mkString(", ")}"
+      log info s"$word (index: $word_index of $end_index >= ${wordToDicts.size}) is present in " +
+        s"${wordToDicts.getOrElse(word, ListBuffer[BabylonDictionary]()).map(_.dict_name).mkString(", ")}"
       setWordMeanings(word, wordToDicts)
     })
   }

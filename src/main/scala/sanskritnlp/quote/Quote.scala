@@ -47,8 +47,7 @@ case class QuoteText(scriptRenderings: List[ScriptRendering],
     val rendering = canonicalRendering.getOrElse(scriptRenderings.head)
     key = rendering.getKey
   }
-  def this(scriptRendering: ScriptRendering, language: Language = Language("UNK"),
-           metre: Option[String] = None) = this(scriptRendering::Nil, language=language, metre=metre)
+  def this(scriptRendering: ScriptRendering, language: Language) = this(scriptRendering::Nil, language=language)
 }
 
 

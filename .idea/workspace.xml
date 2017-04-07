@@ -6,7 +6,52 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac05e739-ded8-465e-b65f-6eff68c25840" name="Default" comment="" />
+    <list default="true" id="ac05e739-ded8-465e-b65f-6eff68c25840" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShita/dbSanskritMaker$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShita/dbSanskritMaker.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary$$anonfun$1.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary$$anonfun$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary$$anonfun$2.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary$$anonfun$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$3.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$4.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$5.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$6.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$7.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$8.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$addOptitrans$1.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$addOptitrans$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$addOptitrans$2.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$addOptitrans$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$addOptitrans$3.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$addOptitrans$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$getMatchingDictionaries$1.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$getMatchingDictionaries$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$getMatchingDictionaries$2.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$getMatchingDictionaries$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeStardict$1.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeStardict$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeStardict$2.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeStardict$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeStardict$3.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeStardict$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeStardict$4.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeStardict$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeTars$1.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeTars$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$writeTarsList$1$1.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$writeTarsList$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$writeTarsList$1$2.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$writeTarsList$1$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$writeTarsList$1$3.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$writeTarsList$1$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$.class" afterPath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/sanskritnlpjava.jar" afterPath="$PROJECT_DIR$/out/sanskritnlpjava.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/com/sktutilities/notes/Comments.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/com/sktutilities/notes/Comments.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/com/sktutilities/sandhi/AdditionalChecks.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/com/sktutilities/sandhi/AdditionalChecks.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/com/sktutilities/sandhi/ConsonantSandhi.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/com/sktutilities/sandhi/ConsonantSandhi.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/com/sktutilities/sandhi/Launcher2.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/com/sktutilities/sandhi/Launcher2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/com/sktutilities/sandhi/VisargaDisplay.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/com/sktutilities/sandhi/VisargaDisplay.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/com/sktutilities/sandhi/VowelSandhi.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/com/sktutilities/sandhi/VowelSandhi.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/com/sktutilities/transliteratorAsSwing/TransliteratorJFrame.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/com/sktutilities/transliteratorAsSwing/TransliteratorJFrame.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_paranamer_paranamer_2_7.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_paranamer_paranamer_2_7.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_11_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_11_8.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_couchbase_lite_couchbase_lite_java_1_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_couchbase_lite_couchbase_lite_java_1_4_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/net_liftweb_lift_json_2_11_3_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/net_liftweb_lift_json_2_11_3_0_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_apache_commons_commons_compress_1_11.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_apache_commons_commons_compress_1_11.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_apache_commons_commons_csv_1_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_apache_commons_commons_csv_1_4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sanskritnlp.iml" afterPath="$PROJECT_DIR$/sanskritnlp.iml" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/dbMaker.scala" afterPath="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/dbMaker.scala" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/subhAShita-db-sanskrit/subhAShita-db-sanskrit.iml" afterPath="$USER_HOME$/subhAShita-db-sanskrit/subhAShita-db-sanskrit.iml" />
+    </list>
     <ignored path="sanskritnlpjava.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,108 +71,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Quote.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/quote/Quote.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1896">
-              <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-              <folding>
-                <element signature="e#27#52#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1992">
-              <caret line="83" column="30" lean-forward="false" selection-start-line="83" selection-start-column="23" selection-end-line="83" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dbMaker.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dbMaker.scala" pinned="false" current-in-tab="true">
         <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/dbMaker.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
-              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state relative-caret-position="468">
+              <caret line="26" column="34" lean-forward="false" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
               <folding>
                 <element signature="e#20#78#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="babylon_add_devanAgarI.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/stardict-sanskrit/bin/babylon_add_devanAgarI.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="3" column="96" lean-forward="false" selection-start-line="3" selection-start-column="96" selection-end-line="3" selection-end-column="96" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dictionary.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/stardict-sanskrit/bin/scripts/stardict_sanskrit/Dictionary.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="90" column="26" lean-forward="true" selection-start-line="90" selection-start-column="26" selection-end-line="90" selection-end-column="26" />
-              <folding>
-                <element signature="e#27#61#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="make_tarballs.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/stardict-sanskrit/bin/make_tarballs.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="1" column="41" lean-forward="false" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="decompile_all.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/stardict-sanskrit/bin/decompile_all.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="babylon_add_optitrans.sh" pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/stardict-sanskrit/bin/babylon_add_optitrans.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="73" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tsv_to_babylon.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/stardict-sanskrit/bin/tsv_to_babylon.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tsv_to_stardict.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/stardict-sanskrit/bin/tsv_to_stardict.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="1" column="41" lean-forward="false" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -145,8 +96,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>appId</find>
-      <find>google</find>
       <find>nexus-staging-maven</find>
       <find>language</find>
       <find>व्व्रजभा</find>
@@ -175,6 +124,8 @@
       <find>राजारामज</find>
       <find>tars</find>
       <find>compress</find>
+      <find>tar</find>
+      <find>delete</find>
     </findStrings>
     <replaceStrings>
       <replace>$USER_HOME$/stardict-sanskrit/sa-vyAkaraNa/abhyankara-grammar</replace>
@@ -199,7 +150,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes/sanskritnlp/dictionary/BabylonDictionary.class" />
         <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/dictionary/BabylonDictionary.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/ocr/gocr.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/Section.scala" />
@@ -244,12 +194,13 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wiktionary.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/quote/Quote.scala" />
-        <option value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/dbMaker.scala" />
         <option value="$USER_HOME$/stardict-sanskrit/bin/babylon_add_devanAgarI.sh" />
         <option value="$USER_HOME$/stardict-sanskrit/bin/make_tarballs.sh" />
         <option value="$USER_HOME$/stardict-sanskrit/bin/tsv_to_stardict.sh" />
         <option value="$USER_HOME$/stardict-sanskrit/bin/babylon_add_optitrans.sh" />
         <option value="$USER_HOME$/stardict-sanskrit/bin/scripts/stardict_sanskrit/Dictionary.scala" />
+        <option value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/dbMaker.scala" />
+        <option value="$MAVEN_REPOSITORY$/com/couchbase/lite/couchbase-lite-java-core/1.4.0/couchbase-lite-java-core-1.4.0.jar!/com/couchbase/lite/Manager.class" />
       </list>
     </option>
   </component>
@@ -261,10 +212,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="41" />
-    <option name="y" value="15" />
-    <option name="width" value="1879" />
-    <option name="height" value="1065" />
+    <option name="x" value="64" />
+    <option name="y" value="-1091" />
+    <option name="width" value="1857" />
+    <option name="height" value="1092" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -312,7 +263,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="subhAShita-db-sanskrit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
               <option name="myItemId" value="sanskritnlpjava" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="subhAShita-db-sanskrit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="subhAShita" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -323,6 +292,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="bin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sanskritnlpjava" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stardict_sanskrit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -339,8 +326,8 @@
     <property name="last_directory_selection" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.3669355" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/scaladoc" />
+    <property name="project.structure.side.proportion" value="0.55421686" />
+    <property name="last_opened_file_path" value="/usr/share/jdk1.8.0_121" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="true" />
@@ -364,7 +351,26 @@
       <recent name="$USER_HOME$/stardict-sanskrit/sa-vyAkaraNa/abhyankara-grammar/scripts" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.batchProcessor">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.dbMaker">
+    <configuration default="false" name="Scala Console" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console" temporary="true">
+      <module name="abhyankara-grammar" />
+      <setting name="vmparams4" value="-Djline.terminal=NONE" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="consoleArgs" value="-usejavacp" />
+      <method />
+    </configuration>
     <configuration default="false" name="harvardKyotoTest" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -455,13 +461,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="Scala Console" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console" temporary="true">
-      <module name="abhyankara-grammar" />
-      <setting name="vmparams4" value="-Djline.terminal=NONE" />
-      <setting name="workingDirectory" value="$PROJECT_DIR$" />
-      <setting name="consoleArgs" value="-usejavacp" />
-      <method />
-    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -546,20 +545,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="INTERPRETER_PATH" value="/bin/bash" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="BlazeCommandRunConfigurationType" factoryName="Blaze Command" handler-id="BlazeCommandGenericRunConfigurationHandlerProvider">
       <method />
     </configuration>
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
@@ -678,10 +663,11 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="kRdanta-rUpa-mAlA" />
+      <module name="mahA-subhAShita-sangraha" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -720,6 +706,8 @@
       <setting name="testName" value="" />
       <setting name="testKind" value="Class" />
       <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
       <classRegexps />
       <testRegexps />
       <envs />
@@ -737,6 +725,8 @@
       <setting name="testName" value="" />
       <setting name="testKind" value="Class" />
       <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
       <classRegexps />
       <testRegexps />
       <envs />
@@ -779,26 +769,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="kRdanta-rUpa-mAlA" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Attests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="kRdanta-rUpa-mAlA" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
+      <module name="mahA-subhAShita-sangraha" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -810,7 +781,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="kRdanta-rUpa-mAlA" />
+      <module name="mahA-subhAShita-sangraha" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -818,27 +789,6 @@
       <option name="TEST_TYPE" value="TEST_SCRIPT" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Nosetests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="kRdanta-rUpa-mAlA" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -850,41 +800,10 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="kRdanta-rUpa-mAlA" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="py.test">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="kRdanta-rUpa-mAlA" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="testToRun" value="" />
-      <option name="keywords" value="" />
-      <option name="params" value="" />
-      <option name="USE_PARAM" value="false" />
-      <option name="USE_KEYWORD" value="false" />
+      <module name="mahA-subhAShita-sangraha" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
     <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
@@ -899,9 +818,102 @@
       <setting name="testName" value="" />
       <setting name="testKind" value="Class" />
       <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
       <classRegexps />
       <testRegexps />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Chandas" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
+      <module name="abhyankara-grammar" />
+      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" />
+      <setting name="vmparams" value="" />
+      <setting name="consoleargs" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$USER_HOME$/stardict-sanskrit/sa-kAvya/Chandas/" />
+      <method />
+    </configuration>
+    <configuration default="false" name="DCS" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
+      <module name="abhyankara-grammar" />
+      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" />
+      <setting name="vmparams" value="" />
+      <setting name="consoleargs" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$USER_HOME$/stardict-sanskrit/sa-kAvya/dcs-frequency/" />
+      <method />
+    </configuration>
+    <configuration default="false" name="PadFilenames" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
+      <module name="sanskritnlp" />
+      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" />
+      <setting name="vmparams" value="" />
+      <setting name="consoleargs" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$USER_HOME$/" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Test" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
+      <module name="sanskritnlp" />
+      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" />
+      <setting name="vmparams" value="" />
+      <setting name="consoleargs" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="abhyankar-make-baby" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
+      <module name="sanskritnlp" />
+      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" />
+      <setting name="vmparams" value="" />
+      <setting name="consoleargs" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$USER_HOME$/stardict-sanskrit/sa-vyAkaraNa/abhyankara-grammar" />
+      <method />
+    </configuration>
+    <configuration default="false" name="kalpadruma-to-dev" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
+      <module name="rv-base" />
+      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" />
+      <setting name="vmparams" value="" />
+      <setting name="consoleargs" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="rv make_padapATha_index_dev" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
+      <module name="sanskritnlp" />
+      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" />
+      <setting name="vmparams" value="" />
+      <setting name="consoleargs" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="rv make_padapATha_index_hk.scala" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
+      <module name="sanskritnlp" />
+      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" />
+      <setting name="vmparams" value="" />
+      <setting name="consoleargs" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="vedic-rituals-hi mkbaby" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
+      <module name="sanskritnlp" />
+      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" />
+      <setting name="vmparams" value="" />
+      <setting name="consoleargs" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$USER_HOME$/stardict-sanskrit/sa-head/vedic-rituals-hi" />
       <method />
     </configuration>
     <configuration default="false" name="babylonDictTest" type="Application" factoryName="Application">
@@ -980,21 +992,6 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="sanskritnlp" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="dbMaker" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="subhAShita.dbMaker" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="subhAShita-db-sanskrit" />
       <envs />
       <method />
     </configuration>
@@ -1163,134 +1160,57 @@
         <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="nexus-staging:release" />
       </method>
     </configuration>
-    <configuration default="false" name="Test" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
-      <module name="sanskritnlp" />
-      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" />
-      <setting name="vmparams" value="" />
-      <setting name="consoleargs" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="PadFilenames" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
-      <module name="sanskritnlp" />
-      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" />
-      <setting name="vmparams" value="" />
-      <setting name="consoleargs" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="$USER_HOME$/" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="kalpadruma-to-dev" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
-      <module name="rv-base" />
-      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" />
-      <setting name="vmparams" value="" />
-      <setting name="consoleargs" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="rv make_padapATha_index_dev" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
-      <module name="sanskritnlp" />
-      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" />
-      <setting name="vmparams" value="" />
-      <setting name="consoleargs" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="rv make_padapATha_index_hk.scala" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
-      <module name="sanskritnlp" />
-      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" />
-      <setting name="vmparams" value="" />
-      <setting name="consoleargs" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="vedic-rituals-hi mkbaby" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
-      <module name="sanskritnlp" />
-      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" />
-      <setting name="vmparams" value="" />
-      <setting name="consoleargs" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="$USER_HOME$/stardict-sanskrit/sa-head/vedic-rituals-hi" />
-      <method />
-    </configuration>
-    <configuration default="false" name="DCS" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
-      <module name="abhyankara-grammar" />
-      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" />
-      <setting name="vmparams" value="" />
-      <setting name="consoleargs" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="$USER_HOME$/stardict-sanskrit/sa-kAvya/dcs-frequency/" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Chandas" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
-      <module name="abhyankara-grammar" />
-      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" />
-      <setting name="vmparams" value="" />
-      <setting name="consoleargs" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="$USER_HOME$/stardict-sanskrit/sa-kAvya/Chandas/" />
-      <method />
-    </configuration>
-    <configuration default="false" name="abhyankar-make-baby" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
-      <module name="sanskritnlp" />
-      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" />
-      <setting name="vmparams" value="" />
-      <setting name="consoleargs" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="$USER_HOME$/stardict-sanskrit/sa-vyAkaraNa/abhyankara-grammar" />
+    <configuration default="false" name="dbMaker" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="subhAShita.dbMakerSanskrit" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="subhAShita-db-sanskrit" />
+      <envs />
       <method />
     </configuration>
     <list size="28">
-      <item index="0" class="java.lang.String" itemvalue="Application.babylonDictTest" />
-      <item index="1" class="java.lang.String" itemvalue="Application.slpTest" />
-      <item index="2" class="java.lang.String" itemvalue="Application.optitransTest" />
-      <item index="3" class="java.lang.String" itemvalue="Application.sa_wiktionary" />
-      <item index="4" class="java.lang.String" itemvalue="Application.dbMaker" />
-      <item index="5" class="java.lang.String" itemvalue="Application.batchProcessor" />
-      <item index="6" class="java.lang.String" itemvalue="Application.subhAShitaTest" />
-      <item index="7" class="java.lang.String" itemvalue="Application.hi_wiktionary" />
-      <item index="8" class="java.lang.String" itemvalue="Application.sectionTest" />
-      <item index="9" class="java.lang.String" itemvalue="Application.gocr" />
-      <item index="10" class="java.lang.String" itemvalue="Application.sanskritocr" />
-      <item index="11" class="java.lang.String" itemvalue="Maven.google-appengine" />
-      <item index="12" class="java.lang.String" itemvalue="Maven.mvn delpoy" />
-      <item index="13" class="java.lang.String" itemvalue="Maven.mvn nexus-staging:release" />
-      <item index="14" class="java.lang.String" itemvalue="Scala Script.Test" />
-      <item index="15" class="java.lang.String" itemvalue="Scala Script.PadFilenames" />
-      <item index="16" class="java.lang.String" itemvalue="Scala Script.kalpadruma-to-dev" />
-      <item index="17" class="java.lang.String" itemvalue="Scala Script.rv make_padapATha_index_dev" />
-      <item index="18" class="java.lang.String" itemvalue="Scala Script.rv make_padapATha_index_hk.scala" />
-      <item index="19" class="java.lang.String" itemvalue="Scala Script.vedic-rituals-hi mkbaby" />
-      <item index="20" class="java.lang.String" itemvalue="Scala Script.DCS" />
-      <item index="21" class="java.lang.String" itemvalue="Scala Script.Chandas" />
-      <item index="22" class="java.lang.String" itemvalue="Scala Script.abhyankar-make-baby" />
-      <item index="23" class="java.lang.String" itemvalue="Application.harvardKyotoTest" />
-      <item index="24" class="java.lang.String" itemvalue="Application.asTest" />
-      <item index="25" class="java.lang.String" itemvalue="Application.wikisource" />
-      <item index="26" class="java.lang.String" itemvalue="Application.shAstraPodcastMaker" />
-      <item index="27" class="java.lang.String" itemvalue="Scala Console.Scala Console" />
+      <item index="0" class="java.lang.String" itemvalue="Scala Script.Chandas" />
+      <item index="1" class="java.lang.String" itemvalue="Scala Script.DCS" />
+      <item index="2" class="java.lang.String" itemvalue="Scala Script.PadFilenames" />
+      <item index="3" class="java.lang.String" itemvalue="Scala Script.Test" />
+      <item index="4" class="java.lang.String" itemvalue="Scala Script.abhyankar-make-baby" />
+      <item index="5" class="java.lang.String" itemvalue="Scala Script.kalpadruma-to-dev" />
+      <item index="6" class="java.lang.String" itemvalue="Scala Script.rv make_padapATha_index_dev" />
+      <item index="7" class="java.lang.String" itemvalue="Scala Script.rv make_padapATha_index_hk.scala" />
+      <item index="8" class="java.lang.String" itemvalue="Scala Script.vedic-rituals-hi mkbaby" />
+      <item index="9" class="java.lang.String" itemvalue="Application.babylonDictTest" />
+      <item index="10" class="java.lang.String" itemvalue="Application.slpTest" />
+      <item index="11" class="java.lang.String" itemvalue="Application.optitransTest" />
+      <item index="12" class="java.lang.String" itemvalue="Application.sa_wiktionary" />
+      <item index="13" class="java.lang.String" itemvalue="Application.batchProcessor" />
+      <item index="14" class="java.lang.String" itemvalue="Application.subhAShitaTest" />
+      <item index="15" class="java.lang.String" itemvalue="Application.hi_wiktionary" />
+      <item index="16" class="java.lang.String" itemvalue="Application.sectionTest" />
+      <item index="17" class="java.lang.String" itemvalue="Application.gocr" />
+      <item index="18" class="java.lang.String" itemvalue="Application.sanskritocr" />
+      <item index="19" class="java.lang.String" itemvalue="Maven.google-appengine" />
+      <item index="20" class="java.lang.String" itemvalue="Maven.mvn delpoy" />
+      <item index="21" class="java.lang.String" itemvalue="Maven.mvn nexus-staging:release" />
+      <item index="22" class="java.lang.String" itemvalue="Application.dbMaker" />
+      <item index="23" class="java.lang.String" itemvalue="Scala Console.Scala Console" />
+      <item index="24" class="java.lang.String" itemvalue="Application.harvardKyotoTest" />
+      <item index="25" class="java.lang.String" itemvalue="Application.asTest" />
+      <item index="26" class="java.lang.String" itemvalue="Application.wikisource" />
+      <item index="27" class="java.lang.String" itemvalue="Application.shAstraPodcastMaker" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Scala Console.Scala Console" />
-        <item index="1" class="java.lang.String" itemvalue="Application.wikisource" />
-        <item index="2" class="java.lang.String" itemvalue="Application.shAstraPodcastMaker" />
-        <item index="3" class="java.lang.String" itemvalue="Application.harvardKyotoTest" />
-        <item index="4" class="java.lang.String" itemvalue="Application.asTest" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Application.wikisource" />
+        <item index="1" class="java.lang.String" itemvalue="Application.shAstraPodcastMaker" />
+        <item index="2" class="java.lang.String" itemvalue="Application.harvardKyotoTest" />
+        <item index="3" class="java.lang.String" itemvalue="Application.asTest" />
       </list>
     </recent_temporary>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -1352,32 +1272,33 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="41" y="15" width="1879" height="1065" extended-state="6" />
-    <editor active="true" />
+    <frame x="64" y="-1091" width="1857" height="1092" extended-state="6" />
     <layout>
+      <window_info id="GfmBrowser" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931355" sideWeight="0.49806523" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32745826" sideWeight="0.38584852" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32745826" sideWeight="0.6141515" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2393321" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25788498" sideWeight="0.50248754" order="13" side_tool="false" content_ui="tabs" x="94" y="448" width="1809" height="403" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931355" sideWeight="0.48479822" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16693944" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2498618" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39888683" sideWeight="0.49806523" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931355" sideWeight="0.49806523" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32721713" sideWeight="0.38584852" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2393321" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25688073" sideWeight="0.50248754" order="13" side_tool="false" content_ui="tabs" x="94" y="448" width="1809" height="403" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931355" sideWeight="0.48479822" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16657682" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39888683" sideWeight="0.49806523" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1458,13 +1379,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.8-sources.jar!/scala/Option.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="106" column="6" lean-forward="false" selection-start-line="106" selection-start-column="6" selection-end-line="106" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.8-sources.jar!/scala/Option.scala" />
     <entry file="file://$USER_HOME$/stardict-sanskrit/sa-vyAkaraNa/abhyankara-grammar/abhyankara-grammar.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1395">
@@ -1493,13 +1408,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-csv/1.4/commons-csv-1.4.jar!/org/apache/commons/csv/CSVFormat.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="261" column="21" lean-forward="false" selection-start-line="261" selection-start-column="21" selection-end-line="261" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-csv/1.4/commons-csv-1.4.jar!/org/apache/commons/csv/CSVFormat.class" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/indicMaps.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1560,7 +1469,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1599,13 +1507,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.m2/settings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.m2/settings.xml" />
     <entry file="file://$PROJECT_DIR$/pom-war.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -1621,41 +1523,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="2376">
-            <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="79" lean-forward="false" selection-start-line="25" selection-start-column="79" selection-end-line="25" selection-end-column="79" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/jre/lib/ext/localedata.jar!/sun/util/resources/hi/LocaleNames_hi.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="437">
-            <caret line="41" column="93" lean-forward="true" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="93" />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/jre/lib/ext/localedata.jar!/sun/util/resources/hi/LocaleNames_hi.class" />
     <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/mUlAni/vishvAsa-priya-padyAni/प्रिय-काव्यांशाः priya-kAvyAmshAH subhAShitAni सुभाषितानि - पद्यानि.tsv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
@@ -1663,34 +1537,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/couchbase/lite/couchbase-lite-java-core/1.4.0/couchbase-lite-java-core-1.4.0.jar!/com/couchbase/lite/ManagerOptions.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/couchbase/lite/couchbase-lite-java-core/1.4.0/couchbase-lite-java-core-1.4.0.jar!/com/couchbase/lite/Manager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="59" column="68" lean-forward="false" selection-start-line="59" selection-start-column="68" selection-end-line="59" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/couchbase/lite/couchbase-lite-java-core/1.4.0/couchbase-lite-java-core-1.4.0.jar!/com/couchbase/lite/Context.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/couchbase/lite/couchbase-lite-java/1.4.0/couchbase-lite-java-1.4.0.jar!/com/couchbase/lite/JavaContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/couchbase/lite/couchbase-lite-java-core/1.4.0/couchbase-lite-java-core-1.4.0.jar!/com/couchbase/lite/ManagerOptions.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/couchbase/lite/couchbase-lite-java-core/1.4.0/couchbase-lite-java-core-1.4.0.jar!/com/couchbase/lite/Context.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/couchbase/lite/couchbase-lite-java/1.4.0/couchbase-lite-java-1.4.0.jar!/com/couchbase/lite/JavaContext.class" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/transliterator.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-571">
@@ -1705,20 +1554,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-json_2.11/2.6/lift-json_2.11-2.6.jar!/net/liftweb/json/Serialization.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="381" column="29" lean-forward="false" selection-start-line="381" selection-start-column="29" selection-end-line="381" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/liftweb/lift-json_2.11/2.6/lift-json_2.11-2.6.jar!/net/liftweb/json/Serialization.class" />
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Object.java" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wiktionary.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1992">
@@ -1733,55 +1570,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1992">
-          <caret line="83" column="30" lean-forward="false" selection-start-line="83" selection-start-column="23" selection-end-line="83" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/quote/Quote.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1896">
-          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-          <folding>
-            <element signature="e#27#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/dbMaker.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding>
-            <element signature="e#20#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/stardict-sanskrit/bin/babylon_add_devanAgarI.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="96" lean-forward="false" selection-start-line="3" selection-start-column="96" selection-end-line="3" selection-end-column="96" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/stardict-sanskrit/bin/scripts/stardict_sanskrit/Dictionary.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="90" column="26" lean-forward="true" selection-start-line="90" selection-start-column="26" selection-end-line="90" selection-end-column="26" />
-          <folding>
-            <element signature="e#27#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/stardict-sanskrit/bin/make_tarballs.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
+        <state relative-caret-position="18">
           <caret line="1" column="41" lean-forward="false" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
           <folding />
         </state>
@@ -1805,7 +1596,7 @@
     </entry>
     <entry file="file://$USER_HOME$/stardict-sanskrit/bin/tsv_to_stardict.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
+        <state relative-caret-position="18">
           <caret line="1" column="41" lean-forward="false" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
           <folding />
         </state>
@@ -1813,9 +1604,75 @@
     </entry>
     <entry file="file://$USER_HOME$/stardict-sanskrit/bin/babylon_add_optitrans.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
+        <state relative-caret-position="72">
           <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="73" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1494">
+          <caret line="83" column="30" lean-forward="false" selection-start-line="83" selection-start-column="23" selection-end-line="83" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/stardict-sanskrit/bin/babylon_add_devanAgarI.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="96" lean-forward="false" selection-start-line="3" selection-start-column="96" selection-end-line="3" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/stardict-sanskrit/bin/scripts/stardict_sanskrit/Dictionary.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="170" column="32" lean-forward="false" selection-start-line="170" selection-start-column="32" selection-end-line="170" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/quote/Quote.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/couchbase/lite/couchbase-lite-java-core/1.4.0/couchbase-lite-java-core-1.4.0.jar!/com/couchbase/lite/Manager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="736" column="0" lean-forward="false" selection-start-line="736" selection-start-column="0" selection-end-line="736" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/README.md">
+      <provider editor-type-id="Gfm">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="432">
+            <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/dbMaker.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="26" column="34" lean-forward="false" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+          <folding>
+            <element signature="e#20#78#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1838,11 +1695,11 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Python (kalpadruma-sa)|Python</last-edited>
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.55421686" />
               </list>
             </option>
           </splitter-proportions>
@@ -1850,11 +1707,11 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>scala-sdk-2.11.8</last-edited>
+          <last-edited>jdk1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.55421686" />
               </list>
             </option>
           </splitter-proportions>
@@ -1862,11 +1719,11 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>Android API 25 Platform</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.3669355" />
               </list>
             </option>
           </splitter-proportions>
@@ -1878,7 +1735,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.3669355" />
+                <option value="0.55421686" />
               </list>
             </option>
           </splitter-proportions>
@@ -1898,11 +1755,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: net.sourceforge:jwbf:3.0.0</last-edited>
+          <last-edited>com.couchbase.lite:couchbase-lite-java-forestdb:1.4.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.3669355" />
+                <option value="0.55421686" />
               </list>
             </option>
           </splitter-proportions>

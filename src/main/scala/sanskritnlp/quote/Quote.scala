@@ -30,7 +30,7 @@ case class ScriptRendering(text: String, scheme: String = transliterator.scriptU
           .replaceAll("[MNn]", "m")
       }
       case unknownScript => {
-        log warn (s"got $unknownScript")
+        log warn (s"got script $unknownScript for text [$text]")
         return text.replaceAll("\\s", "")
       }
     }

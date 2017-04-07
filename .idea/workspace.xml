@@ -7,18 +7,63 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac05e739-ded8-465e-b65f-6eff68c25840" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_4_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_4_3.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShita/dbMaker.class" afterPath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShita/dbMaker.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShita/vishvasaPriyaSamskritaPadyani$$anonfun$1.class" afterPath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShita/vishvasaPriyaSamskritaPadyani$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShita/vishvasaPriyaSamskritaPadyani$$anonfun$2.class" afterPath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShita/vishvasaPriyaSamskritaPadyani$$anonfun$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShita/vishvasaPriyaSamskritaPadyani$.class" afterPath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShita/vishvasaPriyaSamskritaPadyani$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/ScriptRendering.class" afterPath="$PROJECT_DIR$/target/sanskritnlp-1.0/WEB-INF/classes/sanskritnlp/quote/ScriptRendering.class" />
+      <change type="NEW" beforePath="" afterPath="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShitaDb/QuoteDb.scala" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary$$anonfun$$lessinit$greater$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary$$anonfun$$lessinit$greater$10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary$$anonfun$$lessinit$greater$11.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary$$anonfun$$lessinit$greater$12.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary$$anonfun$$lessinit$greater$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary$$anonfun$$lessinit$greater$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary$$anonfun$$lessinit$greater$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary$$anonfun$$lessinit$greater$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary$$anonfun$$lessinit$greater$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary$$anonfun$$lessinit$greater$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary$$anonfun$$lessinit$greater$8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary$$anonfun$$lessinit$greater$9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary$$anonfun$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary$$anonfun$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/Dictionary.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$addOptitrans$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$addOptitrans$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$addOptitrans$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$getMatchingDictionaries$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$getMatchingDictionaries$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeStardict$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeStardict$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeStardict$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeStardict$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeTars$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeTars$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeTars$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$makeTars$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$writeTarsList$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$writeTarsList$1$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$$anonfun$writeTarsList$1$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/stardict_sanskrit_bin/stardict_sanskrit/batchProcessor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShita/QuoteList.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShita/dbMaker.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShita/dbMakerSanskrit$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShita/dbMakerSanskrit.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShita/vishvasaPriyaSamskritaPadyani$$anonfun$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShita/vishvasaPriyaSamskritaPadyani$$anonfun$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShita/vishvasaPriyaSamskritaPadyani$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShita/vishvasaPriyaSamskritaPadyani.class" afterPath="" />
+      <change type="DELETED" beforePath="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/dbMaker.scala" afterPath="" />
+      <change type="MOVED" beforePath="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" afterPath="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShitaDb/QuoteList.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/data/com.couchbase.lite.test/files/data/annotation_db__sa.cblite2/db.sqlite3-shm" afterPath="$PROJECT_DIR$/data/data/com.couchbase.lite.test/files/data/annotation_db__sa.cblite2/db.sqlite3-shm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/data/com.couchbase.lite.test/files/data/quote_db__sa.cblite2/db.sqlite3" afterPath="$PROJECT_DIR$/data/data/com.couchbase.lite.test/files/data/quote_db__sa.cblite2/db.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/data/com.couchbase.lite.test/files/data/quote_db__sa.cblite2/db.sqlite3-shm" afterPath="$PROJECT_DIR$/data/data/com.couchbase.lite.test/files/data/quote_db__sa.cblite2/db.sqlite3-shm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/data/com.couchbase.lite.test/files/data/quote_db__sa.cblite2/db.sqlite3-wal" afterPath="$PROJECT_DIR$/data/data/com.couchbase.lite.test/files/data/quote_db__sa.cblite2/db.sqlite3-wal" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sanskritnlp.iml" afterPath="$PROJECT_DIR$/sanskritnlp.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/sanskritnlp/quote/Quote.scala" afterPath="$PROJECT_DIR$/src/main/scala/sanskritnlp/quote/Quote.scala" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" afterPath="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/dbMaker.scala" afterPath="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/dbMaker.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/dcs-frequency/dcs-frequency.iml" afterPath="$PROJECT_DIR$/out/production/dcs-frequency/dcs-frequency.iml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/subhAShita-db-sanskrit/subhAShita-db-sanskrit.iml" afterPath="$USER_HOME$/subhAShita-db-sanskrit/subhAShita-db-sanskrit.iml" />
     </list>
     <ignored path="sanskritnlpjava.iws" />
@@ -43,27 +88,37 @@
       <file leaf-file-name="Quote.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/quote/Quote.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1354">
+            <state relative-caret-position="-652">
               <caret line="32" column="61" lean-forward="false" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="61" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dbMaker.scala" pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/dbMaker.scala">
+      <file leaf-file-name="QuoteDb.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/src/subhAShitaDb/QuoteDb.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+            <state relative-caret-position="504">
+              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding>
-                <element signature="e#20#78#0" expanded="true" />
+                <element signature="e#22#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="subhAShita-db-sanskrit.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/subhAShita-db-sanskrit.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="QuoteList.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala">
+        <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/src/subhAShitaDb/QuoteList.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="846">
               <caret line="54" column="45" lean-forward="false" selection-start-line="54" selection-start-column="45" selection-end-line="54" selection-end-column="45" />
@@ -80,13 +135,12 @@
         <option value="Class" />
         <option value="Package Object" />
         <option value="Scala Script" />
+        <option value="Scala Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>व्व्रजभा</find>
-      <find>व्रजभा</find>
       <find>उन्मीलन्नेत्रपत्रोज्ज्वलमलकलतालोलरोलम्बडिम्बं</find>
       <find>नाभिषेको न संस्कारः सिंहस्य</find>
       <find>भाषा</find>
@@ -114,6 +168,8 @@
       <find>tar</find>
       <find>delete</find>
       <find>fasterx</find>
+      <find>key</find>
+      <find>encr</find>
       <find>ScriptRendering</find>
     </findStrings>
     <replaceStrings>
@@ -139,10 +195,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/ocr/gocr.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/Section.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wikiBot.scala" />
-        <option value="$PROJECT_DIR$/scripts/PadFilenames.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/podcasting/Podcast.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wikisource.scala" />
         <option value="$USER_HOME$/stardict-sanskrit/sa-head/vedic-rituals-hi/scripts/make_babylon.scala" />
@@ -188,8 +240,12 @@
         <option value="$MAVEN_REPOSITORY$/com/couchbase/lite/couchbase-lite-java-core/1.4.0/couchbase-lite-java-core-1.4.0.jar!/com/couchbase/lite/Manager.class" />
         <option value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/quote/Quote.scala" />
-        <option value="$USER_HOME$/subhAShita-db-sanskrit/subhAShita-db-sanskrit.iml" />
         <option value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/dbMaker.scala" />
+        <option value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteDb.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/quote/QuoteDb.scala" />
+        <option value="$USER_HOME$/subhAShita-db-sanskrit/subhAShita-db-sanskrit.iml" />
+        <option value="$PROJECT_DIR$/sanskritnlp.iml" />
+        <option value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShitaDb/QuoteDb.scala" />
       </list>
     </option>
   </component>
@@ -202,7 +258,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="64" />
-    <option name="y" value="-1091" />
+    <option name="y" value="-11" />
     <option name="width" value="1857" />
     <option name="height" value="1092" />
   </component>
@@ -270,29 +326,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="subhAShita" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QuoteList.scala" />
-              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sanskritnlpjava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subhAShita-db-sanskrit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subhAShita" />
+              <option name="myItemId" value="subhAShitaDb" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -319,8 +353,18 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="sanskritnlpjava" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sanskritnlpjava" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="out" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -334,54 +378,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="out" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="production" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sanskritnlp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sanskritnlpjava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sanskritnlpjava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sanskritnlp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Quote.scala" />
-              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -433,21 +435,21 @@
     <property name="Repository.Attach.Sources" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$USER_HOME$/stardict-sanskrit/sa-kAvya/Chandas/scripts" />
-      <recent name="$USER_HOME$/stardict-sanskrit/sa-kAvya/dcs-frequency/scripts" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="subhAShitaDb" />
+      <recent name="sanskritnlp.quote" />
       <recent name="subhAShita" />
       <recent name="sanskritnlp.wiki" />
       <recent name="sanskritnlp.wiki.bot" />
-      <recent name="sanskritnlp.ocr" />
-      <recent name="sanskritnlp.dictionary" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/lib" />
       <recent name="$USER_HOME$/stardict-sanskrit/sa-kAvya/dcs-frequency/scripts" />
       <recent name="$USER_HOME$/stardict-sanskrit/sa-vyAkaraNa/abhyankara-grammar/scripts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$USER_HOME$/stardict-sanskrit/sa-kAvya/Chandas/scripts" />
+      <recent name="$USER_HOME$/stardict-sanskrit/sa-kAvya/dcs-frequency/scripts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -926,7 +928,7 @@
     </configuration>
     <configuration default="false" name="Chandas" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
       <module name="abhyankara-grammar" />
-      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" />
+      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteDb.scala" />
       <setting name="vmparams" value="" />
       <setting name="consoleargs" value="" />
       <setting name="params" value="" />
@@ -935,7 +937,7 @@
     </configuration>
     <configuration default="false" name="DCS" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
       <module name="abhyankara-grammar" />
-      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" />
+      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteDb.scala" />
       <setting name="vmparams" value="" />
       <setting name="consoleargs" value="" />
       <setting name="params" value="" />
@@ -944,7 +946,7 @@
     </configuration>
     <configuration default="false" name="PadFilenames" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
       <module name="sanskritnlp" />
-      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" />
+      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteDb.scala" />
       <setting name="vmparams" value="" />
       <setting name="consoleargs" value="" />
       <setting name="params" value="" />
@@ -955,7 +957,7 @@
     </configuration>
     <configuration default="false" name="Test" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
       <module name="sanskritnlp" />
-      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" />
+      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteDb.scala" />
       <setting name="vmparams" value="" />
       <setting name="consoleargs" value="" />
       <setting name="params" value="" />
@@ -966,7 +968,7 @@
     </configuration>
     <configuration default="false" name="abhyankar-make-baby" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
       <module name="sanskritnlp" />
-      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" />
+      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteDb.scala" />
       <setting name="vmparams" value="" />
       <setting name="consoleargs" value="" />
       <setting name="params" value="" />
@@ -975,7 +977,7 @@
     </configuration>
     <configuration default="false" name="kalpadruma-to-dev" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
       <module name="rv-base" />
-      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" />
+      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteDb.scala" />
       <setting name="vmparams" value="" />
       <setting name="consoleargs" value="" />
       <setting name="params" value="" />
@@ -986,7 +988,7 @@
     </configuration>
     <configuration default="false" name="rv make_padapATha_index_dev" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
       <module name="sanskritnlp" />
-      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" />
+      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteDb.scala" />
       <setting name="vmparams" value="" />
       <setting name="consoleargs" value="" />
       <setting name="params" value="" />
@@ -997,7 +999,7 @@
     </configuration>
     <configuration default="false" name="rv make_padapATha_index_hk.scala" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
       <module name="sanskritnlp" />
-      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" />
+      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteDb.scala" />
       <setting name="vmparams" value="" />
       <setting name="consoleargs" value="" />
       <setting name="params" value="" />
@@ -1008,7 +1010,7 @@
     </configuration>
     <configuration default="false" name="vedic-rituals-hi mkbaby" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
       <module name="sanskritnlp" />
-      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" />
+      <setting name="path" value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteDb.scala" />
       <setting name="vmparams" value="" />
       <setting name="consoleargs" value="" />
       <setting name="params" value="" />
@@ -1261,7 +1263,7 @@
     </configuration>
     <configuration default="false" name="dbMaker" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="subhAShita.dbMakerSanskrit" />
+      <option name="MAIN_CLASS_NAME" value="subhAShitaDb.dbMakerSanskrit" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -1371,8 +1373,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-1091" width="1857" height="1092" extended-state="6" />
-    <editor active="true" />
+    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <layout>
       <window_info id="GfmBrowser" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1394,7 +1395,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2393321" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25688073" sideWeight="0.50248754" order="13" side_tool="false" content_ui="tabs" x="94" y="448" width="1809" height="403" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25688073" sideWeight="0.50248754" order="13" side_tool="false" content_ui="tabs" x="94" y="448" width="1809" height="403" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931355" sideWeight="0.48479822" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16657682" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1454,7 +1455,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="21" />
+      <option name="time" value="22" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1463,8 +1464,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/stardict-sanskrit/bin/scripts/babylon_add_devanAgarI.scala" />
-    <entry file="file://$USER_HOME$/stardict-sanskrit/bin/scripts/babylon_add_optitrans.scala" />
     <entry file="file://$USER_HOME$/stardict-sanskrit/sa-vyAkaraNa/abhyankara-grammar/scripts/make_babylon.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -1565,13 +1564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sanskritnlp.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="63" lean-forward="false" selection-start-line="37" selection-start-column="63" selection-end-line="37" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gssmurthy/Maatraa5d.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -1630,9 +1622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/couchbase/lite/couchbase-lite-java-core/1.4.0/couchbase-lite-java-core-1.4.0.jar!/com/couchbase/lite/ManagerOptions.class" />
-    <entry file="jar://$MAVEN_REPOSITORY$/com/couchbase/lite/couchbase-lite-java-core/1.4.0/couchbase-lite-java-core-1.4.0.jar!/com/couchbase/lite/Context.class" />
-    <entry file="jar://$MAVEN_REPOSITORY$/com/couchbase/lite/couchbase-lite-java/1.4.0/couchbase-lite-java-1.4.0.jar!/com/couchbase/lite/JavaContext.class" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/transliteration/transliterator.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-571">
@@ -1720,14 +1709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/couchbase/lite/couchbase-lite-java-core/1.4.0/couchbase-lite-java-core-1.4.0.jar!/com/couchbase/lite/Manager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="736" column="0" lean-forward="false" selection-start-line="736" selection-start-column="0" selection-end-line="736" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/README.md">
       <provider editor-type-id="Gfm">
         <state />
@@ -1744,15 +1725,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/quote/Quote.scala">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/couchbase/lite/couchbase-lite-java-core/1.4.0/couchbase-lite-java-core-1.4.0.jar!/com/couchbase/lite/ManagerOptions.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1354">
-          <caret line="32" column="61" lean-forward="false" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="61" />
+        <state relative-caret-position="36">
+          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/quote/QuoteDb.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="25" lean-forward="true" selection-start-line="0" selection-start-column="25" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/src/subhAShitaDb/QuoteList.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="846">
           <caret line="54" column="45" lean-forward="false" selection-start-line="54" selection-start-column="45" selection-end-line="54" selection-end-column="45" />
@@ -1762,18 +1751,69 @@
     </entry>
     <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/subhAShita-db-sanskrit.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="87" lean-forward="false" selection-start-line="20" selection-start-column="87" selection-end-line="20" selection-end-column="87" />
+        <state relative-caret-position="288">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/dbMaker.scala">
+    <entry file="file://$PROJECT_DIR$/sanskritnlp.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+        <state relative-caret-position="303">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/quote/Quote.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-652">
+          <caret line="32" column="61" lean-forward="false" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/couchbase/lite/couchbase-lite-java-core/1.4.0/couchbase-lite-java-core-1.4.0.jar!/com/couchbase/lite/Context.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/couchbase/lite/couchbase-lite-java-core/1.4.0/couchbase-lite-java-core-1.4.0.jar!/com/couchbase/lite/Manager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="78" column="23" lean-forward="true" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/couchbase/lite/couchbase-lite-java/1.4.0/couchbase-lite-java-1.4.0.jar!/com/couchbase/lite/JavaContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="19" />
           <folding>
-            <element signature="e#20#78#0" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#476#477#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/couchbase/lite/couchbase-lite-java-core/1.4.0/couchbase-lite-java-core-1.4.0.jar!/com/couchbase/lite/Document.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="144" column="167" lean-forward="true" selection-start-line="144" selection-start-column="167" selection-end-line="144" selection-end-column="167" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/src/subhAShitaDb/QuoteDb.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="e#22#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1833,7 +1873,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>subhAShita-db-sanskrit</last-edited>
+          <last-edited>sanskritnlp</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

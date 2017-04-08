@@ -3,7 +3,6 @@ package sanskritnlp.quote
 import net.liftweb.json._
 import net.liftweb.json.Serialization
 import org.slf4j.LoggerFactory
-import sanskritnlp.quote.subhAShitaTest.getClass
 import sanskritnlp.transliteration.transliterator
 
 case class Language(code: String) {
@@ -68,11 +67,14 @@ case class Source(name: QuoteText, authors: List[QuoteText] = List[QuoteText](),
 
 case class Rating(rating: Int)
 
+abstract class Annotation(val textKey: String, val source: Source) {
+  def getKey(): String = s"${this.getClass.getSimpleName}__${textKey}__${source.key}"
+}
 case class Topic(scriptRendering: ScriptRendering, language: Language = Language("UNK"))
-case class TopicAnnotation(val textKey: String, val source: Source, topic: Topic)
-case class MemorableBitsAnnotation(val textKey: String, val source: Source, memorableBits: List[QuoteText])
-case class RatingAnnotation(val textKey: String, val source: Source, overall: Rating)
-case class OriginAnnotation(val textKey: String, val source: Source, origin: Source = sourceHelper.emptySource)
+case class TopicAnnotation(override val textKey: String, override val source: Source, topics: List[Topic]) extends Annotation(textKey = textKey, source = source)
+case class MemorableBitsAnnotation(override val textKey: String, override val source: Source, memorableBits: List[QuoteText]) extends Annotation(textKey = textKey, source = source)
+case class RatingAnnotation(override val textKey: String, override val source: Source, overall: Rating) extends Annotation(textKey = textKey, source = source)
+case class OriginAnnotation(override val textKey: String, override val source: Source, origin: Source = sourceHelper.emptySource) extends Annotation(textKey = textKey, source = source)
 
 case class QuoteWithInfo(quoteText: QuoteText,
                          originAnnotations: List[OriginAnnotation] = List(),
@@ -80,7 +82,7 @@ case class QuoteWithInfo(quoteText: QuoteText,
                          ratingAnnotations: List[RatingAnnotation] = List(),
                          descriptionAnnotations: List[DescriptionAnnotation] = List()
                     )
-case class DescriptionAnnotation(val textKey: String, val source: Source, description: QuoteWithInfo)
+case class DescriptionAnnotation(override val textKey: String, override val source: Source, description: QuoteWithInfo) extends Annotation(textKey = textKey, source = source)
 
 object quoteTextHelper {
   val emptyText = new QuoteText("")
@@ -101,7 +103,7 @@ object sourceHelper {
   }
 }
 
-object subhAShitaTest {
+object quoteTest {
   val log = LoggerFactory.getLogger(getClass.getName)
   def quoteTest: Unit = {
     implicit val formats = Serialization.formats(ShortTypeHints(

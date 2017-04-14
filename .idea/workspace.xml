@@ -7,32 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac05e739-ded8-465e-b65f-6eff68c25840" name="Default" comment="Updated README">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShitaDb/QuoteDb$$anon$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShitaDb/QuoteDb$$anon$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShitaDb/QuoteDb$$anonfun$addQuoteWithInfo$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShitaDb/QuoteDb$$anonfun$addQuoteWithInfo$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShitaDb/QuoteDb$$anonfun$addQuoteWithInfo$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShitaDb/QuoteDb$$anonfun$addQuoteWithInfo$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShitaDb/QuoteDb.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShitaDb/dbMakerSanskrit$$anonfun$main$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/stardict-sanskrit/scala-project/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/stardict-sanskrit/scala-project/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/stardict-sanskrit/scala-project/.idea/copyright/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/stardict-sanskrit/scala-project/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/stardict-sanskrit/scala-project/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/stardict-sanskrit/scala-project/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/stardict-sanskrit/scala-project/.idea/scopes/scope_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/stardict-sanskrit/scala-project/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/stardict-sanskrit/scala-project/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/stardict-sanskrit/scala-project/stardict-sanskrit.iml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShitaDb/dbMakerSanskrit$.class" afterPath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShitaDb/dbMakerSanskrit$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShitaDb/dbMakerSanskrit.class" afterPath="$PROJECT_DIR$/out/production/subhAShita-db-sanskrit/subhAShitaDb/dbMakerSanskrit.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dcs-frequency/dcs-frequency.babylon" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dcs-frequency/dcs-frequency.babylon_final" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dcs-frequency/dcs-frequency.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dcs-frequency/dcs-frequency.dict.dz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dcs-frequency/dcs-frequency.idx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dcs-frequency/dcs-frequency.ifo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dcs-frequency/dcs-frequency.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dcs-frequency/dcs-frequency.syn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dcs-frequency/scripts/mkBabylon.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/dcs-frequency/text2.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/sanskritnlp/quote/Quote.scala" afterPath="$PROJECT_DIR$/src/main/scala/sanskritnlp/quote/Quote.scala" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/stardict-sanskrit/bin/scripts/stardict_sanskrit/Dictionary.scala" afterPath="$USER_HOME$/stardict-sanskrit/bin/scripts/stardict_sanskrit/Dictionary.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sanskritnlpjava.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,18 +39,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Quote.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/sanskritnlp/quote/Quote.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1854">
-              <caret line="106" column="24" lean-forward="false" selection-start-line="106" selection-start-column="24" selection-end-line="106" selection-end-column="24" />
-              <folding>
-                <element signature="e#27#52#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="QuoteInfoDb.scala" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/src/subhAShitaDb/QuoteInfoDb.scala">
           <provider selected="true" editor-type-id="text-editor">
@@ -126,21 +100,39 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="162">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuoteList.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/subhAShita-db-sanskrit/src/subhAShitaDb/QuoteList.scala">
+      <file leaf-file-name="tsv_to_stardict.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/stardict-sanskrit/bin/tsv_to_stardict.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-              <folding>
-                <element signature="e#22#47#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="72">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="make_tarballs.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/stardict-sanskrit/bin/make_tarballs.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="babylon_add_optitrans.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/stardict-sanskrit/bin/babylon_add_optitrans.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -245,9 +237,6 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/scala/sanskritnlp/wiki/bot/wiktionary.scala" />
         <option value="$USER_HOME$/stardict-sanskrit/bin/babylon_add_devanAgarI.sh" />
-        <option value="$USER_HOME$/stardict-sanskrit/bin/make_tarballs.sh" />
-        <option value="$USER_HOME$/stardict-sanskrit/bin/tsv_to_stardict.sh" />
-        <option value="$USER_HOME$/stardict-sanskrit/bin/babylon_add_optitrans.sh" />
         <option value="$MAVEN_REPOSITORY$/com/couchbase/lite/couchbase-lite-java-core/1.4.0/couchbase-lite-java-core-1.4.0.jar!/com/couchbase/lite/Manager.class" />
         <option value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/QuoteList.scala" />
         <option value="$USER_HOME$/subhAShita-db-sanskrit/src/subhAShita/dbMaker.scala" />
@@ -263,6 +252,9 @@
         <option value="$USER_HOME$/stardict-sanskrit/scala-project/stardict-sanskrit.iml" />
         <option value="$USER_HOME$/stardict-sanskrit/stardict-sanskrit.iml" />
         <option value="$USER_HOME$/stardict-sanskrit/bin/scripts/stardict_sanskrit/Dictionary.scala" />
+        <option value="$USER_HOME$/stardict-sanskrit/bin/babylon_add_optitrans.sh" />
+        <option value="$USER_HOME$/stardict-sanskrit/bin/make_tarballs.sh" />
+        <option value="$USER_HOME$/stardict-sanskrit/bin/tsv_to_stardict.sh" />
         <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
@@ -353,6 +345,34 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sanskritnlpjava" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sanskritnlpjava" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sanskritnlpjava" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sanskritnlpjava" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sanskritnlpjava" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="out" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1368,7 +1388,28 @@
       <option name="project" value="LOCAL" />
       <updated>1492189445079</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="* Update compiled files. Stop tracking workspace.xml">
+      <created>1492192210695</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1492192210695</updated>
+    </task>
+    <task id="LOCAL-00007" summary="* Compress dict files.&#10;* Add intellij module for stardict-sanskrit. Remove outdated project files.">
+      <created>1492192322150</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1492192322150</updated>
+    </task>
+    <task id="LOCAL-00008" summary="* Fix classpath. * Delete outdated intellij module files.">
+      <created>1492192853230</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1492192853230</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -1406,7 +1447,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39561588" sideWeight="0.5002764" order="13" side_tool="false" content_ui="tabs" x="94" y="448" width="1809" height="403" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2393321" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931355" sideWeight="0.48479822" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19513543" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19513543" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1465,7 +1506,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated README, carried out tests." />
     <MESSAGE value="Updated README" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated README" />
+    <MESSAGE value="* Update compiled files. Stop tracking workspace.xml" />
+    <MESSAGE value="* Compress dict files.&#10;* Add intellij module for stardict-sanskrit. Remove outdated project files." />
+    <MESSAGE value="* Fix classpath. * Delete outdated intellij module files." />
+    <option name="LAST_COMMIT_MESSAGE" value="* Fix classpath. * Delete outdated intellij module files." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1608,38 +1652,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/stardict-sanskrit/bin/make_tarballs.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="41" lean-forward="false" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/stardict-sanskrit/bin/decompile_all.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/stardict-sanskrit/bin/tsv_to_babylon.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/stardict-sanskrit/bin/tsv_to_stardict.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="41" lean-forward="false" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/stardict-sanskrit/bin/babylon_add_optitrans.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="73" />
         </state>
       </provider>
     </entry>
@@ -1775,6 +1791,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="38" lean-forward="true" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1818,10 +1835,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$USER_HOME$/stardict-sanskrit/bin/make_tarballs.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/stardict-sanskrit/bin/babylon_add_optitrans.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/stardict-sanskrit/bin/tsv_to_babylon.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/stardict-sanskrit/bin/tsv_to_stardict.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -1,2 +1,9 @@
 /settings.xml
 .idea/workspace.xml
+/target/nexus-staging/
+/target/maven-status/
+/target/generated-sources/
+/target/apidocs/
+/target/maven-archiver/
+/target/javadoc-bundle-options/
+/out/production/

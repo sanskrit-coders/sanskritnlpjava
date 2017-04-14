@@ -81,7 +81,7 @@ case class QuoteWithInfo(quoteText: QuoteText,
                          topicAnnotations: List[TopicAnnotation] = List(),
                          ratingAnnotations: List[RatingAnnotation] = List(),
                          descriptionAnnotations: List[DescriptionAnnotation] = List()
-                    )
+                        )
 case class DescriptionAnnotation(override val textKey: String, override val source: Source, description: QuoteWithInfo) extends Annotation(textKey = textKey, source = source)
 
 object quoteTextHelper {

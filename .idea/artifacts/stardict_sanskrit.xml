@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="stardict-sanskrit">
+    <output-path>$PROJECT_DIR$/out</output-path>
+    <root id="archive" name="stardict-sanskrit.jar">
+      <element id="module-output" name="stardict-sanskrit" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/ch/qos/logback/logback-classic/0.9.29/logback-classic-0.9.29.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/ch/qos/logback/logback-core/0.9.29/logback-core-0.9.29.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.8-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/commons/commons-compress/1.11/commons-compress-1.11.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

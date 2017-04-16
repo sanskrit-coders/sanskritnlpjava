@@ -75,14 +75,19 @@ case class TopicAnnotation(override val textKey: String, override val source: So
 case class MemorableBitsAnnotation(override val textKey: String, override val source: Source, memorableBits: List[QuoteText]) extends Annotation(textKey = textKey, source = source)
 case class RatingAnnotation(override val textKey: String, override val source: Source, overall: Rating) extends Annotation(textKey = textKey, source = source)
 case class OriginAnnotation(override val textKey: String, override val source: Source, origin: Source = sourceHelper.emptySource) extends Annotation(textKey = textKey, source = source)
+// The below is usable for translations as well.
+case class DescriptionAnnotation(override val textKey: String, override val source: Source, description: QuoteText) extends Annotation(textKey = textKey, source = source)
+case class RequestAnnotation(override val textKey: String, override val source: Source, request: QuoteText) extends Annotation(textKey = textKey, source = source)
+case class ReferenceAnnotation(override val textKey: String, override val source: Source, reference: QuoteText) extends Annotation(textKey = textKey, source = source)
 
 case class QuoteWithInfo(quoteText: QuoteText,
                          originAnnotations: List[OriginAnnotation] = List(),
                          topicAnnotations: List[TopicAnnotation] = List(),
                          ratingAnnotations: List[RatingAnnotation] = List(),
-                         descriptionAnnotations: List[DescriptionAnnotation] = List()
+                         descriptionAnnotations: List[DescriptionAnnotation] = List(),
+                         requestAnnotations: List[RequestAnnotation] = List(),
+                         referenceAnnotations: List[ReferenceAnnotation] = List()
                         )
-case class DescriptionAnnotation(override val textKey: String, override val source: Source, description: QuoteWithInfo) extends Annotation(textKey = textKey, source = source)
 
 object quoteTextHelper {
   val emptyText = new QuoteText("")

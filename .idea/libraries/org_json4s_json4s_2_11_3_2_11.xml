@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="org.json4s:json4s_2.11:3.2.11" type="repository">
+    <properties maven-id="org.json4s:json4s_2.11:3.2.11" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/json4s/json4s_2.11/3.2.11/json4s_2.11-3.2.11.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.0/scala-library-2.11.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/json4s/json4s_2.11/3.2.11/json4s_2.11-3.2.11-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

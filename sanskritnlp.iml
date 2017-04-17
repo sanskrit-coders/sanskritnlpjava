@@ -36,5 +36,8 @@
     <orderEntry type="library" name="Maven: jstl:jstl:1.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.google.appengine:appengine-testing:1.9.15" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.google.appengine:appengine-api-stubs:1.9.15" level="project" />
+    <orderEntry type="library" name="org.json4s:json4s-native_2.11:3.5.1" level="project" />
+    <orderEntry type="library" name="org.json4s:json4s-jackson_2.11:3.5.1" level="project" />
+    <orderEntry type="library" name="org.json4s:json4s_2.11:3.2.11" level="project" />
   </component>
 </module>

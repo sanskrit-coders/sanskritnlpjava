@@ -100,7 +100,8 @@ object jsonHelper {
       classOf[TopicAnnotation],
       classOf[RatingAnnotation],
       classOf[RequestAnnotation],
-      classOf[ReferenceAnnotation]
+      classOf[ReferenceAnnotation],
+      classOf[MemorableBitsAnnotation]
     )))
 
 

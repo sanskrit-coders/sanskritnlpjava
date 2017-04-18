@@ -98,23 +98,35 @@ object jsonHelper {
       classOf[OriginAnnotation],
       classOf[DescriptionAnnotation],
       classOf[TopicAnnotation],
-      classOf[RatingAnnotation]
+      classOf[RatingAnnotation],
+      classOf[RequestAnnotation],
+      classOf[ReferenceAnnotation]
     )))
 
 
   def getJsonMap(caseObj: Any): Map[String,Object] = {
-    // implicit val formats = Serialization.formats(NoTypeHints)
-    implicit val formats = Serialization.formats(ShortTypeHints(
-      List(
-        classOf[QuoteText],
-        classOf[OriginAnnotation],
-        classOf[DescriptionAnnotation],
-        classOf[TopicAnnotation],
-        classOf[RatingAnnotation]
-      )))
+    implicit val formats = jsonHelper.formats
     val jobj = Extraction.decompose(caseObj)
     return jobj.values.asInstanceOf[Map[String,Object]]
   }
+
+  def fromJsonMap(jsonMap: mutable.Map[String, _]): Any = {
+    implicit val formats = jsonHelper.formats
+    //    log debug (jsonMap.toString)
+    val jsonClass = jsonMap.get("jsonClass").get
+    val jsonStr = Serialization.writePretty(jsonMap)
+    //    log debug jsonStr
+    jsonClass match {
+      case "QuoteText" => Serialization.read[QuoteText](jsonStr)
+      case "OriginAnnotation" => Serialization.read[OriginAnnotation](jsonStr)
+      case "DescriptionAnnotation" => Serialization.read[DescriptionAnnotation](jsonStr)
+      case "TopicAnnotation" => Serialization.read[TopicAnnotation](jsonStr)
+      case "RatingAnnotation" => Serialization.read[RatingAnnotation](jsonStr)
+      case "RequestAnnotation" => Serialization.read[RequestAnnotation](jsonStr)
+      case "ReferenceAnnotation" => Serialization.read[ReferenceAnnotation](jsonStr)
+    }
+  }
+
 }
 
 object quoteTextHelper {
@@ -122,15 +134,6 @@ object quoteTextHelper {
   val log = LoggerFactory.getLogger(getClass.getName)
   def getSanskritDevangariiQuote(text: String): QuoteText =
     new QuoteText(text = text, script=transliterator.scriptDevanAgarI, language = Language("sa"))
-
-  def fromJsonMap(jsonMap: mutable.Map[String, _]): Unit = {
-    implicit val formats = jsonHelper.formats
-//    log debug (jsonMap.toString)
-    val jsonStr = Serialization.writePretty(jsonMap)
-    log debug jsonStr
-    val quoteText = JsonMethods.parse(jsonStr).extract[QuoteText]
-    return quoteText
-  }
 }
 
 object sourceHelper {

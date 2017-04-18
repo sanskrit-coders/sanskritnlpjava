@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="org.json4s:json4s-native_2.11:3.2.11" type="repository">
+    <properties maven-id="org.json4s:json4s-native_2.11:3.2.11" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/json4s/json4s-native_2.11/3.2.11/json4s-native_2.11-3.2.11.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.0/scala-library-2.11.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/json4s/json4s-core_2.11/3.2.11/json4s-core_2.11-3.2.11.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/json4s/json4s-ast_2.11/3.2.11/json4s-ast_2.11-3.2.11.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scalap/2.11.0/scalap-2.11.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-compiler/2.11.0/scala-compiler-2.11.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-reflect/2.11.0/scala-reflect-2.11.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/modules/scala-xml_2.11/1.0.1/scala-xml_2.11-1.0.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.1/scala-parser-combinators_2.11-1.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/json4s/json4s-native_2.11/3.2.11/json4s-native_2.11-3.2.11-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

@@ -1,9 +1,11 @@
 package sanskritnlp.quote
 
 import org.json4s._
-import org.json4s.native.Serialization
+import org.json4s.native.{JsonMethods, Serialization}
 import org.slf4j.LoggerFactory
 import sanskritnlp.transliteration.transliterator
+
+import scala.collection.mutable
 
 case class Language(code: String) {
   val log = LoggerFactory.getLogger(getClass.getName)
@@ -39,7 +41,7 @@ case class ScriptRendering(text: String, scheme: String = transliterator.scriptU
 case class QuoteText(scriptRenderings: List[ScriptRendering],
                      var key: String = "",
                      language: Language = Language("UNK"),
-                     metre: Option[String] = None) {
+                     metre: String = "UNK") {
   val log = LoggerFactory.getLogger(getClass.getName)
   // Helps make primary keys (aka ids) for storing these case classes in databases.
   if (scriptRenderings.nonEmpty) {
@@ -52,6 +54,7 @@ case class QuoteText(scriptRenderings: List[ScriptRendering],
       language=language)
   def this(text: String) = this(text=text, script=transliterator.scriptUnknown, language = Language("UNK"))
 }
+
 
 case class Source(name: QuoteText, authors: List[QuoteText] = List[QuoteText](), var key: String = "") {
   key = s"${name.key}__${authors.sortBy(_.scriptRenderings.head.text).map(_.key).mkString("_")}"
@@ -88,11 +91,46 @@ case class QuoteWithInfo(quoteText: QuoteText,
                          requestAnnotations: List[RequestAnnotation] = List(),
                          referenceAnnotations: List[ReferenceAnnotation] = List()
                         )
+object jsonHelper {
+  val formats = Serialization.formats(ShortTypeHints(
+    List(
+      classOf[QuoteText],
+      classOf[OriginAnnotation],
+      classOf[DescriptionAnnotation],
+      classOf[TopicAnnotation],
+      classOf[RatingAnnotation]
+    )))
+
+
+  def getJsonMap(caseObj: Any): Map[String,Object] = {
+    // implicit val formats = Serialization.formats(NoTypeHints)
+    implicit val formats = Serialization.formats(ShortTypeHints(
+      List(
+        classOf[QuoteText],
+        classOf[OriginAnnotation],
+        classOf[DescriptionAnnotation],
+        classOf[TopicAnnotation],
+        classOf[RatingAnnotation]
+      )))
+    val jobj = Extraction.decompose(caseObj)
+    return jobj.values.asInstanceOf[Map[String,Object]]
+  }
+}
 
 object quoteTextHelper {
   val emptyText = new QuoteText("")
+  val log = LoggerFactory.getLogger(getClass.getName)
   def getSanskritDevangariiQuote(text: String): QuoteText =
     new QuoteText(text = text, script=transliterator.scriptDevanAgarI, language = Language("sa"))
+
+  def fromJsonMap(jsonMap: mutable.Map[String, _]): Unit = {
+    implicit val formats = jsonHelper.formats
+//    log debug (jsonMap.toString)
+    val jsonStr = Serialization.writePretty(jsonMap)
+    log debug jsonStr
+    val quoteText = JsonMethods.parse(jsonStr).extract[QuoteText]
+    return quoteText
+  }
 }
 
 object sourceHelper {
@@ -108,17 +146,11 @@ object sourceHelper {
   }
 }
 
+
 object quoteTest {
   val log = LoggerFactory.getLogger(getClass.getName)
   def quoteTest: Unit = {
-    implicit val formats = Serialization.formats(ShortTypeHints(
-      List(
-        classOf[QuoteText],
-        classOf[OriginAnnotation],
-        classOf[DescriptionAnnotation],
-        classOf[TopicAnnotation],
-        classOf[RatingAnnotation]
-      )))
+    implicit val formats = jsonHelper.formats
 
     val quoteText = QuoteText(
       scriptRenderings = List(

@@ -3,7 +3,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <packaging>jar</packaging>
-    <version>1.0</version>
+    <version>1.1</version>
     <description>
         A collection of scala and java classes for some basic natural language processing (NLP) for the Sanskrit language, contributed by the open source SanskritNLP project and friends.
         Some notable facilities:
@@ -53,7 +53,7 @@
     </properties>
 
     <prerequisites>
-        <maven>3.3.9</maven>
+        <maven>3.5</maven>
     </prerequisites>
 
     <repositories>
@@ -84,6 +84,16 @@
             <version>2.11.0-M4</version>
         </dependency>
         <!-- Compile/runtime dependencies -->
+        <dependency>
+            <groupId>org.json4s</groupId>
+            <artifactId>json4s_2.11</artifactId>
+            <version>3.2.11</version>
+        </dependency>
+        <dependency>
+            <groupId>org.json4s</groupId>
+            <artifactId>json4s-native_2.11</artifactId>
+            <version>3.2.11</version>
+        </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>

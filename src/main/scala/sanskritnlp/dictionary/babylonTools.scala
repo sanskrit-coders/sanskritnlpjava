@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory
 import sanskritnlp.transliteration._
 import sanskritnlp.vyAkaraNa.devanAgarI
 
+import scala.collection.mutable
 import scala.io.Source
 
 /**
@@ -152,4 +153,5 @@ object babylonTools {
     destination.close()
     log info("Produced " + outfileStr)
   }
+
 }

@@ -28,7 +28,8 @@ class BabylonDictionary(name_in: String, source_in: String = "", head_language: 
     fileLocation = infileStr
     words_taken = 0
     src = Source.fromFile(infileStr, "utf8")
-    linesIter = src.getLines
+    def isHeadLine(x:String) = x.startsWith("#") || x.trim.isEmpty
+    linesIter = src.getLines.dropWhile(isHeadLine)
   }
 
   def hasNext(): Boolean = {
@@ -85,6 +86,7 @@ class BabylonDictionary(name_in: String, source_in: String = "", head_language: 
     }
   }
 
+  // Assumes that you've called makeWordToMeaningsMap.
   def getWords: List[String] = {
     if (wordToMeanings.size == 0) {
       return wordToLocations.keys.toList.sorted
@@ -113,7 +115,7 @@ class BabylonDictionary(name_in: String, source_in: String = "", head_language: 
 object babylonDictTest {
   val log = LoggerFactory.getLogger(this.getClass)
 
-  def main(args: Array[String]) {
+  def kalpadruma_test: Unit = {
     val kalpadruma = new BabylonDictionary(name_in = "कल्पद्रुमः", source_in = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html", head_language = "sa")
     kalpadruma.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-head/kalpadruma-sa/kalpadruma-sa.babylon_final")
     log info kalpadruma.getMeanings("इ").mkString("\n\n")
@@ -121,5 +123,8 @@ object babylonDictTest {
     log info kalpadruma.getMeanings("उ").mkString("\n\n")
     log info kalpadruma.getMeanings("इ").mkString("\n\n")
     log info kalpadruma.getMeanings("अ").mkString("\n\n")
+  }
+  def main(args: Array[String]) {
+
   }
 }

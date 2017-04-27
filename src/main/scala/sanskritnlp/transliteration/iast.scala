@@ -52,12 +52,17 @@ object iast extends RomanScript {
     test_toDevanagari(romanText)
   }
 
+  def test_isEncoding() = {
+    log info(isEncoding("Aṃkuśeśvaram").toString)
+    log info(isEncoding("Aṃkuśeśvaram").toString)
+  }
 }
 
 object iastTest {
   def main(args: Array[String]): Unit = {
-    iast.test_toDevanagari()
-    iast.test_fromDevanagari()
+//    iast.test_toDevanagari()
+//    iast.test_fromDevanagari()
+    iast.test_isEncoding()
   }
 }
 

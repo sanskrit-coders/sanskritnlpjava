@@ -6,6 +6,12 @@ trait IndicScript {
 
   val mapToDevanagari: Map[Char, Char] = null
 
+  val distinctCharacters: Set[Char] = null
+
+  def isEncoding(str_in: String): Boolean = {
+    return str_in.map(x => distinctCharacters.contains(x)).contains(true)
+  }
+
   def fromDevanagari(str: String): String = str.map(x => mapFromDevanagari.getOrElse(x, x)).mkString("")
 
   def toDevanagari(str: String) = str.map(x => mapToDevanagari.getOrElse(x, x)).mkString("")
@@ -65,6 +71,8 @@ object kannaDa extends IndicScript{
   )
 
   override val mapToDevanagari = mapFromDevanagari.map(_.swap)
+  override val distinctCharacters = mapFromDevanagari.values.toSet
+
 
 }
 
@@ -77,6 +85,7 @@ object kannaDa extends IndicScript{
 object telugu extends IndicScript{
 // Produced using shrI vinod rAjan's
 // akSharamukha service ( http://www.virtualvinodh.com/aksaramukha ).
+
   override val mapFromDevanagari = Map(
   'अ' -> 'అ', 'आ' -> 'ఆ',  'इ' -> 'ఇ', 'ई' -> 'ఈ',
   'उ' -> 'ఉ', 'ऊ' -> 'ఊ',
@@ -118,7 +127,9 @@ object telugu extends IndicScript{
   '६'-> '౬', '७'-> '౭', '८'-> '౮', '९'-> '౯'
   )
 
-override val mapToDevanagari = mapFromDevanagari.map(_.swap)
+  override val mapToDevanagari = mapFromDevanagari.map(_.swap)
+  override val distinctCharacters = mapFromDevanagari.values.toSet
+
 
 }
 

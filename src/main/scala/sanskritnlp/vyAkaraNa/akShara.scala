@@ -1,5 +1,7 @@
 package sanskritnlp.vyAkaraNa
 
+import org.slf4j.LoggerFactory
+
 class Syllable (strIn: String){
   var svara = ""
   var vyanjana = ""
@@ -37,6 +39,7 @@ object symbols{
 object devanAgarI{
   val saMkhyA = Set('०', '१', '२', '३', '४', '५', '६', '७', '८', '९')
   val allSymbols = saMkhyA ++ consonants.vyanjana_symbols ++ vowels.svarAH ++ vowels.mAtrA ++ Set(vowels.virAma, vowels.avagraha,  vowels.anusvAra, vowels.visarga, vowels.chandrabindu, symbols.toneMarkers.verticalBar, symbols.toneMarkers.anudAtta)
+  def isEncoding(str_in: String): Boolean = allSymbols.map(str_in.contains(_)).contains(true)
 }
 
 object consonants{
@@ -47,6 +50,7 @@ object consonants{
 object vowels {
   // Symbols are assumed to occur in the following order:
   // (sthAna mAtrA tone nasalization).
+  val log = LoggerFactory.getLogger(this.getClass)
 
   val hrasva = shivasUtra.get_symbols("अ", "क्") ++ List("ऎ", "ऒ")
 
@@ -117,17 +121,17 @@ object vowels {
 
 
   def test = {
-    println("svarAH " + svarAH.mkString(" "))
-    println("hrasva " + hrasva.mkString(" "))
-    println("dIrgha " + dIrgha.mkString(" "))
-    println("mAtrA " + mAtrA.mkString(" "))
-    println(hrasvamAtrA.size + " " + dIrghamAtrA.size)
-    println(svarAH.drop(1).mkString(" "))
-    println(mAtrA.mkString("_"))
-    println("svara2mAtrA " + svara2mAtrA)
-    println("mAtrA2svara " + mAtrA2svara)
-    println("dIrgha2hrasva " + dIrgha2hrasva)
-    println("hrasva2dIrgha " + dIrgha2hrasva)
-    println("vyanjanAni " + consonants.vyanjanAni.mkString(" "))
+    log info("svarAH " + svarAH.mkString(" "))
+    log info("hrasva " + hrasva.mkString(" "))
+    log info("dIrgha " + dIrgha.mkString(" "))
+    log info("mAtrA " + mAtrA.mkString(" "))
+    log info(hrasvamAtrA.size + " " + dIrghamAtrA.size)
+    log info(svarAH.drop(1).mkString(" "))
+    log info(mAtrA.mkString("_"))
+    log info("svara2mAtrA " + svara2mAtrA)
+    log info("mAtrA2svara " + mAtrA2svara)
+    log info("dIrgha2hrasva " + dIrgha2hrasva)
+    log info("hrasva2dIrgha " + dIrgha2hrasva)
+    log info("vyanjanAni " + consonants.vyanjanAni.mkString(" "))
  }
 }

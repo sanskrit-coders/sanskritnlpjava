@@ -9,7 +9,8 @@ scala -classpath "$PATH_TO_SANSKRITNLPJAVA/sanskritnlp-1.0-SNAPSHOT/WEB-INF/lib/
 import java.io._
 
 import org.slf4j.LoggerFactory
-import sanskritnlp.transliteration.{as, optitrans, transliterator, iast}
+import sanskritnlp.transliteration._
+import sanskritnlp.vyAkaraNa.devanAgarI
 
 import scala.io.Source
 
@@ -20,7 +21,7 @@ object babylonTools {
 
   val log = LoggerFactory.getLogger("babylonTools")
   def sutraNumbersToDevanagari(infileStr: String): Unit = {
-    println("Processing " + infileStr)
+    log info("Processing " + infileStr)
     val outfileStr = infileStr.replaceFirst(".babylon$", ".babylon_dev_sutra")
     val src = Source.fromFile(infileStr, "utf8")
     val outFileObj = new File(outfileStr)
@@ -36,26 +37,42 @@ object babylonTools {
       // println(newLine)
     })
     destination.close()
-    println("Produced " + outfileStr)
+    log info("Produced " + outfileStr)
   }
 
   def fixHeadwords(infileStr: String, outputExt: String, headwordTransformer: (Array[String]) => Array[String]): Unit = {
-    println("Processing " + infileStr)
+    log info("Processing " + infileStr)
     val outfileStr = infileStr.replaceFirst("\\.[^.]+$", outputExt)
-    println("Will produce " + outfileStr)
+    log info("Will produce " + outfileStr)
     val src = Source.fromFile(infileStr, "utf8")
     val outFileObj = new File(outfileStr)
     new File(outFileObj.getParent).mkdirs
     val destination = new PrintWriter(outFileObj)
+
+    def headwordSorter(x: String, b: String): Boolean = {
+      if(x.contains("_")) {
+        return false
+      }
+      if(devanAgarI.isEncoding(x)){
+        return true
+      }
+      if(kannaDa.isEncoding(x)) {
+        return true
+      }
+      if(telugu.isEncoding(x)) {
+        return true
+      }
+      return false
+    }
 
     src.getLines.zipWithIndex.foreach( t => {
       val line = t._1
       val index = t._2
       try {
         if(index % 3 == 0) {
-          val headwords_original = line.split('|')
-          val headwords_transliterated = headwordTransformer(headwords_original)
-          destination.println((headwords_transliterated).toSet.toList.sorted.mkString("|"))
+          val headwordsOriginal = line.split('|')
+          val headwordsFixed = headwordTransformer(headwordsOriginal)
+          destination.println(headwordsFixed.toSet.toList.sortWith(headwordSorter).mkString("|"))
         } else {
           destination.println(line)
         }
@@ -67,13 +84,13 @@ object babylonTools {
       }
     })
     destination.close()
-    println("Produced " + outfileStr)
+    log info("Produced " + outfileStr)
   }
 
   def fixEntries(infileStr: String, outputExt: String, entryTransformer: String => String): Unit = {
-    println("Processing " + infileStr)
+    log info("Processing " + infileStr)
     val outfileStr = infileStr.replaceFirst("\\.[^.]+$", outputExt)
-    println("Will produce " + outfileStr)
+    log info("Will produce " + outfileStr)
     val src = Source.fromFile(infileStr, "utf8")
     val outFileObj = new File(outfileStr)
     new File(outFileObj.getParent).mkdirs
@@ -98,11 +115,11 @@ object babylonTools {
       }
     })
     destination.close()
-    println("Produced " + outfileStr)
+    log info("Produced " + outfileStr)
   }
 
   def asToDevanagari(infileStr: String): Unit = {
-    println("Processing " + infileStr)
+    log info("Processing " + infileStr)
     val outfileStr = infileStr.replaceFirst("\\.babylon$", ".babylonv1")
     val src = Source.fromFile(infileStr, "utf8")
     val outFileObj = new File(outfileStr)
@@ -117,10 +134,10 @@ object babylonTools {
       newLine = asPatternUnmarked.replaceAllIn(newLine, _ match {
         case asPatternUnmarked(fore, as_str, aft) => fore + as.toDevanagari(as_str) + aft })
       destination.println(newLine)
-      // println(line)
-      println(newLine)
+      // log info(line)
+      log info(newLine)
     })
     destination.close()
-    println("Produced " + outfileStr)
+    log info("Produced " + outfileStr)
   }
 }

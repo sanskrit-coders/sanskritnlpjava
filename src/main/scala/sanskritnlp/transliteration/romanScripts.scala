@@ -171,7 +171,7 @@ trait RomanScript {
   }
 
   def isEncoding(str_in: String): Boolean = {
-    return str_in.map(x => distinctCharacters.contains(x)).contains(true)
+    return  distinctCharacters.map(x => str_in.contains(x)).contains(true)
   }
 
   def fromDevanagari(str_in: String): String = {

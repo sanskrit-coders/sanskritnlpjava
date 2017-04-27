@@ -44,35 +44,42 @@ object babylonTools {
     log info("Processing " + infileStr)
     val outfileStr = infileStr.replaceFirst("\\.[^.]+$", outputExt)
     log info("Will produce " + outfileStr)
-    val src = Source.fromFile(infileStr, "utf8")
     val outFileObj = new File(outfileStr)
     new File(outFileObj.getParent).mkdirs
     val destination = new PrintWriter(outFileObj)
 
-    def headwordSorter(x: String, b: String): Boolean = {
-      if(x.contains("_")) {
-        return false
+    def headwordSorter(a: String, b: String): Boolean = {
+      def checkDistinctProperty(fn: String=> Boolean): Boolean = fn(a) && !fn(b)
+      def getScore(x: String): Float = {
+        var score = x.length
+        if(x.contains("_")) score += -1000
+        if(devanAgarI.isEncoding(x)) score += 1000
+        if(kannaDa.isEncoding(x)) score += 70
+        if(telugu.isEncoding(x)) score += 69
+        return score
       }
-      if(devanAgarI.isEncoding(x)){
-        return true
+      if (getScore(a) == getScore(b)) {
+        return a < b
+      } else {
+        return getScore(a) > getScore(b)
       }
-      if(kannaDa.isEncoding(x)) {
-        return true
-      }
-      if(telugu.isEncoding(x)) {
-        return true
-      }
-      return false
     }
 
-    src.getLines.zipWithIndex.foreach( t => {
+    def isHeadLine(x:String) = x.startsWith("#") || x.trim.isEmpty
+    var src = Source.fromFile(infileStr, "utf8")
+    src.getLines.takeWhile(isHeadLine(_)).foreach(destination.println)
+
+    src = Source.fromFile(infileStr, "utf8")
+    src.getLines.dropWhile(isHeadLine(_)).zipWithIndex.foreach( t => {
       val line = t._1
       val index = t._2
       try {
         if(index % 3 == 0) {
           val headwordsOriginal = line.split('|')
           val headwordsFixed = headwordTransformer(headwordsOriginal)
-          destination.println(headwordsFixed.toSet.toList.sortWith(headwordSorter).mkString("|"))
+          // Sorting with sortwith is risky - can fail and produce no output line. Skipping that.
+          destination.println(headwordsFixed.toSet.toList.sortWith(headwordSorter
+          ).mkString("|"))
         } else {
           destination.println(line)
         }

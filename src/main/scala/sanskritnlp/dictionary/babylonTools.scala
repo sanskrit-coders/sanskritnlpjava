@@ -9,7 +9,7 @@ scala -classpath "$PATH_TO_SANSKRITNLPJAVA/sanskritnlp-1.0-SNAPSHOT/WEB-INF/lib/
 import java.io._
 
 import org.slf4j.LoggerFactory
-import sanskritnlp.transliteration.{as, optitrans, transliterator}
+import sanskritnlp.transliteration.{as, optitrans, transliterator, iast}
 
 import scala.io.Source
 
@@ -39,7 +39,7 @@ object babylonTools {
     println("Produced " + outfileStr)
   }
 
-  def addTransliteratedHeadwords(infileStr: String, outputExt: String, sourceScheme: String, destScheme: String): Unit = {
+  def fixHeadwords(infileStr: String, outputExt: String, headwordTransformer: (Array[String]) => Array[String]): Unit = {
     println("Processing " + infileStr)
     val outfileStr = infileStr.replaceFirst("\\.[^.]+$", outputExt)
     println("Will produce " + outfileStr)
@@ -54,8 +54,39 @@ object babylonTools {
       try {
         if(index % 3 == 0) {
           val headwords_original = line.split('|')
-          val headwords_transliterated = headwords_original.map(transliterator.transliterate(_, sourceScheme, destScheme))
-          destination.println((headwords_original ++ headwords_transliterated).toSet.toList.sorted.mkString("|"))
+          val headwords_transliterated = headwordTransformer(headwords_original)
+          destination.println((headwords_transliterated).toSet.toList.sorted.mkString("|"))
+        } else {
+          destination.println(line)
+        }
+      } catch {
+        case ex: Exception => {
+          log error ex.toString
+          log error "line: " + t.toString()
+        }
+      }
+    })
+    destination.close()
+    println("Produced " + outfileStr)
+  }
+
+  def fixEntries(infileStr: String, outputExt: String, entryTransformer: String => String): Unit = {
+    println("Processing " + infileStr)
+    val outfileStr = infileStr.replaceFirst("\\.[^.]+$", outputExt)
+    println("Will produce " + outfileStr)
+    val src = Source.fromFile(infileStr, "utf8")
+    val outFileObj = new File(outfileStr)
+    new File(outFileObj.getParent).mkdirs
+    val destination = new PrintWriter(outFileObj)
+
+    src.getLines.zipWithIndex.foreach( t => {
+      val line = t._1
+      val index = t._2
+      try {
+        if((index + 1) % 2 == 0) {
+          val entryOriginal = line
+          val entryTransliterated = entryTransformer(entryOriginal)
+          destination.println(entryTransliterated.toSet.toList.sorted.mkString("|"))
         } else {
           destination.println(line)
         }

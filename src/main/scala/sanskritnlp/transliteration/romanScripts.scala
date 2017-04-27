@@ -170,6 +170,10 @@ trait RomanScript {
     output
   }
 
+  def isEncoding(str_in: String): Boolean = {
+    return str_in.map(x => distinctCharacters.contains(x)).contains(true)
+  }
+
   def fromDevanagari(str_in: String): String = {
     var output = str_in
 

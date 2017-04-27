@@ -98,12 +98,17 @@ object babylonTools {
     log info("Processing " + infileStr)
     val outfileStr = infileStr.replaceFirst("\\.[^.]+$", outputExt)
     log info("Will produce " + outfileStr)
-    val src = Source.fromFile(infileStr, "utf8")
     val outFileObj = new File(outfileStr)
     new File(outFileObj.getParent).mkdirs
     val destination = new PrintWriter(outFileObj)
 
-    src.getLines.zipWithIndex.foreach( t => {
+
+    def isHeadLine(x:String) = x.startsWith("#") || x.trim.isEmpty
+    var src = Source.fromFile(infileStr, "utf8")
+    src.getLines.takeWhile(isHeadLine(_)).foreach(destination.println)
+
+    src = Source.fromFile(infileStr, "utf8")
+    src.getLines.dropWhile(isHeadLine(_)).zipWithIndex.foreach( t => {
       val line = t._1
       val index = t._2
       try {

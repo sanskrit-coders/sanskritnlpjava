@@ -1,5 +1,7 @@
 package sanskritnlp.transliteration
 
+import scala.collection.SetLike
+
 /**
   * General transliteration utilities.
   * Created by vvasuki on 2/21/16.
@@ -27,6 +29,23 @@ object transliterator {
       }
       case _ => {return None}
     }
+  }
+
+  // Assumes that words are space separable.
+  def transliterateWordsIfIndic(in_str: String, wordSet: Set[String], sourceScheme: String, destScheme: String): String = {
+    val words = in_str.split("\s+")
+    words.map(word => {
+      if (wordSet.contains(word)) {
+        transliterate(word, sourceScheme, destScheme)
+      } else if(word.endsWith("s")) {
+        if (wordSet.contains(word.dropRight(1))) {
+          transliterate(word, sourceScheme, destScheme) + "-s"
+        }
+      } else {
+        word
+      }
+    }).mkString(" ")
+
   }
 
   // Transliterate among roman schemes + devanAgarI via devanAgarI.

@@ -13,6 +13,7 @@ import sanskritnlp.transliteration._
 import sanskritnlp.vyAkaraNa.devanAgarI
 
 import scala.collection.mutable
+import scala.collection.mutable.ListBuffer
 import scala.io.Source
 
 /**
@@ -40,6 +41,21 @@ object babylonTools {
     destination.close()
     log info("Produced " + outfileStr)
   }
+
+  def mapWordToDicts(dictList: Seq[BabylonDictionary], headword_pattern: String):  mutable.HashMap[String, ListBuffer[BabylonDictionary]] = {
+    val wordToDicts = new mutable.HashMap[String, ListBuffer[BabylonDictionary]]()
+    dictList.foreach(dictionary => {
+      // dictionary.makeWordToLocationMap(headword_pattern = "\\p{IsDevanagari}+")
+      dictionary.makeWordToMeaningsMap(headword_pattern)
+      dictionary.getWords.foreach(word => {
+        var dictList = wordToDicts.getOrElse(word, ListBuffer[BabylonDictionary]())
+        dictList += dictionary
+        wordToDicts += (word -> dictList)
+      })
+    })
+    return wordToDicts
+  }
+
 
   def fixHeadwords(infileStr: String, outputExt: String, headwordTransformer: (Array[String]) => Array[String]): Unit = {
     log info("Processing " + infileStr)

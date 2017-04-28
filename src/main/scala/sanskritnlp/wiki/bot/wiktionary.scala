@@ -2,7 +2,7 @@ package sanskritnlp.wiki.bot
 
 import net.sourceforge.jwbf.core.contentRep.SimpleArticle
 import org.slf4j.LoggerFactory
-import sanskritnlp.dictionary.BabylonDictionary
+import sanskritnlp.dictionary.{BabylonDictionary, babylonTools}
 import sanskritnlp.wiki.Section
 
 import scala.collection.mutable
@@ -42,22 +42,8 @@ trait wiktionary extends wikiBot {
     })
   }
 
-  def mapWordToDicts(dictList: List[BabylonDictionary], headword_pattern: String):  mutable.HashMap[String, ListBuffer[BabylonDictionary]] = {
-    val wordToDicts = new mutable.HashMap[String, ListBuffer[BabylonDictionary]]()
-    dictList.foreach(dictionary => {
-      // dictionary.makeWordToLocationMap(headword_pattern = "\\p{IsDevanagari}+")
-      dictionary.makeWordToMeaningsMap(headword_pattern)
-      dictionary.getWords.foreach(word => {
-        var dictList = wordToDicts.getOrElse(word, ListBuffer[BabylonDictionary]())
-        dictList += dictionary
-        wordToDicts += (word -> dictList)
-      })
-    })
-    return wordToDicts
-  }
-
   def fixWikiError(dictList: List[BabylonDictionary], start_index: Int = 1, end_index: Int = -1, headword_pattern: String) = {
-    val wordToDicts = mapWordToDicts(dictList, headword_pattern)
+    val wordToDicts = babylonTools.mapWordToDicts(dictList, headword_pattern)
     var word_index = start_index - 1
     // use drop to skip n items.
     wordToDicts.keys.toList.sorted.drop(word_index).take(end_index - start_index + 1).foreach(word => {
@@ -81,7 +67,7 @@ trait wiktionary extends wikiBot {
   }
 
   def uploadFromBabylonDictsCombined(dictList: List[BabylonDictionary], start_index: Int = 1, end_index: Int = 1000000, headword_pattern: String) = {
-    val wordToDicts = mapWordToDicts(dictList, headword_pattern)
+    val wordToDicts = babylonTools.mapWordToDicts(dictList, headword_pattern)
     var word_index = start_index - 1
     // use drop to skip n items.
     wordToDicts.keys.toList.sorted.drop(word_index).take(end_index - start_index + 1).foreach(word => {

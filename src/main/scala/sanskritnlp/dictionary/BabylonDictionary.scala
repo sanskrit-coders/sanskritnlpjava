@@ -36,10 +36,16 @@ class BabylonDictionary(name_in: String, source_in: String = "", head_language: 
     return linesIter.hasNext
   }
 
+  //  java.nio.charset.MalformedInputException: Input length = 1 implies bad character in file.
   def next(): (Array[String], String) = {
     words_taken = words_taken + 1
-    val returnTuple = (linesIter.next().split('|'), linesIter.next)
-    assert(linesIter.next() == "")
+    val headwords = linesIter.next().split('|')
+//    log debug(headwords.mkString("|"))
+//    log debug(linesIter.hasNext.toString)
+    val entry = linesIter.next
+//    log debug(entry)
+    val returnTuple = (headwords, entry)
+    assert(!linesIter.hasNext || linesIter.next() == "")
     return returnTuple
   }
 

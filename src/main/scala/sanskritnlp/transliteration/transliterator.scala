@@ -33,7 +33,7 @@ object transliterator {
 
   // Assumes that words are space separable.
   def transliterateWordsIfIndic(in_str: String, wordSet: Set[String], sourceScheme: String, destScheme: String): String = {
-    val words = in_str.split("\s+")
+    val words = in_str.split("\\s+")
     words.map(word => {
       if (wordSet.contains(word)) {
         transliterate(word, sourceScheme, destScheme)

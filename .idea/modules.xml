@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/sanskritnlp.iml" filepath="$PROJECT_DIR$/sanskritnlp.iml" />
-      <module fileurl="file://$USER_HOME$/subhAShita-pratimAlA-scala/.idea/modules/sanskritnlpjava-build.iml" filepath="$USER_HOME$/subhAShita-pratimAlA-scala/.idea/modules/sanskritnlpjava-build.iml" />
+      <module fileurl="file://$USER_HOME$/.idea/modules/sanskritnlpjava.iml" filepath="$USER_HOME$/.idea/modules/sanskritnlpjava.iml" />
       <module fileurl="file://$USER_HOME$/stardict-sanskrit/stardict-sanskrit.iml" filepath="$USER_HOME$/stardict-sanskrit/stardict-sanskrit.iml" />
       <module fileurl="file://$USER_HOME$/subhAShita-db-sanskrit/subhAShita-db-sanskrit.iml" filepath="$USER_HOME$/subhAShita-db-sanskrit/subhAShita-db-sanskrit.iml" />
     </modules>

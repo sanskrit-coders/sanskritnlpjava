@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="sanskritnlpjava-g-appengine:war">
+    <output-path>$USER_HOME$/sanskritnlpjava-g-appengine/target</output-path>
+    <root id="archive" name="sanskritnlp-1.2.war">
+      <element id="artifact" artifact-name="sanskritnlpjava-g-appengine:war exploded" />
+    </root>
+  </artifact>
+</component>

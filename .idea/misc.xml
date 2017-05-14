@@ -39,6 +39,8 @@
     </properties>
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="appengine-java" url="file://$USER_HOME$/sanskritnlpjava-g-appengine" />
+    <file type="web" url="file://$USER_HOME$/sanskritnlpjava-g-appengine" />
     <type id="Python" />
   </component>
   <component name="JavadocGenerationManager">
@@ -62,6 +64,7 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
+        <option value="$USER_HOME$/sanskritnlpjava-g-appengine/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>

@@ -18,8 +18,6 @@ Contributions and suggestions are invited at https://github.com/sanskrit-coders/
 * Final jar files
   * out/*.jar [all modules in intellij project]
   * target/*.jar [includes sources and javadocs in separate jars. sanskritnlp module only]
-* War files
-  * target/ [sanskritnlp module only]
 * Classes
   * out/production/*/ [Modules other than sanskritnlp.]
   * target/sanskritnlp-1.0-SNAPSHOT/WEB-INF/classes [sanskritnlp module output.]
@@ -27,11 +25,6 @@ Contributions and suggestions are invited at https://github.com/sanskrit-coders/
 ### Some known users
 * [stardict-sanskrit]() and sister stardict-.* projects.
 
-
-## Web-UI users
-* The corresponding webserver hosts pages such as: <http://sanskritnlp.appspot.com/forms/Chandas-de.htm> etc..
-    * (These are listed from <https://sites.google.com/site/sanskritcode/projects>.)
-* Last update : 2017-03-23
 
 # Contributors
 ## Setup
@@ -59,18 +52,6 @@ Contributions and suggestions are invited at https://github.com/sanskrit-coders/
 * Regarding **maven targets**:
   * You can set up a maven goal in intellij as well.
   * In intellij: Don't be fooled by weird messages in the Run widget - look at the messages widget.
-
-### Deploying to google cloud.
-* Note that we're using appengine-maven-plugin in <pom-war.xml>. In intellij pass this file explicitly with -f pom-war.xml.
-  * It's use is described [here](https://cloud.google.com/appengine/docs/standard/java/tools/maven).
-* `mvn appengine:update` should do the trick - if you have right maven version.
-  * If you are doing this from intellij:
-    * a browser window will pop up, get SSO authentication done,
-    * give you a code to paste in the maven widget.
-* Local build: `mvn clean install`
-  * Files are output in target/ .
-* Local dev server run: `mvn appengine:devserver`
-* Manage online at <https://console.cloud.google.com> . Navigate around a bit.
 
 ### Releasing to maven.
 * Note that we're using appengine-maven-plugin in <pom.xml>, and credentials stored in settings.xml (<-- not to be checked in) .

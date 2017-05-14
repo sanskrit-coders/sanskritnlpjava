@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="sanskritnlp" />
+        <module name="sanskritnlpjava-g-appengine" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="sanskritnlp" target="1.5" />
+      <module name="sanskritnlpjava-g-appengine" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

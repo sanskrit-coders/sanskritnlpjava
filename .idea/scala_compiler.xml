@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <profile name="Maven 1" modules="sanskritnlpjava,stardict-sanskrit,sanskritnlpjava-g-appengine,subhAShita-db-sanskrit,indic-transliteration,sanskritnlp" />
+    <profile name="Maven 1" modules="sanskritnlpjava,sanskritnlpjava-g-appengine,subhAShita-db-sanskrit,indic-transliteration,sanskritnlp,stardict-sanskrit" />
   </component>
 </project>

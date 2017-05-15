@@ -95,27 +95,7 @@
             <artifactId>logback-core</artifactId>
             <version>0.9.29</version>
         </dependency>
-
-        <!--
-         Evaluation: https://www.mediawiki.org/wiki/API:Client_code/Evaluations/Java_Wiki_Bot_Framework_(JWBF)
-         Javadoc here: http://jwbf.sourceforge.net/doc/ , especially Article class.
-         Parsers (very complicated):
-         https://www.mediawiki.org/wiki/Alternative_parsers
-         http://stackoverflow.com/questions/11612118/java-wikitext-parser
-        -->
-        <dependency>
-            <groupId>net.sourceforge</groupId>
-            <artifactId>jwbf</artifactId>
-            <version>3.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>jstl</groupId>
-            <artifactId>jstl</artifactId>
-            <version>1.2</version>
-        </dependency>
     </dependencies>
-
-
     <!-- For maven deployment -->
     <distributionManagement>
         <snapshotRepository>

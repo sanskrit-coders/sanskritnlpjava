@@ -2,7 +2,6 @@ package com.sktutilities.chanda;
 
 import java.util.ArrayList;
 
-import com.sktutilities.util.ConsonantUtil;
 import com.sktutilities.util.Log;
 import com.sktutilities.util.MetricUtil;
 import com.sktutilities.util.VowelUtil;

@@ -102,7 +102,7 @@ object sa_wiktionary extends wiktionary {
   val shabdasAgara = new BabylonDictionary(name_in = "शब्दसागरः", source_in = "http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/contrib/index.html", head_language= "sa")
   shabdasAgara.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-head/shabda-sAgara/shabda-sAgara.babylon_final")
   val AkhyAtachandrikA = new BabylonDictionary(name_in = "आख्यातचन्द्रिका", source_in = "http://github.com/sanskrit-coders/stardict-sanskrit/tree/master/sa-head/AkhyAtachandrikA", head_language= "sa")
-  AkhyAtachandrikA.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-vyAkaraNa/AkhyAtachandrikA/AkhyAtachandrikA.babylon_final")
+  AkhyAtachandrikA.fromFile(infileStr = "/home/vvasuki/stardict-sanskrit/sa-sanskritnlp.vyAkaraNa.vyAkaraNa/AkhyAtachandrikA/AkhyAtachandrikA.babylon_final")
 
   These don't yet exist fully:
   dcs frequency
@@ -125,7 +125,7 @@ object sa_wiktionary extends wiktionary {
   These don't yet exist fully:
   mbh name index
 
-  In sa-vyAkaraNa:
+  In sa-sanskritnlp.vyAkaraNa.vyAkaraNa:
   To upload:
   Declensions
   Conjugations

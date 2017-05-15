@@ -65,6 +65,7 @@
     <option name="originalFiles">
       <list>
         <option value="$USER_HOME$/sanskritnlpjava-g-appengine/pom.xml" />
+        <option value="$USER_HOME$/indic-transliteration/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>

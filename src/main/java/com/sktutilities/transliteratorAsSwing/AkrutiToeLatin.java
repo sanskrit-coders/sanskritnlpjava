@@ -1,28 +1,15 @@
 package com.sktutilities.transliteratorAsSwing;
 
-import java.awt.Container;
-import java.awt.Font;
+import com.sktutilities.util.EncodingUtil;
+import com.sktutilities.util.Log;
+
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.io.IOException;
-
-import javax.swing.BoxLayout;
-import javax.swing.JButton;
-import javax.swing.JFileChooser;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
-
-import com.sktutilities.util.EncodingUtil;
-import com.sktutilities.util.Log;
 
 
 public class AkrutiToeLatin extends JFrame implements ActionListener, KeyListener {

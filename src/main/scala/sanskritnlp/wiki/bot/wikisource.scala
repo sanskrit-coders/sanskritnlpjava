@@ -119,7 +119,7 @@ object wikisource extends wikiBot {
     // fillIndexedPagesSanskritocr
     // fillIndexedPagesGocr
 
-    // outfileStr = "/home/vvasuki/stardict-sanskrit/sa-vyAkaraNa/abhyankara-grammar/abhyankara-grammar.txt"
+    // outfileStr = "/home/vvasuki/stardict-sanskrit/sa-sanskritnlp.vyAkaraNa.vyAkaraNa/abhyankara-grammar/abhyankara-grammar.txt"
     getIndexedPages("ADictionaryOfSanskritGrammarByMahamahopadhyayaKashinathVasudevAbhyankar.djvu", 221, 230, numberLanguage = "sa")
   }
 }

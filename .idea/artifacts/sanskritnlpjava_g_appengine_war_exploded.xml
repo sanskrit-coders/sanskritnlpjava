@@ -12,6 +12,12 @@
           </element>
           <element id="library" level="project" name="Maven: org.scala-lang:scala-library:2.11.8" />
           <element id="library" level="project" name="Maven: org.scala-lang:scala-xml:2.11.0-M4" />
+          <element id="archive" name="indic-transliteration-1.1.jar">
+            <element id="module-output" name="indic-transliteration" />
+          </element>
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:0.9.29" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.6.1" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:0.9.29" />
           <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.3.2" />
         </element>
       </element>

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$USER_HOME$/indic-transliteration/indic-transliteration.iml" filepath="$USER_HOME$/indic-transliteration/indic-transliteration.iml" />
       <module fileurl="file://$PROJECT_DIR$/sanskritnlp.iml" filepath="$PROJECT_DIR$/sanskritnlp.iml" />
       <module fileurl="file://$USER_HOME$/sanskritnlpjava-g-appengine/sanskritnlpjava-g-appengine.iml" filepath="$USER_HOME$/sanskritnlpjava-g-appengine/sanskritnlpjava-g-appengine.iml" />
       <module fileurl="file://$USER_HOME$/stardict-sanskrit/stardict-sanskrit.iml" filepath="$USER_HOME$/stardict-sanskrit/stardict-sanskrit.iml" />

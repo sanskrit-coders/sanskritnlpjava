@@ -2,12 +2,12 @@ package com.sktutilities.pratyahara;
 
 import com.sktutilities.transliteration.*;
 import com.sktutilities.util.Log;
+import com.sktutilities.util.SivaSutra;
 
 import java.io.*;
 import java.awt.event.*;
 import javax.swing.*;
 import java.awt.*;
-import javax.swing.text.*;
 import javax.swing.JTextPane;
 import javax.swing.text.rtf.*;
 

@@ -6,14 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="dict-tools" />
         <module name="indic-transliteration" />
         <module name="sanskritnlp" />
         <module name="sanskritnlpjava-g-appengine" />
-        <module name="stardict-sanskrit" />
         <module name="subhAShita-db-sanskrit" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="dict-tools" target="1.5" />
       <module name="indic-transliteration" target="1.5" />
       <module name="sanskritnlp" target="1.5" />
       <module name="sanskritnlpjava-g-appengine" target="1.5" />

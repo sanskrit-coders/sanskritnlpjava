@@ -69,6 +69,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$USER_HOME$/stardict-sanskrit/pom.xml" />
         <option value="$USER_HOME$/subhAShita-db-sanskrit/pom.xml" />
+        <option value="$USER_HOME$/dict-tools/pom.xml" />
       </list>
     </option>
   </component>

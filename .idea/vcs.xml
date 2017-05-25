@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$USER_HOME$/dict-tools" vcs="Git" />
     <mapping directory="$USER_HOME$/stardict-sanskrit" vcs="Git" />
     <mapping directory="$USER_HOME$/subhAShita-db-sanskrit" vcs="Git" />
   </component>

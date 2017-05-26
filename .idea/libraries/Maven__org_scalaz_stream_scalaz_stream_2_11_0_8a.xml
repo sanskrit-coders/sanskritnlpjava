@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.scalaz.stream:scalaz-stream_2.11:0.8a">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/scalaz/stream/scalaz-stream_2.11/0.8a/scalaz-stream_2.11-0.8a.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/scalaz/stream/scalaz-stream_2.11/0.8a/scalaz-stream_2.11-0.8a-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/scalaz/stream/scalaz-stream_2.11/0.8a/scalaz-stream_2.11-0.8a-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

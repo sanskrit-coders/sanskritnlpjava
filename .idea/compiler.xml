@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="couchbase-lite-desktop" />
         <module name="db-interface" />
         <module name="dict-tools" />
         <module name="indic-transliteration" />
@@ -16,6 +17,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="couchbase-lite-desktop" target="1.5" />
+      <module name="couchbaseLiteDesktop" target="1.5" />
       <module name="db-interface" target="1.5" />
       <module name="dict-tools" target="1.5" />
       <module name="indic-transliteration" target="1.5" />

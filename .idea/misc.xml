@@ -69,9 +69,11 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$USER_HOME$/stardict-sanskrit/pom.xml" />
         <option value="$USER_HOME$/subhAShita-db-sanskrit/pom.xml" />
-        <option value="$USER_HOME$/dict-tools/pom.xml" />
         <option value="$USER_HOME$/db-interface/pom.xml" />
         <option value="$USER_HOME$/wiki-tools/pom.xml" />
+        <option value="$USER_HOME$/couchbaseLiteDesktop/pom.xml" />
+        <option value="$USER_HOME$/dict-tools/pom.xml" />
+        <option value="$USER_HOME$/couchbase-lite-desktop/pom.xml" />
       </list>
     </option>
   </component>

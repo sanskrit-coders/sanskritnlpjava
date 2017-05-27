@@ -12,6 +12,7 @@
         <module name="sanskritnlp" />
         <module name="sanskritnlpjava-g-appengine" />
         <module name="subhAShita-db-sanskrit" />
+        <module name="wiki-tools" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -22,6 +23,7 @@
       <module name="sanskritnlpjava-g-appengine" target="1.5" />
       <module name="stardict-sanskrit" target="1.5" />
       <module name="subhAShita-db-sanskrit" target="1.5" />
+      <module name="wiki-tools" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

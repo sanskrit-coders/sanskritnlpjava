@@ -74,6 +74,7 @@
         <option value="$USER_HOME$/couchbaseLiteDesktop/pom.xml" />
         <option value="$USER_HOME$/dict-tools/pom.xml" />
         <option value="$USER_HOME$/couchbase-lite-desktop/pom.xml" />
+        <option value="$USER_HOME$/StarDict-1/pom.xml" />
       </list>
     </option>
   </component>

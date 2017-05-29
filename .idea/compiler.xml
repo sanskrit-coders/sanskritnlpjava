@@ -12,6 +12,7 @@
         <module name="indic-transliteration" />
         <module name="sanskritnlp" />
         <module name="sanskritnlpjava-g-appengine" />
+        <module name="StarDict" />
         <module name="subhAShita-db-sanskrit" />
         <module name="wiki-tools" />
       </profile>
@@ -24,6 +25,7 @@
       <module name="indic-transliteration" target="1.5" />
       <module name="sanskritnlp" target="1.5" />
       <module name="sanskritnlpjava-g-appengine" target="1.5" />
+      <module name="StarDict" target="1.8" />
       <module name="stardict-sanskrit" target="1.5" />
       <module name="subhAShita-db-sanskrit" target="1.5" />
       <module name="wiki-tools" target="1.5" />

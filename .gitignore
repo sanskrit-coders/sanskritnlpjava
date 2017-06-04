@@ -1,9 +1,7 @@
 /settings.xml
-.idea/workspace.xml
-/target/nexus-staging/
-/target/maven-status/
-/target/generated-sources/
-/target/apidocs/
-/target/maven-archiver/
-/target/javadoc-bundle-options/
-/out/production/
+
+# Enough if the .iml module file is in the repository. No need to keep the project files in version control - they change too frequently.
+.idea
+
+/target
+/out

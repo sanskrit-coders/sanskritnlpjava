@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ScalaCompilerConfiguration">
-    <profile name="Maven 1" modules="sanskritnlpjava,stardict-sanskrit,couchbaseLiteDesktop,root,db-interface,indic-transliteration,sanskritnlp,sanskritnlpjava-g-appengine,couchbase-lite-desktop,subhAShita-db-sanskrit,wiki-tools,dict-tools" />
-  </component>
-</project>
